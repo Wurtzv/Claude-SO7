@@ -81,6 +81,7 @@
       `<div class="t">Gerningstid: ${esc(r.gerningstid)}</div>` +
       `<div class="t">Døgnrapport ${esc(dag(r.rapportdato))}</div>` +
       (r.praecision === "by" ? `<div class="t">${r.vej ? "Vejen blev ikke fundet – punktet" : "Kun by/område oplyst – punktet"} sidder ved byens midte.</div>` : "") +
+      naboHtml(r) +
       `<div class="t">${esc(r.politikreds)}</div>` +
       `<div class="t">Kilde: ${kilder}</div></div>`;
   }
@@ -91,7 +92,7 @@
     markører.clear();
     for (const r of v) {
       if (!r._ll) continue;
-      const m = L.circleMarker(r._ll, stil(r)).bindPopup(popup(r), { maxWidth: 280 });
+      const m = L.circleMarker(r._ll, stil(r)).bindPopup(() => popup(r), { maxWidth: 280 });
       m.bindTooltip(navn(r), { direction: "top", offset: [0, -6] });
       m.on("click", () => vælg(r.id, "kort"));
       m.addTo(lag);
@@ -579,6 +580,67 @@
     }
     throw new Error("data mangler");
   }
+
+  // ---------- naboveje og "nær mig" ----------
+  let NABO = {};
+  const naboNøgle = (r) => `${r.lat.toFixed(4)},${r.lon.toFixed(4)}`;
+  function naboveje(r) { return r.praecision === "vej" && r.lat != null ? NABO[naboNøgle(r)] || null : null; }
+  function naboHtml(r) {
+    const v = naboveje(r);
+    if (!v || !v.length) return "";
+    return `<div class="nabo"><b>Naboveje (inden for ca. 500 m):</b> ${esc(v.map((x) => x.vej).join(", "))}</div>`;
+  }
+  hentData("naboveje.json").then((d) => { NABO = d; }).catch(() => { /* valgfri */ });
+
+  const NÆR_KM = 5, NÆR_DAGE = 14;
+  const nærLag = L.layerGroup().addTo(map);
+  function afstandKm(a, b) {
+    const k = Math.cos(((a[0] + b[0]) / 2) * Math.PI / 180);
+    return Math.hypot((a[1] - b[1]) * k, a[0] - b[0]) * 111.32;
+  }
+  function visNær(pos) {
+    const her = [pos.coords.latitude, pos.coords.longitude];
+    const grænse = new Date(); grænse.setDate(grænse.getDate() - NÆR_DAGE);
+    const fra = grænse.toISOString().slice(0, 10);
+    const fund = DATA.filter((r) => r.rapportdato >= fra)
+      .map((r) => ({ r, km: afstandKm(her, [r.lat, r.lon]) }))
+      .filter((x) => x.km <= NÆR_KM).sort((a, b) => a.km - b.km);
+    nærLag.clearLayers();
+    L.circle(her, { radius: NÆR_KM * 1000, color: css("--sel"), weight: 1.5, fillOpacity: 0.04, interactive: false }).addTo(nærLag);
+    L.circleMarker(her, { radius: 7, color: "#fff", weight: 2, fillColor: css("--sel"), fillOpacity: 1 }).bindTooltip("Du er her").addTo(nærLag);
+    // vis de seneste 14 dage på kortet, så alle fundne punkter er tegnet
+    state.dato = ""; state.periode = NÆR_DAGE; state.omraade = ""; state.kreds = "";
+    fyldVælgere(); tegn(false);
+    map.fitBounds(L.latLng(her).toBounds(NÆR_KM * 2000), { padding: [10, 10] });
+    $("naerSub").textContent = fund.length
+      ? `${fund.length} anmeldte indbrud i døgnrapporterne inden for ${NÆR_KM} km af din placering siden ${dag(fra)}. Nærmeste først.`
+      : `Ingen indbrud i døgnrapporterne inden for ${NÆR_KM} km siden ${dag(fra)}. Bemærk: vej-data findes kun for Øst- og Nordjylland.`;
+    $("naerListe").innerHTML = fund.map(({ r, km }) => {
+      const nv = naboveje(r);
+      return `<button class="item" data-id="${esc(r.id)}"><span class="km">${km < 1 ? Math.round(km * 1000) + " m" : tal(km, 1) + " km"}</span>` +
+        `<span class="st">${esc(navn(r))}${r.postnr ? ` <span class="t">${esc(r.postnr)}</span>` : ""}</span>` +
+        `<span class="t">${esc(dag(r.rapportdato))} · ${esc(r.gerningstid)}${r.praecision === "by" ? " · ca. placering (byens midte)" : ""}</span>` +
+        (nv && nv.length ? `<span class="nabo">Naboveje: ${esc(nv.slice(0, 10).map((x) => x.vej).join(", "))}${nv.length > 10 ? " …" : ""}</span>` : "") +
+        "</button>";
+    }).join("");
+  }
+  $("naerKnap").addEventListener("click", () => {
+    const knap = $("naerKnap");
+    $("naerBoks").hidden = false;
+    if (!navigator.geolocation) { $("naerSub").textContent = "Din browser kan ikke oplyse din placering."; return; }
+    knap.disabled = true; $("naerSub").textContent = "Finder din placering …"; $("naerListe").innerHTML = "";
+    navigator.geolocation.getCurrentPosition((pos) => { knap.disabled = false; visNær(pos); }, (fejl) => {
+      knap.disabled = false;
+      $("naerSub").textContent = fejl.code === 1
+        ? "Siden fik ikke lov at se din placering. Tillad placering for siden i browserens indstillinger og prøv igen."
+        : "Kunne ikke finde din placering. Prøv igen udenfor eller med GPS slået til.";
+    }, { enableHighAccuracy: true, timeout: 15000, maximumAge: 60000 });
+  });
+  $("naerListe").addEventListener("click", (e) => {
+    const b = e.target.closest(".item"); if (!b) return;
+    $("map").scrollIntoView({ behavior: "smooth", block: "center" });
+    vælg(b.dataset.id, "liste");
+  });
 
   // ---------- hotspots ----------
   // Tæller efter rapportdato i de seneste N dage (regnet fra nyeste døgnrapport) mod de N dage før.

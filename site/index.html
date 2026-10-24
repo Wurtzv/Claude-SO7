@@ -33,7 +33,14 @@
     <label><span class="lbl">Politikreds</span><select id="kreds"></select></label>
     <label><span class="lbl">Område</span><select id="omraade"></select></label>
     <button class="reset" id="nulstil" type="button">Nulstil</button>
+    <button class="naer" id="naerKnap" type="button" aria-controls="naerBoks">Indbrud nær mig</button>
   </div>
+
+  <section class="grafboks" id="naerBoks" hidden aria-labelledby="naerTitel" aria-live="polite">
+    <h2 id="naerTitel">Indbrud inden for 5 km · seneste 14 dage</h2>
+    <p class="gsub" id="naerSub"></p>
+    <div id="naerListe" class="naerliste"></div>
+  </section>
 
   <div class="filters lag" role="group" aria-label="Kortlag">
     <div class="grp">

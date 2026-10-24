@@ -12,7 +12,7 @@ from pathlib import Path
 from .geokod import Geokoder
 from .kilder import KILDER, siden
 from .lager import Lager
-from . import omraader, statistik, ugerapport
+from . import naboer, omraader, statistik, ugerapport
 from .parse import parse_rapport
 
 RODEN = Path(__file__).resolve().parent.parent
@@ -194,6 +194,12 @@ def opdater(args) -> int:
     if not args.uden_geokodning:
         geokod(lager, args.prøvekørsel, args.geokodning_minutter)
         postnumre(lager, args.prøvekørsel, args.postnummer_minutter)
+        if not args.prøvekørsel:
+            geo_n = Geokoder(DATA / "geokode-cache.json")
+            try:
+                naboer.opdater(lager.indbrud, DATA / "naboveje.json", geo_n.vejnavn, args.naboveje_minutter)
+            finally:
+                geo_n.gem()
 
     if not args.uden_statistik and not args.prøvekørsel:
         try:
@@ -227,6 +233,8 @@ def main(argv=None) -> int:
                    help="maks. tid til geokodning pr. kørsel (resten tages næste gang)")
     o.add_argument("--postnummer-minutter", type=float, default=10,
                    help="maks. tid til postnummeropslag pr. kørsel")
+    o.add_argument("--naboveje-minutter", type=float, default=8,
+                   help="maks. tid til opslag af naboveje pr. kørsel")
     h = sub.add_parser("historik", help="hent ældre døgnrapporter dag for dag")
     h.add_argument("--fra", required=True, help="første dato, fx 2023-01-01")
     h.add_argument("--til", default=date.today().isoformat(), help="sidste dato (standard i dag)")

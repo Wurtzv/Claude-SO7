@@ -265,6 +265,19 @@ class Geokoder:
         self.cache[nøgle] = pnr or {"fejl": True, "dato": self.i_dag.isoformat()}
         return pnr
 
+    def vejnavn(self, lat: float, lon: float) -> str | None:
+        """Nærmeste vejnavn ved et punkt (omvendt opslag i Nominatim, caches pr. ~10 m)."""
+        nøgle = f"vej|{lat:.4f},{lon:.4f}"
+        hit = self.cache.get(nøgle)
+        if hit is not None and not (isinstance(hit, dict) and self._forældet_fejl(hit)):
+            return hit if isinstance(hit, str) else None
+        self._vent()
+        r = net.hent_json(NOMINATIM.replace("/search", "/reverse"),
+                          params={"lat": lat, "lon": lon, "format": "jsonv2", "zoom": 17, "addressdetails": 1})
+        vej = (r.get("address") or {}).get("road", "") if isinstance(r, dict) else ""
+        self.cache[nøgle] = vej or {"fejl": True, "dato": self.i_dag.isoformat()}
+        return vej or None
+
     def kommune(self, by: str, omraade: str = "", kreds: str = "") -> str | None:
         """Kommunen en by/bydel ligger i, fx 'Risskov' -> 'Aarhus' (navn uden 'Kommune').
         Søgningen holdes inden for politikredsen, så 'Hasle' ikke bliver til Hasle på Bornholm."""
