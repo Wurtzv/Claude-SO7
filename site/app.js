@@ -25,7 +25,7 @@
   const legend = L.control({ position: "bottomleft" });
   legend.onAdd = () => {
     const d = L.DomUtil.create("div", "legend");
-    d.innerHTML = '<span><i class="sw"></i>Privat beboelse</span><span><i class="sw b"></i>Erhverv og andet</span><span><i class="sw a o"></i>Ca. placering (by)</span><span><i class="sw s"></i>Kommune: alle indbrud i kvartalet</span>';
+    d.innerHTML = '<span><i class="sw"></i>Privat beboelse</span><span><i class="sw b"></i>Erhverv og andet</span><span><i class="sw a o"></i>Ca. placering (by)</span><span><i class="sw s"></i>Kommune: alle indbrud i perioden</span>';
     return d;
   };
   legend.addTo(map);
@@ -181,6 +181,32 @@
   const statMarkører = new Map();
   let STAT = null;
   const kvt = (k) => `${k.slice(5)}. kvt. ${k.slice(0, 4)}`;
+  let PERIODER = [];
+  const sum = (x, kvartaler) => kvartaler.reduce((a, q) => a + (x.antal[q] || 0), 0);
+
+  // Hele kalenderår (det seneste også selvom det ikke er slut) og enkelte kvartaler.
+  // "fjor" er de samme kvartaler året før, så et halvt år sammenlignes med et halvt år.
+  function byggPerioder(kv) {
+    const findes = new Set(kv), ud = [];
+    const år = [...new Set(kv.map((q) => q.slice(0, 4)))].sort().reverse();
+    år.forEach((å, i) => {
+      const qs = kv.filter((q) => q.startsWith(å));
+      if (qs.length < 4 && i > 0) return; // ufuldstændigt ældste år
+      const fjor = qs.map((q) => String(+å - 1) + q.slice(4));
+      const nr = qs.map((q) => q.slice(5));
+      ud.push({
+        id: "Y" + å, år: true, kvartaler: qs,
+        navn: qs.length === 4 ? `Hele ${å}` : `${å} (${nr[0]}.–${nr[nr.length - 1]}. kvt.)`,
+        fjor: fjor.every((q) => findes.has(q)) ? fjor : null,
+        fjorNavn: qs.length === 4 ? `Hele ${+å - 1}` : `Samme kvartaler i ${+å - 1}`,
+      });
+    });
+    for (const q of [...kv].reverse()) {
+      const f = String(+q.slice(0, 4) - 1) + q.slice(4);
+      ud.push({ id: q, år: false, kvartaler: [q], navn: kvt(q), fjor: findes.has(f) ? [f] : null, fjorNavn: "Samme kvartal året før" });
+    }
+    return ud;
+  }
   const tal = (n, d = 0) => n.toLocaleString("da-DK", { minimumFractionDigits: d, maximumFractionDigits: d });
 
   // Hvad cirklerne og listen måler. "værdi" er det tal, der vises og sorteres efter.
@@ -198,16 +224,16 @@
       $("klist").innerHTML = '<p class="empty">Slå laget "Alle indbrud pr. kommune" til for at se kommunerne.</p>';
       return;
     }
-    const k = $("kvartal").value;
+    const per = PERIODER.find((p) => p.id === $("kvartal").value) || PERIODER[0];
+    const k = per.navn;
     const mål = MÅL[$("maal").value] || MÅL.antal;
-    const kv = STAT.kvartaler, iFjor = kv[kv.indexOf(k) - 4];
     const rækker = STAT.kommuner.filter((x) => x.lat != null).map((x) => {
-      const n = x.antal[k] || 0;
+      const n = sum(x, per.kvartaler);
       return {
         ...x, n,
         prInd: x.indbyggere ? (n / x.indbyggere) * 1000 : 0,
         prHus: x.husstande ? (n / x.husstande) * 1000 : 0,
-        fjor: iFjor ? x.antal[iFjor] || 0 : null,
+        fjor: per.fjor ? sum(x, per.fjor) : null,
       };
     });
     const maks = Math.max(1e-9, ...rækker.map(mål.værdi));
@@ -220,8 +246,8 @@
         color: css("--stat"), weight: 2,
         fillColor: css("--stat"), fillOpacity: 0.2 + 0.6 * andel,
       });
-      const fjor = r.fjor == null ? "" : `<div class="t">Samme kvartal året før: ${tal(r.fjor)}</div>`;
-      m.bindPopup(`<div class="pop"><strong>${esc(r.navn)} Kommune</strong>${tal(r.n)} anmeldte indbrud i beboelse, ${kvt(k)}` +
+      const fjor = r.fjor == null ? "" : `<div class="t">${esc(per.fjorNavn)}: ${tal(r.fjor)}</div>`;
+      m.bindPopup(`<div class="pop"><strong>${esc(r.navn)} Kommune</strong>${tal(r.n)} anmeldte indbrud i beboelse, ${esc(k)}` +
         `<div class="t">${tal(r.prInd, 2)} pr. 1.000 indbyggere (${tal(r.indbyggere || 0)} indb.)</div>` +
         `<div class="t">${tal(r.prHus, 2)} pr. 1.000 husstande (${tal(r.husstande || 0)} husst.)</div>${fjor}` +
         `<div class="t">Kilde: <a href="${esc(STAT.kilde_url)}" target="_blank" rel="noopener">Danmarks Statistik</a></div></div>`, { maxWidth: 280 });
@@ -236,7 +262,7 @@
       }
     }
     const sorteret = [...rækker].sort((a, b) => mål.værdi(b) - mål.værdi(a) || a.navn.localeCompare(b.navn, "da"));
-    $("klist").innerHTML = `<div class="day">${esc(kvt(k))} · sorteret efter ${esc(mål.navn)}</div>` + sorteret.map((r) => {
+    $("klist").innerHTML = `<div class="day">${esc(k)} · sorteret efter ${esc(mål.navn)}</div>` + sorteret.map((r) => {
       const ændring = r.fjor ? ` · året før ${tal(r.fjor)} (${r.n >= r.fjor ? "+" : "−"}${tal(Math.abs(Math.round(((r.n - r.fjor) / r.fjor) * 100)))} %)` : "";
       return `<button class="item" data-kode="${esc(r.kode)}"><i class="sw s"></i><span class="st">${esc(r.navn)} <b class="kn">${vis(r)}</b><small class="enh">${esc(mål.enhed)}</small></span>` +
         `<span class="t">${tal(r.n)} indbrud · ${tal(r.prInd, 2)} pr. 1.000 indb. · ${tal(r.prHus, 2)} pr. 1.000 husst.${ændring}</span></button>`;
@@ -244,14 +270,18 @@
     statLag.addTo(map);
     const total = rækker.reduce((a, r) => a + r.n, 0);
     const ind = rækker.reduce((a, r) => a + (r.indbyggere || 0), 0), hus = rækker.reduce((a, r) => a + (r.husstande || 0), 0);
-    $("statInfo").textContent = `${tal(total)} anmeldte indbrud i beboelse i Jylland i ${kvt(k)} – ` +
+    $("statInfo").textContent = `${tal(total)} anmeldte indbrud i beboelse i Jylland, ${esc(k)} – ` +
       `${tal((total / ind) * 1000, 2)} pr. 1.000 indbyggere, ${tal((total / hus) * 1000, 2)} pr. 1.000 husstande.`;
   }
 
 
   hentData("statistik.json").then((d) => {
     STAT = d;
-    $("kvartal").innerHTML = [...d.kvartaler].reverse().map((k) => `<option value="${k}">${kvt(k)}</option>`).join("");
+    PERIODER = byggPerioder(d.kvartaler);
+    const opt = (p) => `<option value="${p.id}">${esc(p.navn)}</option>`;
+    $("kvartal").innerHTML =
+      `<optgroup label="Hele år">${PERIODER.filter((p) => p.år).map(opt).join("")}</optgroup>` +
+      `<optgroup label="Kvartaler">${PERIODER.filter((p) => !p.år).map(opt).join("")}</optgroup>`;
     $("statGrp").hidden = false;
     tegnStatistik();
   }).catch(() => { /* statistikken er valgfri */ });

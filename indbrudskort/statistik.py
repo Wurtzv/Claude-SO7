@@ -16,7 +16,7 @@ from . import net
 
 API = "https://api.statbank.dk/v1/data/{tabel}/BULK"
 INDBRUD_I_BEBOELSE = "1320"
-ANTAL_KVARTALER = 5  # seneste kvartal + samme kvartal året før
+ANTAL_KVARTALER = 12  # tre år, så hele kalenderår og året før kan sammenlignes
 
 
 def er_jysk(kode: str) -> bool:
