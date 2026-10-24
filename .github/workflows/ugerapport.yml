@@ -1,0 +1,36 @@
+name: Ugerapport
+
+# Hver mandag: opret et GitHub-issue med ugens opsummering. GitHub sender nye issues på
+# mail til repoets ejer og alle, der "Watch"-er repoet.
+on:
+  schedule:
+    - cron: "15 10 * * 1"   # mandag kl. 10:15 UTC, efter den daglige opdatering kl. 08:30
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  ugerapport:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main   # med de data, den daglige kørsel lige har committet
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Skriv ugerapport
+        run: |
+          python -m indbrudskort ugerapport --md uge.md --url "https://${GITHUB_REPOSITORY_OWNER,,}.github.io/${GITHUB_REPOSITORY#*/}/"
+          printf '\ncc @%s\n' "$GITHUB_REPOSITORY_OWNER" >> uge.md
+      - name: Opret issue og luk sidste uges
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh label create ugerapport --color 0f5f8a --description "Ugentlig opsummering af indbrud" 2>/dev/null || true
+          for n in $(gh issue list --label ugerapport --state open --json number --jq '.[].number'); do
+            gh issue close "$n" --reason completed
+          done
+          gh issue create --title "Indbrud: ugens overblik $(date -u +%-d/%-m-%Y)" --label ugerapport --body-file uge.md

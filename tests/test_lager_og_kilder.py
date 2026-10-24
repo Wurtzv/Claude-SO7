@@ -183,3 +183,19 @@ def test_kun_kredsens_egne_kommuner():
          {"rapportdato": "2026-09-21", "politikreds": "Østjyllands Politi", "omraade": "Hinnerup", "by": "Hinnerup"}]
     d = byg(r, lambda by, o, k: {"Ulstrup": "Viborg", "Hinnerup": "Favrskov"}[by])
     assert [k["navn"] for k in d["kommuner"]] == ["Favrskov"]
+
+
+def test_postnummer_fra_cache_og_netvaerk(tmp_path, monkeypatch):
+    from indbrudskort import net
+    cache = tmp_path / "c.json"
+    cache.write_text(json.dumps({"pnr|56.196,10.236": "8240"}))
+    g = Geokoder(cache, token="", pause=0)
+    assert g.postnummer(56.195964, 10.235767) == "8240"  # intet netværkskald
+    kald = []
+    monkeypatch.setattr(net, "hent_json", lambda url, params=None: kald.append(url) or
+                        {"address": {"postcode": "8260", "road": "Reventlowsvej"}})
+    assert g.postnummer(56.124357, 10.160625) == "8260"
+    assert kald and kald[0].endswith("/reverse")
+    monkeypatch.setattr(net, "hent_json", lambda url, params=None: {"address": {}})
+    assert g.postnummer(57.0, 9.9) is None
+    assert g.cache["pnr|57.000,9.900"]["fejl"]

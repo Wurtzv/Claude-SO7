@@ -12,7 +12,7 @@ from pathlib import Path
 from .geokod import Geokoder
 from .kilder import KILDER, siden
 from .lager import Lager
-from . import omraader, statistik
+from . import omraader, statistik, ugerapport
 from .parse import parse_rapport
 
 RODEN = Path(__file__).resolve().parent.parent
@@ -59,6 +59,29 @@ def geokod(lager: Lager, prøvekørsel: bool, minutter: float) -> None:
             geo.gem()
 
 
+def postnumre(lager: Lager, prøvekørsel: bool, minutter: float) -> None:
+    """Sætter postnummer på placerede indbrud ud fra punktet (nyeste først, tidsbegrænset)."""
+    geo = Geokoder(DATA / "geokode-cache.json")
+    slut = time.monotonic() + minutter * 60
+    mangler = sorted((r for r in lager.indbrud if r.get("lat") is not None and not r.get("postnr")),
+                     key=lambda r: r["rapportdato"], reverse=True)
+    try:
+        for i, r in enumerate(mangler):
+            if time.monotonic() > slut:
+                print(f"  postnumre stoppet efter {minutter:g} min; {len(mangler) - i} venter til næste kørsel")
+                break
+            try:
+                p = geo.postnummer(r["lat"], r["lon"])
+            except Exception as e:
+                print(f"  postnummeropslag fejlede: {e}")
+                break
+            if p:
+                r["postnr"] = p
+    finally:
+        if not prøvekørsel:
+            geo.gem()
+
+
 def gem_omraader(lager: Lager) -> None:
     """Egen statistik pr. område, by og kommune (kommuner slås op én gang og caches)."""
     geo = Geokoder(DATA / "geokode-cache.json")
@@ -66,6 +89,26 @@ def gem_omraader(lager: Lager) -> None:
         omraader.gem(lager.indbrud, DATA / "omraader.json", geo.kommune)
     finally:
         geo.gem()
+
+
+def _statistik() -> dict | None:
+    f = DATA / "statistik.json"
+    return json.loads(f.read_text("utf-8")) if f.exists() else None
+
+
+def gem_ugerapport(lager: Lager) -> dict:
+    return ugerapport.gem(lager.indbrud, DATA / "ugerapport.json", _statistik())
+
+
+def uge(args) -> int:
+    """Skriver ugens opsummering som Markdown (bruges af det ugentlige GitHub-issue)."""
+    data = ugerapport.byg(Lager(DATA / "indbrud.json").indbrud, _statistik())
+    tekst = ugerapport.markdown(data, args.url)
+    if args.md:
+        Path(args.md).write_text(tekst, "utf-8")
+    else:
+        print(tekst)
+    return 0
 
 
 def historik(args) -> int:
@@ -150,6 +193,7 @@ def opdater(args) -> int:
 
     if not args.uden_geokodning:
         geokod(lager, args.prøvekørsel, args.geokodning_minutter)
+        postnumre(lager, args.prøvekørsel, args.postnummer_minutter)
 
     if not args.uden_statistik and not args.prøvekørsel:
         try:
@@ -165,6 +209,7 @@ def opdater(args) -> int:
         lager.normaliser()
         lager.gem()
         gem_omraader(lager)
+        gem_ugerapport(lager)
     # Rødt flag i Actions, hvis ingen kilder kunne nås.
     return 1 if fejl == len(KILDER) else 0
 
@@ -180,13 +225,18 @@ def main(argv=None) -> int:
     o.add_argument("--prøvekørsel", action="store_true", help="hent og parse, men gem intet")
     o.add_argument("--geokodning-minutter", type=float, default=20,
                    help="maks. tid til geokodning pr. kørsel (resten tages næste gang)")
+    o.add_argument("--postnummer-minutter", type=float, default=10,
+                   help="maks. tid til postnummeropslag pr. kørsel")
     h = sub.add_parser("historik", help="hent ældre døgnrapporter dag for dag")
     h.add_argument("--fra", required=True, help="første dato, fx 2023-01-01")
     h.add_argument("--til", default=date.today().isoformat(), help="sidste dato (standard i dag)")
     h.add_argument("--maks", type=int, default=0, help="stop efter så mange dage (0 = alle)")
     h.add_argument("--pause", type=float, default=1.0, help="sekunder mellem rapporter")
+    u = sub.add_parser("ugerapport", help="skriv ugens opsummering som Markdown")
+    u.add_argument("--md", help="fil at skrive til (standard: skærmen)")
+    u.add_argument("--url", default="", help="link til kortsiden i bunden af rapporten")
     args = p.parse_args(argv)
-    return historik(args) if args.cmd == "historik" else opdater(args)
+    return {"historik": historik, "ugerapport": uge}.get(args.cmd, opdater)(args)
 
 
 if __name__ == "__main__":

@@ -251,6 +251,20 @@ class Geokoder:
         self.cache[nøgle] = {"lon": round(p[0], 6), "lat": round(p[1], 6)} if p else {"fejl": True, "dato": self.i_dag.isoformat()}
         return p
 
+    def postnummer(self, lat: float, lon: float) -> str | None:
+        """Postnummer for et punkt (omvendt opslag i Nominatim, caches pr. ~100 m)."""
+        nøgle = f"pnr|{lat:.3f},{lon:.3f}"
+        hit = self.cache.get(nøgle)
+        if hit is not None and not (isinstance(hit, dict) and self._forældet_fejl(hit)):
+            return hit if isinstance(hit, str) else None
+        self._vent()
+        r = net.hent_json(NOMINATIM.replace("/search", "/reverse"),
+                          params={"lat": lat, "lon": lon, "format": "jsonv2", "zoom": 17, "addressdetails": 1})
+        pnr = (r.get("address") or {}).get("postcode", "") if isinstance(r, dict) else ""
+        pnr = pnr if re.fullmatch(r"\d{4}", pnr or "") else None
+        self.cache[nøgle] = pnr or {"fejl": True, "dato": self.i_dag.isoformat()}
+        return pnr
+
     def kommune(self, by: str, omraade: str = "", kreds: str = "") -> str | None:
         """Kommunen en by/bydel ligger i, fx 'Risskov' -> 'Aarhus' (navn uden 'Kommune').
         Søgningen holdes inden for politikredsen, så 'Hasle' ikke bliver til Hasle på Bornholm."""

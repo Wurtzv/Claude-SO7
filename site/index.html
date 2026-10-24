@@ -66,6 +66,28 @@
     </aside>
   </div>
 
+  <section class="grafboks" id="ugeBoks" hidden aria-labelledby="ugeTitel">
+    <h2 id="ugeTitel">Ugens overblik</h2>
+    <p class="gsub" id="ugeSub"></p>
+    <div class="ugegrid" id="ugeGrid"></div>
+    <p class="ghint">Samme opsummering sendes hver mandag som et GitHub-issue, så den kommer på mail til dem, der følger repoet.</p>
+  </section>
+
+  <section class="grafboks" id="hotBoks" hidden aria-labelledby="hotTitel">
+    <h2 id="hotTitel">Hotspots – hvor sker indbruddene?</h2>
+    <p class="gsub">Flest anmeldte indbrud i perioden, og hvor det er steget mest i forhold til perioden lige før. "Før" er de lige så mange dage før. Klik på en række for at se indbruddene på kortet.</p>
+    <div class="gstyr">
+      <label><span class="lbl">Niveau</span>
+        <select id="hotNiveau"><option value="bydele">Byer og bydele</option><option value="postnumre">Postnumre</option><option value="veje">Veje</option></select></label>
+      <label><span class="lbl">Periode</span>
+        <select id="hotDage"><option value="30">Seneste 30 dage</option><option value="90">Seneste 90 dage</option><option value="365">Seneste 365 dage</option></select></label>
+      <label><span class="lbl">Sortér efter</span>
+        <select id="hotSort"><option value="antal">Flest indbrud</option><option value="forskel">Størst stigning</option></select></label>
+      <label><span class="lbl">Politikreds</span><select id="hotKreds"></select></label>
+    </div>
+    <div id="hotTabel" class="gtabel rang"></div>
+  </section>
+
   <section class="grafboks" id="grafBoks" hidden aria-labelledby="grafTitel">
     <h2 id="grafTitel">Udvikling pr. kvartal</h2>
     <p class="gsub">Danmarks Statistik, alle anmeldte indbrud i beboelse. Vælg op til tre kommuner – klik også på en kommune på kortet eller i listen. Målet følger "Vis kommuner efter".</p>
