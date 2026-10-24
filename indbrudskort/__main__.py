@@ -5,13 +5,14 @@ from __future__ import annotations
 import argparse
 import json
 import sys
-from datetime import date
+import time
+from datetime import date, timedelta
 from pathlib import Path
 
 from .geokod import Geokoder
 from .kilder import KILDER, siden
 from .lager import Lager
-from . import statistik
+from . import omraader, statistik
 from .parse import parse_rapport
 
 RODEN = Path(__file__).resolve().parent.parent
@@ -33,6 +34,79 @@ def indlæs_startdata(lager: Lager, fil: Path) -> int:
         nye += lager.tilføj_rapport(poster, url=m["url"], titel=m["titel"], rapportdato=rd,
                                     udgiver=m["udgiver"], politikreds=m["politikreds"])
     return nye
+
+
+def geokod(lager: Lager, prøvekørsel: bool, minutter: float) -> None:
+    """Geokoder manglende veje, nyeste først, i højst `minutter` (Nominatim tillader ét kald i sekundet,
+    så en stor historik bliver placeret over flere dages kørsler)."""
+    geo = Geokoder(DATA / "geokode-cache.json")
+    slut = time.monotonic() + minutter * 60
+    mangler = sorted(lager.mangler_koordinater(), key=lambda r: r["rapportdato"], reverse=True)
+    færdige = 0
+    try:
+        for r in mangler:
+            if time.monotonic() > slut:
+                print(f"  geokodning stoppet efter {minutter:g} min; {len(mangler) - færdige} venter til næste kørsel")
+                break
+            p = geo.vej(r["vej"], r["by"])
+            færdige += 1
+            if p:
+                r.update(lat=p["lat"], lon=p["lon"], praecision=p["praecision"], geokilde=p["geokilde"])
+            else:
+                print(f"  kunne ikke geokode {r['vej']}, {r['by']}")
+    finally:
+        if not prøvekørsel:
+            geo.gem()
+
+
+def historik(args) -> int:
+    """Henter ældre døgnrapporter dag for dag (kun kredse med historik-skabeloner)."""
+    lager = Lager(DATA / "indbrud.json")
+    hfil = DATA / "historik.json"
+    ikke_fundet: dict = json.loads(hfil.read_text("utf-8")) if hfil.exists() else {}
+    fra, til = date.fromisoformat(args.fra), date.fromisoformat(args.til)
+    nye = behandlet = 0
+    for kilde in KILDER:
+        if not getattr(kilde, "historik", None):
+            continue
+        set_ = set(ikke_fundet.get(kilde.politikreds, []))
+        d = til
+        while d >= fra:
+            ds = d.isoformat()
+            urls = kilde.historiske_urls(d)
+            if ds in set_ or any(u in lager.behandlet for u in urls):
+                d -= timedelta(days=1)
+                continue
+            try:
+                m = kilde.hent_historisk(d)
+            except Exception as e:
+                print(f"  FEJL {ds}: {e}")
+                d -= timedelta(days=1)
+                continue
+            if m is None:
+                set_.add(ds)
+            else:
+                poster = kilde.parse(m, m.indhold)
+                n = lager.tilføj_rapport(poster, url=m.url, titel=m.titel, rapportdato=d,
+                                         udgiver=m.udgiver, politikreds=m.politikreds)
+                nye += n
+                print(f"  {ds}: {len(poster)} indbrud, {n} nye")
+            behandlet += 1
+            if behandlet % 25 == 0:  # gem undervejs, så en afbrudt kørsel kan fortsætte
+                ikke_fundet[kilde.politikreds] = sorted(set_)
+                hfil.write_text(json.dumps(ikke_fundet, indent=1) + "\n", "utf-8")
+                lager.gem()
+            if args.maks and behandlet >= args.maks:
+                break
+            time.sleep(args.pause)
+            d -= timedelta(days=1)
+        ikke_fundet[kilde.politikreds] = sorted(set_)
+    hfil.write_text(json.dumps(ikke_fundet, indent=1) + "\n", "utf-8")
+    lager.normaliser()
+    lager.gem()
+    omraader.gem(lager.indbrud, DATA / "omraader.json")
+    print(f"Historik: {behandlet} dage behandlet, {nye} nye indbrud. I alt {len(lager.indbrud)}.")
+    return 0
 
 
 def opdater(args) -> int:
@@ -66,17 +140,7 @@ def opdater(args) -> int:
                 print(f"  {m.dato} {m.titel[:60]}: ingen indbrud fundet")
 
     if not args.uden_geokodning:
-        geo = Geokoder(DATA / "geokode-cache.json")
-        try:
-            for r in lager.mangler_koordinater():
-                p = geo.vej(r["vej"], r["by"])
-                if p:
-                    r.update(lat=p["lat"], lon=p["lon"], praecision=p["praecision"], geokilde=p["geokilde"])
-                else:
-                    print(f"  kunne ikke geokode {r['vej']}, {r['by']}")
-        finally:
-            if not args.prøvekørsel:
-                geo.gem()
+        geokod(lager, args.prøvekørsel, args.geokodning_minutter)
 
     if not args.uden_statistik and not args.prøvekørsel:
         try:
@@ -89,7 +153,9 @@ def opdater(args) -> int:
 
     print(f"I alt {len(lager.indbrud)} indbrud, {nye} nye.")
     if not args.prøvekørsel:
+        lager.normaliser()
         lager.gem()
+        omraader.gem(lager.indbrud, DATA / "omraader.json")
     # Rødt flag i Actions, hvis ingen kilder kunne nås.
     return 1 if fejl == len(KILDER) else 0
 
@@ -103,8 +169,15 @@ def main(argv=None) -> int:
     o.add_argument("--uden-geokodning", action="store_true")
     o.add_argument("--uden-statistik", action="store_true", help="spring kommunestatistikken fra Danmarks Statistik over")
     o.add_argument("--prøvekørsel", action="store_true", help="hent og parse, men gem intet")
+    o.add_argument("--geokodning-minutter", type=float, default=20,
+                   help="maks. tid til geokodning pr. kørsel (resten tages næste gang)")
+    h = sub.add_parser("historik", help="hent ældre døgnrapporter dag for dag")
+    h.add_argument("--fra", required=True, help="første dato, fx 2023-01-01")
+    h.add_argument("--til", default=date.today().isoformat(), help="sidste dato (standard i dag)")
+    h.add_argument("--maks", type=int, default=0, help="stop efter så mange dage (0 = alle)")
+    h.add_argument("--pause", type=float, default=1.0, help="sekunder mellem rapporter")
     args = p.parse_args(argv)
-    return opdater(args)
+    return historik(args) if args.cmd == "historik" else opdater(args)
 
 
 if __name__ == "__main__":

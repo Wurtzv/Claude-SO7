@@ -109,3 +109,46 @@ def test_geokoder_bruger_cache(tmp_path):
     cache.write_text(json.dumps({"Klintevej|Hammel": {"lat": 56.26, "lon": 9.86, "praecision": "vej", "geokilde": "nominatim"}}))
     g = Geokoder(cache, token="")
     assert g.vej("Klintevej", "Hammel")["lat"] == 56.26  # intet netværkskald
+
+
+def test_omraadestatistik_pr_maaned():
+    from indbrudskort.omraader import byg
+    r = [
+        {"rapportdato": "2026-09-21", "politikreds": "Østjyllands Politi", "omraade": "Aarhus", "by": "Risskov"},
+        {"rapportdato": "2026-09-30", "politikreds": "Østjyllands Politi", "omraade": "Aarhus", "by": "Viby J"},
+        {"rapportdato": "2026-10-02", "politikreds": "Østjyllands Politi", "omraade": "Aarhus", "by": "Risskov"},
+        {"rapportdato": "2026-10-03", "politikreds": "Nordjyllands Politi", "omraade": "Aalborg", "by": "Vejgaard"},
+    ]
+    d = byg(r)
+    assert d["maaneder"] == ["2026-09", "2026-10"]
+    aarhus = next(o for o in d["omraader"] if o["navn"] == "Aarhus")
+    assert aarhus["antal"] == {"2026-09": 2, "2026-10": 1}
+    risskov = next(b for b in d["byer"] if b["navn"] == "Risskov")
+    assert risskov["antal"] == {"2026-09": 1, "2026-10": 1} and risskov["omraade"] == "Aarhus"
+    assert d["daekning"]["Østjyllands Politi"] == {"fra": "2026-09-21", "til": "2026-10-02"}
+
+
+def test_historiske_urls():
+    from indbrudskort.kilder import KILDER
+    oj = KILDER[0]
+    urls = oj.historiske_urls(date(2024, 3, 5))
+    assert urls[0] == ("https://politi.dk/oestjyllands-politi/doegnrapporter/"
+                       "oestjyllands-politi-uddrag-af-doegnrapporten-5-marts-2024/2024/03/05")
+    assert "doegnrapport05032024/2024/03/05" in urls[1]
+
+
+def test_normaliser_retter_og_fletter(tmp_path):
+    lager = Lager(tmp_path / "indbrud.json")
+    lager.indbrud = [
+        {"id": "a", "vej": "Råhøjparken, 8260 Viby J", "by": "", "omraade": "", "rapportdato": "2026-08-30",
+         "kilde_url": "u1", "kilder": [{"url": "u1"}], "tid_fra": "2026-08-28", "tid_til": "2026-08-29", "politikreds": "Østjyllands Politi"},
+        {"id": "b", "vej": "Råhøjparken", "by": "Viby J", "omraade": "Aarhus", "rapportdato": "2026-08-31",
+         "kilde_url": "u2", "kilder": [{"url": "u2"}], "tid_fra": "2026-08-28", "tid_til": "2026-08-29", "politikreds": "Østjyllands Politi"},
+        {"id": "c", "vej": "00 og", "by": "", "omraade": "", "rapportdato": "2026-08-30",
+         "kilde_url": "u1", "kilder": [{"url": "u1"}], "tid_fra": "2026-08-29", "tid_til": None, "politikreds": "Østjyllands Politi"},
+    ]
+    lager.normaliser()
+    assert len(lager.indbrud) == 1
+    [r] = lager.indbrud
+    assert (r["vej"], r["by"], r["omraade"]) == ("Råhøjparken", "Viby J", "Aarhus")
+    assert {k["url"] for k in r["kilder"]} == {"u1", "u2"}

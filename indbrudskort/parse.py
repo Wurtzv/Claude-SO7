@@ -37,6 +37,19 @@ BY_ALIASER = {
     "tranbjerg": "Tranbjerg J",
     "harlev": "Harlev J",
     "gjerlev": "Gjerlev J",
+    "grenå": "Grenaa",
+    "åbyshøj": "Åbyhøj",
+    "højberg": "Højbjerg",
+    "trambjerg j": "Tranbjerg J",
+    "viby i": "Viby J",
+    "aarhus vest": "Aarhus V",
+    "aabyhøj": "Åbyhøj",
+    "aarus c": "Aarhus C",
+    "rissskov": "Risskov",
+    "tilist": "Tilst",
+    "tlst": "Tilst",
+    "hasseager": "Hasselager",
+    "århus vest": "Aarhus V",
 }
 
 # Byer og bydele, der vises samlet som "Aarhus" i områdefilteret.
@@ -65,7 +78,7 @@ TID_START_RE = re.compile(
 VEJ_ENDELSE_RE = re.compile(
     r"^(.*?(?:vej|gade|allé|alle|vænget|vænge|boulevard|stræde|torv|plads|parken|"
     r"haven|bakken|bakke|have|park|sti|stien|toften|lunden|høj|ager|agre|vang|holm|"
-    r"engen|marken|kvarter|kæret|kær|dal|dalen|gyde|skov|ringen|krogen|tofte))\s+(\S.*)$",
+    r"engen|marken|kvarter|kæret|kær|dal|dalen|gyde|skov|ringen|krogen|tofte|skrænten|skrænt))\s+(\S.*)$",
     re.I,
 )
 
@@ -180,6 +193,8 @@ def del_sammenskrevne(linje: str) -> list[str]:
 def _rens_by(by: str) -> str:
     by = by.strip(" ,.-")
     by = re.sub(r"\s+", " ", by)
+    by = re.sub(r"\s*b?egået$", "", by)  # "Hammelegået", "Brabrand egået"
+    by = re.sub(r"\s(c|n|v|j|s|ø|nv|nø|sv|sø)$", lambda m: " " + m.group(1).upper(), by, flags=re.I)  # "Viby j", "Randers Sø"
     key = by.casefold()
     if key in BY_ALIASER:
         return BY_ALIASER[key]
@@ -224,9 +239,59 @@ def _tidspunkter(tekst: str, rapportdato: date) -> list[Tidspunkt]:
     return ud
 
 
+POSTNR_RE = re.compile(
+    r"^(?P<vej>.+?)(?:,|\s+\d{1,4}[A-Za-z]?)?\s*,?\s+(?P<pnr>\d{4})\s+(?P<by>[^\d,]+?)(?:\s+\d{4})?(?:\s+i\s+.+)?$")
+
+
+def del_sted(sted: str) -> tuple[str, str]:
+    """'Klintevej i Hammel' / 'Tornhøjvej, 8260 Viby J' / 'Hellerupvej 003 8000 Aarhus C'
+    / 'Sletterhagevej Risskov' -> (vej, by)."""
+    m = POSTNR_RE.match(sted)
+    if m:
+        return m.group("vej"), m.group("by")
+    m = re.match(r"^(.*?)\s+(?:[iI]|ved|v\.|på)\s+(.+)$", sted)
+    if m:
+        return m.group(1), m.group(2)
+    if "," in sted:  # "Ved Stranden, Egå"
+        v, _, b = sted.partition(",")
+        return v, b
+    m = VEJ_ENDELSE_RE.match(sted)
+    return (m.group(1), m.group(2)) if m else (sted, "")
+
+
+VEJORD = {"allé", "alle", "vej", "gade", "plads", "stræde", "vænge", "boulevard"}
+
+
+def _del_by(by: str) -> tuple[str, str]:
+    """'Assentoft ved Randers SØ' -> ('Assentoft', 'Randers SØ'); 'Ved Grenaa' -> ('Grenaa', '')."""
+    by = re.sub(r"\s+", " ", by).strip(" ,.-–")
+    by = re.sub(r"^(?:(?:i|ved|v\.|på|•)\s+)+", "", by, flags=re.I)
+    by = re.sub(r"\s+(?:på|–|-)$", "", by)
+    m = re.match(r"^(.+?)\s+(?:ved|v\.|i|på)\s+(.+)$", by, re.I)
+    if m:
+        return _rens_by(m.group(1)), _rens_by(m.group(2))
+    return _rens_by(by), ""
+
+
+def rens_sted(vej: str, by: str) -> tuple[str, str, str]:
+    """Retter vej og by -> (vej, by, nær), hvor `nær` er den større by i fx 'Lading ved Sabro'.
+    Bruges både ved parsing og ved oprydning af allerede gemte poster."""
+    vej = re.sub(r"^[•·*\-\s]*(?:på\s+)?", "", vej, flags=re.I)
+    if POSTNR_RE.match(vej):  # postnummer i vejfeltet, fx "Råhøjparken, 8260 Viby J"
+        vej, by = del_sted(vej)
+    elif not by or re.search(r"\d", by):
+        vej, by = del_sted(f"{vej} {by}".strip())
+    by, nær = _del_by(by)
+    if by.casefold() in VEJORD:  # "Stennehøj" + "Allé" var ét vejnavn
+        vej, by, nær = f"{vej} {by}", nær, ""
+    return re.sub(r"\s+", " ", vej).strip(" ,."), by, nær
+
+
 def parse_linje(linje: str, rapportdato: date) -> Indbrud | None:
     rå = linje
-    s = ret_ocr(re.sub(r"\s+", " ", linje)).strip(" .;")
+    if re.match(r"^\d", linje.strip()) and not re.match(r"^\s*\d+\s+indbrud\b", linje, re.I):
+        return None  # løsrevet stump af en linje, fx "00 og lørdag den 29/8 kl. 08:00"
+    s = ret_ocr(re.sub(r"\s+", " ", linje)).strip(" .;").lstrip("•·*- ")
     antal = 1
     m = re.match(r"^(\d+|to|tre|fire|fem)\s+indbrud\s+på\s+", s, re.I)
     if m:
@@ -242,12 +307,8 @@ def parse_linje(linje: str, rapportdato: date) -> Indbrud | None:
     if not sted or not DATO_RE.search(tid):
         return None
 
-    m = re.match(r"^(.*?)\s+[iI]\s+(.+)$", sted)
-    if m:
-        vej, by = m.group(1), m.group(2)
-    else:
-        m = VEJ_ENDELSE_RE.match(sted)
-        vej, by = (m.group(1), m.group(2)) if m else (sted, "")
+    vej, by = del_sted(sted)
+    vej, by, nær = rens_sted(vej, by)
     vej = re.sub(r"\s+", " ", vej).strip(" ,.")
     if not vej:
         return None
@@ -256,7 +317,8 @@ def parse_linje(linje: str, rapportdato: date) -> Indbrud | None:
     tidspunkter = _tidspunkter(tid, rapportdato)
     ib = Indbrud(
         vej=vej,
-        by=_rens_by(by),
+        by=by,
+        omraade_navn=omraade_for(nær) if nær else None,
         gerningstid_tekst=tid,
         antal=antal,
         linje=rå,
