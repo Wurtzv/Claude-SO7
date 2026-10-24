@@ -6,6 +6,13 @@
   "lon": 10.266729,
   "praecision": "by"
  },
+ "\" På Christian X's Vej|Viby J": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 56.129033,
+  "lon": 10.162433,
+  "praecision": "by"
+ },
  "\" På Elmevej|Risskov": {
   "dato": "2026-10-24",
   "geokilde": "nominatim",
@@ -20,11 +27,25 @@
   "lon": 10.238378,
   "praecision": "by"
  },
+ "\" På Havnegade|Aarhus C": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 56.149628,
+  "lon": 10.213405,
+  "praecision": "by"
+ },
  "\" På Holme Møllevej|Viby J": {
   "dato": "2026-10-24",
   "geokilde": "nominatim",
   "lat": 56.129033,
   "lon": 10.162433,
+  "praecision": "by"
+ },
+ "\" På Hovedvejen|Nimtofte": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 56.408874,
+  "lon": 10.567359,
   "praecision": "by"
  },
  "\" På Orionsvej|Højbjerg": {
@@ -39,6 +60,13 @@
   "geokilde": "nominatim",
   "lat": 56.156587,
   "lon": 10.105647,
+  "praecision": "by"
+ },
+ "\" På Rugmarksvej|Harlev J": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 56.146669,
+  "lon": 9.996093,
   "praecision": "by"
  },
  "\" På Skovtjørnevej|Langå": {
@@ -66,6 +94,12 @@
   "geokilde": "nominatim",
   "lat": 56.196206,
   "lon": 10.255367,
+  "praecision": "vej"
+ },
+ "Aaholmsgade|Odder": {
+  "geokilde": "nominatim",
+  "lat": 55.974959,
+  "lon": 10.152312,
   "praecision": "vej"
  },
  "Aalborggade|Randers SV": {
@@ -98,11 +132,24 @@
   "lon": 10.130776,
   "praecision": "vej"
  },
+ "Abildhaven|Lystrup": {
+  "geokilde": "nominatim",
+  "lat": 56.230466,
+  "lon": 10.224904,
+  "praecision": "vej"
+ },
  "Abildhøjvej|Viby J": {
   "geokilde": "nominatim",
   "lat": 56.110337,
   "lon": 10.145301,
   "praecision": "vej"
+ },
+ "Absalongade|Aarhus C": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 56.149628,
+  "lon": 10.213405,
+  "praecision": "by"
  },
  "Absalonsvej|Randers SØ": {
   "geokilde": "nominatim",
@@ -122,6 +169,12 @@
   "lon": 10.254718,
   "praecision": "vej"
  },
+ "Adolph Meyers Vej|Aarhus C": {
+  "geokilde": "nominatim",
+  "lat": 56.141333,
+  "lon": 10.205904,
+  "praecision": "vej"
+ },
  "Adonisvej|Paderup": {
   "geokilde": "nominatim",
   "lat": 56.426549,
@@ -134,10 +187,34 @@
   "lon": 10.002784,
   "praecision": "vej"
  },
+ "Agerbæksvej|Risskov": {
+  "geokilde": "nominatim",
+  "lat": 56.187348,
+  "lon": 10.220024,
+  "praecision": "vej"
+ },
  "Agerledet|Viby J": {
   "geokilde": "nominatim",
   "lat": 56.112809,
   "lon": 10.144441,
+  "praecision": "vej"
+ },
+ "Agertoften|Malling": {
+  "geokilde": "nominatim",
+  "lat": 56.03749,
+  "lon": 10.204228,
+  "praecision": "vej"
+ },
+ "Agervej|Ørsted": {
+  "geokilde": "nominatim",
+  "lat": 56.502037,
+  "lon": 10.337541,
+  "praecision": "vej"
+ },
+ "Agnetesvej|Randers SØ": {
+  "geokilde": "nominatim",
+  "lat": 56.448049,
+  "lon": 10.047837,
   "praecision": "vej"
  },
  "Agrisvej|Risskov": {
@@ -151,6 +228,12 @@
   "geokilde": "nominatim",
   "lat": 56.196672,
   "lon": 10.228988,
+  "praecision": "vej"
+ },
+ "Ahornvej|Harridslev": {
+  "geokilde": "nominatim",
+  "lat": 56.496446,
+  "lon": 10.129826,
   "praecision": "vej"
  },
  "Ahornvej|Hornslet": {
@@ -169,6 +252,12 @@
   "geokilde": "nominatim",
   "lat": 56.477016,
   "lon": 10.044003,
+  "praecision": "vej"
+ },
+ "Akacievej|Risskov": {
+  "geokilde": "nominatim",
+  "lat": 56.190573,
+  "lon": 10.229902,
   "praecision": "vej"
  },
  "Albert Naurs Vej|Højbjerg": {
@@ -196,10 +285,22 @@
   "lon": 10.206361,
   "praecision": "by"
  },
+ "Alsvej|Risskov": {
+  "geokilde": "nominatim",
+  "lat": 56.192164,
+  "lon": 10.222458,
+  "praecision": "vej"
+ },
  "Amaliegårdvej|Hornslet": {
   "geokilde": "nominatim",
   "lat": 56.311692,
   "lon": 10.292505,
+  "praecision": "vej"
+ },
+ "Amstrupgårdsvej|Haslund": {
+  "geokilde": "nominatim",
+  "lat": 56.414627,
+  "lon": 10.041064,
   "praecision": "vej"
  },
  "Amstrup|Ulstrup": {
@@ -219,6 +320,12 @@
   "geokilde": "nominatim",
   "lat": 56.511906,
   "lon": 10.167649,
+  "praecision": "vej"
+ },
+ "Amtsvejen|Spentrup": {
+  "geokilde": "nominatim",
+  "lat": 56.509125,
+  "lon": 10.139852,
   "praecision": "vej"
  },
  "Anbækvej|Hammel": {
@@ -247,6 +354,18 @@
   "lon": 10.052386,
   "praecision": "by"
  },
+ "Anemonevej|Ebeltoft": {
+  "geokilde": "nominatim",
+  "lat": 56.189079,
+  "lon": 10.676222,
+  "praecision": "vej"
+ },
+ "Anemonevej|Hadsten": {
+  "geokilde": "nominatim",
+  "lat": 56.332272,
+  "lon": 10.04438,
+  "praecision": "vej"
+ },
  "Anker Jensens Vej|Åbyhøj": {
   "geokilde": "nominatim",
   "lat": 56.147429,
@@ -265,16 +384,40 @@
   "lon": 10.1673,
   "praecision": "vej"
  },
+ "Anne Krabbes Vej|Ørsted": {
+  "geokilde": "nominatim",
+  "lat": 56.498707,
+  "lon": 10.326132,
+  "praecision": "vej"
+ },
  "Annekærvej|Egå": {
   "geokilde": "nominatim",
   "lat": 56.22982,
   "lon": 10.296613,
   "praecision": "vej"
  },
+ "Annettevej|Brabrand": {
+  "geokilde": "nominatim",
+  "lat": 56.150963,
+  "lon": 10.131532,
+  "praecision": "vej"
+ },
+ "Antilopevej|Randers SØ": {
+  "geokilde": "nominatim",
+  "lat": 56.444839,
+  "lon": 10.078019,
+  "praecision": "vej"
+ },
  "Apisvej|Tilst": {
   "geokilde": "nominatim",
   "lat": 56.184647,
   "lon": 10.124169,
+  "praecision": "vej"
+ },
+ "Araliavej|Framlev": {
+  "geokilde": "nominatim",
+  "lat": 56.147581,
+  "lon": 9.991079,
   "praecision": "vej"
  },
  "Araliavej|Harlev J": {
@@ -295,6 +438,12 @@
   "lon": 10.076127,
   "praecision": "vej"
  },
+ "Arnakvej|Højbjerg": {
+  "geokilde": "nominatim",
+  "lat": 56.10666,
+  "lon": 10.223985,
+  "praecision": "vej"
+ },
  "Arnegårdsvej|Åbyhøj": {
   "geokilde": "nominatim",
   "lat": 56.149073,
@@ -312,6 +461,10 @@
   "lat": 56.104088,
   "lon": 10.217511,
   "praecision": "vej"
+ },
+ "Askevej|": {
+  "dato": "2026-10-24",
+  "fejl": true
  },
  "Askevej|Randers": {
   "geokilde": "nominatim",
@@ -361,6 +514,12 @@
   "lon": 10.038353,
   "praecision": "vej"
  },
+ "Astridsminde|Randers": {
+  "geokilde": "nominatim",
+  "lat": 56.445297,
+  "lon": 10.096716,
+  "praecision": "vej"
+ },
  "Astridsvej|Brabrand": {
   "geokilde": "nominatim",
   "lat": 56.156514,
@@ -377,6 +536,12 @@
   "geokilde": "nominatim",
   "lat": 56.348408,
   "lon": 10.532037,
+  "praecision": "vej"
+ },
+ "Asylgade|Odder": {
+  "geokilde": "nominatim",
+  "lat": 55.970483,
+  "lon": 10.151965,
   "praecision": "vej"
  },
  "Asylvej|Risskov": {
@@ -409,6 +574,12 @@
   "lat": 56.413442,
   "lon": 10.879314,
   "praecision": "by"
+ },
+ "August Kroghs Vej|Grenaa": {
+  "geokilde": "nominatim",
+  "lat": 56.406686,
+  "lon": 10.910448,
+  "praecision": "vej"
  },
  "Augustenborggade|Aarhus C": {
   "geokilde": "nominatim",
@@ -452,6 +623,18 @@
   "lon": 10.691283,
   "praecision": "vej"
  },
+ "Bakkedraget|Højbjerg": {
+  "geokilde": "nominatim",
+  "lat": 56.113278,
+  "lon": 10.211565,
+  "praecision": "vej"
+ },
+ "Bakkefaldet|Aarhus V": {
+  "geokilde": "nominatim",
+  "lat": 56.170096,
+  "lon": 10.167201,
+  "praecision": "vej"
+ },
  "Bakkegårdsvej|Risskov": {
   "geokilde": "nominatim",
   "lat": 56.198134,
@@ -482,10 +665,34 @@
   "lon": 9.991442,
   "praecision": "vej"
  },
+ "Bakkevej|Randers SØ": {
+  "geokilde": "nominatim",
+  "lat": 56.46822,
+  "lon": 9.991442,
+  "praecision": "vej"
+ },
+ "Bakkevænget|Aarhus N": {
+  "geokilde": "nominatim",
+  "lat": 56.18187,
+  "lon": 10.199501,
+  "praecision": "vej"
+ },
  "Balagervej|Viby J": {
   "geokilde": "nominatim",
   "lat": 56.126486,
   "lon": 10.175946,
+  "praecision": "vej"
+ },
+ "Baldrianvej|Risskov": {
+  "geokilde": "nominatim",
+  "lat": 56.206681,
+  "lon": 10.24672,
+  "praecision": "vej"
+ },
+ "Baldursvej|Grenaa": {
+  "geokilde": "nominatim",
+  "lat": 56.417063,
+  "lon": 10.894309,
   "praecision": "vej"
  },
  "Balevej|Mørke": {
@@ -504,6 +711,12 @@
   "geokilde": "nominatim",
   "lat": 56.36814,
   "lon": 10.526403,
+  "praecision": "vej"
+ },
+ "Ballevej|Tirstrup": {
+  "geokilde": "nominatim",
+  "lat": 56.302688,
+  "lon": 10.693721,
   "praecision": "vej"
  },
  "Balskærvej|Malling": {
@@ -541,6 +754,10 @@
   "lat": 56.495222,
   "lon": 10.121836,
   "praecision": "vej"
+ },
+ "Baslandvej|Ørum Djurs": {
+  "dato": "2026-10-24",
+  "fejl": true
  },
  "Baunehøjparken|Rønde": {
   "geokilde": "nominatim",
@@ -614,10 +831,28 @@
   "lon": 10.223228,
   "praecision": "vej"
  },
+ "Bellisvej|Hammel": {
+  "geokilde": "nominatim",
+  "lat": 56.262134,
+  "lon": 9.859949,
+  "praecision": "vej"
+ },
+ "Bentesminde|Randers SØ": {
+  "geokilde": "nominatim",
+  "lat": 56.446418,
+  "lon": 10.096598,
+  "praecision": "vej"
+ },
  "Bernstorffsvej|Viby J": {
   "geokilde": "nominatim",
   "lat": 56.123053,
   "lon": 10.157813,
+  "praecision": "vej"
+ },
+ "Besservej|Risskov": {
+  "geokilde": "nominatim",
+  "lat": 56.197365,
+  "lon": 10.225306,
   "praecision": "vej"
  },
  "Bethesdavej|Aarhus N": {
@@ -662,11 +897,49 @@
   "lon": 10.043947,
   "praecision": "vej"
  },
+ "Birkevej|Risskov": {
+  "geokilde": "nominatim",
+  "lat": 56.190606,
+  "lon": 10.242,
+  "praecision": "vej"
+ },
+ "Birkevænget|Randers NV": {
+  "geokilde": "nominatim",
+  "lat": 56.455845,
+  "lon": 9.97112,
+  "praecision": "vej"
+ },
+ "Birkhøjen|Hinnerup": {
+  "geokilde": "nominatim",
+  "lat": 56.267247,
+  "lon": 10.075681,
+  "praecision": "vej"
+ },
  "Bisgaardsvej|Odder": {
   "geokilde": "nominatim",
   "lat": 55.980759,
   "lon": 10.156666,
   "praecision": "vej"
+ },
+ "Bisgaardvej|Odder": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 55.975832,
+  "lon": 10.15132,
+  "praecision": "by"
+ },
+ "Bispehavevej|Aarhus V": {
+  "geokilde": "nominatim",
+  "lat": 56.1685,
+  "lon": 10.159254,
+  "praecision": "vej"
+ },
+ "Bispehavevej|Hasle": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 55.183802,
+  "lon": 14.706171,
+  "praecision": "by"
  },
  "Bispeparken|Åbyhøj": {
   "dato": "2026-10-24",
@@ -711,6 +984,18 @@
   "lon": 10.226576,
   "praecision": "vej"
  },
+ "Blomsterhaven|Harlev J": {
+  "geokilde": "nominatim",
+  "lat": 56.150934,
+  "lon": 10.002043,
+  "praecision": "vej"
+ },
+ "Blomstervangen|Egå": {
+  "geokilde": "nominatim",
+  "lat": 56.205527,
+  "lon": 10.275671,
+  "praecision": "vej"
+ },
  "Blomstervænget|Tilst": {
   "geokilde": "nominatim",
   "lat": 56.1916,
@@ -739,6 +1024,12 @@
   "geokilde": "nominatim",
   "lat": 56.13199,
   "lon": 10.102824,
+  "praecision": "vej"
+ },
+ "Blåmejsevej|Aarhus V": {
+  "geokilde": "nominatim",
+  "lat": 56.168733,
+  "lon": 10.18041,
   "praecision": "vej"
  },
  "Blåmunkevej|Hammel": {
@@ -789,12 +1080,49 @@
   "lon": 10.302358,
   "praecision": "vej"
  },
+ "Borggyden|Randers NØ": {
+  "geokilde": "nominatim",
+  "lat": 56.4883,
+  "lon": 10.17851,
+  "praecision": "vej"
+ },
+ "Borgmestervangen|Randers C": {
+  "geokilde": "nominatim",
+  "lat": 56.466561,
+  "lon": 10.030081,
+  "praecision": "vej"
+ },
  "Borrevænget 25|Mårslet": {
   "dato": "2026-10-24",
   "geokilde": "nominatim",
   "lat": 56.067118,
   "lon": 10.162458,
   "praecision": "by"
+ },
+ "Borum Byvej|Sabro": {
+  "geokilde": "nominatim",
+  "lat": 56.189537,
+  "lon": 10.011716,
+  "praecision": "vej"
+ },
+ "Borum Møllevej|Borum": {
+  "geokilde": "nominatim",
+  "lat": 56.185671,
+  "lon": 9.996493,
+  "praecision": "vej"
+ },
+ "Borupvej|Tranbjerg J": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 56.090599,
+  "lon": 10.13301,
+  "praecision": "by"
+ },
+ "Bosminde|Randers SØ": {
+  "geokilde": "nominatim",
+  "lat": 56.446461,
+  "lon": 10.093529,
+  "praecision": "vej"
  },
  "Boulevarden|Odder": {
   "geokilde": "nominatim",
@@ -820,10 +1148,28 @@
   "lon": 10.168257,
   "praecision": "vej"
  },
+ "Brammersgade|Aarhus C": {
+  "geokilde": "nominatim",
+  "lat": 56.147266,
+  "lon": 10.205416,
+  "praecision": "vej"
+ },
  "Bredefeldsvej|Hammel": {
   "geokilde": "nominatim",
   "lat": 56.259362,
   "lon": 9.864187,
+  "praecision": "vej"
+ },
+ "Bredevej|Egå": {
+  "geokilde": "nominatim",
+  "lat": 56.231236,
+  "lon": 10.295673,
+  "praecision": "vej"
+ },
+ "Bredgade|Grenaa": {
+  "geokilde": "nominatim",
+  "lat": 56.414909,
+  "lon": 10.88032,
   "praecision": "vej"
  },
  "Bredgade|Langå": {
@@ -886,6 +1232,12 @@
   "lon": 10.33191,
   "praecision": "vej"
  },
+ "Broagervej|Risskov": {
+  "geokilde": "nominatim",
+  "lat": 56.193113,
+  "lon": 10.221701,
+  "praecision": "vej"
+ },
  "Brobjergvej|Egå": {
   "geokilde": "nominatim",
   "lat": 56.204214,
@@ -896,6 +1248,12 @@
   "geokilde": "nominatim",
   "lat": 56.314849,
   "lon": 10.319861,
+  "praecision": "vej"
+ },
+ "Brohaven|Egå": {
+  "geokilde": "nominatim",
+  "lat": 56.204185,
+  "lon": 10.269746,
   "praecision": "vej"
  },
  "Brombærhaven|Lystrup": {
@@ -935,16 +1293,34 @@
   "lon": 10.555026,
   "praecision": "vej"
  },
+ "Brovænget|Egå": {
+  "geokilde": "nominatim",
+  "lat": 56.206116,
+  "lon": 10.269534,
+  "praecision": "vej"
+ },
  "Brunbakkevej|Højbjerg": {
   "geokilde": "nominatim",
   "lat": 56.099986,
   "lon": 10.211491,
   "praecision": "vej"
  },
+ "Brunkløvervej|Ebeltoft": {
+  "geokilde": "nominatim",
+  "lat": 56.158314,
+  "lon": 10.678079,
+  "praecision": "vej"
+ },
  "Brydehøjvej|Hørning": {
   "geokilde": "nominatim",
   "lat": 56.117356,
   "lon": 10.019447,
+  "praecision": "vej"
+ },
+ "Brynhøjvænget|Tilst": {
+  "geokilde": "nominatim",
+  "lat": 56.185517,
+  "lon": 10.102988,
   "praecision": "vej"
  },
  "Buggesgårdvej|Viby J": {
@@ -989,10 +1365,35 @@
   "lon": 10.215125,
   "praecision": "vej"
  },
+ "Bygaden|Anholt": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 55.3986618,
+  "lon": 9.3729881,
+  "praecision": "by"
+ },
+ "Bygaden|Lystrup": {
+  "geokilde": "nominatim",
+  "lat": 56.232316,
+  "lon": 10.234685,
+  "praecision": "vej"
+ },
+ "Bygaden|Ulstrup": {
+  "geokilde": "nominatim",
+  "lat": 55.610839,
+  "lon": 11.237833,
+  "praecision": "vej"
+ },
  "Bygmarken|Lystrup": {
   "geokilde": "nominatim",
   "lat": 56.235243,
   "lon": 10.239358,
+  "praecision": "vej"
+ },
+ "Bygvangen|Aarhus N": {
+  "geokilde": "nominatim",
+  "lat": 56.182039,
+  "lon": 10.207251,
   "praecision": "vej"
  },
  "Byhøjdalen|Trige": {
@@ -1023,6 +1424,18 @@
   "geokilde": "nominatim",
   "lat": 56.205181,
   "lon": 10.220929,
+  "praecision": "vej"
+ },
+ "Bymosevej|Aarhus V": {
+  "geokilde": "nominatim",
+  "lat": 56.172872,
+  "lon": 10.15044,
+  "praecision": "vej"
+ },
+ "Byparken|Allingåbro": {
+  "geokilde": "nominatim",
+  "lat": 56.464935,
+  "lon": 10.331081,
   "praecision": "vej"
  },
  "Byrielsholmvej|Hammel": {
@@ -1068,6 +1481,16 @@
   "lon": 10.134329,
   "praecision": "vej"
  },
+ "Bækhusevej|Ramte": {
+  "dato": "2026-10-24",
+  "fejl": true
+ },
+ "Bærmosehøjen|Trige": {
+  "geokilde": "nominatim",
+  "lat": 56.256526,
+  "lon": 10.141913,
+  "praecision": "vej"
+ },
  "Bævervej|Højbjerg": {
   "geokilde": "nominatim",
   "lat": 56.108876,
@@ -1078,6 +1501,12 @@
   "geokilde": "nominatim",
   "lat": 56.155474,
   "lon": 10.204467,
+  "praecision": "vej"
+ },
+ "Bøgebakken|Lillering": {
+  "geokilde": "nominatim",
+  "lat": 56.138549,
+  "lon": 9.966279,
   "praecision": "vej"
  },
  "Bøgebjergvej|Ebeltoft": {
@@ -1112,6 +1541,12 @@
   "lon": 10.162433,
   "praecision": "by"
  },
+ "Bøgevangen|Solbjerg": {
+  "geokilde": "nominatim",
+  "lat": 56.042852,
+  "lon": 10.087256,
+  "praecision": "vej"
+ },
  "Bøgevej|Odder": {
   "geokilde": "nominatim",
   "lat": 55.969172,
@@ -1136,10 +1571,22 @@
   "lon": 10.149264,
   "praecision": "vej"
  },
+ "Bøjenvej|Auning": {
+  "geokilde": "nominatim",
+  "lat": 56.397277,
+  "lon": 10.354449,
+  "praecision": "vej"
+ },
  "Bønnerupvej|Glesborg": {
   "geokilde": "nominatim",
   "lat": 56.522257,
   "lon": 10.711864,
+  "praecision": "vej"
+ },
+ "Børglumvej|Risskov": {
+  "geokilde": "nominatim",
+  "lat": 56.186932,
+  "lon": 10.210996,
   "praecision": "vej"
  },
  "Børupvej|Tranbjerg J": {
@@ -1160,7 +1607,26 @@
   "lon": 10.202254,
   "praecision": "vej"
  },
+ "C. A. Thyregods Vej|Åbyhøj": {
+  "geokilde": "nominatim",
+  "lat": 56.156124,
+  "lon": 10.150712,
+  "praecision": "vej"
+ },
  "C. A. Tyregods Vej|Åbyhøj": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 56.155315,
+  "lon": 10.165488,
+  "praecision": "by"
+ },
+ "C.A. Thyregods Vej|Åbyhøj": {
+  "geokilde": "nominatim",
+  "lat": 56.156124,
+  "lon": 10.150712,
+  "praecision": "vej"
+ },
+ "C.A. Thyregodsvej|Åbyhøj": {
   "dato": "2026-10-24",
   "geokilde": "nominatim",
   "lat": 56.155315,
@@ -1179,10 +1645,22 @@
   "lon": 10.18887,
   "praecision": "vej"
  },
+ "Carit Etlars Vej|Åbyhøj": {
+  "geokilde": "nominatim",
+  "lat": 56.157885,
+  "lon": 10.158423,
+  "praecision": "vej"
+ },
  "Carl Blochs Gade|Aarhus C": {
   "geokilde": "nominatim",
   "lat": 56.153647,
   "lon": 10.192005,
+  "praecision": "vej"
+ },
+ "Carl Nielsens Vej|Randers NV": {
+  "geokilde": "nominatim",
+  "lat": 56.460221,
+  "lon": 9.957656,
   "praecision": "vej"
  },
  "Carl Svenstrups Vej|Grenaa": {
@@ -1191,11 +1669,36 @@
   "lon": 10.906237,
   "praecision": "vej"
  },
+ "Casper Møllers Vej|Risskov": {
+  "geokilde": "nominatim",
+  "lat": 56.1948,
+  "lon": 10.252234,
+  "praecision": "vej"
+ },
  "Castenschioldsvej|Højbjerg": {
   "geokilde": "nominatim",
   "lat": 56.111781,
   "lon": 10.207429,
   "praecision": "vej"
+ },
+ "Cederlunden|Randers SØ": {
+  "geokilde": "nominatim",
+  "lat": 56.451223,
+  "lon": 10.083836,
+  "praecision": "vej"
+ },
+ "Ceresbyen|Aarhus C": {
+  "geokilde": "nominatim",
+  "lat": 56.156247,
+  "lon": 10.190604,
+  "praecision": "vej"
+ },
+ "Chr. Christensensvej|Odder": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 55.975832,
+  "lon": 10.15132,
+  "praecision": "by"
  },
  "Chr. Molbechs Vej|Aarhus C": {
   "dato": "2026-10-24",
@@ -1209,6 +1712,19 @@
   "lat": 56.148702,
   "lon": 10.161167,
   "praecision": "vej"
+ },
+ "Chr. Winthers vej|Åbyhøj": {
+  "geokilde": "nominatim",
+  "lat": 56.148702,
+  "lon": 10.161167,
+  "praecision": "vej"
+ },
+ "Chr. Wærums Gade|Aarhus C": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 56.149628,
+  "lon": 10.213405,
+  "praecision": "by"
  },
  "Christian X's Vej|Viby J": {
   "geokilde": "nominatim",
@@ -1247,6 +1763,12 @@
   "lon": 10.042596,
   "praecision": "by"
  },
+ "Dalbyovervej|Gjerlev J": {
+  "geokilde": "nominatim",
+  "lat": 56.60196,
+  "lon": 10.190372,
+  "praecision": "vej"
+ },
  "Dalgas Avenue|Aarhus C": {
   "geokilde": "nominatim",
   "lat": 56.141975,
@@ -1265,6 +1787,18 @@
   "lon": 10.314031,
   "praecision": "vej"
  },
+ "Dalsagervej|Egå": {
+  "geokilde": "nominatim",
+  "lat": 56.208803,
+  "lon": 10.275026,
+  "praecision": "vej"
+ },
+ "Dalsagervej|Grenaa": {
+  "geokilde": "nominatim",
+  "lat": 56.393412,
+  "lon": 10.828581,
+  "praecision": "vej"
+ },
  "Dalsgårdsvej|Auning": {
   "geokilde": "nominatim",
   "lat": 56.396353,
@@ -1277,10 +1811,22 @@
   "lon": 9.849647,
   "praecision": "vej"
  },
+ "Dalsvinget|Højbjerg": {
+  "geokilde": "nominatim",
+  "lat": 56.112119,
+  "lon": 10.214046,
+  "praecision": "vej"
+ },
  "Dalsvinget|Øster Tørslev": {
   "geokilde": "nominatim",
   "lat": 56.585013,
   "lon": 10.187911,
+  "praecision": "vej"
+ },
+ "Dalumvej|Højbjerg": {
+  "geokilde": "nominatim",
+  "lat": 56.118333,
+  "lon": 10.170353,
   "praecision": "vej"
  },
  "Dalvangen|Højbjerg": {
@@ -1331,6 +1877,12 @@
   "lon": 10.147705,
   "praecision": "vej"
  },
+ "Damvej|Sabro": {
+  "geokilde": "nominatim",
+  "lat": 56.209854,
+  "lon": 10.032297,
+  "praecision": "vej"
+ },
  "Damvænget|Tranbjerg J": {
   "geokilde": "nominatim",
   "lat": 56.085669,
@@ -1356,6 +1908,12 @@
   "lon": 11.255486,
   "praecision": "by"
  },
+ "De Lichtenbergs Vej|Grenaa": {
+  "geokilde": "nominatim",
+  "lat": 56.408046,
+  "lon": 10.910797,
+  "praecision": "vej"
+ },
  "De Mezas Vej|Aarhus C": {
   "geokilde": "nominatim",
   "lat": 56.14484,
@@ -1368,6 +1926,12 @@
   "lat": 55.1838021,
   "lon": 14.7061711,
   "praecision": "by"
+ },
+ "Degnebakken|Åbyhøj": {
+  "geokilde": "nominatim",
+  "lat": 56.162793,
+  "lon": 10.167027,
+  "praecision": "vej"
  },
  "Degnevænget|Hornslet": {
   "geokilde": "nominatim",
@@ -1393,6 +1957,12 @@
   "lon": 10.081677,
   "praecision": "vej"
  },
+ "Digevænget|Beder": {
+  "geokilde": "nominatim",
+  "lat": 56.062573,
+  "lon": 10.200797,
+  "praecision": "vej"
+ },
  "Digtervænget|Aarhus C": {
   "geokilde": "nominatim",
   "lat": 56.166321,
@@ -1403,6 +1973,12 @@
   "geokilde": "nominatim",
   "lat": 56.416123,
   "lon": 10.888973,
+  "praecision": "vej"
+ },
+ "Doktorvej|Glesborg": {
+  "geokilde": "nominatim",
+  "lat": 56.475787,
+  "lon": 10.732672,
   "praecision": "vej"
  },
  "Dolmer Bygade|Grenaa": {
@@ -1434,6 +2010,13 @@
   "geokilde": "nominatim",
   "lat": 56.329089,
   "lon": 10.052386,
+  "praecision": "by"
+ },
+ "Dr. Louise Vej|Grenaa": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 56.413442,
+  "lon": 10.879314,
   "praecision": "by"
  },
  "Drasbeksgade|Kolind": {
@@ -1496,6 +2079,12 @@
   "lon": 10.883591,
   "praecision": "vej"
  },
+ "Duevej|Hinnerup": {
+  "geokilde": "nominatim",
+  "lat": 56.269301,
+  "lon": 10.060134,
+  "praecision": "vej"
+ },
  "Dunhammervej|Grenaa": {
   "geokilde": "nominatim",
   "lat": 56.411509,
@@ -1527,10 +2116,40 @@
   "lon": 10.181799,
   "praecision": "vej"
  },
+ "Dyngby Møllevej|Odder": {
+  "geokilde": "nominatim",
+  "lat": 55.951481,
+  "lon": 10.230885,
+  "praecision": "vej"
+ },
+ "Dyrbyvej|Gassum": {
+  "geokilde": "nominatim",
+  "lat": 56.575455,
+  "lon": 10.012459,
+  "praecision": "vej"
+ },
+ "Dyrlundsvej|Hammel": {
+  "geokilde": "nominatim",
+  "lat": 56.255842,
+  "lon": 9.875155,
+  "praecision": "vej"
+ },
  "Dysagervej|Åbyhøj": {
   "geokilde": "nominatim",
   "lat": 56.146359,
   "lon": 10.155932,
+  "praecision": "vej"
+ },
+ "Dyssehøjvej|Spentrup": {
+  "geokilde": "nominatim",
+  "lat": 56.53738,
+  "lon": 10.060202,
+  "praecision": "vej"
+ },
+ "Dådyrvej|Højbjerg": {
+  "geokilde": "nominatim",
+  "lat": 56.115328,
+  "lon": 10.219529,
   "praecision": "vej"
  },
  "Ebeltoftvej|Mørke": {
@@ -1549,6 +2168,12 @@
   "geokilde": "nominatim",
   "lat": 56.259491,
   "lon": 10.339314,
+  "praecision": "vej"
+ },
+ "Edelhoffvej|Harlev J": {
+  "geokilde": "nominatim",
+  "lat": 56.14192,
+  "lon": 10.012241,
   "praecision": "vej"
  },
  "Edisonsvej|Viby J": {
@@ -1587,6 +2212,13 @@
   "lon": 10.133229,
   "praecision": "vej"
  },
+ "Egelundvej|Risskov": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 56.201768,
+  "lon": 10.241958,
+  "praecision": "by"
+ },
  "Egensvej|Risskov": {
   "geokilde": "nominatim",
   "lat": 56.196533,
@@ -1623,6 +2255,19 @@
   "lon": 10.319903,
   "praecision": "vej"
  },
+ "Egevæksvej|Højbjerg": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 56.113385,
+  "lon": 10.206361,
+  "praecision": "by"
+ },
+ "Egevænget|Langå": {
+  "geokilde": "nominatim",
+  "lat": 56.393552,
+  "lon": 9.900237,
+  "praecision": "vej"
+ },
  "Egevænget|Tranbjerg J": {
   "geokilde": "nominatim",
   "lat": 56.091748,
@@ -1639,6 +2284,12 @@
   "geokilde": "nominatim",
   "lat": 56.214789,
   "lon": 10.271777,
+  "praecision": "vej"
+ },
+ "Egsmark Høje|Ebeltoft": {
+  "geokilde": "nominatim",
+  "lat": 56.221787,
+  "lon": 10.674826,
   "praecision": "vej"
  },
  "Egå Mosevej|Egå": {
@@ -1663,10 +2314,34 @@
   "lon": 10.169662,
   "praecision": "vej"
  },
+ "Ejstrupvej|Fårup": {
+  "geokilde": "nominatim",
+  "lat": 56.550437,
+  "lon": 9.903814,
+  "praecision": "vej"
+ },
+ "Ekkodalen|Dråby": {
+  "geokilde": "nominatim",
+  "lat": 56.212047,
+  "lon": 10.69415,
+  "praecision": "vej"
+ },
  "Elbækvej|Risskov": {
   "geokilde": "nominatim",
   "lat": 56.192335,
   "lon": 10.245362,
+  "praecision": "vej"
+ },
+ "Elevvej|Lisbjerg": {
+  "geokilde": "nominatim",
+  "lat": 56.227582,
+  "lon": 10.179942,
+  "praecision": "vej"
+ },
+ "Elgårdsmindevej|Fløjstrup": {
+  "geokilde": "nominatim",
+  "lat": 56.415636,
+  "lon": 10.244345,
   "praecision": "vej"
  },
  "Elhøjvej|Aarhus V": {
@@ -1674,6 +2349,13 @@
   "lat": 56.171572,
   "lon": 10.169371,
   "praecision": "vej"
+ },
+ "Elhøjvej|Hasle": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 55.183802,
+  "lon": 14.706171,
+  "praecision": "by"
  },
  "Elkjærvej|Hornslet": {
   "geokilde": "nominatim",
@@ -1687,6 +2369,19 @@
   "lon": 10.223047,
   "praecision": "vej"
  },
+ "Ellebæk Parkvej|Lystrup": {
+  "geokilde": "nominatim",
+  "lat": 56.234153,
+  "lon": 10.218895,
+  "praecision": "vej"
+ },
+ "Ellebæk Park|Lystrup": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 56.23632,
+  "lon": 10.238378,
+  "praecision": "by"
+ },
  "Ellekærparken|Hornslet": {
   "geokilde": "nominatim",
   "lat": 56.319717,
@@ -1697,6 +2392,18 @@
   "geokilde": "nominatim",
   "lat": 56.138971,
   "lon": 10.191645,
+  "praecision": "vej"
+ },
+ "Ellemosevej|Hadsten": {
+  "geokilde": "nominatim",
+  "lat": 56.329761,
+  "lon": 10.055449,
+  "praecision": "vej"
+ },
+ "Ellemosevej|Tranbjerg J": {
+  "geokilde": "nominatim",
+  "lat": 56.09259,
+  "lon": 10.150973,
   "praecision": "vej"
  },
  "Elleparken|Lystrup": {
@@ -1741,6 +2448,12 @@
   "lon": 10.24331,
   "praecision": "vej"
  },
+ "Elmevej|Ryomgård": {
+  "geokilde": "nominatim",
+  "lat": 56.384187,
+  "lon": 10.506582,
+  "praecision": "vej"
+ },
  "Elmsager|Risskov": {
   "geokilde": "nominatim",
   "lat": 56.205832,
@@ -1765,10 +2478,22 @@
   "lon": 10.216384,
   "praecision": "vej"
  },
+ "Elsdyrvej|Randers SØ": {
+  "geokilde": "nominatim",
+  "lat": 56.445428,
+  "lon": 10.075021,
+  "praecision": "vej"
+ },
  "Elsdyrvænget|Højbjerg": {
   "geokilde": "nominatim",
   "lat": 56.105316,
   "lon": 10.218308,
+  "praecision": "vej"
+ },
+ "Elsesminde|Randers SØ": {
+  "geokilde": "nominatim",
+  "lat": 56.443717,
+  "lon": 10.101914,
   "praecision": "vej"
  },
  "Elsted Skolevej|Lystrup": {
@@ -1776,6 +2501,19 @@
   "lat": 56.242206,
   "lon": 10.227512,
   "praecision": "vej"
+ },
+ "Elstedhøj|Lystrup": {
+  "geokilde": "nominatim",
+  "lat": 56.239591,
+  "lon": 10.234669,
+  "praecision": "vej"
+ },
+ "Elstedvej|Terp": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 56.5166824,
+  "lon": 9.9438554,
+  "praecision": "by"
  },
  "Elstedvænge|Lystrup": {
   "geokilde": "nominatim",
@@ -1811,6 +2549,12 @@
   "geokilde": "nominatim",
   "lat": 56.110405,
   "lon": 10.209715,
+  "praecision": "vej"
+ },
+ "Emmasvej|Brabrand": {
+  "geokilde": "nominatim",
+  "lat": 56.158295,
+  "lon": 10.128577,
   "praecision": "vej"
  },
  "Enebærvej|Risskov": {
@@ -1850,6 +2594,18 @@
   "lon": 10.114299,
   "praecision": "vej"
  },
+ "Engdraget|Grenaa": {
+  "geokilde": "nominatim",
+  "lat": 56.412361,
+  "lon": 10.892702,
+  "praecision": "vej"
+ },
+ "Engelstoft|Lystrup": {
+  "geokilde": "nominatim",
+  "lat": 56.236144,
+  "lon": 10.19275,
+  "praecision": "vej"
+ },
  "Engelundsvej|Viby J": {
   "geokilde": "nominatim",
   "lat": 56.119768,
@@ -1862,16 +2618,64 @@
   "lon": 10.327058,
   "praecision": "vej"
  },
+ "Enghavevej|Hornslet": {
+  "geokilde": "nominatim",
+  "lat": 56.311707,
+  "lon": 10.316562,
+  "praecision": "vej"
+ },
  "Enghegnet|Grenaa": {
   "geokilde": "nominatim",
   "lat": 56.413931,
   "lon": 10.891501,
   "praecision": "vej"
  },
+ "Engmarksvej|Risskov": {
+  "geokilde": "nominatim",
+  "lat": 56.202396,
+  "lon": 10.271186,
+  "praecision": "vej"
+ },
+ "Engparken|Ryomgård": {
+  "geokilde": "nominatim",
+  "lat": 56.379235,
+  "lon": 10.509585,
+  "praecision": "vej"
+ },
+ "Engskovgård|Skødstrup": {
+  "geokilde": "nominatim",
+  "lat": 56.260639,
+  "lon": 10.308192,
+  "praecision": "vej"
+ },
+ "Engskovtoften|Skødstrup": {
+  "geokilde": "nominatim",
+  "lat": 56.2593,
+  "lon": 10.307329,
+  "praecision": "vej"
+ },
+ "Engsvinget|Harlev J": {
+  "geokilde": "nominatim",
+  "lat": 56.145825,
+  "lon": 10.004802,
+  "praecision": "vej"
+ },
+ "Engsøvej|Risskov": {
+  "geokilde": "nominatim",
+  "lat": 56.199653,
+  "lon": 10.234756,
+  "praecision": "vej"
+ },
  "Engtoften|Viby J": {
   "geokilde": "nominatim",
   "lat": 56.122494,
   "lon": 10.168059,
+  "praecision": "vej"
+ },
+ "Engtoftevej|Hjortshøj": {
+  "geokilde": "nominatim",
+  "lat": 56.272196,
+  "lon": 10.19969,
   "praecision": "vej"
  },
  "Engvangen|Grenaa": {
@@ -1890,6 +2694,12 @@
   "geokilde": "nominatim",
   "lat": 56.363261,
   "lon": 10.606539,
+  "praecision": "vej"
+ },
+ "Enøvænget|Tilst": {
+  "geokilde": "nominatim",
+  "lat": 56.174269,
+  "lon": 10.102879,
   "praecision": "vej"
  },
  "Erantisvej|Øster Bjerregrav": {
@@ -1929,6 +2739,24 @@
   "lon": 10.078937,
   "praecision": "vej"
  },
+ "Ertebjerg|Tilst": {
+  "geokilde": "nominatim",
+  "lat": 56.187156,
+  "lon": 10.124049,
+  "praecision": "vej"
+ },
+ "Esbern Snares Vej|Randers SØ": {
+  "geokilde": "nominatim",
+  "lat": 56.441154,
+  "lon": 10.065905,
+  "praecision": "vej"
+ },
+ "Esbyvej|Risskov": {
+  "geokilde": "nominatim",
+  "lat": 56.194268,
+  "lon": 10.228965,
+  "praecision": "vej"
+ },
  "Eskebakken|Nimtofte": {
   "geokilde": "nominatim",
   "lat": 56.407131,
@@ -1940,6 +2768,13 @@
   "geokilde": "nominatim",
   "lat": 56.313704,
   "lon": 10.315958,
+  "praecision": "by"
+ },
+ "Eskimovej|Aarhus N": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 56.149628,
+  "lon": 10.213405,
   "praecision": "by"
  },
  "Esmarcksvej|Ryomgård": {
@@ -1985,6 +2820,12 @@
   "lon": 10.195758,
   "praecision": "vej"
  },
+ "Eya Jensens Gade|Risskov": {
+  "geokilde": "nominatim",
+  "lat": 56.197324,
+  "lon": 10.204159,
+  "praecision": "vej"
+ },
  "F. Vestergaards Gade|Aarhus": {
   "geokilde": "nominatim",
   "lat": 56.142515,
@@ -1995,6 +2836,12 @@
   "geokilde": "nominatim",
   "lat": 56.329815,
   "lon": 10.070758,
+  "praecision": "vej"
+ },
+ "Falstersgade|Aarhus C": {
+  "geokilde": "nominatim",
+  "lat": 56.163484,
+  "lon": 10.200337,
   "praecision": "vej"
  },
  "Farsundsvej|Aarhus N": {
@@ -2013,6 +2860,12 @@
   "geokilde": "nominatim",
   "lat": 56.26954,
   "lon": 10.061183,
+  "praecision": "vej"
+ },
+ "Fasanvej|Aarhus V": {
+  "geokilde": "nominatim",
+  "lat": 56.162637,
+  "lon": 10.178297,
   "praecision": "vej"
  },
  "Fasanvej|Hammel": {
@@ -2045,6 +2898,18 @@
   "lon": 10.014405,
   "praecision": "vej"
  },
+ "Fejøvænget|Tilst": {
+  "geokilde": "nominatim",
+  "lat": 56.178147,
+  "lon": 10.102305,
+  "praecision": "vej"
+ },
+ "Femkløvervej|Randers NV": {
+  "geokilde": "nominatim",
+  "lat": 56.485621,
+  "lon": 10.016655,
+  "praecision": "vej"
+ },
  "Fenrisvej|Randers NV": {
   "geokilde": "nominatim",
   "lat": 56.47227,
@@ -2069,10 +2934,23 @@
   "lon": 10.206087,
   "praecision": "vej"
  },
+ "Fjordbakken|Randers NØ": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 56.435543,
+  "lon": 10.042596,
+  "praecision": "by"
+ },
  "Fjorddalen|Randers SØ": {
   "geokilde": "nominatim",
   "lat": 56.453427,
   "lon": 10.175804,
+  "praecision": "vej"
+ },
+ "Fjordvej|Malling": {
+  "geokilde": "nominatim",
+  "lat": 56.02334,
+  "lon": 10.257422,
   "praecision": "vej"
  },
  "Fjældevænget|Aarhus V": {
@@ -2091,6 +2969,12 @@
   "geokilde": "nominatim",
   "lat": 56.199915,
   "lon": 10.266093,
+  "praecision": "vej"
+ },
+ "Flintebakken|Risskov": {
+  "geokilde": "nominatim",
+  "lat": 56.204833,
+  "lon": 10.20911,
   "praecision": "vej"
  },
  "Flinthøjen|Hinnerup": {
@@ -2166,6 +3050,12 @@
   "lon": 10.106178,
   "praecision": "vej"
  },
+ "Fredensgade|Aarhus C": {
+  "geokilde": "nominatim",
+  "lat": 56.152832,
+  "lon": 10.208592,
+  "praecision": "vej"
+ },
  "Fredensgade|Grenaa": {
   "geokilde": "nominatim",
   "lat": 56.415431,
@@ -2178,11 +3068,27 @@
   "lon": 10.064619,
   "praecision": "vej"
  },
+ "Fredensgårdsvej|Højbjerg": {
+  "geokilde": "nominatim",
+  "lat": 56.122459,
+  "lon": 10.183183,
+  "praecision": "vej"
+ },
+ "Fredensvej|Viby J": {
+  "geokilde": "nominatim",
+  "lat": 56.127864,
+  "lon": 10.163305,
+  "praecision": "vej"
+ },
  "Fredericiavej|Randers SV": {
   "geokilde": "nominatim",
   "lat": 56.438085,
   "lon": 10.037706,
   "praecision": "vej"
+ },
+ "Frederik Barfoeds Vej|": {
+  "dato": "2026-10-24",
+  "fejl": true
  },
  "Frederiks Allé|": {
   "dato": "2026-10-24",
@@ -2192,6 +3098,12 @@
   "geokilde": "nominatim",
   "lat": 56.147529,
   "lon": 10.195719,
+  "praecision": "vej"
+ },
+ "Frederiksbjerg Torv|Aarhus C": {
+  "geokilde": "nominatim",
+  "lat": 56.145979,
+  "lon": 10.192591,
   "praecision": "vej"
  },
  "Frederiksdalvej|Randers SV": {
@@ -2222,6 +3134,12 @@
   "geokilde": "nominatim",
   "lat": 56.154249,
   "lon": 10.17694,
+  "praecision": "vej"
+ },
+ "Fridasminde|Randers SØ": {
+  "geokilde": "nominatim",
+  "lat": 56.446593,
+  "lon": 10.102447,
   "praecision": "vej"
  },
  "Fridtjof Nansens Vej|Aarhus N": {
@@ -2260,10 +3178,22 @@
   "lon": 10.32198,
   "praecision": "vej"
  },
+ "Frugthaven|Albæk": {
+  "geokilde": "nominatim",
+  "lat": 56.486069,
+  "lon": 10.1664,
+  "praecision": "vej"
+ },
  "Frydenlunds Allé|Aarhus V": {
   "geokilde": "nominatim",
   "lat": 56.165498,
   "lon": 10.174853,
+  "praecision": "vej"
+ },
+ "Frøken Sophiesvej|Spentrup": {
+  "geokilde": "nominatim",
+  "lat": 56.536448,
+  "lon": 10.029654,
   "praecision": "vej"
  },
  "Frøkjærvænget|Harlev J": {
@@ -2276,6 +3206,18 @@
   "geokilde": "nominatim",
   "lat": 56.07481,
   "lon": 10.15142,
+  "praecision": "vej"
+ },
+ "Fuglebakken|Hinnerup": {
+  "geokilde": "nominatim",
+  "lat": 56.278431,
+  "lon": 10.059418,
+  "praecision": "vej"
+ },
+ "Fuglebakken|Randers C": {
+  "geokilde": "nominatim",
+  "lat": 56.469125,
+  "lon": 10.035702,
   "praecision": "vej"
  },
  "Fuglebakken|Randers SØ": {
@@ -2294,6 +3236,12 @@
   "geokilde": "nominatim",
   "lat": 56.166809,
   "lon": 10.178251,
+  "praecision": "vej"
+ },
+ "Fuglebækvej|Trustrup": {
+  "geokilde": "nominatim",
+  "lat": 56.345965,
+  "lon": 10.804282,
   "praecision": "vej"
  },
  "Fuglekærvej|Hasselager": {
@@ -2320,6 +3268,12 @@
   "lon": 10.122279,
   "praecision": "vej"
  },
+ "Fuglsøhøj|Knebel": {
+  "geokilde": "nominatim",
+  "lat": 56.193282,
+  "lon": 10.540039,
+  "praecision": "vej"
+ },
  "Fuglsøvej|Risskov": {
   "geokilde": "nominatim",
   "lat": 56.202144,
@@ -2338,10 +3292,30 @@
   "lon": 10.220279,
   "praecision": "vej"
  },
+ "Funch Thomsens Gade|Aarhus N": {
+  "geokilde": "nominatim",
+  "lat": 56.174595,
+  "lon": 10.204438,
+  "praecision": "vej"
+ },
+ "Fusagervej|Foldby": {
+  "dato": "2026-10-24",
+  "fejl": true
+ },
+ "Futuravej|Hadsen": {
+  "dato": "2026-10-24",
+  "fejl": true
+ },
  "Fyrrebakken|Lystrup": {
   "geokilde": "nominatim",
   "lat": 56.236954,
   "lon": 10.220947,
+  "praecision": "vej"
+ },
+ "Fyrrelien|Randers NV": {
+  "geokilde": "nominatim",
+  "lat": 56.469539,
+  "lon": 9.991179,
   "praecision": "vej"
  },
  "Fyrrevej|Egå": {
@@ -2350,11 +3324,24 @@
   "lon": 10.336882,
   "praecision": "vej"
  },
+ "Fyrrevej|Harridslev": {
+  "geokilde": "nominatim",
+  "lat": 56.497771,
+  "lon": 10.129028,
+  "praecision": "vej"
+ },
  "Fyrrevej|Randers NØ": {
   "geokilde": "nominatim",
   "lat": 56.497771,
   "lon": 10.129028,
   "praecision": "vej"
+ },
+ "Fyrrevænget|Hou": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 57.057385,
+  "lon": 10.366756,
+  "praecision": "by"
  },
  "Fældevænget|Aarhus V": {
   "dato": "2026-10-24",
@@ -2376,6 +3363,12 @@
   "lon": 10.162336,
   "praecision": "vej"
  },
+ "Gammel Holmevej|Højbjerg": {
+  "geokilde": "nominatim",
+  "lat": 56.116894,
+  "lon": 10.176047,
+  "praecision": "vej"
+ },
  "Gammel Kirkevej|Hjortshøj": {
   "geokilde": "nominatim",
   "lat": 56.251749,
@@ -2388,10 +3381,50 @@
   "lon": 10.172333,
   "praecision": "vej"
  },
+ "Gammel Landevej|Mørke": {
+  "geokilde": "nominatim",
+  "lat": 56.379383,
+  "lon": 10.320799,
+  "praecision": "vej"
+ },
  "Gammel Munkegade|Aarhus C": {
   "geokilde": "nominatim",
   "lat": 56.159372,
   "lon": 10.204248,
+  "praecision": "vej"
+ },
+ "Gammel Møllevej|Ørum Djurs": {
+  "dato": "2026-10-24",
+  "fejl": true
+ },
+ "Gammelgårdsvej|Åbyhøj": {
+  "geokilde": "nominatim",
+  "lat": 56.156134,
+  "lon": 10.157618,
+  "praecision": "vej"
+ },
+ "Gammelsøvej|Ormslev": {
+  "geokilde": "nominatim",
+  "lat": 56.115864,
+  "lon": 10.048688,
+  "praecision": "vej"
+ },
+ "Gammelsøvej|Viby J": {
+  "geokilde": "nominatim",
+  "lat": 56.115864,
+  "lon": 10.048688,
+  "praecision": "vej"
+ },
+ "Gammelvej|Hjortshøj": {
+  "geokilde": "nominatim",
+  "lat": 56.261377,
+  "lon": 10.250077,
+  "praecision": "vej"
+ },
+ "Gartnerparken|Trige": {
+  "geokilde": "nominatim",
+  "lat": 56.25334,
+  "lon": 10.142813,
   "praecision": "vej"
  },
  "Gartnervej|Randers NV": {
@@ -2412,10 +3445,28 @@
   "lon": 10.057358,
   "praecision": "vej"
  },
+ "Gavnøvænget|Tilst": {
+  "geokilde": "nominatim",
+  "lat": 56.180298,
+  "lon": 10.102199,
+  "praecision": "vej"
+ },
+ "Gazellevej|Randers": {
+  "geokilde": "nominatim",
+  "lat": 56.444723,
+  "lon": 10.079305,
+  "praecision": "vej"
+ },
  "Gebauersgade|Aarhus C": {
   "geokilde": "nominatim",
   "lat": 56.151968,
   "lon": 10.194798,
+  "praecision": "vej"
+ },
+ "Geding Byvej|Geding": {
+  "geokilde": "nominatim",
+  "lat": 56.206247,
+  "lon": 10.096938,
   "praecision": "vej"
  },
  "Gefionvej|Åbyhøj": {
@@ -2424,6 +3475,12 @@
   "lat": 56.155315,
   "lon": 10.165488,
   "praecision": "by"
+ },
+ "Gentoftevej|Aarhus C": {
+  "geokilde": "nominatim",
+  "lat": 56.138847,
+  "lon": 10.197401,
+  "praecision": "vej"
  },
  "Gersdorffsgade|Odder": {
   "geokilde": "nominatim",
@@ -2437,10 +3494,28 @@
   "lon": 10.233499,
   "praecision": "vej"
  },
+ "Gertrud Rasks Vej|Aarhus N": {
+  "geokilde": "nominatim",
+  "lat": 56.176366,
+  "lon": 10.214251,
+  "praecision": "vej"
+ },
+ "Giber Ringvej|Tranbjerg J": {
+  "geokilde": "nominatim",
+  "lat": 56.082928,
+  "lon": 10.109693,
+  "praecision": "vej"
+ },
  "Ginneruplundvej|Hadsten": {
   "geokilde": "nominatim",
   "lat": 56.31443,
   "lon": 10.048228,
+  "praecision": "vej"
+ },
+ "Gjellerupvej|Åbyhøj": {
+  "geokilde": "nominatim",
+  "lat": 56.14622,
+  "lon": 10.148988,
   "praecision": "vej"
  },
  "Gjerlevvej|Øster Tørslev": {
@@ -2449,7 +3524,63 @@
   "lon": 10.181571,
   "praecision": "vej"
  },
+ "Gl. Engvej|Randers SØ": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 56.435543,
+  "lon": 10.042596,
+  "praecision": "by"
+ },
  "Gl. Hadsundvej|Randers C": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 56.435543,
+  "lon": 10.042596,
+  "praecision": "by"
+ },
+ "Gl. Hobrovej|Randers NV": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 56.435543,
+  "lon": 10.042596,
+  "praecision": "by"
+ },
+ "Gl. Krovej i|Odder": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 55.975832,
+  "lon": 10.15132,
+  "praecision": "by"
+ },
+ "Gl. Løgtenvej|Ugelbølle": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 56.308574,
+  "lon": 10.415861,
+  "praecision": "by"
+ },
+ "Gl. Mørkevej|Mørke": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 56.334562,
+  "lon": 10.377531,
+  "praecision": "by"
+ },
+ "Gl. Skanderborgvej|Farre": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 56.218402,
+  "lon": 9.843876,
+  "praecision": "by"
+ },
+ "Gl. Skolevej|Hammelev": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 55.2447907,
+  "lon": 9.3837264,
+  "praecision": "by"
+ },
+ "Glarbjergvvej|Randers NØ": {
   "dato": "2026-10-24",
   "geokilde": "nominatim",
   "lat": 56.435543,
@@ -2462,6 +3593,12 @@
   "lon": 10.833598,
   "praecision": "vej"
  },
+ "Glentehøj|Rønde": {
+  "geokilde": "nominatim",
+  "lat": 56.303817,
+  "lon": 10.475897,
+  "praecision": "vej"
+ },
  "Glentevej|Grenaa": {
   "geokilde": "nominatim",
   "lat": 56.408728,
@@ -2472,6 +3609,12 @@
   "geokilde": "nominatim",
   "lat": 56.475983,
   "lon": 10.037359,
+  "praecision": "vej"
+ },
+ "Glænovænget|Tilst": {
+  "geokilde": "nominatim",
+  "lat": 56.180311,
+  "lon": 10.105801,
   "praecision": "vej"
  },
  "Glænøvænget|Tilst": {
@@ -2492,10 +3635,22 @@
   "lon": 10.214742,
   "praecision": "vej"
  },
+ "Godthåbsvej|Randers SØ": {
+  "geokilde": "nominatim",
+  "lat": 56.448234,
+  "lon": 10.057672,
+  "praecision": "vej"
+ },
  "Gordonhaven|Hadsten": {
   "geokilde": "nominatim",
   "lat": 56.322813,
   "lon": 10.060839,
+  "praecision": "vej"
+ },
+ "Gorrilds Allé|Randers NV": {
+  "geokilde": "nominatim",
+  "lat": 56.474936,
+  "lon": 9.99988,
   "praecision": "vej"
  },
  "Gosmervej|Ørting": {
@@ -2516,10 +3671,22 @@
   "lon": 10.21437,
   "praecision": "vej"
  },
+ "Grenaavej|Gjerrild": {
+  "geokilde": "nominatim",
+  "lat": 56.485017,
+  "lon": 10.828428,
+  "praecision": "vej"
+ },
  "Grenaavej|Grenaa": {
   "geokilde": "nominatim",
   "lat": 56.445833,
   "lon": 10.847971,
+  "praecision": "vej"
+ },
+ "Grenstenvej|Stevnstrup": {
+  "geokilde": "nominatim",
+  "lat": 56.422704,
+  "lon": 9.927673,
   "praecision": "vej"
  },
  "Grenåvej|Randers SØ": {
@@ -2532,6 +3699,12 @@
   "geokilde": "nominatim",
   "lat": 56.199064,
   "lon": 10.235639,
+  "praecision": "vej"
+ },
+ "Grenåvej|Rønde": {
+  "geokilde": "nominatim",
+  "lat": 56.2968,
+  "lon": 10.50903,
   "praecision": "vej"
  },
  "Grenåvej|Skødstrup": {
@@ -2638,6 +3811,12 @@
   "lon": 10.200164,
   "praecision": "vej"
  },
+ "Grønspættevej|Egå": {
+  "geokilde": "nominatim",
+  "lat": 56.233604,
+  "lon": 10.330076,
+  "praecision": "vej"
+ },
  "Grønvej|Sabro": {
   "geokilde": "nominatim",
   "lat": 56.208827,
@@ -2668,10 +3847,48 @@
   "lon": 10.17068,
   "praecision": "vej"
  },
+ "Guldbærvej|Randers NV": {
+  "geokilde": "nominatim",
+  "lat": 56.48453,
+  "lon": 9.983372,
+  "praecision": "vej"
+ },
+ "Guldsmedegade|Aarhus C": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 56.149628,
+  "lon": 10.213405,
+  "praecision": "by"
+ },
  "Guldsmedgade|Aarhus C": {
   "geokilde": "nominatim",
   "lat": 56.159137,
   "lon": 10.2077,
+  "praecision": "vej"
+ },
+ "Gunneruplundvej|Hadsten": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 56.329089,
+  "lon": 10.052386,
+  "praecision": "by"
+ },
+ "Gunnerupmosevej|Assentoft": {
+  "geokilde": "nominatim",
+  "lat": 56.428194,
+  "lon": 10.126209,
+  "praecision": "vej"
+ },
+ "Gunnerupvej|Randers SØ": {
+  "geokilde": "nominatim",
+  "lat": 56.435343,
+  "lon": 10.140063,
+  "praecision": "vej"
+ },
+ "Gurresøvej|Risskov": {
+  "geokilde": "nominatim",
+  "lat": 56.202332,
+  "lon": 10.237992,
   "praecision": "vej"
  },
  "Gustav Holms Vej|Aarhus N": {
@@ -2680,10 +3897,34 @@
   "lon": 10.213399,
   "praecision": "vej"
  },
+ "Gustav Wieds Vej|Aarhus C": {
+  "geokilde": "nominatim",
+  "lat": 56.168154,
+  "lon": 10.194188,
+  "praecision": "vej"
+ },
  "Gyldenkronesvej|Mårslet": {
   "geokilde": "nominatim",
   "lat": 56.063686,
   "lon": 10.162081,
+  "praecision": "vej"
+ },
+ "Gyvelmarksvej|Risskov": {
+  "geokilde": "nominatim",
+  "lat": 56.19671,
+  "lon": 10.258638,
+  "praecision": "vej"
+ },
+ "Gyvelvej|Egå": {
+  "geokilde": "nominatim",
+  "lat": 56.231178,
+  "lon": 10.323142,
+  "praecision": "vej"
+ },
+ "Gyvelvej|Randers NØ": {
+  "geokilde": "nominatim",
+  "lat": 56.477773,
+  "lon": 10.032075,
   "praecision": "vej"
  },
  "Gærdetoften|Randers NV": {
@@ -2704,10 +3945,30 @@
   "lon": 10.193199,
   "praecision": "vej"
  },
+ "H C Andersensvej|Kolind": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 56.35813,
+  "lon": 10.584791,
+  "praecision": "by"
+ },
  "H. C. Andersens Vej|Åbyhøj": {
   "geokilde": "nominatim",
   "lat": 56.151733,
   "lon": 10.158825,
+  "praecision": "vej"
+ },
+ "H. Giersings Allé|Højbjerg": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 56.113385,
+  "lon": 10.206361,
+  "praecision": "by"
+ },
+ "H. P. Jensens Vej|Højbjerg": {
+  "geokilde": "nominatim",
+  "lat": 56.111272,
+  "lon": 10.202823,
   "praecision": "vej"
  },
  "H. V. Kaalunds Vej|Aarhus C": {
@@ -2726,6 +3987,18 @@
   "geokilde": "nominatim",
   "lat": 56.132902,
   "lon": 10.179055,
+  "praecision": "vej"
+ },
+ "H.C.Andersens Vej|Åbyhøj": {
+  "geokilde": "nominatim",
+  "lat": 56.151733,
+  "lon": 10.158825,
+  "praecision": "vej"
+ },
+ "H.P. Jensens Vej|Højbjerg": {
+  "geokilde": "nominatim",
+  "lat": 56.111272,
+  "lon": 10.202823,
   "praecision": "vej"
  },
  "H.P. Rosenvinges Pl|Grenaa": {
@@ -2759,16 +4032,32 @@
   "lon": 10.085033,
   "praecision": "vej"
  },
+ "Haderslevgade|": {
+  "dato": "2026-10-24",
+  "fejl": true
+ },
  "Hadsundvej|Hald": {
   "geokilde": "nominatim",
   "lat": 56.539121,
   "lon": 10.094482,
   "praecision": "vej"
  },
+ "Hadsundvej|Randers NØ": {
+  "geokilde": "nominatim",
+  "lat": 56.488712,
+  "lon": 10.045794,
+  "praecision": "vej"
+ },
  "Hagemannsgade|Odder": {
   "geokilde": "nominatim",
   "lat": 55.96598,
   "lon": 10.149515,
+  "praecision": "vej"
+ },
+ "Haldsøvej|Risskov": {
+  "geokilde": "nominatim",
+  "lat": 56.207562,
+  "lon": 10.240312,
   "praecision": "vej"
  },
  "Hallingvej|Halling": {
@@ -2781,6 +4070,12 @@
   "geokilde": "nominatim",
   "lat": 56.178165,
   "lon": 10.105819,
+  "praecision": "vej"
+ },
+ "Hammelevvej|Grenaa": {
+  "geokilde": "nominatim",
+  "lat": 56.430161,
+  "lon": 10.88512,
   "praecision": "vej"
  },
  "Hammelvej|Langå": {
@@ -2831,6 +4126,25 @@
   "lon": 10.212265,
   "praecision": "vej"
  },
+ "Hans Schourups Gade|Aarhus C": {
+  "geokilde": "nominatim",
+  "lat": 56.141377,
+  "lon": 10.191473,
+  "praecision": "vej"
+ },
+ "Hans Tausens Vej|Viby J": {
+  "geokilde": "nominatim",
+  "lat": 56.131879,
+  "lon": 10.170764,
+  "praecision": "vej"
+ },
+ "Hanstholmsvej|Egå": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 56.21535,
+  "lon": 10.266729,
+  "praecision": "by"
+ },
  "Harald Jensens Plads|": {
   "dato": "2026-10-24",
   "fejl": true
@@ -2841,16 +4155,53 @@
   "lon": 10.190788,
   "praecision": "vej"
  },
+ "Harald Jensens Plads|Aarhus C": {
+  "geokilde": "nominatim",
+  "lat": 56.14404,
+  "lon": 10.190788,
+  "praecision": "vej"
+ },
+ "Harald Kiddes Vej|Åbyhøj": {
+  "geokilde": "nominatim",
+  "lat": 56.15877,
+  "lon": 10.161302,
+  "praecision": "vej"
+ },
+ "Harald Selmers Vej|Risskov": {
+  "geokilde": "nominatim",
+  "lat": 56.183887,
+  "lon": 10.235531,
+  "praecision": "vej"
+ },
+ "Haraldsgade|Viby J": {
+  "geokilde": "nominatim",
+  "lat": 56.138134,
+  "lon": 10.174886,
+  "praecision": "vej"
+ },
  "Harebakken|Hinnerup": {
   "geokilde": "nominatim",
   "lat": 56.273853,
   "lon": 10.044335,
   "praecision": "vej"
  },
+ "Hareskovvej|Lystrup": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 56.23632,
+  "lon": 10.238378,
+  "praecision": "by"
+ },
  "Harevænget|Hammel": {
   "geokilde": "nominatim",
   "lat": 56.24707,
   "lon": 9.849682,
+  "praecision": "vej"
+ },
+ "Harlev Kirkevej|Harlev J": {
+  "geokilde": "nominatim",
+  "lat": 56.134336,
+  "lon": 10.004745,
   "praecision": "vej"
  },
  "Harlev Møllevej|Harlev J": {
@@ -2870,6 +4221,18 @@
   "geokilde": "nominatim",
   "lat": 56.483812,
   "lon": 10.158226,
+  "praecision": "vej"
+ },
+ "Hasle Centervej|Aarhus V": {
+  "geokilde": "nominatim",
+  "lat": 56.166649,
+  "lon": 10.153694,
+  "praecision": "vej"
+ },
+ "Hasle Ringvej|Aarhus N": {
+  "geokilde": "nominatim",
+  "lat": 56.176701,
+  "lon": 10.179106,
   "praecision": "vej"
  },
  "Hasle Ringvej|Aarhus V": {
@@ -2897,10 +4260,35 @@
   "lon": 10.171605,
   "praecision": "vej"
  },
+ "Haslevangsvej|Hasle": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 55.183802,
+  "lon": 14.706171,
+  "praecision": "by"
+ },
+ "Haslevej|Åbyhøj": {
+  "geokilde": "nominatim",
+  "lat": 56.158947,
+  "lon": 10.164355,
+  "praecision": "vej"
+ },
+ "Haslund Klostervej|Randers SV": {
+  "geokilde": "nominatim",
+  "lat": 56.418744,
+  "lon": 10.034659,
+  "praecision": "vej"
+ },
  "Haslundkærvej|Randers SV": {
   "geokilde": "nominatim",
   "lat": 56.402874,
   "lon": 10.033858,
+  "praecision": "vej"
+ },
+ "Hasselbakken|Grenaa": {
+  "geokilde": "nominatim",
+  "lat": 56.419639,
+  "lon": 10.856496,
   "praecision": "vej"
  },
  "Hasselbakken|Hasselager": {
@@ -2952,6 +4340,12 @@
   "lon": 10.185699,
   "praecision": "vej"
  },
+ "Hasselvænget|Fårup": {
+  "geokilde": "nominatim",
+  "lat": 56.547862,
+  "lon": 9.849457,
+  "praecision": "vej"
+ },
  "Hattemagervej|Randers NV": {
   "geokilde": "nominatim",
   "lat": 56.475186,
@@ -2963,6 +4357,13 @@
   "lat": 56.232284,
   "lon": 10.32217,
   "praecision": "vej"
+ },
+ "Haveforening Af|Aarhus C": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 56.149628,
+  "lon": 10.213405,
+  "praecision": "by"
  },
  "Haveforeningen Engvang|Viby J": {
   "geokilde": "nominatim",
@@ -3037,6 +4438,13 @@
   "lon": 10.241826,
   "praecision": "vej"
  },
+ "Havrevej|Ørum": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 56.480433,
+  "lon": 9.626306,
+  "praecision": "by"
+ },
  "Havrevænget|Malling": {
   "geokilde": "nominatim",
   "lat": 56.041653,
@@ -3053,6 +4461,30 @@
   "geokilde": "nominatim",
   "lat": 56.178743,
   "lon": 10.20787,
+  "praecision": "vej"
+ },
+ "Havvænget|Malling": {
+  "geokilde": "nominatim",
+  "lat": 56.038746,
+  "lon": 10.268567,
+  "praecision": "vej"
+ },
+ "Hedemannsgade|Aarhus C": {
+  "geokilde": "nominatim",
+  "lat": 56.146729,
+  "lon": 10.191346,
+  "praecision": "vej"
+ },
+ "Hedeskovvej|Lystrup": {
+  "geokilde": "nominatim",
+  "lat": 56.236969,
+  "lon": 10.227776,
+  "praecision": "vej"
+ },
+ "Hedevangsvej|Egå": {
+  "geokilde": "nominatim",
+  "lat": 56.241994,
+  "lon": 10.335596,
   "praecision": "vej"
  },
  "Hedevej|Havndal": {
@@ -3079,10 +4511,22 @@
   "lon": 10.176842,
   "praecision": "vej"
  },
+ "Hejrebakken|Brabrand": {
+  "geokilde": "nominatim",
+  "lat": 56.157647,
+  "lon": 10.123081,
+  "praecision": "vej"
+ },
  "Hejredalsvej|Brabrand": {
   "geokilde": "nominatim",
   "lat": 56.155648,
   "lon": 10.123816,
+  "praecision": "vej"
+ },
+ "Hejrevej|Egå": {
+  "geokilde": "nominatim",
+  "lat": 56.235801,
+  "lon": 10.328557,
   "praecision": "vej"
  },
  "Heklagade|Aarhus N": {
@@ -3097,10 +4541,34 @@
   "lon": 10.094479,
   "praecision": "vej"
  },
+ "Helgesgade|Viby J": {
+  "geokilde": "nominatim",
+  "lat": 56.136841,
+  "lon": 10.18001,
+  "praecision": "vej"
+ },
+ "Helgesvej|Åbyhøj": {
+  "geokilde": "nominatim",
+  "lat": 56.153941,
+  "lon": 10.171392,
+  "praecision": "vej"
+ },
+ "Helle Virkners Plads|Aarhus": {
+  "geokilde": "nominatim",
+  "lat": 56.151437,
+  "lon": 10.184728,
+  "praecision": "vej"
+ },
  "Hellerupvej|Aarhus C": {
   "geokilde": "nominatim",
   "lat": 56.138301,
   "lon": 10.193511,
+  "praecision": "vej"
+ },
+ "Hemmed Kirkevej|Glesborg": {
+  "geokilde": "nominatim",
+  "lat": 56.48781,
+  "lon": 10.769534,
   "praecision": "vej"
  },
  "Henrik Hertz Vej|Åbyhøj": {
@@ -3121,6 +4589,12 @@
   "lon": 10.217592,
   "praecision": "vej"
  },
+ "Herman Bangs Vej|Grenaa": {
+  "geokilde": "nominatim",
+  "lat": 56.408824,
+  "lon": 10.903044,
+  "praecision": "vej"
+ },
  "Herningvej|Randers SV": {
   "geokilde": "nominatim",
   "lat": 56.445463,
@@ -3137,6 +4611,12 @@
   "geokilde": "nominatim",
   "lat": 56.471114,
   "lon": 10.013594,
+  "praecision": "vej"
+ },
+ "Herredsvej|Aarhus V": {
+  "geokilde": "nominatim",
+  "lat": 56.172864,
+  "lon": 10.165264,
   "praecision": "vej"
  },
  "Herredsvej|Hasle": {
@@ -3224,6 +4704,12 @@
   "lon": 10.094797,
   "praecision": "vej"
  },
+ "Hjortevej|Randers SØ": {
+  "geokilde": "nominatim",
+  "lat": 56.443786,
+  "lon": 10.078118,
+  "praecision": "vej"
+ },
  "Hjortshøjvangen|Hjortshøj": {
   "geokilde": "nominatim",
   "lat": 56.254552,
@@ -3272,10 +4758,59 @@
   "lon": 10.022466,
   "praecision": "vej"
  },
+ "Holbergsgade|Aarhus C": {
+  "geokilde": "nominatim",
+  "lat": 56.148351,
+  "lon": 10.194073,
+  "praecision": "vej"
+ },
+ "Holger Drachmanns Vej|Aarhus C": {
+  "geokilde": "nominatim",
+  "lat": 56.165724,
+  "lon": 10.196318,
+  "praecision": "vej"
+ },
+ "Hollandsbjergvej|Ørsted": {
+  "geokilde": "nominatim",
+  "lat": 56.498021,
+  "lon": 10.309101,
+  "praecision": "vej"
+ },
+ "Hollerupvej|Ulstrup": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 55.5399,
+  "lon": 11.255486,
+  "praecision": "by"
+ },
+ "Holmbjergvej|Knebelbro": {
+  "geokilde": "nominatim",
+  "lat": 56.203188,
+  "lon": 10.474613,
+  "praecision": "vej"
+ },
  "Holme Byvej|Højbjerg": {
   "geokilde": "nominatim",
   "lat": 56.115483,
   "lon": 10.173181,
+  "praecision": "vej"
+ },
+ "Holme Møllevej|Højbjerg": {
+  "geokilde": "nominatim",
+  "lat": 56.121709,
+  "lon": 10.171931,
+  "praecision": "vej"
+ },
+ "Holme Møllevej|Viby J": {
+  "geokilde": "nominatim",
+  "lat": 56.121709,
+  "lon": 10.171931,
+  "praecision": "vej"
+ },
+ "Holme Parkvej|Højbjerg": {
+  "geokilde": "nominatim",
+  "lat": 56.10583,
+  "lon": 10.17582,
   "praecision": "vej"
  },
  "Holmebakken|Hinnerup": {
@@ -3309,10 +4844,22 @@
   "lon": 10.180805,
   "praecision": "vej"
  },
+ "Holmevangen|Højbjerg": {
+  "geokilde": "nominatim",
+  "lat": 56.119925,
+  "lon": 10.187334,
+  "praecision": "vej"
+ },
  "Holmevej|Højbjerg": {
   "geokilde": "nominatim",
   "lat": 56.118186,
   "lon": 10.178586,
+  "praecision": "vej"
+ },
+ "Holmevej|Randers NØ": {
+  "geokilde": "nominatim",
+  "lat": 56.492264,
+  "lon": 9.89127,
   "praecision": "vej"
  },
  "Holmgårdsvej|Randers SØ": {
@@ -3322,11 +4869,24 @@
   "lon": 10.0425957,
   "praecision": "by"
  },
+ "Holmkærvej|Trige": {
+  "geokilde": "nominatim",
+  "lat": 56.253757,
+  "lon": 10.137314,
+  "praecision": "vej"
+ },
  "Holmstrupgårdvej|Aarhus V": {
   "geokilde": "nominatim",
   "lat": 56.172223,
   "lon": 10.119127,
   "praecision": "vej"
+ },
+ "Holmstrupgårdvej|Holmstrup": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 55.3619976,
+  "lon": 10.2766392,
+  "praecision": "by"
  },
  "Holmstruphøjvej|Aarhus V": {
   "geokilde": "nominatim",
@@ -3338,6 +4898,12 @@
   "geokilde": "nominatim",
   "lat": 56.442635,
   "lon": 10.047155,
+  "praecision": "vej"
+ },
+ "Holsteinsgade|Odder": {
+  "geokilde": "nominatim",
+  "lat": 55.971545,
+  "lon": 10.146467,
   "praecision": "vej"
  },
  "Holtevej|Aarhus C": {
@@ -3395,6 +4961,13 @@
   "lon": 10.615058,
   "praecision": "vej"
  },
+ "Horstved|Kolind": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 56.35813,
+  "lon": 10.584791,
+  "praecision": "by"
+ },
  "Hostrupsvej|Viby J": {
   "geokilde": "nominatim",
   "lat": 56.134082,
@@ -3412,6 +4985,18 @@
   "geokilde": "nominatim",
   "lat": 55.993507,
   "lon": 10.244649,
+  "praecision": "vej"
+ },
+ "Hougårdsvej|Brabrand": {
+  "geokilde": "nominatim",
+  "lat": 56.15087,
+  "lon": 10.094701,
+  "praecision": "vej"
+ },
+ "Hovbro|Aidt": {
+  "geokilde": "nominatim",
+  "lat": 56.312962,
+  "lon": 9.800482,
   "praecision": "vej"
  },
  "Hovedgaden|Allingåbro": {
@@ -3432,16 +5017,59 @@
   "lon": 10.818883,
   "praecision": "vej"
  },
+ "Hovedvejen|Nimtofte": {
+  "geokilde": "nominatim",
+  "lat": 56.42843,
+  "lon": 10.535181,
+  "praecision": "vej"
+ },
+ "Hovedvej|Balle": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 56.31562,
+  "lon": 10.807736,
+  "praecision": "by"
+ },
+ "Hovgårdvej|Hornslet": {
+  "geokilde": "nominatim",
+  "lat": 56.298777,
+  "lon": 10.365531,
+  "praecision": "vej"
+ },
  "Hovvejen|Hasselager": {
   "geokilde": "nominatim",
   "lat": 56.082391,
   "lon": 10.082986,
   "praecision": "vej"
  },
+ "Hovvejen|Sabro": {
+  "geokilde": "nominatim",
+  "lat": 56.237977,
+  "lon": 9.989939,
+  "praecision": "vej"
+ },
+ "Hovvej|Hadsten": {
+  "geokilde": "nominatim",
+  "lat": 56.330225,
+  "lon": 10.05906,
+  "praecision": "vej"
+ },
+ "Hroarsvej|Hadsten": {
+  "geokilde": "nominatim",
+  "lat": 56.328154,
+  "lon": 10.061613,
+  "praecision": "vej"
+ },
  "Huldremosevej|Ramten": {
   "geokilde": "nominatim",
   "lat": 56.446852,
   "lon": 10.630084,
+  "praecision": "vej"
+ },
+ "Humlehaven|Hinnerup": {
+  "geokilde": "nominatim",
+  "lat": 56.259377,
+  "lon": 10.086449,
   "praecision": "vej"
  },
  "Humlevej|Hornslet": {
@@ -3456,6 +5084,12 @@
   "lon": 10.273302,
   "praecision": "vej"
  },
+ "Hvalløsvej|Hadsten": {
+  "geokilde": "nominatim",
+  "lat": 56.371225,
+  "lon": 10.15889,
+  "praecision": "vej"
+ },
  "Hvedebakken|Hammel": {
   "geokilde": "nominatim",
   "lat": 56.243074,
@@ -3467,6 +5101,13 @@
   "lat": 56.181764,
   "lon": 10.201478,
   "praecision": "vej"
+ },
+ "Hvedevangsvej|Egå": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 56.21535,
+  "lon": 10.266729,
+  "praecision": "by"
  },
  "Hvedevej|Kolind": {
   "geokilde": "nominatim",
@@ -3490,6 +5131,12 @@
   "geokilde": "nominatim",
   "lat": 56.483457,
   "lon": 10.017091,
+  "praecision": "vej"
+ },
+ "Hyacintvej|Stevnstrup": {
+  "geokilde": "nominatim",
+  "lat": 56.43162,
+  "lon": 9.938284,
   "praecision": "vej"
  },
  "Hybenhaven|Lystrup": {
@@ -3520,6 +5167,18 @@
   "geokilde": "nominatim",
   "lat": 56.047577,
   "lon": 10.091592,
+  "praecision": "vej"
+ },
+ "Hyrdevænget|Tranbjerg J": {
+  "geokilde": "nominatim",
+  "lat": 56.0854,
+  "lon": 10.151766,
+  "praecision": "vej"
+ },
+ "Hyttenvej|Glesborg": {
+  "geokilde": "nominatim",
+  "lat": 56.479703,
+  "lon": 10.643166,
   "praecision": "vej"
  },
  "Hæstvej|Trige": {
@@ -3638,10 +5297,22 @@
   "lon": 10.225511,
   "praecision": "vej"
  },
+ "Højvangen|Randers SØ": {
+  "geokilde": "nominatim",
+  "lat": 56.441397,
+  "lon": 10.132516,
+  "praecision": "vej"
+ },
  "Højvangsvej|Viby J": {
   "geokilde": "nominatim",
   "lat": 56.12938,
   "lon": 10.120437,
+  "praecision": "vej"
+ },
+ "Højvangsvej|Ørsted": {
+  "geokilde": "nominatim",
+  "lat": 56.498761,
+  "lon": 10.330247,
   "praecision": "vej"
  },
  "Højvænget|Odder": {
@@ -3680,10 +5351,28 @@
   "lon": 10.170124,
   "praecision": "vej"
  },
+ "Hørretvænget|Mårslet": {
+  "geokilde": "nominatim",
+  "lat": 56.075724,
+  "lon": 10.166361,
+  "praecision": "vej"
+ },
  "I. Christensens Gade|Brabrand": {
   "geokilde": "nominatim",
   "lat": 56.174149,
   "lon": 10.204271,
+  "praecision": "vej"
+ },
+ "I.P. Jacobsens Vej|Åbyhøj": {
+  "geokilde": "nominatim",
+  "lat": 56.150705,
+  "lon": 10.151699,
+  "praecision": "vej"
+ },
+ "Idrætsvej|Glesborg": {
+  "geokilde": "nominatim",
+  "lat": 56.476686,
+  "lon": 10.720363,
   "praecision": "vej"
  },
  "Ildervej|Højbjerg": {
@@ -3735,6 +5424,12 @@
   "lon": 10.183159,
   "praecision": "vej"
  },
+ "Isfuglen|Randers SV": {
+  "geokilde": "nominatim",
+  "lat": 56.447916,
+  "lon": 10.016949,
+  "praecision": "vej"
+ },
  "Ivar Huitfeldts Gade|Aarhus N": {
   "geokilde": "nominatim",
   "lat": 56.171304,
@@ -3746,6 +5441,16 @@
   "lat": 56.151796,
   "lon": 10.153223,
   "praecision": "vej"
+ },
+ "J. M. Mørks Gade|Aarhus C": {
+  "geokilde": "nominatim",
+  "lat": 56.155138,
+  "lon": 10.202692,
+  "praecision": "vej"
+ },
+ "J. Skjoldborgs Vej|Åbyhæj": {
+  "dato": "2026-10-24",
+  "fejl": true
  },
  "J.L. Heibergs Vej|Åbyhøj": {
   "geokilde": "nominatim",
@@ -3772,10 +5477,34 @@
   "lon": 9.871667,
   "praecision": "vej"
  },
+ "Jagtvej|Højbjerg": {
+  "geokilde": "nominatim",
+  "lat": 56.115924,
+  "lon": 10.214596,
+  "praecision": "vej"
+ },
+ "Janesvej|Brabrand": {
+  "geokilde": "nominatim",
+  "lat": 56.165658,
+  "lon": 10.135732,
+  "praecision": "vej"
+ },
  "Jarlsmindevej|Viby J": {
   "geokilde": "nominatim",
   "lat": 56.131054,
   "lon": 10.125214,
+  "praecision": "vej"
+ },
+ "Jasminvej|Risskov": {
+  "geokilde": "nominatim",
+  "lat": 56.192724,
+  "lon": 10.238217,
+  "praecision": "vej"
+ },
+ "Jebjergvej|Langå": {
+  "geokilde": "nominatim",
+  "lat": 56.388519,
+  "lon": 9.945694,
   "praecision": "vej"
  },
  "Jegstrupvej|Hasselager": {
@@ -3796,13 +5525,37 @@
   "lon": 10.198339,
   "praecision": "vej"
  },
+ "Jelshøjvej|Mårslet": {
+  "geokilde": "nominatim",
+  "lat": 56.083811,
+  "lon": 10.166502,
+  "praecision": "vej"
+ },
+ "Jelshøjvænget|Højbjerg": {
+  "geokilde": "nominatim",
+  "lat": 56.103884,
+  "lon": 10.20459,
+  "praecision": "vej"
+ },
  "Jens Baggesens Vej|Aarhus N": {
   "geokilde": "nominatim",
   "lat": 56.169588,
   "lon": 10.192235,
   "praecision": "vej"
  },
+ "Jens Baggesens Vej|Aarhus V": {
+  "geokilde": "nominatim",
+  "lat": 56.169588,
+  "lon": 10.192235,
+  "praecision": "vej"
+ },
  "Jens Munks Vej|Aarhus N": {
+  "geokilde": "nominatim",
+  "lat": 56.179106,
+  "lon": 10.216739,
+  "praecision": "vej"
+ },
+ "Jens Munks vej|Aarhus N": {
   "geokilde": "nominatim",
   "lat": 56.179106,
   "lon": 10.216739,
@@ -3818,6 +5571,12 @@
   "geokilde": "nominatim",
   "lat": 56.17056,
   "lon": 10.1509,
+  "praecision": "vej"
+ },
+ "Jernaldervej|Søften": {
+  "geokilde": "nominatim",
+  "lat": 56.242824,
+  "lon": 10.077833,
   "praecision": "vej"
  },
  "Jernaldervænget|Brabrand": {
@@ -3838,16 +5597,46 @@
   "lon": 10.500742,
   "praecision": "vej"
  },
+ "Jettesvej|Brabrand": {
+  "geokilde": "nominatim",
+  "lat": 56.157513,
+  "lon": 10.132661,
+  "praecision": "vej"
+ },
+ "Johan Langes Vej|Aarhus C": {
+  "geokilde": "nominatim",
+  "lat": 56.161085,
+  "lon": 10.186417,
+  "praecision": "vej"
+ },
  "Johan Langes vej|Aarhus C": {
   "geokilde": "nominatim",
   "lat": 56.161085,
   "lon": 10.186417,
   "praecision": "vej"
  },
+ "Johannes Ewalds Vej|Åbyhøj": {
+  "geokilde": "nominatim",
+  "lat": 56.158339,
+  "lon": 10.148939,
+  "praecision": "vej"
+ },
  "Johannes Grosens Vej|Egå": {
   "geokilde": "nominatim",
   "lat": 56.205196,
   "lon": 10.267003,
+  "praecision": "vej"
+ },
+ "John Mogensens Gade|Aarhus C": {
+  "geokilde": "nominatim",
+  "lat": 56.151265,
+  "lon": 10.185569,
+  "praecision": "vej"
+ },
+ "Jomfru Dybersvej|Spentrup": {
+  "geokilde": "nominatim",
+  "lat": 56.537215,
+  "lon": 10.029057,
   "praecision": "vej"
  },
  "Julius Bechgaards Vej|Aarhus C": {
@@ -3910,10 +5699,28 @@
   "lon": 9.871618,
   "praecision": "vej"
  },
+ "Jættehøjen|Risskov": {
+  "geokilde": "nominatim",
+  "lat": 56.199599,
+  "lon": 10.219952,
+  "praecision": "vej"
+ },
+ "Jønhøjvej|Åbyhøj": {
+  "geokilde": "nominatim",
+  "lat": 56.161474,
+  "lon": 10.164901,
+  "praecision": "vej"
+ },
  "Jørgen Brønlunds Vej|Aarhus N": {
   "geokilde": "nominatim",
   "lat": 56.176984,
   "lon": 10.211685,
+  "praecision": "vej"
+ },
+ "Kaj Munks Vej|Viby J": {
+  "geokilde": "nominatim",
+  "lat": 56.130032,
+  "lon": 10.17857,
   "praecision": "vej"
  },
  "Kalkkjærvej|Højbjerg": {
@@ -3923,10 +5730,29 @@
   "lon": 10.206361,
   "praecision": "by"
  },
+ "Kalkærvej|Højbjerg": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 56.113385,
+  "lon": 10.206361,
+  "praecision": "by"
+ },
+ "Kamma Rahbeks vej|Åbyhøj": {
+  "geokilde": "nominatim",
+  "lat": 56.159141,
+  "lon": 10.162776,
+  "praecision": "vej"
+ },
  "Kanalvej|Kolind": {
   "geokilde": "nominatim",
   "lat": 56.401852,
   "lon": 10.720135,
+  "praecision": "vej"
+ },
+ "Kanehaven i|Risskov": {
+  "geokilde": "nominatim",
+  "lat": 56.207238,
+  "lon": 10.214206,
   "praecision": "vej"
  },
  "Kanehaven|Risskov": {
@@ -3935,10 +5761,34 @@
   "lon": 10.214206,
   "praecision": "vej"
  },
+ "Kannikegade|Grenaa": {
+  "geokilde": "nominatim",
+  "lat": 56.413016,
+  "lon": 10.878321,
+  "praecision": "vej"
+ },
  "Kantorparken|Risskov": {
   "geokilde": "nominatim",
   "lat": 56.197234,
   "lon": 10.20742,
+  "praecision": "vej"
+ },
+ "Kantorvænget|Risskov": {
+  "geokilde": "nominatim",
+  "lat": 56.199019,
+  "lon": 10.204906,
+  "praecision": "vej"
+ },
+ "Kappelsdal|Hammel": {
+  "geokilde": "nominatim",
+  "lat": 56.245191,
+  "lon": 9.862105,
+  "praecision": "vej"
+ },
+ "Karensvej|Brabrand": {
+  "geokilde": "nominatim",
+  "lat": 56.154984,
+  "lon": 10.128027,
   "praecision": "vej"
  },
  "Karetmagertoften|Højbjerg": {
@@ -3972,6 +5822,12 @@
   "lon": 10.174952,
   "praecision": "vej"
  },
+ "Kastanievej|Viby J": {
+  "geokilde": "nominatim",
+  "lat": 56.134273,
+  "lon": 10.182634,
+  "praecision": "vej"
+ },
  "Kasted Tværvej|Aarhus N": {
   "geokilde": "nominatim",
   "lat": 56.206848,
@@ -4000,6 +5856,12 @@
   "geokilde": "nominatim",
   "lat": 56.103255,
   "lon": 10.213907,
+  "praecision": "vej"
+ },
+ "Kejlstrupvej|Risskov": {
+  "geokilde": "nominatim",
+  "lat": 56.196012,
+  "lon": 10.225369,
   "praecision": "vej"
  },
  "Ketting Parkvej|Harlev J": {
@@ -4038,12 +5900,30 @@
   "lon": 10.088889,
   "praecision": "vej"
  },
+ "Kildeagervænget|Hasselager": {
+  "geokilde": "nominatim",
+  "lat": 56.116406,
+  "lon": 10.091087,
+  "praecision": "vej"
+ },
  "Kildeager|Hasselager": {
   "dato": "2026-10-24",
   "geokilde": "nominatim",
   "lat": 56.112696,
   "lon": 10.101558,
   "praecision": "by"
+ },
+ "Kildegade|Odder": {
+  "geokilde": "nominatim",
+  "lat": 55.976031,
+  "lon": 10.152776,
+  "praecision": "vej"
+ },
+ "Kildegården|Aarhus C": {
+  "geokilde": "nominatim",
+  "lat": 56.141718,
+  "lon": 10.206191,
+  "praecision": "vej"
  },
  "Kildehøjen|Risskov": {
   "geokilde": "nominatim",
@@ -4118,6 +5998,30 @@
   "lon": 9.929839,
   "praecision": "vej"
  },
+ "Kirkestien|Allingåbro": {
+  "geokilde": "nominatim",
+  "lat": 56.465805,
+  "lon": 10.334657,
+  "praecision": "vej"
+ },
+ "Kirkestien|Viby J": {
+  "geokilde": "nominatim",
+  "lat": 56.128678,
+  "lon": 10.164756,
+  "praecision": "vej"
+ },
+ "Kirketoften|Egens": {
+  "geokilde": "nominatim",
+  "lat": 56.269329,
+  "lon": 10.513243,
+  "praecision": "vej"
+ },
+ "Kirkevejen|Lading": {
+  "geokilde": "nominatim",
+  "lat": 56.228124,
+  "lon": 9.976084,
+  "praecision": "vej"
+ },
  "Kirkevej|Enslev": {
   "geokilde": "nominatim",
   "lat": 56.127722,
@@ -4161,6 +6065,18 @@
   "lon": 9.942253,
   "praecision": "vej"
  },
+ "Kjærslund|Viby J": {
+  "geokilde": "nominatim",
+  "lat": 56.10976,
+  "lon": 10.15245,
+  "praecision": "vej"
+ },
+ "Klattrupgade|Havndal": {
+  "geokilde": "nominatim",
+  "lat": 56.660188,
+  "lon": 10.205759,
+  "praecision": "vej"
+ },
  "Klintevej|Hammel": {
   "geokilde": "nominatim",
   "lat": 56.26228,
@@ -4171,6 +6087,12 @@
   "geokilde": "nominatim",
   "lat": 56.198894,
   "lon": 10.250112,
+  "praecision": "vej"
+ },
+ "Klirevej|Egå": {
+  "geokilde": "nominatim",
+  "lat": 56.236287,
+  "lon": 10.331947,
   "praecision": "vej"
  },
  "Klokkeblomstvej|Viby J": {
@@ -4197,6 +6119,12 @@
   "lat": 55.183802,
   "lon": 14.706171,
   "praecision": "by"
+ },
+ "Klokkervej|Aarhus V": {
+  "geokilde": "nominatim",
+  "lat": 56.161396,
+  "lon": 10.159333,
+  "praecision": "vej"
  },
  "Klokkeskovvej|Viby J": {
   "geokilde": "nominatim",
@@ -4283,6 +6211,12 @@
   "lon": 10.06816,
   "praecision": "vej"
  },
+ "Kolt Østerparken|Hasselager": {
+  "geokilde": "nominatim",
+  "lat": 56.11283,
+  "lon": 10.094679,
+  "praecision": "vej"
+ },
  "Kolt Østervej|Hasselager": {
   "geokilde": "nominatim",
   "lat": 56.110801,
@@ -4299,6 +6233,12 @@
   "geokilde": "nominatim",
   "lat": 56.125372,
   "lon": 10.163854,
+  "praecision": "vej"
+ },
+ "Kongsvang Allé|Aarhus C": {
+  "geokilde": "nominatim",
+  "lat": 56.138842,
+  "lon": 10.186054,
   "praecision": "vej"
  },
  "Kontorhotel (vej ikke oplyst)|Sabro": {
@@ -4326,6 +6266,19 @@
   "lon": 10.151577,
   "praecision": "vej"
  },
+ "Kornvangen|Ebeltoft": {
+  "geokilde": "nominatim",
+  "lat": 56.20283,
+  "lon": 10.695348,
+  "praecision": "vej"
+ },
+ "Kornvænget|Ørum": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 56.4804333,
+  "lon": 9.626306,
+  "praecision": "by"
+ },
  "Korsagervej|Randers SV": {
   "geokilde": "nominatim",
   "lat": 56.419768,
@@ -4344,10 +6297,35 @@
   "lon": 10.22199,
   "praecision": "vej"
  },
+ "Korsvangen|Hinnerup": {
+  "geokilde": "nominatim",
+  "lat": 56.249986,
+  "lon": 10.032067,
+  "praecision": "vej"
+ },
+ "Korsvangen|Norring": {
+  "geokilde": "nominatim",
+  "lat": 56.250491,
+  "lon": 10.032845,
+  "praecision": "vej"
+ },
  "Krabbes Ager|Odder": {
   "geokilde": "nominatim",
   "lat": 55.974402,
   "lon": 10.12717,
+  "praecision": "vej"
+ },
+ "Krabbes Agger|Odder": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 55.975832,
+  "lon": 10.15132,
+  "praecision": "by"
+ },
+ "Krabbesholms Allé|Viby J": {
+  "geokilde": "nominatim",
+  "lat": 56.133858,
+  "lon": 10.167984,
   "praecision": "vej"
  },
  "Kraghøjvej|Ebdrup": {
@@ -4366,6 +6344,12 @@
   "geokilde": "nominatim",
   "lat": 56.279748,
   "lon": 10.29415,
+  "praecision": "vej"
+ },
+ "Krathusvej|Risskov": {
+  "geokilde": "nominatim",
+  "lat": 56.182063,
+  "lon": 10.231738,
   "praecision": "vej"
  },
  "Kratleddet|Mårslet": {
@@ -4422,10 +6406,23 @@
   "lon": 10.2077,
   "praecision": "vej"
  },
+ "Kroagre|Risskov": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 56.201768,
+  "lon": 10.241958,
+  "praecision": "by"
+ },
  "Krogagre|Risskov": {
   "geokilde": "nominatim",
   "lat": 56.206708,
   "lon": 10.20742,
+  "praecision": "vej"
+ },
+ "Krogen|Egå": {
+  "geokilde": "nominatim",
+  "lat": 56.217474,
+  "lon": 10.267454,
   "praecision": "vej"
  },
  "Kroghsgade|Aarhus C": {
@@ -4444,6 +6441,18 @@
   "geokilde": "nominatim",
   "lat": 56.109816,
   "lon": 10.227249,
+  "praecision": "vej"
+ },
+ "Krusåvej|Risskov": {
+  "geokilde": "nominatim",
+  "lat": 56.191958,
+  "lon": 10.225913,
+  "praecision": "vej"
+ },
+ "Kræsten Iversens Vej|Højbjerg": {
+  "geokilde": "nominatim",
+  "lat": 56.118521,
+  "lon": 10.193041,
   "praecision": "vej"
  },
  "Kunnerupvej|Hasselager": {
@@ -4488,6 +6497,12 @@
   "lon": 10.255914,
   "praecision": "vej"
  },
+ "Kystvejen|Rude Strand": {
+  "geokilde": "nominatim",
+  "lat": 55.997222,
+  "lon": 10.254402,
+  "praecision": "vej"
+ },
  "Kåthedevej|Kåtrup": {
   "geokilde": "nominatim",
   "lat": 56.570071,
@@ -4530,6 +6545,12 @@
   "lon": 10.087928,
   "praecision": "vej"
  },
+ "Kærparken|Randers SV": {
+  "geokilde": "nominatim",
+  "lat": 56.448773,
+  "lon": 10.026586,
+  "praecision": "vej"
+ },
  "Kærvej|Drastrup Kær": {
   "dato": "2026-10-24",
   "fejl": true
@@ -4563,6 +6584,12 @@
   "geokilde": "nominatim",
   "lat": 56.194414,
   "lon": 10.251341,
+  "praecision": "vej"
+ },
+ "Labing Møllevej|Harlev J": {
+  "geokilde": "nominatim",
+  "lat": 56.167232,
+  "lon": 10.018685,
   "praecision": "vej"
  },
  "Ladefogedvej|Aarhus": {
@@ -4648,6 +6675,12 @@
   "lon": 10.432064,
   "praecision": "vej"
  },
+ "Langgade|Randers NV": {
+  "geokilde": "nominatim",
+  "lat": 56.471079,
+  "lon": 10.027215,
+  "praecision": "vej"
+ },
  "Langkærvej|Tilst": {
   "geokilde": "nominatim",
   "lat": 56.187494,
@@ -4658,6 +6691,18 @@
   "geokilde": "nominatim",
   "lat": 56.336255,
   "lon": 10.142366,
+  "praecision": "vej"
+ },
+ "Langvad|Egå": {
+  "geokilde": "nominatim",
+  "lat": 56.20734,
+  "lon": 10.261674,
+  "praecision": "vej"
+ },
+ "Langåvej|Langå": {
+  "geokilde": "nominatim",
+  "lat": 56.399328,
+  "lon": 9.931461,
   "praecision": "vej"
  },
  "Langørvej|Tilst": {
@@ -4678,10 +6723,22 @@
   "lon": 10.095135,
   "praecision": "vej"
  },
+ "Lassesminde|Randers SØ": {
+  "geokilde": "nominatim",
+  "lat": 56.446328,
+  "lon": 10.104989,
+  "praecision": "vej"
+ },
  "Laurbærvænget|Tranbjerg J": {
   "geokilde": "nominatim",
   "lat": 56.08925,
   "lon": 10.148484,
+  "praecision": "vej"
+ },
+ "Lauritshøj|Skødstrup": {
+  "geokilde": "nominatim",
+  "lat": 56.263648,
+  "lon": 10.314953,
   "praecision": "vej"
  },
  "Laurvigsgade|Aarhus N": {
@@ -4702,6 +6759,18 @@
   "lon": 10.26897,
   "praecision": "vej"
  },
+ "Lenesminde|Randers SØ": {
+  "geokilde": "nominatim",
+  "lat": 56.447569,
+  "lon": 10.105543,
+  "praecision": "vej"
+ },
+ "Lervangen|Randers NØ": {
+  "geokilde": "nominatim",
+  "lat": 56.476362,
+  "lon": 10.031131,
+  "praecision": "vej"
+ },
  "Libravej|Højbjerg": {
   "geokilde": "nominatim",
   "lat": 56.127487,
@@ -4712,6 +6781,12 @@
   "geokilde": "nominatim",
   "lat": 56.470588,
   "lon": 10.058757,
+  "praecision": "vej"
+ },
+ "Ligustervej|Brabrand": {
+  "geokilde": "nominatim",
+  "lat": 56.156062,
+  "lon": 10.12305,
   "praecision": "vej"
  },
  "Liljebakken|Grenaa": {
@@ -4732,16 +6807,40 @@
   "lon": 10.219281,
   "praecision": "vej"
  },
+ "Lillegade|Grenaa": {
+  "geokilde": "nominatim",
+  "lat": 56.41514,
+  "lon": 10.871767,
+  "praecision": "vej"
+ },
  "Lillehammervej|Aarhus N": {
   "geokilde": "nominatim",
   "lat": 56.177679,
   "lon": 10.192981,
   "praecision": "vej"
  },
+ "Lilleåvænget|Hadsten": {
+  "geokilde": "nominatim",
+  "lat": 56.327535,
+  "lon": 10.030328,
+  "praecision": "vej"
+ },
  "Liltvedvej|Auning": {
   "geokilde": "nominatim",
   "lat": 56.431829,
   "lon": 10.31655,
+  "praecision": "vej"
+ },
+ "Liltvedvej|Fausing": {
+  "geokilde": "nominatim",
+  "lat": 56.437758,
+  "lon": 10.29489,
+  "praecision": "vej"
+ },
+ "Lindenborgvej i|Risskov": {
+  "geokilde": "nominatim",
+  "lat": 56.189575,
+  "lon": 10.211612,
   "praecision": "vej"
  },
  "Lindenborgvej|Risskov": {
@@ -4780,6 +6879,18 @@
   "lon": 10.109181,
   "praecision": "vej"
  },
+ "Lokesvej|Åbyhøj": {
+  "geokilde": "nominatim",
+  "lat": 56.147607,
+  "lon": 10.170728,
+  "praecision": "vej"
+ },
+ "Lucernevej|Randers NV": {
+  "geokilde": "nominatim",
+  "lat": 56.482737,
+  "lon": 10.016929,
+  "praecision": "vej"
+ },
  "Ludvig Feilbergs Vej|Åbyhøj": {
   "geokilde": "nominatim",
   "lat": 56.156644,
@@ -4805,6 +6916,12 @@
   "lon": 10.042596,
   "praecision": "by"
  },
+ "Lunddalsvej|Langå": {
+  "geokilde": "nominatim",
+  "lat": 56.363927,
+  "lon": 9.947837,
+  "praecision": "vej"
+ },
  "Lundeparken|Odder": {
   "geokilde": "nominatim",
   "lat": 55.969512,
@@ -4816,6 +6933,19 @@
   "lat": 55.969197,
   "lon": 10.158149,
   "praecision": "vej"
+ },
+ "Lykkesholms Allé|Viby J": {
+  "geokilde": "nominatim",
+  "lat": 56.133772,
+  "lon": 10.164922,
+  "praecision": "vej"
+ },
+ "Lykkeskovvej|Hørning": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 56.085919,
+  "lon": 10.035605,
+  "praecision": "by"
  },
  "Lyngbyvej|Trustrup": {
   "geokilde": "nominatim",
@@ -4841,6 +6971,19 @@
   "lon": 9.816751,
   "praecision": "vej"
  },
+ "Lyngvej|Risskov": {
+  "geokilde": "nominatim",
+  "lat": 56.196144,
+  "lon": 10.244699,
+  "praecision": "vej"
+ },
+ "Lysstrupgårdsparken|Odder": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 55.975832,
+  "lon": 10.15132,
+  "praecision": "by"
+ },
  "Lystenlund|Solbjerg": {
   "geokilde": "nominatim",
   "lat": 56.036737,
@@ -4851,6 +6994,12 @@
   "geokilde": "nominatim",
   "lat": 56.230043,
   "lon": 10.234357,
+  "praecision": "vej"
+ },
+ "Lystrupvej|Allingåbro": {
+  "geokilde": "nominatim",
+  "lat": 56.49657,
+  "lon": 10.456366,
   "praecision": "vej"
  },
  "Lystrupvej|Lystrup": {
@@ -4864,6 +7013,13 @@
   "lat": 56.207406,
   "lon": 10.235676,
   "praecision": "vej"
+ },
+ "Lystrupvej|Trustrup": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 56.348595,
+  "lon": 10.771194,
+  "praecision": "by"
  },
  "Lyøvej|Hadsten": {
   "geokilde": "nominatim",
@@ -4901,10 +7057,22 @@
   "lon": 10.314699,
   "praecision": "vej"
  },
+ "Løjstrupvej|Langå": {
+  "geokilde": "nominatim",
+  "lat": 56.376844,
+  "lon": 9.918528,
+  "praecision": "vej"
+ },
  "Løkkebjergvej|Tranebjerg": {
   "geokilde": "nominatim",
   "lat": 55.832956,
   "lon": 10.599094,
+  "praecision": "vej"
+ },
+ "Løkkenvej|Randers SV": {
+  "geokilde": "nominatim",
+  "lat": 56.441992,
+  "lon": 10.040638,
   "praecision": "vej"
  },
  "Løvenholmvej|Allingåbro": {
@@ -4931,6 +7099,12 @@
   "lon": 10.426925,
   "praecision": "vej"
  },
+ "M.C. Holsts Vej|Højbjerg": {
+  "geokilde": "nominatim",
+  "lat": 56.111551,
+  "lon": 10.205603,
+  "praecision": "vej"
+ },
  "M.P. Hansens Vej|Højbjerg": {
   "geokilde": "nominatim",
   "lat": 56.115756,
@@ -4941,6 +7115,16 @@
   "geokilde": "nominatim",
   "lat": 56.13443,
   "lon": 10.187056,
+  "praecision": "vej"
+ },
+ "Majsvænget|": {
+  "dato": "2026-10-24",
+  "fejl": true
+ },
+ "Majsvænget|Malling": {
+  "geokilde": "nominatim",
+  "lat": 56.041498,
+  "lon": 10.20324,
   "praecision": "vej"
  },
  "Majvej|Aarhus V": {
@@ -5003,6 +7187,12 @@
   "lon": 10.716973,
   "praecision": "vej"
  },
+ "Mariendalsvej|Randers SV": {
+  "geokilde": "nominatim",
+  "lat": 56.443491,
+  "lon": 10.034865,
+  "praecision": "vej"
+ },
  "Marienholtvej|Ryomgård": {
   "geokilde": "nominatim",
   "lat": 56.348445,
@@ -5033,10 +7223,22 @@
   "lon": 10.031637,
   "praecision": "vej"
  },
+ "Markskellet|Malling": {
+  "geokilde": "nominatim",
+  "lat": 56.039376,
+  "lon": 10.204445,
+  "praecision": "vej"
+ },
  "Marselis Boulevard|Aarhus C": {
   "geokilde": "nominatim",
   "lat": 56.140804,
   "lon": 10.19656,
+  "praecision": "vej"
+ },
+ "Marselisvej|Aarhus C": {
+  "geokilde": "nominatim",
+  "lat": 56.139901,
+  "lon": 10.20254,
   "praecision": "vej"
  },
  "Marstrandsgade|Aarhus C": {
@@ -5070,6 +7272,12 @@
   "lon": 10.261269,
   "praecision": "vej"
  },
+ "Mejlbyvej|Hårup": {
+  "geokilde": "nominatim",
+  "lat": 56.277225,
+  "lon": 10.233421,
+  "praecision": "vej"
+ },
  "Mejlgade|Aarhus C": {
   "geokilde": "nominatim",
   "lat": 56.160387,
@@ -5100,6 +7308,12 @@
   "lon": 10.051167,
   "praecision": "vej"
  },
+ "Midtagervej|Viby J": {
+  "geokilde": "nominatim",
+  "lat": 56.12456,
+  "lon": 10.178906,
+  "praecision": "vej"
+ },
  "Miltonsvej|Højbjerg": {
   "geokilde": "nominatim",
   "lat": 56.117658,
@@ -5110,6 +7324,12 @@
   "geokilde": "nominatim",
   "lat": 56.117658,
   "lon": 10.202464,
+  "praecision": "vej"
+ },
+ "Mimersvej|Randers NV": {
+  "geokilde": "nominatim",
+  "lat": 56.476795,
+  "lon": 10.020578,
   "praecision": "vej"
  },
  "Mimosevej|Langå": {
@@ -5137,6 +7357,13 @@
   "lat": 56.263191,
   "lon": 9.868521,
   "praecision": "vej"
+ },
+ "Minthøjvej|Hasle": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 55.183802,
+  "lon": 14.706171,
+  "praecision": "by"
  },
  "Mirabellevej|Risskov": {
   "geokilde": "nominatim",
@@ -5192,6 +7419,29 @@
   "lon": 10.199923,
   "praecision": "vej"
  },
+ "Morelvej|": {
+  "dato": "2026-10-24",
+  "fejl": true
+ },
+ "Mortensensvej|Auning": {
+  "geokilde": "nominatim",
+  "lat": 56.430646,
+  "lon": 10.368955,
+  "praecision": "vej"
+ },
+ "Mortensvej|Auning": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 56.43145,
+  "lon": 10.378186,
+  "praecision": "by"
+ },
+ "Morvads Allé|Højbjerg": {
+  "geokilde": "nominatim",
+  "lat": 56.117164,
+  "lon": 10.212614,
+  "praecision": "vej"
+ },
  "Mosealléen|Tilst": {
   "geokilde": "nominatim",
   "lat": 56.191273,
@@ -5202,6 +7452,12 @@
   "geokilde": "nominatim",
   "lat": 56.502395,
   "lon": 9.896594,
+  "praecision": "vej"
+ },
+ "Mosegårdsparken|Trige": {
+  "geokilde": "nominatim",
+  "lat": 56.296307,
+  "lon": 10.151717,
   "praecision": "vej"
  },
  "Moseparken|Tilst": {
@@ -5217,6 +7473,12 @@
   "praecision": "vej"
  },
  "Mosevænget|Randers": {
+  "geokilde": "nominatim",
+  "lat": 56.453438,
+  "lon": 9.962895,
+  "praecision": "vej"
+ },
+ "Mosevænget|Randers NV": {
   "geokilde": "nominatim",
   "lat": 56.453438,
   "lon": 9.962895,
@@ -5307,6 +7569,12 @@
   "lon": 10.153402,
   "praecision": "vej"
  },
+ "Mysundevej|Randers NØ": {
+  "geokilde": "nominatim",
+  "lat": 56.483959,
+  "lon": 10.031993,
+  "praecision": "vej"
+ },
  "Mågevej|Risskov": {
   "geokilde": "nominatim",
   "lat": 56.200254,
@@ -5343,10 +7611,22 @@
   "lon": 10.867024,
   "praecision": "vej"
  },
+ "Mølbjerget|Rodskov": {
+  "geokilde": "nominatim",
+  "lat": 56.302055,
+  "lon": 10.361803,
+  "praecision": "vej"
+ },
  "Møllebakken|Hasselager": {
   "geokilde": "nominatim",
   "lat": 56.109183,
   "lon": 10.119009,
+  "praecision": "vej"
+ },
+ "Møllebakken|Lading": {
+  "geokilde": "nominatim",
+  "lat": 56.22473,
+  "lon": 9.970052,
   "praecision": "vej"
  },
  "Møllebakken|Odder": {
@@ -5361,10 +7641,22 @@
   "lon": 10.266846,
   "praecision": "vej"
  },
+ "Møllegade|Randers C": {
+  "geokilde": "nominatim",
+  "lat": 56.463676,
+  "lon": 10.036707,
+  "praecision": "vej"
+ },
  "Møllegangen|Risskov": {
   "geokilde": "nominatim",
   "lat": 56.187478,
   "lon": 10.216455,
+  "praecision": "vej"
+ },
+ "Mølleparken|Mårslet": {
+  "geokilde": "nominatim",
+  "lat": 56.069881,
+  "lon": 10.15742,
   "praecision": "vej"
  },
  "Mølleparken|Randers C": {
@@ -5386,6 +7678,12 @@
   "lon": 10.3781855,
   "praecision": "by"
  },
+ "Møllersmindevej|Auning": {
+  "geokilde": "nominatim",
+  "lat": 56.42719,
+  "lon": 10.390273,
+  "praecision": "vej"
+ },
  "Møllestedet|Hornslet": {
   "geokilde": "nominatim",
   "lat": 56.314694,
@@ -5402,6 +7700,12 @@
   "geokilde": "nominatim",
   "lat": 56.256704,
   "lon": 9.848936,
+  "praecision": "vej"
+ },
+ "Møllevangen|Hinnerup": {
+  "geokilde": "nominatim",
+  "lat": 56.275185,
+  "lon": 10.076281,
   "praecision": "vej"
  },
  "Møllevangen|Risskov": {
@@ -5421,10 +7725,34 @@
   "dato": "2026-10-24",
   "fejl": true
  },
+ "Møllevangs Allé|Aarhus N": {
+  "geokilde": "nominatim",
+  "lat": 56.173079,
+  "lon": 10.185299,
+  "praecision": "vej"
+ },
+ "Møllevangs Allé|Aarhus V": {
+  "geokilde": "nominatim",
+  "lat": 56.173079,
+  "lon": 10.185299,
+  "praecision": "vej"
+ },
+ "Møllevej|Mørke": {
+  "geokilde": "nominatim",
+  "lat": 56.31965,
+  "lon": 10.368966,
+  "praecision": "vej"
+ },
  "Møllevej|Ørsted": {
   "geokilde": "nominatim",
   "lat": 56.503136,
   "lon": 10.335097,
+  "praecision": "vej"
+ },
+ "Nagelsvej|Højbjerg": {
+  "geokilde": "nominatim",
+  "lat": 56.116921,
+  "lon": 10.210269,
   "praecision": "vej"
  },
  "Nattergalevej|Aarhus V": {
@@ -5512,6 +7840,12 @@
   "lon": 10.177335,
   "praecision": "vej"
  },
+ "Niels Bjerres Vej|Højbjerg": {
+  "geokilde": "nominatim",
+  "lat": 56.114938,
+  "lon": 10.1935,
+  "praecision": "vej"
+ },
  "Niels Bohrs Vej|Viby J": {
   "geokilde": "nominatim",
   "lat": 56.131893,
@@ -5522,6 +7856,18 @@
   "geokilde": "nominatim",
   "lat": 56.170206,
   "lon": 10.214831,
+  "praecision": "vej"
+ },
+ "Niels W. Gades Vej|Aarhus C": {
+  "geokilde": "nominatim",
+  "lat": 56.132278,
+  "lon": 10.209471,
+  "praecision": "vej"
+ },
+ "Nimtoftevej|Ryomgård": {
+  "geokilde": "nominatim",
+  "lat": 56.382653,
+  "lon": 10.507252,
   "praecision": "vej"
  },
  "Nodrevej|Sabro": {
@@ -5537,10 +7883,28 @@
   "lon": 10.185662,
   "praecision": "vej"
  },
+ "Nordbyvej|Viby J": {
+  "geokilde": "nominatim",
+  "lat": 56.128652,
+  "lon": 10.158664,
+  "praecision": "vej"
+ },
+ "Nordmanvej|Egå": {
+  "geokilde": "nominatim",
+  "lat": 56.241274,
+  "lon": 10.328645,
+  "praecision": "vej"
+ },
  "Nordre Ringgade|Aarhus N": {
   "geokilde": "nominatim",
   "lat": 56.17336,
   "lon": 10.211859,
+  "praecision": "vej"
+ },
+ "Nordre Ringvej|Ryomgård": {
+  "geokilde": "nominatim",
+  "lat": 56.387154,
+  "lon": 10.503996,
   "praecision": "vej"
  },
  "Nordre Strandvej|Risskov": {
@@ -5559,6 +7923,12 @@
   "geokilde": "nominatim",
   "lat": 56.199054,
   "lon": 10.224624,
+  "praecision": "vej"
+ },
+ "Nordvej|Ørsted": {
+  "geokilde": "nominatim",
+  "lat": 56.522344,
+  "lon": 10.27082,
   "praecision": "vej"
  },
  "Nordvestpassagen|Aarhus N": {
@@ -5586,10 +7956,22 @@
   "lon": 10.040164,
   "praecision": "vej"
  },
+ "Norges Allé|Aarhus N": {
+  "geokilde": "nominatim",
+  "lat": 56.177166,
+  "lon": 10.198633,
+  "praecision": "vej"
+ },
  "Norgesvej|Hadsten": {
   "geokilde": "nominatim",
   "lat": 56.33499,
   "lon": 10.043744,
+  "praecision": "vej"
+ },
+ "Norringholmsvej|Viby J": {
+  "geokilde": "nominatim",
+  "lat": 56.134414,
+  "lon": 10.143177,
   "praecision": "vej"
  },
  "Norsmindevej|Malling": {
@@ -5605,11 +7987,24 @@
   "lon": 10.213405,
   "praecision": "by"
  },
+ "Novembervej|Aarhus V": {
+  "geokilde": "nominatim",
+  "lat": 56.175366,
+  "lon": 10.154242,
+  "praecision": "vej"
+ },
  "Ny Munkegade|Aarhus C": {
   "geokilde": "nominatim",
   "lat": 56.163795,
   "lon": 10.201466,
   "praecision": "vej"
+ },
+ "Ny Tilemansnsvej|Hammel": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 56.252613,
+  "lon": 9.861056,
+  "praecision": "by"
  },
  "Ny Tjørnegade|Aarhus N": {
   "geokilde": "nominatim",
@@ -5623,6 +8018,12 @@
   "lon": 10.204943,
   "praecision": "vej"
  },
+ "Nygade|Aarhus C": {
+  "geokilde": "nominatim",
+  "lat": 56.158136,
+  "lon": 10.203777,
+  "praecision": "vej"
+ },
  "Nygårdsvej|Højbjerg": {
   "geokilde": "nominatim",
   "lat": 56.110747,
@@ -5633,6 +8034,18 @@
   "geokilde": "nominatim",
   "lat": 56.32148,
   "lon": 10.030773,
+  "praecision": "vej"
+ },
+ "Nygårdsvænget|Rønde": {
+  "geokilde": "nominatim",
+  "lat": 56.303658,
+  "lon": 10.480832,
+  "praecision": "vej"
+ },
+ "Nykersvej|Aarhus V": {
+  "geokilde": "nominatim",
+  "lat": 56.176387,
+  "lon": 10.173984,
   "praecision": "vej"
  },
  "Nyløkkevej|Malling": {
@@ -5665,6 +8078,18 @@
   "lon": 9.996779,
   "praecision": "vej"
  },
+ "Nålemagervej|Randers NV": {
+  "geokilde": "nominatim",
+  "lat": 56.47387,
+  "lon": 10.007326,
+  "praecision": "vej"
+ },
+ "Næringen|Risskov": {
+  "geokilde": "nominatim",
+  "lat": 56.194476,
+  "lon": 10.198033,
+  "praecision": "vej"
+ },
  "Næsbyvej|Højbjerg": {
   "geokilde": "nominatim",
   "lat": 56.12076,
@@ -5675,6 +8100,24 @@
   "geokilde": "nominatim",
   "lat": 56.144952,
   "lon": 9.994647,
+  "praecision": "vej"
+ },
+ "Nødagervej|Kolind": {
+  "geokilde": "nominatim",
+  "lat": 56.353935,
+  "lon": 10.611167,
+  "praecision": "vej"
+ },
+ "Nøddevej|Viby J": {
+  "geokilde": "nominatim",
+  "lat": 56.133611,
+  "lon": 10.187447,
+  "praecision": "vej"
+ },
+ "Nødkær Allé|Højbjerg": {
+  "geokilde": "nominatim",
+  "lat": 56.107842,
+  "lon": 10.194552,
   "praecision": "vej"
  },
  "Nørgårdsvej|Randers SV": {
@@ -5695,6 +8138,18 @@
   "lon": 10.038272,
   "praecision": "vej"
  },
+ "Nørrebrogade|Randers C": {
+  "geokilde": "nominatim",
+  "lat": 56.474623,
+  "lon": 10.034798,
+  "praecision": "vej"
+ },
+ "Nørrebrogade|Randers NØ": {
+  "geokilde": "nominatim",
+  "lat": 56.474623,
+  "lon": 10.034798,
+  "praecision": "vej"
+ },
  "Nørregade|Aarhus C": {
   "geokilde": "nominatim",
   "lat": 56.161238,
@@ -5713,6 +8168,13 @@
   "lon": 10.505309,
   "praecision": "vej"
  },
+ "Nørreled|Hou": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 57.057385,
+  "lon": 10.366756,
+  "praecision": "by"
+ },
  "Nørreport|Ebeltoft": {
   "geokilde": "nominatim",
   "lat": 56.202287,
@@ -5725,12 +8187,24 @@
   "lon": 10.03326,
   "praecision": "vej"
  },
+ "Nørreskovvej|Hinnerup": {
+  "geokilde": "nominatim",
+  "lat": 56.262379,
+  "lon": 10.071498,
+  "praecision": "vej"
+ },
  "Nørreskovvej|Støvring": {
   "dato": "2026-10-24",
   "geokilde": "nominatim",
   "lat": 56.88472,
   "lon": 9.833064,
   "praecision": "by"
+ },
+ "Nørresundbyvej|Randers SV": {
+  "geokilde": "nominatim",
+  "lat": 56.445654,
+  "lon": 10.041052,
+  "praecision": "vej"
  },
  "Nørresøvej|Risskov": {
   "geokilde": "nominatim",
@@ -5752,16 +8226,34 @@
   "lon": 10.162458,
   "praecision": "by"
  },
+ "Obstrupengen|Mårslet": {
+  "geokilde": "nominatim",
+  "lat": 56.083547,
+  "lon": 10.145846,
+  "praecision": "vej"
+ },
  "Obstruptoften|Mårslet": {
   "geokilde": "nominatim",
   "lat": 56.081138,
   "lon": 10.146787,
   "praecision": "vej"
  },
+ "Oddervej|Hundslund": {
+  "geokilde": "nominatim",
+  "lat": 55.904804,
+  "lon": 10.026968,
+  "praecision": "vej"
+ },
  "Oddervej|Højbjerg": {
   "geokilde": "nominatim",
   "lat": 56.12258,
   "lon": 10.207487,
+  "praecision": "vej"
+ },
+ "Odinsvej|Spentrup": {
+  "geokilde": "nominatim",
+  "lat": 56.536048,
+  "lon": 10.038796,
   "praecision": "vej"
  },
  "Oehlenschlægersvej|Åbyhøj": {
@@ -5782,6 +8274,12 @@
   "lon": 10.201029,
   "praecision": "vej"
  },
+ "Ollerupvej|Højbjerg": {
+  "geokilde": "nominatim",
+  "lat": 56.119118,
+  "lon": 10.170004,
+  "praecision": "vej"
+ },
  "Oluf Palmes Allé|Aarhus N": {
   "dato": "2026-10-24",
   "geokilde": "nominatim",
@@ -5793,6 +8291,18 @@
   "geokilde": "nominatim",
   "lat": 56.442986,
   "lon": 10.053429,
+  "praecision": "vej"
+ },
+ "Ordrupvej|Aarhus C": {
+  "geokilde": "nominatim",
+  "lat": 56.138286,
+  "lon": 10.192681,
+  "praecision": "vej"
+ },
+ "Orholt Allé|Tranbjerg J": {
+  "geokilde": "nominatim",
+  "lat": 56.086482,
+  "lon": 10.116678,
   "praecision": "vej"
  },
  "Orionsvej|Hinnerup": {
@@ -5807,6 +8317,12 @@
   "lon": 10.191434,
   "praecision": "vej"
  },
+ "Orla Lehmanns Allé|Aarhus C": {
+  "geokilde": "nominatim",
+  "lat": 56.149833,
+  "lon": 10.201163,
+  "praecision": "vej"
+ },
  "Ormslevvej|Viby J": {
   "geokilde": "nominatim",
   "lat": 56.12936,
@@ -5817,6 +8333,18 @@
   "geokilde": "nominatim",
   "lat": 56.176955,
   "lon": 10.117255,
+  "praecision": "vej"
+ },
+ "Otte Ruds Gade|Aarhus N": {
+  "geokilde": "nominatim",
+  "lat": 56.171873,
+  "lon": 10.214931,
+  "praecision": "vej"
+ },
+ "Otto Benzons Vej|Aarhus V": {
+  "geokilde": "nominatim",
+  "lat": 56.168112,
+  "lon": 10.186155,
   "praecision": "vej"
  },
  "Oust Møllevej|Randers NV": {
@@ -5879,6 +8407,18 @@
   "lon": 10.196563,
   "praecision": "vej"
  },
+ "Pagtervænget|Assentoft": {
+  "geokilde": "nominatim",
+  "lat": 56.43853,
+  "lon": 10.145964,
+  "praecision": "vej"
+ },
+ "Pallisvej|Brabrand": {
+  "geokilde": "nominatim",
+  "lat": 56.161711,
+  "lon": 10.129486,
+  "praecision": "vej"
+ },
  "Palmelunden|Randers SØ": {
   "geokilde": "nominatim",
   "lat": 56.453025,
@@ -5895,6 +8435,12 @@
   "geokilde": "nominatim",
   "lat": 56.428322,
   "lon": 10.070935,
+  "praecision": "vej"
+ },
+ "Park Alle|Randers SØ": {
+  "geokilde": "nominatim",
+  "lat": 56.439196,
+  "lon": 10.147616,
   "praecision": "vej"
  },
  "Park Allé|Ryomgård": {
@@ -5933,10 +8479,28 @@
   "lon": 10.222491,
   "praecision": "vej"
  },
+ "Permelillevej|Risskov": {
+  "geokilde": "nominatim",
+  "lat": 56.199573,
+  "lon": 10.230858,
+  "praecision": "vej"
+ },
+ "Peter Eriksens Vej|Malling": {
+  "geokilde": "nominatim",
+  "lat": 56.037928,
+  "lon": 10.26676,
+  "praecision": "vej"
+ },
  "Peter Fabers Vej|Aarhus V": {
   "geokilde": "nominatim",
   "lat": 56.168615,
   "lon": 10.186448,
+  "praecision": "vej"
+ },
+ "Piasminde|Randers SØ": {
+  "geokilde": "nominatim",
+  "lat": 56.444714,
+  "lon": 10.113017,
   "praecision": "vej"
  },
  "Pilealle|Ulstrup": {
@@ -5964,6 +8528,12 @@
   "lon": 9.990915,
   "praecision": "vej"
  },
+ "Pilevej|Harridslev": {
+  "geokilde": "nominatim",
+  "lat": 56.497277,
+  "lon": 10.124884,
+  "praecision": "vej"
+ },
  "Pilevej|Risskov": {
   "geokilde": "nominatim",
   "lat": 56.193121,
@@ -5976,16 +8546,52 @@
   "lon": 10.346907,
   "praecision": "vej"
  },
+ "Pilevænget|Odder": {
+  "geokilde": "nominatim",
+  "lat": 55.974715,
+  "lon": 10.164246,
+  "praecision": "vej"
+ },
+ "Pilevænget|Randers NV": {
+  "geokilde": "nominatim",
+  "lat": 56.457094,
+  "lon": 9.969947,
+  "praecision": "vej"
+ },
  "Pittevej|Thorsø": {
   "geokilde": "nominatim",
   "lat": 56.328096,
   "lon": 9.791855,
   "praecision": "vej"
  },
+ "Plantagevej|Egå": {
+  "geokilde": "nominatim",
+  "lat": 56.234188,
+  "lon": 10.32911,
+  "praecision": "vej"
+ },
+ "Plantagevej|Glesborg": {
+  "geokilde": "nominatim",
+  "lat": 56.527878,
+  "lon": 10.715196,
+  "praecision": "vej"
+ },
+ "Platanvej|Risskov": {
+  "geokilde": "nominatim",
+  "lat": 56.186965,
+  "lon": 10.24029,
+  "praecision": "vej"
+ },
  "Plutovej|Hadsten": {
   "geokilde": "nominatim",
   "lat": 56.323328,
   "lon": 10.030238,
+  "praecision": "vej"
+ },
+ "Plutovej|Højbjerg": {
+  "geokilde": "nominatim",
+  "lat": 56.121546,
+  "lon": 10.184792,
   "praecision": "vej"
  },
  "Podøvej|Ulstrup": {
@@ -6013,6 +8619,12 @@
   "lon": 10.107607,
   "praecision": "vej"
  },
+ "Porsgrunnsvej|Aarhus N": {
+  "geokilde": "nominatim",
+  "lat": 56.178378,
+  "lon": 10.178921,
+  "praecision": "vej"
+ },
  "Porskær|Brabrand": {
   "geokilde": "nominatim",
   "lat": 56.160781,
@@ -6025,10 +8637,20 @@
   "lon": 10.872359,
   "praecision": "vej"
  },
+ "Postvej|Foldby": {
+  "dato": "2026-10-24",
+  "fejl": true
+ },
  "Pottemagertoften|Højbjerg": {
   "geokilde": "nominatim",
   "lat": 56.104663,
   "lon": 10.168642,
+  "praecision": "vej"
+ },
+ "Poul Helgesens Vej|Viby J": {
+  "geokilde": "nominatim",
+  "lat": 56.131005,
+  "lon": 10.170701,
   "praecision": "vej"
  },
  "Poul M. Møllers Vej|Aarhus C": {
@@ -6042,6 +8664,12 @@
   "geokilde": "nominatim",
   "lat": 56.122334,
   "lon": 10.185463,
+  "praecision": "vej"
+ },
+ "Primulavej|Grenaa": {
+  "geokilde": "nominatim",
+  "lat": 56.420791,
+  "lon": 10.867785,
   "praecision": "vej"
  },
  "Prins Christiansgade|Randers": {
@@ -6136,6 +8764,12 @@
   "lon": 10.218344,
   "praecision": "vej"
  },
+ "Præstevangsvej|Aarhus V": {
+  "geokilde": "nominatim",
+  "lat": 56.163395,
+  "lon": 10.16853,
+  "praecision": "vej"
+ },
  "Præstevænget|Allingåbro": {
   "geokilde": "nominatim",
   "lat": 56.481438,
@@ -6166,6 +8800,24 @@
   "lon": 10.195095,
   "praecision": "vej"
  },
+ "Randersvej|Lisbjerg": {
+  "geokilde": "nominatim",
+  "lat": 56.209967,
+  "lon": 10.173791,
+  "praecision": "vej"
+ },
+ "Randersvej|Mørke": {
+  "geokilde": "nominatim",
+  "lat": 56.346883,
+  "lon": 10.358825,
+  "praecision": "vej"
+ },
+ "Randersvej|Spentrup": {
+  "geokilde": "nominatim",
+  "lat": 56.597279,
+  "lon": 9.99861,
+  "praecision": "vej"
+ },
  "Randersvej|Spørring": {
   "geokilde": "nominatim",
   "lat": 56.28329,
@@ -6182,6 +8834,18 @@
   "geokilde": "nominatim",
   "lat": 56.418462,
   "lon": 10.877614,
+  "praecision": "vej"
+ },
+ "Reginehøjvej|Aarhus N": {
+  "geokilde": "nominatim",
+  "lat": 56.179694,
+  "lon": 10.204489,
+  "praecision": "vej"
+ },
+ "Regnersgade|Viby J": {
+  "geokilde": "nominatim",
+  "lat": 56.137538,
+  "lon": 10.182006,
   "praecision": "vej"
  },
  "Reimersvej|Auning": {
@@ -6214,6 +8878,18 @@
   "lon": 10.160625,
   "praecision": "vej"
  },
+ "Revlingebakken|Lystrup": {
+  "geokilde": "nominatim",
+  "lat": 56.23499,
+  "lon": 10.227986,
+  "praecision": "vej"
+ },
+ "Ribesvej|Risskov": {
+  "geokilde": "nominatim",
+  "lat": 56.188499,
+  "lon": 10.232016,
+  "praecision": "vej"
+ },
  "Ridder Munks Vej|Thorsø": {
   "geokilde": "nominatim",
   "lat": 56.308144,
@@ -6230,6 +8906,22 @@
   "geokilde": "nominatim",
   "lat": 56.198726,
   "lon": 10.226308,
+  "praecision": "vej"
+ },
+ "Rimsø Bygade|": {
+  "dato": "2026-10-24",
+  "fejl": true
+ },
+ "Ringkøbingvej|Aarhus C": {
+  "geokilde": "nominatim",
+  "lat": 56.157686,
+  "lon": 10.18899,
+  "praecision": "vej"
+ },
+ "Ringvejen|Grenaa": {
+  "geokilde": "nominatim",
+  "lat": 56.405892,
+  "lon": 10.878109,
   "praecision": "vej"
  },
  "Risdalsvej|Viby J": {
@@ -6255,6 +8947,19 @@
   "lat": 56.477144,
   "lon": 10.067824,
   "praecision": "vej"
+ },
+ "Risvang Allé|Aarhus N": {
+  "geokilde": "nominatim",
+  "lat": 56.182791,
+  "lon": 10.21016,
+  "praecision": "vej"
+ },
+ "Risvangs Allé|Aarhus N": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 56.149628,
+  "lon": 10.213405,
+  "praecision": "by"
  },
  "Risvangsvej|Hjortshøj": {
   "geokilde": "nominatim",
@@ -6284,6 +8989,12 @@
   "geokilde": "nominatim",
   "lat": 56.140191,
   "lon": 9.983291,
+  "praecision": "vej"
+ },
+ "Rodskovvej|Hornslet": {
+  "geokilde": "nominatim",
+  "lat": 56.314193,
+  "lon": 10.324618,
   "praecision": "vej"
  },
  "Rodstensgade|Odder": {
@@ -6316,10 +9027,28 @@
   "lon": 10.238433,
   "praecision": "vej"
  },
+ "Rolsøgårdvej|Knebel": {
+  "geokilde": "nominatim",
+  "lat": 56.23872,
+  "lon": 10.476295,
+  "praecision": "vej"
+ },
  "Romaltvej|Randers SØ": {
   "geokilde": "nominatim",
   "lat": 56.450731,
   "lon": 10.095456,
+  "praecision": "vej"
+ },
+ "Rosenbakken|Grenaa": {
+  "geokilde": "nominatim",
+  "lat": 56.419219,
+  "lon": 10.869499,
+  "praecision": "vej"
+ },
+ "Rosenborg Alle|Randers NV": {
+  "geokilde": "nominatim",
+  "lat": 56.472366,
+  "lon": 10.011269,
   "praecision": "vej"
  },
  "Rosendalvej|Viby J": {
@@ -6335,6 +9064,12 @@
   "lon": 10.132303,
   "praecision": "by"
  },
+ "Rosenholms Allé|Viby J": {
+  "geokilde": "nominatim",
+  "lat": 56.135559,
+  "lon": 10.16807,
+  "praecision": "vej"
+ },
  "Rosenholmvej|Hornslet": {
   "geokilde": "nominatim",
   "lat": 56.328129,
@@ -6345,6 +9080,12 @@
   "geokilde": "nominatim",
   "lat": 56.115223,
   "lon": 10.144628,
+  "praecision": "vej"
+ },
+ "Rosenhøjvej|Rønde": {
+  "geokilde": "nominatim",
+  "lat": 56.305419,
+  "lon": 10.409119,
   "praecision": "vej"
  },
  "Rosenkrantzgade|Aarhus C": {
@@ -6389,6 +9130,12 @@
   "lon": 10.042253,
   "praecision": "vej"
  },
+ "Rosenvej|Stevnstrup": {
+  "geokilde": "nominatim",
+  "lat": 56.430974,
+  "lon": 9.939602,
+  "praecision": "vej"
+ },
  "Rougsovej|Allingåbro": {
   "dato": "2026-10-24",
   "geokilde": "nominatim",
@@ -6403,10 +9150,28 @@
   "lon": 11.7135474,
   "praecision": "by"
  },
+ "Rougsøvej|Ørsted": {
+  "geokilde": "nominatim",
+  "lat": 56.502765,
+  "lon": 10.334665,
+  "praecision": "vej"
+ },
+ "Roukær Allé|Højbjerg": {
+  "geokilde": "nominatim",
+  "lat": 56.108493,
+  "lon": 10.190687,
+  "praecision": "vej"
+ },
  "Rouloen|Egå": {
   "geokilde": "nominatim",
   "lat": 56.20805,
   "lon": 10.281989,
+  "praecision": "vej"
+ },
+ "Rudolph Wulffs Gade|Aarhus C": {
+  "geokilde": "nominatim",
+  "lat": 56.140243,
+  "lon": 10.184743,
   "praecision": "vej"
  },
  "Rugbjergvej|Viby J": {
@@ -6446,11 +9211,27 @@
   "lon": 10.579386,
   "praecision": "vej"
  },
+ "Rugårdsvej|Balle": {
+  "geokilde": "nominatim",
+  "lat": 56.30195,
+  "lon": 10.808447,
+  "praecision": "vej"
+ },
  "Runddelsvej|Randers NØ": {
   "geokilde": "nominatim",
   "lat": 56.474782,
   "lon": 10.074111,
   "praecision": "vej"
+ },
+ "Rundhøj Allé i|Højbjerg": {
+  "geokilde": "nominatim",
+  "lat": 56.12046,
+  "lon": 10.180456,
+  "praecision": "vej"
+ },
+ "Runehøjen|": {
+  "dato": "2026-10-24",
+  "fejl": true
  },
  "Runehøjen|Aarhus V": {
   "geokilde": "nominatim",
@@ -6476,10 +9257,22 @@
   "lon": 10.166369,
   "praecision": "vej"
  },
+ "Ryhaven|Aarhus V": {
+  "geokilde": "nominatim",
+  "lat": 56.161566,
+  "lon": 10.149002,
+  "praecision": "vej"
+ },
  "Ryhavevej|Aarhus V": {
   "geokilde": "nominatim",
   "lat": 56.164517,
   "lon": 10.152305,
+  "praecision": "vej"
+ },
+ "Rymarken i|Aarhus V": {
+  "geokilde": "nominatim",
+  "lat": 56.167824,
+  "lon": 10.156226,
   "praecision": "vej"
  },
  "Rymarksvej|Risskov": {
@@ -6498,6 +9291,12 @@
   "geokilde": "nominatim",
   "lat": 56.116808,
   "lon": 10.214516,
+  "praecision": "vej"
+ },
+ "Rypevej|Langå": {
+  "geokilde": "nominatim",
+  "lat": 56.403178,
+  "lon": 9.90563,
   "praecision": "vej"
  },
  "Ryslingevej|Højbjerg": {
@@ -6524,6 +9323,13 @@
   "lon": 10.26777,
   "praecision": "vej"
  },
+ "Ryvej|Hasle": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 55.183802,
+  "lon": 14.706171,
+  "praecision": "by"
+ },
  "Rådhusgade|Odder": {
   "geokilde": "nominatim",
   "lat": 55.980775,
@@ -6534,6 +9340,24 @@
   "geokilde": "nominatim",
   "lat": 56.400395,
   "lon": 10.873878,
+  "praecision": "vej"
+ },
+ "Rådyrvej|Søften": {
+  "geokilde": "nominatim",
+  "lat": 56.233524,
+  "lon": 10.094053,
+  "praecision": "vej"
+ },
+ "Råhøj Allé|Højbjerg": {
+  "geokilde": "nominatim",
+  "lat": 56.121652,
+  "lon": 10.197868,
+  "praecision": "vej"
+ },
+ "Råhøjparken|Stavtrup": {
+  "geokilde": "nominatim",
+  "lat": 56.129317,
+  "lon": 10.109937,
   "praecision": "vej"
  },
  "Råhøjparken|Viby J": {
@@ -6572,6 +9396,24 @@
   "lon": 9.982732,
   "praecision": "vej"
  },
+ "Rødlundvej|Lillering": {
+  "geokilde": "nominatim",
+  "lat": 56.144045,
+  "lon": 9.986266,
+  "praecision": "vej"
+ },
+ "Rødtjørnevej|Laurbjerg": {
+  "geokilde": "nominatim",
+  "lat": 56.356029,
+  "lon": 9.922594,
+  "praecision": "vej"
+ },
+ "Røgelvej|Brabrand": {
+  "geokilde": "nominatim",
+  "lat": 56.154577,
+  "lon": 10.126898,
+  "praecision": "vej"
+ },
  "Røjhøjs Ager|Odder": {
   "dato": "2026-10-24",
   "geokilde": "nominatim",
@@ -6603,6 +9445,32 @@
   "lon": 10.242021,
   "praecision": "vej"
  },
+ "Rønnevej|Harridslev": {
+  "geokilde": "nominatim",
+  "lat": 56.4985,
+  "lon": 10.130962,
+  "praecision": "vej"
+ },
+ "Rønnevej|Risskov": {
+  "geokilde": "nominatim",
+  "lat": 56.18791,
+  "lon": 10.240941,
+  "praecision": "vej"
+ },
+ "Rønsbjergvej|Risskov": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 56.201768,
+  "lon": 10.241958,
+  "praecision": "by"
+ },
+ "Rønshøjs Ager|Odder": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 55.975832,
+  "lon": 10.15132,
+  "praecision": "by"
+ },
  "Rønvangen|Hinnerup": {
   "geokilde": "nominatim",
   "lat": 56.253606,
@@ -6613,6 +9481,12 @@
   "geokilde": "nominatim",
   "lat": 56.147093,
   "lon": 10.137878,
+  "praecision": "vej"
+ },
+ "Rørsangervej|Odder": {
+  "geokilde": "nominatim",
+  "lat": 55.97086,
+  "lon": 10.166758,
   "praecision": "vej"
  },
  "Rørthvej|Odder": {
@@ -6645,10 +9519,22 @@
   "lon": 10.102487,
   "praecision": "vej"
  },
+ "Salonikivej|Hjortshøj": {
+  "geokilde": "nominatim",
+  "lat": 56.287768,
+  "lon": 10.212164,
+  "praecision": "vej"
+ },
  "Saloparken|Odder": {
   "geokilde": "nominatim",
   "lat": 55.980618,
   "lon": 10.140825,
+  "praecision": "vej"
+ },
+ "Saltholmsgade|Aarhus C": {
+  "geokilde": "nominatim",
+  "lat": 56.158752,
+  "lon": 10.195801,
   "praecision": "vej"
  },
  "Saløparken|Odder": {
@@ -6657,16 +9543,46 @@
   "lon": 10.140825,
   "praecision": "vej"
  },
+ "Samsøgade|Aarhus C": {
+  "geokilde": "nominatim",
+  "lat": 56.162149,
+  "lon": 10.201203,
+  "praecision": "vej"
+ },
+ "Samuel Morses Vej|Skejby": {
+  "geokilde": "nominatim",
+  "lat": 56.201985,
+  "lon": 10.186411,
+  "praecision": "vej"
+ },
+ "Sandagervej|Randers SØ": {
+  "geokilde": "nominatim",
+  "lat": 56.442878,
+  "lon": 10.145114,
+  "praecision": "vej"
+ },
  "Sandbakken|Højbjerg": {
   "geokilde": "nominatim",
   "lat": 56.105067,
   "lon": 10.218541,
   "praecision": "vej"
  },
+ "Sandbakkevej i|Grenaa": {
+  "geokilde": "nominatim",
+  "lat": 56.414545,
+  "lon": 10.908318,
+  "praecision": "vej"
+ },
  "Sandkåsvej|Aarhus V": {
   "geokilde": "nominatim",
   "lat": 56.180836,
   "lon": 10.171275,
+  "praecision": "vej"
+ },
+ "Sandmarkvej|Mørke": {
+  "geokilde": "nominatim",
+  "lat": 56.367175,
+  "lon": 10.387254,
   "praecision": "vej"
  },
  "Sandmosevej|Højbjerg": {
@@ -6687,6 +9603,24 @@
   "lon": 10.188099,
   "praecision": "vej"
  },
+ "Sankt Anna Gade|Aarhus C": {
+  "geokilde": "nominatim",
+  "lat": 56.14559,
+  "lon": 10.198741,
+  "praecision": "vej"
+ },
+ "Sankt Pauls Kirkeplads|Aarhus C": {
+  "geokilde": "nominatim",
+  "lat": 56.146073,
+  "lon": 10.204231,
+  "praecision": "vej"
+ },
+ "Saralyst Allé|Højbjerg": {
+  "geokilde": "nominatim",
+  "lat": 56.111021,
+  "lon": 10.18893,
+  "praecision": "vej"
+ },
  "Saralystvej|Højbjerg": {
   "geokilde": "nominatim",
   "lat": 56.122722,
@@ -6703,6 +9637,12 @@
   "geokilde": "nominatim",
   "lat": 56.241485,
   "lon": 10.081011,
+  "praecision": "vej"
+ },
+ "Saxovej|Randers SØ": {
+  "geokilde": "nominatim",
+  "lat": 56.444576,
+  "lon": 10.071899,
   "praecision": "vej"
  },
  "Schleppegrellsgade|Aarhus C": {
@@ -6748,10 +9688,28 @@
   "lon": 10.017128,
   "praecision": "vej"
  },
+ "Serinehøjen|Malling": {
+  "geokilde": "nominatim",
+  "lat": 56.023515,
+  "lon": 10.188226,
+  "praecision": "vej"
+ },
+ "Sifsgade|Åbyhøj": {
+  "geokilde": "nominatim",
+  "lat": 56.15014,
+  "lon": 10.170181,
+  "praecision": "vej"
+ },
  "Sigridsvej|Brabrand": {
   "geokilde": "nominatim",
   "lat": 56.156064,
   "lon": 10.130881,
+  "praecision": "vej"
+ },
+ "Silkeborgvej|Aarhus C": {
+  "geokilde": "nominatim",
+  "lat": 56.15429,
+  "lon": 10.153131,
   "praecision": "vej"
  },
  "Silkeborgvej|Brabrand": {
@@ -6766,16 +9724,52 @@
   "lon": 10.172822,
   "praecision": "vej"
  },
+ "Sivestedodde|Kolind": {
+  "geokilde": "nominatim",
+  "lat": 56.375776,
+  "lon": 10.621476,
+  "praecision": "vej"
+ },
  "Sivhaven|Randers NV": {
   "geokilde": "nominatim",
   "lat": 56.47899,
   "lon": 10.007735,
   "praecision": "vej"
  },
+ "Sivsangervej|Brabrand": {
+  "geokilde": "nominatim",
+  "lat": 56.147283,
+  "lon": 10.135488,
+  "praecision": "vej"
+ },
+ "Siøvej|Hadsten": {
+  "geokilde": "nominatim",
+  "lat": 56.330297,
+  "lon": 10.066167,
+  "praecision": "vej"
+ },
+ "Sjellebrovej|Mørke": {
+  "geokilde": "nominatim",
+  "lat": 56.397651,
+  "lon": 10.248524,
+  "praecision": "vej"
+ },
  "Sjællandsgade|Randers C": {
   "geokilde": "nominatim",
   "lat": 56.465154,
   "lon": 10.01727,
+  "praecision": "vej"
+ },
+ "Skaføvej|Randers NØ": {
+  "geokilde": "nominatim",
+  "lat": 56.471395,
+  "lon": 10.058419,
+  "praecision": "vej"
+ },
+ "Skagenvej|Egå": {
+  "geokilde": "nominatim",
+  "lat": 56.219485,
+  "lon": 10.29225,
   "praecision": "vej"
  },
  "Skalhøjvej|Nimtofte": {
@@ -6808,6 +9802,18 @@
   "lon": 10.045578,
   "praecision": "vej"
  },
+ "Skansebakken|Ebeltoft": {
+  "geokilde": "nominatim",
+  "lat": 56.190603,
+  "lon": 10.678598,
+  "praecision": "vej"
+ },
+ "Skansebo|Randers SV": {
+  "geokilde": "nominatim",
+  "lat": 56.450525,
+  "lon": 10.044114,
+  "praecision": "vej"
+ },
  "Skejby Vænge|Aarhus N": {
   "geokilde": "nominatim",
   "lat": 56.195504,
@@ -6838,6 +9844,12 @@
   "lon": 10.193442,
   "praecision": "vej"
  },
+ "Skelbækvej|Risskov": {
+  "geokilde": "nominatim",
+  "lat": 56.191606,
+  "lon": 10.223507,
+  "praecision": "vej"
+ },
  "Skeltoften|Beder": {
   "geokilde": "nominatim",
   "lat": 56.05785,
@@ -6860,6 +9872,12 @@
   "geokilde": "nominatim",
   "lat": 56.137336,
   "lon": 10.029009,
+  "praecision": "vej"
+ },
+ "Skindergade|Ebeltoft": {
+  "geokilde": "nominatim",
+  "lat": 56.201092,
+  "lon": 10.679969,
   "praecision": "vej"
  },
  "Skippershovedvej|Ørum Djurs": {
@@ -6891,6 +9909,12 @@
   "lon": 10.325844,
   "praecision": "vej"
  },
+ "Skjoldborgs Vej|Hadsten": {
+  "geokilde": "nominatim",
+  "lat": 56.307626,
+  "lon": 10.09858,
+  "praecision": "vej"
+ },
  "Skjoldsgade|Viby J": {
   "geokilde": "nominatim",
   "lat": 56.13738,
@@ -6903,6 +9927,12 @@
   "lon": 10.499991,
   "praecision": "vej"
  },
+ "Skolegyden|Auning": {
+  "geokilde": "nominatim",
+  "lat": 56.43006,
+  "lon": 10.383075,
+  "praecision": "vej"
+ },
  "Skoleparken|Beder": {
   "geokilde": "nominatim",
   "lat": 56.063177,
@@ -6913,6 +9943,12 @@
   "geokilde": "nominatim",
   "lat": 56.414364,
   "lon": 10.870685,
+  "praecision": "vej"
+ },
+ "Skolesvinget|Risskov": {
+  "geokilde": "nominatim",
+  "lat": 56.195306,
+  "lon": 10.226213,
   "praecision": "vej"
  },
  "Skolevangs Allé|Risskov": {
@@ -6928,6 +9964,12 @@
   "lon": 10.241958,
   "praecision": "by"
  },
+ "Skolevej|Egå": {
+  "geokilde": "nominatim",
+  "lat": 56.208394,
+  "lon": 10.279128,
+  "praecision": "vej"
+ },
  "Skolevej|Langå": {
   "geokilde": "nominatim",
   "lat": 56.359097,
@@ -6938,6 +9980,18 @@
   "geokilde": "nominatim",
   "lat": 56.469017,
   "lon": 10.022702,
+  "praecision": "vej"
+ },
+ "Skolevej|Rønde": {
+  "geokilde": "nominatim",
+  "lat": 56.301767,
+  "lon": 10.478032,
+  "praecision": "vej"
+ },
+ "Skolevænget|Tranebjerg": {
+  "geokilde": "nominatim",
+  "lat": 55.830311,
+  "lon": 10.587185,
   "praecision": "vej"
  },
  "Skovagervej|Risskov": {
@@ -6952,6 +10006,12 @@
   "lon": 10.110684,
   "praecision": "vej"
  },
+ "Skovbakkevej|Grenaa": {
+  "geokilde": "nominatim",
+  "lat": 56.412719,
+  "lon": 10.907163,
+  "praecision": "vej"
+ },
  "Skovbrynet|Grenaa": {
   "geokilde": "nominatim",
   "lat": 56.401063,
@@ -6964,6 +10024,12 @@
   "lon": 9.856361,
   "praecision": "vej"
  },
+ "Skovbrynet|Pindstrup": {
+  "geokilde": "nominatim",
+  "lat": 56.391968,
+  "lon": 10.422012,
+  "praecision": "vej"
+ },
  "Skovdalsvej|Auning": {
   "geokilde": "nominatim",
   "lat": 56.431695,
@@ -6974,6 +10040,12 @@
   "geokilde": "nominatim",
   "lat": 56.134776,
   "lon": 10.181798,
+  "praecision": "vej"
+ },
+ "Skovfaldet|Aarhus N": {
+  "geokilde": "nominatim",
+  "lat": 56.177096,
+  "lon": 10.216719,
   "praecision": "vej"
  },
  "Skovgårdsvænget|Tranbjerg J": {
@@ -6998,6 +10070,12 @@
   "geokilde": "nominatim",
   "lat": 56.402911,
   "lon": 10.878394,
+  "praecision": "vej"
+ },
+ "Skovlundgårdsvej|Viby J": {
+  "geokilde": "nominatim",
+  "lat": 56.123772,
+  "lon": 10.131435,
   "praecision": "vej"
  },
  "Skovlundsvej|Odder": {
@@ -7028,6 +10106,12 @@
   "geokilde": "nominatim",
   "lat": 56.125411,
   "lon": 10.203837,
+  "praecision": "vej"
+ },
+ "Skovsangervej|Assentoft": {
+  "geokilde": "nominatim",
+  "lat": 56.452416,
+  "lon": 10.164144,
   "praecision": "vej"
  },
  "Skovsangervej|Hinnerup": {
@@ -7066,10 +10150,22 @@
   "lon": 10.877816,
   "praecision": "vej"
  },
+ "Skovsvinget|Grenaa": {
+  "geokilde": "nominatim",
+  "lat": 56.401387,
+  "lon": 10.878899,
+  "praecision": "vej"
+ },
  "Skovsvinget|Hornslet": {
   "geokilde": "nominatim",
   "lat": 56.301835,
   "lon": 10.363825,
+  "praecision": "vej"
+ },
+ "Skovsvinget|Ryomgård": {
+  "geokilde": "nominatim",
+  "lat": 56.39135,
+  "lon": 10.419666,
   "praecision": "vej"
  },
  "Skovvangen|Grenaa": {
@@ -7137,6 +10233,13 @@
   "lat": 56.146073,
   "lon": 10.204231,
   "praecision": "vej"
+ },
+ "Skydstrupvej|Aarhus N": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 56.149628,
+  "lon": 10.213405,
+  "praecision": "by"
  },
  "Skytten|Randers NV": {
   "geokilde": "nominatim",
@@ -7228,6 +10331,18 @@
   "lon": 10.504443,
   "praecision": "vej"
  },
+ "Slotsparken|Rønde": {
+  "geokilde": "nominatim",
+  "lat": 56.301317,
+  "lon": 10.480743,
+  "praecision": "vej"
+ },
+ "Slotsvej|Karlby": {
+  "geokilde": "nominatim",
+  "lat": 56.339998,
+  "lon": 10.309855,
+  "praecision": "vej"
+ },
  "Slotsvej|Ulstrup": {
   "dato": "2026-10-24",
   "geokilde": "nominatim",
@@ -7248,10 +10363,22 @@
   "lon": 10.264586,
   "praecision": "vej"
  },
+ "Smedegyde|Ørsted": {
+  "geokilde": "nominatim",
+  "lat": 56.502517,
+  "lon": 10.333467,
+  "praecision": "vej"
+ },
  "Smedegårds Allé|Malling": {
   "geokilde": "nominatim",
   "lat": 56.036454,
   "lon": 10.189454,
+  "praecision": "vej"
+ },
+ "Smouenvej|Rønde": {
+  "geokilde": "nominatim",
+  "lat": 56.316805,
+  "lon": 10.485103,
   "praecision": "vej"
  },
  "Snebærvej|Højbjerg": {
@@ -7260,10 +10387,28 @@
   "lon": 10.181432,
   "praecision": "vej"
  },
+ "Snedkervænget|Hornslet": {
+  "geokilde": "nominatim",
+  "lat": 56.321284,
+  "lon": 10.323941,
+  "praecision": "vej"
+ },
  "Snerlevej|Langå": {
   "geokilde": "nominatim",
   "lat": 56.432506,
   "lon": 9.935573,
+  "praecision": "vej"
+ },
+ "Snerlevej|Randers NØ": {
+  "geokilde": "nominatim",
+  "lat": 56.474801,
+  "lon": 10.030523,
+  "praecision": "vej"
+ },
+ "Snogebæksvej|Aarhus V": {
+  "geokilde": "nominatim",
+  "lat": 56.175735,
+  "lon": 10.169043,
   "praecision": "vej"
  },
  "Snærild Bakke|Odder": {
@@ -7277,6 +10422,13 @@
   "lat": 55.97374,
   "lon": 10.12433,
   "praecision": "vej"
+ },
+ "Sofienlundparken|Ulstrup": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 55.5399,
+  "lon": 11.255486,
+  "praecision": "by"
  },
  "Solagervej|Egå": {
   "geokilde": "nominatim",
@@ -7333,6 +10485,13 @@
   "lon": 10.026361,
   "praecision": "vej"
  },
+ "Solhøjvej|Hasle": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 55.183802,
+  "lon": 14.706171,
+  "praecision": "by"
+ },
  "Solhøjvej|Hornslet": {
   "geokilde": "nominatim",
   "lat": 56.336507,
@@ -7376,6 +10535,12 @@
   "lon": 10.115799,
   "praecision": "vej"
  },
+ "Solskrænten|Thorsø": {
+  "geokilde": "nominatim",
+  "lat": 56.303345,
+  "lon": 9.791254,
+  "praecision": "vej"
+ },
  "Solsortevej|Aarhus V": {
   "geokilde": "nominatim",
   "lat": 56.165787,
@@ -7394,6 +10559,12 @@
   "lon": 10.882727,
   "praecision": "vej"
  },
+ "Solvangsvej|Randers SV": {
+  "geokilde": "nominatim",
+  "lat": 56.429527,
+  "lon": 10.03305,
+  "praecision": "vej"
+ },
  "Sommersmindevej|Egå": {
   "geokilde": "nominatim",
   "lat": 56.230178,
@@ -7404,6 +10575,12 @@
   "geokilde": "nominatim",
   "lat": 55.906673,
   "lon": 10.062582,
+  "praecision": "vej"
+ },
+ "Sonnesgade|Aarhus C": {
+  "geokilde": "nominatim",
+  "lat": 56.151597,
+  "lon": 10.193189,
   "praecision": "vej"
  },
  "Sophus Bauditz Vej|Åbyhøj": {
@@ -7461,10 +10638,41 @@
   "lon": 10.188502,
   "praecision": "vej"
  },
+ "Spøttrupvej|Randers NØ": {
+  "geokilde": "nominatim",
+  "lat": 56.472513,
+  "lon": 10.069472,
+  "praecision": "vej"
+ },
+ "St. Blichers Vej|Aarhus V": {
+  "geokilde": "nominatim",
+  "lat": 56.159,
+  "lon": 10.152521,
+  "praecision": "vej"
+ },
+ "St. Blichersvej|Aarhus V": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 56.149628,
+  "lon": 10.213405,
+  "praecision": "by"
+ },
+ "Stadion Alle|Auning": {
+  "geokilde": "nominatim",
+  "lat": 56.427535,
+  "lon": 10.387553,
+  "praecision": "vej"
+ },
  "Stadion Allé|Aarhus C": {
   "geokilde": "nominatim",
   "lat": 56.140219,
   "lon": 10.194753,
+  "praecision": "vej"
+ },
+ "Stadion Allé|Auning": {
+  "geokilde": "nominatim",
+  "lat": 56.427535,
+  "lon": 10.387553,
   "praecision": "vej"
  },
  "Stadion Allé|Grenaa": {
@@ -7517,6 +10725,12 @@
   "lon": 10.304518,
   "praecision": "vej"
  },
+ "Stationsvej|Beder": {
+  "geokilde": "nominatim",
+  "lat": 56.056316,
+  "lon": 10.20031,
+  "praecision": "vej"
+ },
  "Stationsvej|Rønde": {
   "geokilde": "nominatim",
   "lat": 56.35567,
@@ -7527,6 +10741,12 @@
   "geokilde": "nominatim",
   "lat": 56.537952,
   "lon": 10.038987,
+  "praecision": "vej"
+ },
+ "Stavangergade|Aarhus N": {
+  "geokilde": "nominatim",
+  "lat": 56.175442,
+  "lon": 10.198924,
   "praecision": "vej"
  },
  "Stavnsbakken|Risskov": {
@@ -7547,6 +10767,12 @@
   "lon": 10.117845,
   "praecision": "vej"
  },
+ "Steen Blichers Gade|Randers": {
+  "geokilde": "nominatim",
+  "lat": 56.462525,
+  "lon": 10.028871,
+  "praecision": "vej"
+ },
  "Steen Blichers Gade|Randers C": {
   "geokilde": "nominatim",
   "lat": 56.462525,
@@ -7559,6 +10785,13 @@
   "lon": 10.028871,
   "praecision": "vej"
  },
+ "Stejlagervej|Hasle": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 55.183802,
+  "lon": 14.706171,
+  "praecision": "by"
+ },
  "Stejlbjerg|Hornslet": {
   "geokilde": "nominatim",
   "lat": 56.319906,
@@ -7569,6 +10802,12 @@
   "geokilde": "nominatim",
   "lat": 56.461387,
   "lon": 10.041936,
+  "praecision": "vej"
+ },
+ "Stenagervej|Ebeltoft": {
+  "geokilde": "nominatim",
+  "lat": 56.16519,
+  "lon": 10.673048,
   "praecision": "vej"
  },
  "Stenbækhave|Brabrand": {
@@ -7587,6 +10826,12 @@
   "geokilde": "nominatim",
   "lat": 56.231251,
   "lon": 10.244643,
+  "praecision": "vej"
+ },
+ "Stenkløvervej|Randers NV": {
+  "geokilde": "nominatim",
+  "lat": 56.481302,
+  "lon": 10.010107,
   "praecision": "vej"
  },
  "Stenkløvervej|Risskov": {
@@ -7618,6 +10863,12 @@
   "lon": 10.216083,
   "praecision": "vej"
  },
+ "Stensagervej|Viby J": {
+  "geokilde": "nominatim",
+  "lat": 56.130623,
+  "lon": 10.148382,
+  "praecision": "vej"
+ },
  "Stenshøjsvej|Viby J": {
   "dato": "2026-10-24",
   "geokilde": "nominatim",
@@ -7643,6 +10894,18 @@
   "lat": 55.975832,
   "lon": 10.15132,
   "praecision": "by"
+ },
+ "Stillingvej|Borum": {
+  "geokilde": "nominatim",
+  "lat": 56.185814,
+  "lon": 10.00442,
+  "praecision": "vej"
+ },
+ "Stjernevej|Randers N": {
+  "geokilde": "nominatim",
+  "lat": 56.469689,
+  "lon": 10.050543,
+  "praecision": "vej"
  },
  "Stjernevej|Randers NØ": {
   "geokilde": "nominatim",
@@ -7698,10 +10961,28 @@
   "lon": 10.339481,
   "praecision": "vej"
  },
+ "Storskovvej|Viby J": {
+  "geokilde": "nominatim",
+  "lat": 56.13477,
+  "lon": 10.06626,
+  "praecision": "vej"
+ },
+ "Stoubyvej|Gjerlev J": {
+  "geokilde": "nominatim",
+  "lat": 56.573018,
+  "lon": 10.159833,
+  "praecision": "vej"
+ },
  "Strandagervej|Grenaa": {
   "geokilde": "nominatim",
   "lat": 56.47758,
   "lon": 10.873793,
+  "praecision": "vej"
+ },
+ "Strandagervej|Odder": {
+  "geokilde": "nominatim",
+  "lat": 55.964201,
+  "lon": 10.25985,
   "praecision": "vej"
  },
  "Strandbakkevej|Egå": {
@@ -7722,6 +11003,12 @@
   "lon": 10.253259,
   "praecision": "vej"
  },
+ "Strandgade|Hou": {
+  "geokilde": "nominatim",
+  "lat": 56.993083,
+  "lon": 10.305763,
+  "praecision": "vej"
+ },
  "Strandhuset|Egå": {
   "dato": "2026-10-24",
   "geokilde": "nominatim",
@@ -7733,6 +11020,12 @@
   "geokilde": "nominatim",
   "lat": 56.205489,
   "lon": 10.280903,
+  "praecision": "vej"
+ },
+ "Strandhøjen|Ebeltoft": {
+  "geokilde": "nominatim",
+  "lat": 56.225753,
+  "lon": 10.658806,
   "praecision": "vej"
  },
  "Strandmarksvej|Risskov": {
@@ -7778,6 +11071,12 @@
   "lon": 10.193776,
   "praecision": "vej"
  },
+ "Strandvejen|Ugelbølle": {
+  "geokilde": "nominatim",
+  "lat": 56.296335,
+  "lon": 10.438137,
+  "praecision": "vej"
+ },
  "Strandvænget|Risskov": {
   "geokilde": "nominatim",
   "lat": 56.186265,
@@ -7790,10 +11089,22 @@
   "lon": 10.031923,
   "praecision": "vej"
  },
+ "Strynøvænget|Tilst": {
+  "geokilde": "nominatim",
+  "lat": 56.178361,
+  "lon": 10.120471,
+  "praecision": "vej"
+ },
  "Studsgade|Aarhus C": {
   "geokilde": "nominatim",
   "lat": 56.160006,
   "lon": 10.211249,
+  "praecision": "vej"
+ },
+ "Studstrupvej|Skødstrup": {
+  "geokilde": "nominatim",
+  "lat": 56.262115,
+  "lon": 10.333473,
   "praecision": "vej"
  },
  "Stålhøjen|Risskov": {
@@ -7802,10 +11113,22 @@
   "lon": 10.227511,
   "praecision": "vej"
  },
+ "Støvringgårdvej|Mellerup": {
+  "geokilde": "nominatim",
+  "lat": 56.505262,
+  "lon": 10.203735,
+  "praecision": "vej"
+ },
  "Svalevej|Aarhus V": {
   "geokilde": "nominatim",
   "lat": 56.162303,
   "lon": 10.17944,
+  "praecision": "vej"
+ },
+ "Svanlevvej|Hasselager": {
+  "geokilde": "nominatim",
+  "lat": 56.108229,
+  "lon": 10.064325,
   "praecision": "vej"
  },
  "Sveavej|Risskov": {
@@ -7814,10 +11137,22 @@
   "lon": 10.22926,
   "praecision": "vej"
  },
+ "Svejstrupvej|Svejstrup": {
+  "geokilde": "nominatim",
+  "lat": 56.486802,
+  "lon": 9.953402,
+  "praecision": "vej"
+ },
  "Svendgårdsvej|Beder": {
   "geokilde": "nominatim",
   "lat": 56.058227,
   "lon": 10.213619,
+  "praecision": "vej"
+ },
+ "Svendsgade|Viby J": {
+  "geokilde": "nominatim",
+  "lat": 56.138447,
+  "lon": 10.175671,
   "praecision": "vej"
  },
  "Sverigesvej|Hadsten": {
@@ -7868,16 +11203,52 @@
   "lon": 10.873394,
   "praecision": "vej"
  },
+ "Syrenvej|Laurbjerg": {
+  "geokilde": "nominatim",
+  "lat": 56.357961,
+  "lon": 9.91606,
+  "praecision": "vej"
+ },
  "Syrenvej|Risskov": {
   "geokilde": "nominatim",
   "lat": 56.188985,
   "lon": 10.239645,
   "praecision": "vej"
  },
+ "Syrenvænget|Hornslet": {
+  "geokilde": "nominatim",
+  "lat": 56.321671,
+  "lon": 10.327229,
+  "praecision": "vej"
+ },
+ "Sæterstien|Aarhus N": {
+  "geokilde": "nominatim",
+  "lat": 56.178119,
+  "lon": 10.196915,
+  "praecision": "vej"
+ },
+ "Søbakkevej|Tilst": {
+  "geokilde": "nominatim",
+  "lat": 56.191903,
+  "lon": 10.089541,
+  "praecision": "vej"
+ },
+ "Sødalen|Solbjerg": {
+  "geokilde": "nominatim",
+  "lat": 56.040201,
+  "lon": 10.083667,
+  "praecision": "vej"
+ },
  "Sødalsvej|Brabrand": {
   "geokilde": "nominatim",
   "lat": 56.15209,
   "lon": 10.093868,
+  "praecision": "vej"
+ },
+ "Sødringholmsvej|Randers NØ": {
+  "geokilde": "nominatim",
+  "lat": 56.477899,
+  "lon": 10.085446,
   "praecision": "vej"
  },
  "Sødrupvej|Hundslund": {
@@ -7910,10 +11281,28 @@
   "lon": 10.131705,
   "praecision": "vej"
  },
+ "Sølvvej|Randers NV": {
+  "geokilde": "nominatim",
+  "lat": 56.465208,
+  "lon": 9.969357,
+  "praecision": "vej"
+ },
  "Sølystgade|Aarhus C": {
   "geokilde": "nominatim",
   "lat": 56.162349,
   "lon": 10.205684,
+  "praecision": "vej"
+ },
+ "Sølystvej|Egå": {
+  "geokilde": "nominatim",
+  "lat": 56.213015,
+  "lon": 10.284938,
+  "praecision": "vej"
+ },
+ "Sønder Alle|Aarhus C": {
+  "geokilde": "nominatim",
+  "lat": 56.152232,
+  "lon": 10.20933,
   "praecision": "vej"
  },
  "Sønder Alle|Hammel": {
@@ -7976,6 +11365,12 @@
   "lon": 10.061039,
   "praecision": "vej"
  },
+ "Sønderholmvænget|Hasselager": {
+  "geokilde": "nominatim",
+  "lat": 56.107154,
+  "lon": 10.061039,
+  "praecision": "vej"
+ },
  "Søndermarken|Hinnerup": {
   "geokilde": "nominatim",
   "lat": 56.235693,
@@ -7992,6 +11387,12 @@
   "geokilde": "nominatim",
   "lat": 56.235693,
   "lon": 10.079787,
+  "praecision": "vej"
+ },
+ "Søndermarksvej|Vivild": {
+  "geokilde": "nominatim",
+  "lat": 56.481536,
+  "lon": 10.446727,
   "praecision": "vej"
  },
  "Sønderport|Aarhus C": {
@@ -8012,6 +11413,18 @@
   "lon": 10.234953,
   "praecision": "vej"
  },
+ "Søndersøvej|Risskov": {
+  "geokilde": "nominatim",
+  "lat": 56.207033,
+  "lon": 10.241838,
+  "praecision": "vej"
+ },
+ "Søndervangen|Viby J": {
+  "geokilde": "nominatim",
+  "lat": 56.114299,
+  "lon": 10.157889,
+  "praecision": "vej"
+ },
  "Søndervangs Allé|Højbjerg": {
   "geokilde": "nominatim",
   "lat": 56.115053,
@@ -8030,10 +11443,22 @@
   "lon": 10.186466,
   "praecision": "vej"
  },
+ "Søndrupvej|Søndrup": {
+  "geokilde": "nominatim",
+  "lat": 55.893767,
+  "lon": 10.06569,
+  "praecision": "vej"
+ },
  "Søparken|Ryomgård": {
   "geokilde": "nominatim",
   "lat": 56.390217,
   "lon": 10.500253,
+  "praecision": "vej"
+ },
+ "Søren Frichs Vej|Aarhus C": {
+  "geokilde": "nominatim",
+  "lat": 56.153453,
+  "lon": 10.181783,
   "praecision": "vej"
  },
  "Søren Frichs Vej|Åbyhøj": {
@@ -8052,6 +11477,12 @@
   "lon": 10.915167,
   "praecision": "vej"
  },
+ "Søren Lofts Vej|Viby J": {
+  "geokilde": "nominatim",
+  "lat": 56.120032,
+  "lon": 10.141422,
+  "praecision": "vej"
+ },
  "Søren Møllers Gade|Randers": {
   "geokilde": "nominatim",
   "lat": 56.462301,
@@ -8064,6 +11495,18 @@
   "lon": 10.027843,
   "praecision": "vej"
  },
+ "Søren Skjødts Vej|Brabrand": {
+  "geokilde": "nominatim",
+  "lat": 56.153787,
+  "lon": 10.124729,
+  "praecision": "vej"
+ },
+ "Søskrænten|Stavtrup": {
+  "geokilde": "nominatim",
+  "lat": 56.134398,
+  "lon": 10.125466,
+  "praecision": "vej"
+ },
  "Søskrænten|Viby J": {
   "geokilde": "nominatim",
   "lat": 56.134398,
@@ -8074,6 +11517,18 @@
   "geokilde": "nominatim",
   "lat": 56.101377,
   "lon": 10.217254,
+  "praecision": "vej"
+ },
+ "Søsvinget|Egå": {
+  "geokilde": "nominatim",
+  "lat": 56.215388,
+  "lon": 10.286624,
+  "praecision": "vej"
+ },
+ "Søtoften|Egå": {
+  "geokilde": "nominatim",
+  "lat": 56.214017,
+  "lon": 10.287964,
   "praecision": "vej"
  },
  "Søvej|Langå": {
@@ -8092,6 +11547,18 @@
   "geokilde": "nominatim",
   "lat": 56.191364,
   "lon": 10.233529,
+  "praecision": "vej"
+ },
+ "Tandervej|Mårslet": {
+  "geokilde": "nominatim",
+  "lat": 56.055725,
+  "lon": 10.153422,
+  "praecision": "vej"
+ },
+ "Teglbakken|Højbjerg": {
+  "geokilde": "nominatim",
+  "lat": 56.106724,
+  "lon": 10.214612,
   "praecision": "vej"
  },
  "Teglbakken|Odder": {
@@ -8118,16 +11585,46 @@
   "lon": 9.873651,
   "praecision": "vej"
  },
+ "Tendrup Hovvej|Hornslet": {
+  "geokilde": "nominatim",
+  "lat": 56.31003,
+  "lon": 10.309226,
+  "praecision": "vej"
+ },
  "Tendrup Møllevej|Hornslet": {
   "geokilde": "nominatim",
   "lat": 56.314993,
   "lon": 10.307432,
   "praecision": "vej"
  },
+ "Tendrupvej|Hornslet": {
+  "geokilde": "nominatim",
+  "lat": 56.315805,
+  "lon": 10.313377,
+  "praecision": "vej"
+ },
+ "Ternevej|Hinnerup": {
+  "geokilde": "nominatim",
+  "lat": 56.270758,
+  "lon": 10.061769,
+  "praecision": "vej"
+ },
  "Ternevej|Mørke": {
   "geokilde": "nominatim",
   "lat": 56.333573,
   "lon": 10.372965,
+  "praecision": "vej"
+ },
+ "Ternevej|Risskov": {
+  "geokilde": "nominatim",
+  "lat": 56.197505,
+  "lon": 10.26207,
+  "praecision": "vej"
+ },
+ "Terosevej|Skødstrup": {
+  "geokilde": "nominatim",
+  "lat": 56.267556,
+  "lon": 10.307073,
   "praecision": "vej"
  },
  "Terp Skovvej|Højbjerg": {
@@ -8175,6 +11672,12 @@
   "lon": 10.213405,
   "praecision": "by"
  },
+ "Thorsgade|Randers C": {
+  "geokilde": "nominatim",
+  "lat": 56.463781,
+  "lon": 10.038948,
+  "praecision": "vej"
+ },
  "Thorshavnsgade|Aarhus N": {
   "geokilde": "nominatim",
   "lat": 56.176111,
@@ -8185,6 +11688,24 @@
   "geokilde": "nominatim",
   "lat": 56.41739,
   "lon": 10.898087,
+  "praecision": "vej"
+ },
+ "Thorsvej|Åbyhøj": {
+  "geokilde": "nominatim",
+  "lat": 56.154637,
+  "lon": 10.165955,
+  "praecision": "vej"
+ },
+ "Thorsølundvej|Thorsø": {
+  "geokilde": "nominatim",
+  "lat": 56.299844,
+  "lon": 9.791061,
+  "praecision": "vej"
+ },
+ "Thulevej|Aarhus": {
+  "geokilde": "nominatim",
+  "lat": 56.181762,
+  "lon": 10.217216,
   "praecision": "vej"
  },
  "Thunøgade|Aarhus C": {
@@ -8218,6 +11739,12 @@
   "lon": 10.092312,
   "praecision": "vej"
  },
+ "Tilst Parkvej|Tilst": {
+  "geokilde": "nominatim",
+  "lat": 56.186076,
+  "lon": 10.09483,
+  "praecision": "vej"
+ },
  "Tilst Skolevej|Tilst": {
   "geokilde": "nominatim",
   "lat": 56.189006,
@@ -8240,6 +11767,18 @@
   "geokilde": "nominatim",
   "lat": 56.194208,
   "lon": 10.119287,
+  "praecision": "vej"
+ },
+ "Tinghøjvej|Kolind": {
+  "geokilde": "nominatim",
+  "lat": 56.355986,
+  "lon": 10.674969,
+  "praecision": "vej"
+ },
+ "Tinghøjvej|Råsted": {
+  "geokilde": "nominatim",
+  "lat": 56.507999,
+  "lon": 9.935859,
   "praecision": "vej"
  },
  "Tinghøjvej|Trustrup": {
@@ -8266,6 +11805,18 @@
   "lat": 56.090599,
   "lon": 10.13301,
   "praecision": "by"
+ },
+ "Tingvad|Sabro": {
+  "geokilde": "nominatim",
+  "lat": 56.180438,
+  "lon": 10.033239,
+  "praecision": "vej"
+ },
+ "Tingvej|Aarhus V": {
+  "geokilde": "nominatim",
+  "lat": 56.165457,
+  "lon": 10.163926,
+  "praecision": "vej"
  },
  "Tingvej|Hornslet": {
   "geokilde": "nominatim",
@@ -8315,6 +11866,12 @@
   "lon": 10.863091,
   "praecision": "vej"
  },
+ "Tjørnegårdsparken|Trustrup": {
+  "geokilde": "nominatim",
+  "lat": 56.348272,
+  "lon": 10.766188,
+  "praecision": "vej"
+ },
  "Tjørnevej|Hadsten": {
   "geokilde": "nominatim",
   "lat": 56.331315,
@@ -8325,6 +11882,12 @@
   "geokilde": "nominatim",
   "lat": 56.125175,
   "lon": 10.16949,
+  "praecision": "vej"
+ },
+ "Tofteledet|Beder": {
+  "geokilde": "nominatim",
+  "lat": 56.054971,
+  "lon": 10.197981,
   "praecision": "vej"
  },
  "Toften|Voldby": {
@@ -8349,6 +11912,12 @@
   "geokilde": "nominatim",
   "lat": 56.204358,
   "lon": 10.214378,
+  "praecision": "vej"
+ },
+ "Toldervej|Randers SV": {
+  "geokilde": "nominatim",
+  "lat": 56.444604,
+  "lon": 10.035182,
   "praecision": "vej"
  },
  "Tommesensvej|Hammel": {
@@ -8387,6 +11956,12 @@
   "lon": 10.152221,
   "praecision": "vej"
  },
+ "Torshøjvænget|Bering": {
+  "geokilde": "nominatim",
+  "lat": 56.102713,
+  "lon": 10.065852,
+  "praecision": "vej"
+ },
  "Torshøjvænget|Hasselager": {
   "geokilde": "nominatim",
   "lat": 56.102713,
@@ -8417,6 +11992,12 @@
   "lon": 10.136728,
   "praecision": "vej"
  },
+ "Tranebærvej|Brabrand": {
+  "geokilde": "nominatim",
+  "lat": 56.158566,
+  "lon": 10.120931,
+  "praecision": "vej"
+ },
  "Tranekærparken|Risskov": {
   "geokilde": "nominatim",
   "lat": 56.193236,
@@ -8436,16 +12017,46 @@
   "lon": 10.12454,
   "praecision": "vej"
  },
+ "Trankær Vænge|Tranbjerg J": {
+  "geokilde": "nominatim",
+  "lat": 56.085882,
+  "lon": 10.133767,
+  "praecision": "vej"
+ },
+ "Trankær vænge|Tranbjerg J": {
+  "geokilde": "nominatim",
+  "lat": 56.085882,
+  "lon": 10.133767,
+  "praecision": "vej"
+ },
  "Trankærgårdsvej|Tranbjerg J": {
   "geokilde": "nominatim",
   "lat": 56.08572,
   "lon": 10.135928,
   "praecision": "vej"
  },
+ "Trehøjevej|Randers NØ": {
+  "geokilde": "nominatim",
+  "lat": 56.520006,
+  "lon": 10.053575,
+  "praecision": "vej"
+ },
+ "Trepkasgade|Aarhus C": {
+  "geokilde": "nominatim",
+  "lat": 56.145421,
+  "lon": 10.190351,
+  "praecision": "vej"
+ },
  "Tretommerparken|Risskov": {
   "geokilde": "nominatim",
   "lat": 56.191349,
   "lon": 10.21985,
+  "praecision": "vej"
+ },
+ "Tretommervej|Risskov": {
+  "geokilde": "nominatim",
+  "lat": 56.188884,
+  "lon": 10.22296,
   "praecision": "vej"
  },
  "Trige Centervej|Trige": {
@@ -8460,16 +12071,38 @@
   "lon": 10.132368,
   "praecision": "vej"
  },
+ "Trige Parkvej|Trige": {
+  "geokilde": "nominatim",
+  "lat": 56.25044,
+  "lon": 10.153326,
+  "praecision": "vej"
+ },
+ "Trillegårdsvej|Aarhus BV": {
+  "dato": "2026-10-24",
+  "fejl": true
+ },
  "Trillegårdsvej|Aarhus V": {
   "geokilde": "nominatim",
   "lat": 56.178003,
   "lon": 10.171266,
   "praecision": "vej"
  },
+ "Trimmelbakken|Rønde": {
+  "geokilde": "nominatim",
+  "lat": 56.342769,
+  "lon": 10.454196,
+  "praecision": "vej"
+ },
  "Trindballevej|Viby J": {
   "geokilde": "nominatim",
   "lat": 56.127611,
   "lon": 10.056379,
+  "praecision": "vej"
+ },
+ "Troldtjørnevej|Laurbjerg": {
+  "geokilde": "nominatim",
+  "lat": 56.3576,
+  "lon": 9.924579,
   "praecision": "vej"
  },
  "Tronkærgårdsvej|Skødstrup": {
@@ -8491,6 +12124,12 @@
   "lon": 10.13301,
   "praecision": "by"
  },
+ "Trøstmosen|Hornslet": {
+  "geokilde": "nominatim",
+  "lat": 56.312519,
+  "lon": 10.327869,
+  "praecision": "vej"
+ },
  "Tuestensvej|Tilst": {
   "geokilde": "nominatim",
   "lat": 56.187163,
@@ -8504,10 +12143,26 @@
   "lon": 10.111739,
   "praecision": "by"
  },
+ "Tulipanhaven|Tilst": {
+  "geokilde": "nominatim",
+  "lat": 56.191031,
+  "lon": 10.132533,
+  "praecision": "vej"
+ },
+ "Tulipanvej|Øster Bjerregrab": {
+  "dato": "2026-10-24",
+  "fejl": true
+ },
  "Tulshøjvej|Højbjerg": {
   "geokilde": "nominatim",
   "lat": 56.112265,
   "lon": 10.171108,
+  "praecision": "vej"
+ },
+ "Tungelund Bakker|Thorsø": {
+  "geokilde": "nominatim",
+  "lat": 56.303858,
+  "lon": 9.795546,
   "praecision": "vej"
  },
  "Tvedevej|Hald": {
@@ -8516,10 +12171,22 @@
   "lon": 10.140738,
   "praecision": "vej"
  },
+ "Tværagervej|Dyngby Strand": {
+  "geokilde": "nominatim",
+  "lat": 55.965424,
+  "lon": 10.2542,
+  "praecision": "vej"
+ },
  "Tværgade|Malling": {
   "geokilde": "nominatim",
   "lat": 56.036507,
   "lon": 10.197347,
+  "praecision": "vej"
+ },
+ "Tværmarksvej|Risskov": {
+  "geokilde": "nominatim",
+  "lat": 56.198511,
+  "lon": 10.21488,
   "praecision": "vej"
  },
  "Tyge Brahes Vej|Randers NV": {
@@ -8534,10 +12201,28 @@
   "lon": 10.289767,
   "praecision": "vej"
  },
+ "Tårbækvej|Aarhus C": {
+  "geokilde": "nominatim",
+  "lat": 56.138906,
+  "lon": 10.199357,
+  "praecision": "vej"
+ },
  "Tåstrupvej|Harlev J": {
   "geokilde": "nominatim",
   "lat": 56.131666,
   "lon": 9.993263,
+  "praecision": "vej"
+ },
+ "Tåstrupvej|Selling": {
+  "geokilde": "nominatim",
+  "lat": 56.295072,
+  "lon": 10.111506,
+  "praecision": "vej"
+ },
+ "Tøkkerbakken|Risskov": {
+  "geokilde": "nominatim",
+  "lat": 56.204358,
+  "lon": 10.214378,
   "praecision": "vej"
  },
  "Tøndergade|Aarhus C": {
@@ -8576,6 +12261,12 @@
   "lon": 10.048084,
   "praecision": "vej"
  },
+ "Ulstrupvej|Langå": {
+  "geokilde": "nominatim",
+  "lat": 56.400214,
+  "lon": 9.848038,
+  "praecision": "vej"
+ },
  "Ulstrupvej|Torup": {
   "dato": "2026-10-24",
   "geokilde": "nominatim",
@@ -8589,10 +12280,28 @@
   "lon": 10.029505,
   "praecision": "vej"
  },
+ "Urebjergvej|Sabro": {
+  "geokilde": "nominatim",
+  "lat": 56.218626,
+  "lon": 10.01459,
+  "praecision": "vej"
+ },
  "Urmagertoften|Højbjerg": {
   "geokilde": "nominatim",
   "lat": 56.107837,
   "lon": 10.168496,
+  "praecision": "vej"
+ },
+ "Vagtelvej|Aarhus V": {
+  "geokilde": "nominatim",
+  "lat": 56.164921,
+  "lon": 10.177092,
+  "praecision": "vej"
+ },
+ "Valbyvej|Aarhus C": {
+  "geokilde": "nominatim",
+  "lat": 56.138163,
+  "lon": 10.191389,
   "praecision": "vej"
  },
  "Valdemars Have|Aarhus C": {
@@ -8619,10 +12328,22 @@
   "lon": 10.057006,
   "praecision": "vej"
  },
+ "Valmuevej i|Risskov": {
+  "geokilde": "nominatim",
+  "lat": 56.199012,
+  "lon": 10.241929,
+  "praecision": "vej"
+ },
  "Valmuevej|Glesborg": {
   "geokilde": "nominatim",
   "lat": 56.475246,
   "lon": 10.736442,
+  "praecision": "vej"
+ },
+ "Valmuevej|Hammel": {
+  "geokilde": "nominatim",
+  "lat": 56.261976,
+  "lon": 9.85864,
   "praecision": "vej"
  },
  "Valmuevej|Randers NØ": {
@@ -8655,10 +12376,22 @@
   "lon": 10.551355,
   "praecision": "vej"
  },
+ "Vangvejen|Harridslev": {
+  "geokilde": "nominatim",
+  "lat": 56.489613,
+  "lon": 10.133588,
+  "praecision": "vej"
+ },
  "Vardøgade|Aarhus N": {
   "geokilde": "nominatim",
   "lat": 56.176517,
   "lon": 10.19436,
+  "praecision": "vej"
+ },
+ "Vasen|Gjerlev J": {
+  "geokilde": "nominatim",
+  "lat": 56.603654,
+  "lon": 10.062384,
   "praecision": "vej"
  },
  "Vasen|Ørsted": {
@@ -8667,16 +12400,40 @@
   "lon": 10.331282,
   "praecision": "vej"
  },
+ "Ved Byskellet|Randers NV": {
+  "geokilde": "nominatim",
+  "lat": 56.480299,
+  "lon": 10.00618,
+  "praecision": "vej"
+ },
  "Ved Stranden|Egå": {
   "geokilde": "nominatim",
   "lat": 56.218151,
   "lon": 10.295812,
   "praecision": "vej"
  },
+ "Vegavej|Hadsten": {
+  "geokilde": "nominatim",
+  "lat": 56.322714,
+  "lon": 10.039486,
+  "praecision": "vej"
+ },
  "Vegavej|Højbjerg": {
   "geokilde": "nominatim",
   "lat": 56.12425,
   "lon": 10.18749,
+  "praecision": "vej"
+ },
+ "Vegavej|Risskov": {
+  "geokilde": "nominatim",
+  "lat": 56.12425,
+  "lon": 10.18749,
+  "praecision": "vej"
+ },
+ "Vejlagervej|Spentrup": {
+  "geokilde": "nominatim",
+  "lat": 56.519673,
+  "lon": 10.032869,
   "praecision": "vej"
  },
  "Vejlbjergvej|Risskov": {
@@ -8703,6 +12460,12 @@
   "lon": 10.216235,
   "praecision": "vej"
  },
+ "Vennelystvej|Randers SØ": {
+  "geokilde": "nominatim",
+  "lat": 56.444243,
+  "lon": 10.055211,
+  "praecision": "vej"
+ },
  "Venusvej|Højbjerg": {
   "geokilde": "nominatim",
   "lat": 56.122447,
@@ -8715,10 +12478,22 @@
   "lon": 10.068041,
   "praecision": "vej"
  },
+ "Vermundsgade|Viby J": {
+  "geokilde": "nominatim",
+  "lat": 56.137584,
+  "lon": 10.183527,
+  "praecision": "vej"
+ },
  "Vesborgvej|Samsø": {
   "geokilde": "nominatim",
   "lat": 55.78098,
   "lon": 10.553283,
+  "praecision": "vej"
+ },
+ "Vestavej|Højbjerg": {
+  "geokilde": "nominatim",
+  "lat": 56.123953,
+  "lon": 10.18753,
   "praecision": "vej"
  },
  "Vester Alle 29 2. TV|Aarhus C": {
@@ -8752,10 +12527,35 @@
   "lon": 10.011144,
   "praecision": "vej"
  },
+ "Vester Vellingvej|Randers NV": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 56.435543,
+  "lon": 10.042596,
+  "praecision": "by"
+ },
  "Vesteralle|Thorsager": {
   "geokilde": "nominatim",
   "lat": 56.346439,
   "lon": 10.452064,
+  "praecision": "vej"
+ },
+ "Vesterbrogade|Aarhus C": {
+  "geokilde": "nominatim",
+  "lat": 56.157983,
+  "lon": 10.197068,
+  "praecision": "vej"
+ },
+ "Vesterbro|Havndal": {
+  "geokilde": "nominatim",
+  "lat": 56.651082,
+  "lon": 10.177214,
+  "praecision": "vej"
+ },
+ "Vesterbro|Trustrup": {
+  "geokilde": "nominatim",
+  "lat": 56.346648,
+  "lon": 10.764748,
   "praecision": "vej"
  },
  "Vesterengvej|Aarhus N": {
@@ -8774,6 +12574,18 @@
   "geokilde": "nominatim",
   "lat": 56.157416,
   "lon": 10.200163,
+  "praecision": "vej"
+ },
+ "Vestergade|Allingåbro": {
+  "geokilde": "nominatim",
+  "lat": 56.465038,
+  "lon": 10.320782,
+  "praecision": "vej"
+ },
+ "Vestergade|Fårup": {
+  "geokilde": "nominatim",
+  "lat": 56.545861,
+  "lon": 9.916385,
   "praecision": "vej"
  },
  "Vestergade|Randers": {
@@ -8806,6 +12618,12 @@
   "lon": 10.137217,
   "praecision": "vej"
  },
+ "Vestervangen|Hadsten": {
+  "geokilde": "nominatim",
+  "lat": 56.327609,
+  "lon": 10.03245,
+  "praecision": "vej"
+ },
  "Vestervangsvej|Ulstrup": {
   "dato": "2026-10-24",
   "geokilde": "nominatim",
@@ -8813,10 +12631,22 @@
   "lon": 11.255486,
   "praecision": "by"
  },
+ "Vestervang|Aarhus C": {
+  "geokilde": "nominatim",
+  "lat": 56.164793,
+  "lon": 10.193173,
+  "praecision": "vej"
+ },
  "Vestervænge|Ørsted": {
   "geokilde": "nominatim",
   "lat": 56.499472,
   "lon": 10.330101,
+  "praecision": "vej"
+ },
+ "Vestre Bakkevej|Randers C": {
+  "geokilde": "nominatim",
+  "lat": 56.467031,
+  "lon": 10.016436,
   "praecision": "vej"
  },
  "Vestre Fasanvej|Rønde": {
@@ -8849,6 +12679,12 @@
   "lon": 9.904021,
   "praecision": "vej"
  },
+ "Vibevej|Ryomgård": {
+  "geokilde": "nominatim",
+  "lat": 56.383508,
+  "lon": 10.495636,
+  "praecision": "vej"
+ },
  "Vibevænget|Beder": {
   "geokilde": "nominatim",
   "lat": 56.047078,
@@ -8879,6 +12715,12 @@
   "lon": 9.990199,
   "praecision": "vej"
  },
+ "Viborgvej|Svenstrup": {
+  "geokilde": "nominatim",
+  "lat": 56.891936,
+  "lon": 9.829124,
+  "praecision": "vej"
+ },
  "Vidtskuevej|Odder": {
   "geokilde": "nominatim",
   "lat": 55.982058,
@@ -8889,6 +12731,18 @@
   "geokilde": "nominatim",
   "lat": 56.167607,
   "lon": 10.185751,
+  "praecision": "vej"
+ },
+ "Vikær Toften|Risskov": {
+  "geokilde": "nominatim",
+  "lat": 56.194225,
+  "lon": 10.217504,
+  "praecision": "vej"
+ },
+ "Vikærsvej|Risskov": {
+  "geokilde": "nominatim",
+  "lat": 56.190127,
+  "lon": 10.214091,
   "praecision": "vej"
  },
  "Vilhelm Bechs Vej|Viby J": {
@@ -8910,6 +12764,18 @@
   "lon": 10.202005,
   "praecision": "vej"
  },
+ "Villadsensvej|Risskov": {
+  "geokilde": "nominatim",
+  "lat": 56.185847,
+  "lon": 10.216793,
+  "praecision": "vej"
+ },
+ "Vinkelvej|Assentoft": {
+  "geokilde": "nominatim",
+  "lat": 56.439565,
+  "lon": 10.138403,
+  "praecision": "vej"
+ },
  "Vinkelvej|Grenaa": {
   "geokilde": "nominatim",
   "lat": 56.415663,
@@ -8920,6 +12786,12 @@
   "geokilde": "nominatim",
   "lat": 56.334988,
   "lon": 10.378701,
+  "praecision": "vej"
+ },
+ "Vinkelvej|Risskov": {
+  "geokilde": "nominatim",
+  "lat": 56.189867,
+  "lon": 10.236507,
   "praecision": "vej"
  },
  "Vintergækvej|Grenaa": {
@@ -9007,10 +12879,22 @@
   "lon": 10.007784,
   "praecision": "vej"
  },
+ "Voldbyvej|Hammel": {
+  "geokilde": "nominatim",
+  "lat": 56.254589,
+  "lon": 9.870279,
+  "praecision": "vej"
+ },
  "Voldbækvej|Brabrand": {
   "geokilde": "nominatim",
   "lat": 56.152206,
   "lon": 10.097202,
+  "praecision": "vej"
+ },
+ "Volden|Aarhus C": {
+  "geokilde": "nominatim",
+  "lat": 56.158453,
+  "lon": 10.208949,
   "praecision": "vej"
  },
  "Voldgårdsvej|Højbjerg": {
@@ -9019,10 +12903,29 @@
   "lon": 10.166897,
   "praecision": "vej"
  },
+ "Vorbjergbakken|Risskov": {
+  "geokilde": "nominatim",
+  "lat": 56.200952,
+  "lon": 10.230024,
+  "praecision": "vej"
+ },
+ "Vorresvangs Allé|Egå": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 56.21535,
+  "lon": 10.266729,
+  "praecision": "by"
+ },
  "Vorup Boulevard|Randers SV": {
   "geokilde": "nominatim",
   "lat": 56.444465,
   "lon": 10.042516,
+  "praecision": "vej"
+ },
+ "Vosnæsvej|Skødstrup": {
+  "geokilde": "nominatim",
+  "lat": 56.281989,
+  "lon": 10.360075,
   "praecision": "vej"
  },
  "Vrinners Bygade|Knebel": {
@@ -9031,10 +12934,22 @@
   "lon": 10.493721,
   "praecision": "vej"
  },
+ "Vårkjærvej|Viby J": {
+  "geokilde": "nominatim",
+  "lat": 56.127681,
+  "lon": 10.148962,
+  "praecision": "vej"
+ },
  "Vænget|Randers SV": {
   "geokilde": "nominatim",
   "lat": 56.451508,
   "lon": 10.034865,
+  "praecision": "vej"
+ },
+ "Værumvej|Vissing": {
+  "geokilde": "nominatim",
+  "lat": 56.374743,
+  "lon": 10.000965,
   "praecision": "vej"
  },
  "Vølundsvej|Åbyhøj": {
@@ -9065,6 +12980,24 @@
   "geokilde": "nominatim",
   "lat": 56.391019,
   "lon": 9.889298,
+  "praecision": "vej"
+ },
+ "Ydervangen|Randers NV": {
+  "geokilde": "nominatim",
+  "lat": 56.485203,
+  "lon": 10.020473,
+  "praecision": "vej"
+ },
+ "Ydesvej|Grenaa": {
+  "geokilde": "nominatim",
+  "lat": 56.401949,
+  "lon": 10.890195,
+  "praecision": "vej"
+ },
+ "Ydunsvej|Randers NV": {
+  "geokilde": "nominatim",
+  "lat": 56.47283,
+  "lon": 10.021154,
   "praecision": "vej"
  },
  "Ydunsvej|Åbyhøj": {
@@ -9322,6 +13255,10 @@
   "lat": 56.149628,
   "lon": 10.213405
  },
+ "|Aarhus BV": {
+  "dato": "2026-10-24",
+  "fejl": true
+ },
  "|Aarhus C": {
   "lat": 56.149628,
   "lon": 10.213405
@@ -9338,6 +13275,10 @@
   "lat": 56.149628,
   "lon": 10.213405
  },
+ "|Aidt": {
+  "lat": 56.31552,
+  "lon": 9.789223
+ },
  "|Albæk": {
   "lat": 56.483858,
   "lon": 10.162679
@@ -9345,6 +13286,10 @@
  "|Allingåbro": {
   "lat": 56.464342,
   "lon": 10.336854
+ },
+ "|Anholt": {
+  "lat": 55.398662,
+  "lon": 9.372988
  },
  "|Assentoft": {
   "lat": 56.443518,
@@ -9390,6 +13335,14 @@
   "dato": "2026-10-24",
   "fejl": true
  },
+ "|Dråby": {
+  "lat": 56.223146,
+  "lon": 10.702432
+ },
+ "|Dyngby Strand": {
+  "lat": 55.960336,
+  "lon": 10.261874
+ },
  "|Ebdrup": {
   "lat": 56.341181,
   "lon": 10.542018
@@ -9397,6 +13350,10 @@
  "|Ebeltoft": {
   "lat": 56.198838,
   "lon": 10.677091
+ },
+ "|Egens": {
+  "lat": 56.269924,
+  "lon": 10.515697
  },
  "|Egå": {
   "lat": 56.21535,
@@ -9426,6 +13383,10 @@
   "lat": 56.218402,
   "lon": 9.843876
  },
+ "|Fausing": {
+  "lat": 56.444662,
+  "lon": 10.281614
+ },
  "|Favrskov Kommune": {
   "lat": 56.319419,
   "lon": 9.928782
@@ -9437,6 +13398,18 @@
  "|Fjellerup": {
   "lat": 55.236114,
   "lon": 10.562546
+ },
+ "|Fløjstrup": {
+  "lat": 56.411794,
+  "lon": 10.26781
+ },
+ "|Foldby": {
+  "dato": "2026-10-24",
+  "fejl": true
+ },
+ "|Framlev": {
+  "lat": 56.156487,
+  "lon": 10.010938
  },
  "|Fredericia Kommune": {
   "lat": 55.568637,
@@ -9450,9 +13423,21 @@
   "lat": 56.544569,
   "lon": 9.848771
  },
+ "|Gassum": {
+  "lat": 56.575215,
+  "lon": 9.997576
+ },
+ "|Geding": {
+  "lat": 56.207686,
+  "lon": 10.09416
+ },
  "|Gjerlev J": {
   "lat": 56.586584,
   "lon": 10.132303
+ },
+ "|Gjerrild": {
+  "lat": 56.499803,
+  "lon": 10.835073
  },
  "|Glatved": {
   "lat": 56.315588,
@@ -9478,6 +13463,10 @@
   "lat": 55.253974,
   "lon": 9.251541
  },
+ "|Hadsen": {
+  "dato": "2026-10-24",
+  "fejl": true
+ },
  "|Hadsten": {
   "lat": 56.329089,
   "lon": 10.052386
@@ -9502,9 +13491,17 @@
   "lat": 56.252613,
   "lon": 9.861056
  },
+ "|Hammelev": {
+  "lat": 55.244791,
+  "lon": 9.383726
+ },
  "|Harlev J": {
   "lat": 56.146669,
   "lon": 9.996093
+ },
+ "|Harridslev": {
+  "lat": 56.498042,
+  "lon": 10.129452
  },
  "|Hasle": {
   "lat": 55.183802,
@@ -9554,6 +13551,10 @@
   "lat": 55.718612,
   "lon": 11.713547
  },
+ "|Holmstrup": {
+  "lat": 55.361998,
+  "lon": 10.276639
+ },
  "|Holstebro Kommune": {
   "lat": 56.396664,
   "lon": 8.709863
@@ -9594,9 +13595,17 @@
   "lat": 57.181469,
   "lon": 9.662506
  },
+ "|Karlby": {
+  "lat": 56.350133,
+  "lon": 10.285791
+ },
  "|Knebel": {
   "lat": 56.213942,
   "lon": 10.486439
+ },
+ "|Knebelbro": {
+  "lat": 56.202855,
+  "lon": 10.474348
  },
  "|Kolding Kommune": {
   "lat": 55.469153,
@@ -9614,13 +13623,33 @@
   "lat": 56.564196,
   "lon": 9.937231
  },
+ "|Kærby": {
+  "lat": 57.03009,
+  "lon": 9.917722
+ },
+ "|Lading": {
+  "lat": 56.221279,
+  "lon": 9.978648
+ },
  "|Langå": {
   "lat": 56.390979,
   "lon": 9.89363
  },
+ "|Laurbjerg": {
+  "lat": 56.357246,
+  "lon": 9.916744
+ },
  "|Lemvig Kommune": {
   "lat": 56.528819,
   "lon": 8.302986
+ },
+ "|Lillering": {
+  "lat": 56.147369,
+  "lon": 9.978889
+ },
+ "|Lisbjerg": {
+  "lat": 56.221448,
+  "lon": 10.16823
  },
  "|Lystrup": {
   "lat": 56.23632,
@@ -9678,6 +13707,10 @@
   "lat": 56.451202,
   "lon": 10.608704
  },
+ "|Norring": {
+  "lat": 56.247278,
+  "lon": 10.044957
+ },
  "|Odder": {
   "lat": 55.975832,
   "lon": 10.15132
@@ -9686,9 +13719,21 @@
   "lat": 55.930079,
   "lon": 10.141337
  },
+ "|Ormslev": {
+  "lat": 56.124591,
+  "lon": 10.061701
+ },
  "|Paderup": {
   "lat": 56.428736,
   "lon": 10.067736
+ },
+ "|Pindstrup": {
+  "lat": 56.391787,
+  "lon": 10.413966
+ },
+ "|Ramte": {
+  "dato": "2026-10-24",
+  "fejl": true
  },
  "|Ramten": {
   "lat": 56.437868,
@@ -9705,6 +13750,10 @@
  "|Randers Kommune": {
   "lat": 56.535528,
   "lon": 10.002278
+ },
+ "|Randers N": {
+  "lat": 56.435543,
+  "lon": 10.042596
  },
  "|Randers NV": {
   "lat": 56.435543,
@@ -9734,9 +13783,21 @@
   "lat": 56.201768,
   "lon": 10.241958
  },
+ "|Rodskov": {
+  "lat": 56.299821,
+  "lon": 10.364908
+ },
+ "|Rude Strand": {
+  "lat": 55.991751,
+  "lon": 10.247579
+ },
  "|Ryomgård": {
   "lat": 56.384224,
   "lon": 10.502085
+ },
+ "|Råsted": {
+  "lat": 56.513415,
+  "lon": 9.949579
  },
  "|Rønde": {
   "lat": 56.301564,
@@ -9753,6 +13814,10 @@
  "|Samsø Kommune": {
   "lat": 55.883547,
   "lon": 10.611407
+ },
+ "|Selling": {
+  "lat": 56.309373,
+  "lon": 10.097475
  },
  "|Silkeborg Kommune": {
   "lat": 56.181779,
@@ -9814,6 +13879,10 @@
   "lat": 56.88472,
   "lon": 9.833064
  },
+ "|Svejstrup": {
+  "lat": 56.487294,
+  "lon": 9.948645
+ },
  "|Svenstrup": {
   "lat": 56.977321,
   "lon": 9.852584
@@ -9838,6 +13907,14 @@
   "lat": 54.968081,
   "lon": 9.931923
  },
+ "|Søndrup": {
+  "lat": 55.897793,
+  "lon": 10.068863
+ },
+ "|Terp": {
+  "lat": 56.516682,
+  "lon": 9.943855
+ },
  "|Thisted Kommune": {
   "lat": 56.914633,
   "lon": 8.482424
@@ -9853,6 +13930,10 @@
  "|Tilst": {
   "lat": 56.192115,
   "lon": 10.111739
+ },
+ "|Tirstrup": {
+  "lat": 56.301015,
+  "lon": 10.686612
  },
  "|Torup": {
   "lat": 55.983151,
@@ -9918,6 +13999,10 @@
   "lat": 55.761707,
   "lon": 9.353262
  },
+ "|Vellev": {
+  "lat": 56.369719,
+  "lon": 9.819814
+ },
  "|Vesthimmerlands Kommune": {
   "lat": 56.824475,
   "lon": 9.405645
@@ -9954,6 +14039,10 @@
   "lat": 56.406121,
   "lon": 9.989857
  },
+ "|Åbyhæj": {
+  "dato": "2026-10-24",
+  "fejl": true
+ },
  "|Åbyhøj": {
   "lat": 56.155315,
   "lon": 10.165488
@@ -9978,7 +14067,15 @@
   "lat": 55.926783,
   "lon": 10.149543
  },
+ "|Ørum": {
+  "lat": 56.480433,
+  "lon": 9.626306
+ },
  "|Ørum Djurs": {
+  "dato": "2026-10-24",
+  "fejl": true
+ },
+ "|Øster Bjerregrab": {
   "dato": "2026-10-24",
   "fejl": true
  },
@@ -9997,10 +14094,22 @@
   "lon": 10.213405,
   "praecision": "by"
  },
+ "Åboulevarden|Aarhus C": {
+  "geokilde": "nominatim",
+  "lat": 56.155932,
+  "lon": 10.208581,
+  "praecision": "vej"
+ },
  "Åboulevarden|Grenaa": {
   "geokilde": "nominatim",
   "lat": 56.410052,
   "lon": 10.90362,
+  "praecision": "vej"
+ },
+ "Åbovej|Viby J": {
+  "geokilde": "nominatim",
+  "lat": 56.122487,
+  "lon": 10.030036,
   "praecision": "vej"
  },
  "Åbrovej|Egå": {
@@ -10025,6 +14134,19 @@
   "geokilde": "nominatim",
   "lat": 56.162632,
   "lon": 10.161968,
+  "praecision": "vej"
+ },
+ "Åbyhøjvej|Hasle": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 55.183802,
+  "lon": 14.706171,
+  "praecision": "by"
+ },
+ "Åbyvej|Åbyhøj": {
+  "geokilde": "nominatim",
+  "lat": 56.153471,
+  "lon": 10.172146,
   "praecision": "vej"
  },
  "Ådalsparken|Hadsten": {
@@ -10055,6 +14177,19 @@
   "geokilde": "nominatim",
   "lat": 56.412345,
   "lon": 10.873999,
+  "praecision": "vej"
+ },
+ "Ågårdsvej|Hornslet": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 56.313704,
+  "lon": 10.315958,
+  "praecision": "by"
+ },
+ "Ågårdvej|Hornslet": {
+  "geokilde": "nominatim",
+  "lat": 56.311135,
+  "lon": 10.302451,
   "praecision": "vej"
  },
  "Åkrog Strandvej|Risskov": {
@@ -10100,10 +14235,35 @@
   "lon": 10.043088,
   "praecision": "vej"
  },
+ "Ålykkevej|Risskov": {
+  "geokilde": "nominatim",
+  "lat": 56.201876,
+  "lon": 10.254634,
+  "praecision": "vej"
+ },
+ "Åmarksvej|Egå": {
+  "geokilde": "nominatim",
+  "lat": 56.206035,
+  "lon": 10.260173,
+  "praecision": "vej"
+ },
  "Åparken|Grenaa": {
   "geokilde": "nominatim",
   "lat": 56.411758,
   "lon": 10.903018,
+  "praecision": "vej"
+ },
+ "Århusvej|Ebeltoft": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 56.198838,
+  "lon": 10.677091,
+  "praecision": "by"
+ },
+ "Århusvej|Randers SV": {
+  "geokilde": "nominatim",
+  "lat": 56.436475,
+  "lon": 10.051692,
   "praecision": "vej"
  },
  "Århusvej|Trustrup": {
@@ -10136,6 +14296,12 @@
   "lon": 10.085367,
   "praecision": "vej"
  },
+ "Åsen|Randers SV": {
+  "geokilde": "nominatim",
+  "lat": 56.414968,
+  "lon": 10.022448,
+  "praecision": "vej"
+ },
  "Åskrænten|Egå": {
   "geokilde": "nominatim",
   "lat": 56.203141,
@@ -10160,10 +14326,65 @@
   "lon": 10.884077,
   "praecision": "vej"
  },
+ "Åstrupvej|Grenaa": {
+  "geokilde": "nominatim",
+  "lat": 56.418535,
+  "lon": 10.880862,
+  "praecision": "vej"
+ },
+ "Åtoften|Egå": {
+  "geokilde": "nominatim",
+  "lat": 56.20601,
+  "lon": 10.258169,
+  "praecision": "vej"
+ },
+ "Åvej|Grenaa": {
+  "geokilde": "nominatim",
+  "lat": 56.411317,
+  "lon": 10.906733,
+  "praecision": "vej"
+ },
+ "Åvej|Hammel": {
+  "geokilde": "nominatim",
+  "lat": 56.236152,
+  "lon": 9.888266,
+  "praecision": "vej"
+ },
+ "Æblegaven|Risskov": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 56.201768,
+  "lon": 10.241958,
+  "praecision": "by"
+ },
+ "Æblehaven|Albæk": {
+  "geokilde": "nominatim",
+  "lat": 56.484439,
+  "lon": 10.163472,
+  "praecision": "vej"
+ },
+ "Æblehaven|Hornslet": {
+  "geokilde": "nominatim",
+  "lat": 56.321763,
+  "lon": 10.315671,
+  "praecision": "vej"
+ },
  "Æblehaven|Mårslet": {
   "geokilde": "nominatim",
   "lat": 56.085632,
   "lon": 10.026146,
+  "praecision": "vej"
+ },
+ "Æblevej|Højbjerg": {
+  "geokilde": "nominatim",
+  "lat": 56.118723,
+  "lon": 10.183929,
+  "praecision": "vej"
+ },
+ "Æblevænget|Lystrup": {
+  "geokilde": "nominatim",
+  "lat": 56.239769,
+  "lon": 10.228206,
   "praecision": "vej"
  },
  "Ægirsvej|Randers NV": {
@@ -10178,16 +14399,52 @@
   "lon": 10.013538,
   "praecision": "vej"
  },
+ "Øksendalvej|Vellev": {
+  "geokilde": "nominatim",
+  "lat": 56.377817,
+  "lon": 9.811554,
+  "praecision": "vej"
+ },
+ "Ølstedvej|Søften": {
+  "geokilde": "nominatim",
+  "lat": 56.237944,
+  "lon": 10.100895,
+  "praecision": "vej"
+ },
  "Ølstvadbrovej|Randers SV": {
   "geokilde": "nominatim",
   "lat": 56.390695,
   "lon": 10.089799,
   "praecision": "vej"
  },
+ "Ønbjergvej|Rodskov": {
+  "geokilde": "nominatim",
+  "lat": 56.296456,
+  "lon": 10.378997,
+  "praecision": "vej"
+ },
+ "Ørbyvej|Risskov": {
+  "geokilde": "nominatim",
+  "lat": 56.19418,
+  "lon": 10.230478,
+  "praecision": "vej"
+ },
  "Ørbækvej|Lystrup": {
   "geokilde": "nominatim",
   "lat": 56.228022,
   "lon": 10.227729,
+  "praecision": "vej"
+ },
+ "Ørebrogade|Aarhus N": {
+  "geokilde": "nominatim",
+  "lat": 56.179791,
+  "lon": 10.194473,
+  "praecision": "vej"
+ },
+ "Ørnebakken|Lystrup": {
+  "geokilde": "nominatim",
+  "lat": 56.239452,
+  "lon": 10.221849,
   "praecision": "vej"
  },
  "Ørnedalen|Lystrup": {
@@ -10206,6 +14463,18 @@
   "geokilde": "nominatim",
   "lat": 56.242944,
   "lon": 10.223046,
+  "praecision": "vej"
+ },
+ "Ørnevej|Aarhus V": {
+  "geokilde": "nominatim",
+  "lat": 56.135739,
+  "lon": 10.160275,
+  "praecision": "vej"
+ },
+ "Ørnevænget|Hadsten": {
+  "geokilde": "nominatim",
+  "lat": 56.327474,
+  "lon": 10.065817,
   "praecision": "vej"
  },
  "Ørrildvej|Fårup": {
@@ -10246,6 +14515,19 @@
   "lon": 10.21354,
   "praecision": "vej"
  },
+ "Østendalsvej|Kærby": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 57.0300896,
+  "lon": 9.9177223,
+  "praecision": "by"
+ },
+ "Øster Alle|Grenaa": {
+  "geokilde": "nominatim",
+  "lat": 56.415318,
+  "lon": 10.890313,
+  "praecision": "vej"
+ },
  "Øster Alle|Randers C": {
   "geokilde": "nominatim",
   "lat": 56.466953,
@@ -10259,6 +14541,12 @@
   "lon": 10.213405,
   "praecision": "by"
  },
+ "Østerbro|Trustrup": {
+  "geokilde": "nominatim",
+  "lat": 56.349631,
+  "lon": 10.779355,
+  "praecision": "vej"
+ },
  "Østerby Allé|Tranbjerg J": {
   "geokilde": "nominatim",
   "lat": 56.089477,
@@ -10271,10 +14559,34 @@
   "lon": 10.315145,
   "praecision": "vej"
  },
+ "Østergade|Auning": {
+  "geokilde": "nominatim",
+  "lat": 56.429654,
+  "lon": 10.38106,
+  "praecision": "vej"
+ },
  "Østergade|Hammel": {
   "geokilde": "nominatim",
   "lat": 56.256793,
   "lon": 9.867109,
+  "praecision": "vej"
+ },
+ "Østergade|Randers C": {
+  "geokilde": "nominatim",
+  "lat": 56.461944,
+  "lon": 10.040814,
+  "praecision": "vej"
+ },
+ "Østergårdsvej|Malling": {
+  "geokilde": "nominatim",
+  "lat": 56.030619,
+  "lon": 10.158556,
+  "praecision": "vej"
+ },
+ "Østerlarsvej|Aarhus V": {
+  "geokilde": "nominatim",
+  "lat": 56.177141,
+  "lon": 10.174231,
   "praecision": "vej"
  },
  "Østerled|Allingåbro": {
@@ -10293,6 +14605,12 @@
   "geokilde": "nominatim",
   "lat": 56.191679,
   "lon": 10.124152,
+  "praecision": "vej"
+ },
+ "Østermarksvej|Gjerlev J": {
+  "geokilde": "nominatim",
+  "lat": 56.586785,
+  "lon": 10.158036,
   "praecision": "vej"
  },
  "Østermarksvej|Odder": {
@@ -10317,6 +14635,12 @@
   "geokilde": "nominatim",
   "lat": 56.432771,
   "lon": 10.388179,
+  "praecision": "vej"
+ },
+ "Østervold|Randers C": {
+  "geokilde": "nominatim",
+  "lat": 56.46138,
+  "lon": 10.03882,
   "praecision": "vej"
  },
  "Østervænget|Randers SØ": {
@@ -10348,6 +14672,13 @@
   "lat": 56.181852,
   "lon": 10.229252,
   "praecision": "vej"
+ },
+ "Østrevej|Hasle": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 55.183802,
+  "lon": 14.706171,
+  "praecision": "by"
  },
  "Østtoften|Egå": {
   "geokilde": "nominatim",
