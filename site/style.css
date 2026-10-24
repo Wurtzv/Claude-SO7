@@ -75,3 +75,11 @@ aside h2 small{font-family:var(--f-mono);font-size:12px;font-weight:400;color:va
 .filters .check{display:flex;align-items:center;gap:6px;font-size:14px;cursor:pointer;border:1px solid var(--line);border-radius:999px;padding:5px 12px;background:var(--panel)}
 .check input{accent-color:var(--sel);margin:0}
 .statinfo{margin:0;font-family:var(--f-mono);font-size:12.5px;color:var(--muted);flex:1 1 220px;align-self:center}
+.faner{display:flex;border-bottom:1px solid var(--line)}
+.fane{flex:1;border:0;background:transparent;color:var(--muted);font-family:var(--f-display);font-size:18px;font-weight:700;padding:11px 10px 9px;border-bottom:3px solid transparent;text-align:left}
+.fane small{font-family:var(--f-mono);font-size:11.5px;font-weight:400}
+.fane[aria-selected="true"]{color:var(--fg);border-bottom-color:var(--hit)}
+.fane[data-fane="kommuner"][aria-selected="true"]{border-bottom-color:var(--stat)}
+.kn{font-family:var(--f-display);font-size:17px;color:var(--stat);margin-left:4px}
+.stat-tal{font-family:var(--f-display);font-weight:700;font-size:13px;line-height:16px;text-align:center;color:var(--fg);
+  text-shadow:0 0 3px var(--panel),0 0 3px var(--panel),0 0 2px var(--panel)}

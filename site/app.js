@@ -105,7 +105,7 @@
 
   function liste() {
     const v = synlige();
-    $("cnt").textContent = `${v.length} i alt`;
+    $("cnt").textContent = `(${v.length})`;
     let h = "";
     const datoer = [...new Set(v.map((r) => r.rapportdato))].sort().reverse();
     for (const d of datoer) {
@@ -174,14 +174,23 @@
   // ---------- statistik pr. kommune (Danmarks Statistik) ----------
   map.createPane("statistik");
   map.getPane("statistik").style.zIndex = 350; // under de enkelte indbrud
+  map.createPane("statistikTal");
+  map.getPane("statistikTal").style.zIndex = 450;
+  map.getPane("statistikTal").style.pointerEvents = "none";
   const statLag = L.layerGroup();
+  const statMarkører = new Map();
   let STAT = null;
   const kvt = (k) => `${k.slice(5)}. kvt. ${k.slice(0, 4)}`;
   const tal = (n, d = 0) => n.toLocaleString("da-DK", { minimumFractionDigits: d, maximumFractionDigits: d });
 
   function tegnStatistik() {
     statLag.clearLayers();
-    if (!STAT || !$("visStat").checked) { statLag.remove(); return; }
+    statMarkører.clear();
+    if (!STAT || !$("visStat").checked) {
+      statLag.remove();
+      $("klist").innerHTML = '<p class="empty">Slå laget "Alle indbrud pr. kommune" til for at se kommunerne.</p>';
+      return;
+    }
     const k = $("kvartal").value;
     const kv = STAT.kvartaler, iFjor = kv[kv.indexOf(k) - 4];
     const rækker = STAT.kommuner.filter((x) => x.lat != null).map((x) => {
@@ -194,8 +203,8 @@
       const m = L.circleMarker([r.lat, r.lon], {
         pane: "statistik",
         radius: 4 + 26 * Math.sqrt(r.n / maksN),
-        color: css("--stat"), weight: 1.5,
-        fillColor: css("--stat"), fillOpacity: 0.12 + 0.55 * (r.rate / maksRate),
+        color: css("--stat"), weight: 2,
+        fillColor: css("--stat"), fillOpacity: 0.2 + 0.6 * (r.rate / maksRate),
       });
       const fjor = r.fjor == null ? "" : `<div class="t">Samme kvartal året før: ${tal(r.fjor)}</div>`;
       m.bindPopup(`<div class="pop"><strong>${esc(r.navn)} Kommune</strong>${tal(r.n)} anmeldte indbrud i beboelse, ${kvt(k)}` +
@@ -203,7 +212,20 @@
         `<div class="t">Kilde: <a href="${esc(STAT.kilde_url)}" target="_blank" rel="noopener">Danmarks Statistik, STRAF11</a></div></div>`, { maxWidth: 260 });
       m.bindTooltip(`${r.navn}: ${tal(r.n)}`, { direction: "top" });
       m.addTo(statLag);
+      statMarkører.set(r.kode, m);
+      if (r.n >= maksN * 0.04) {
+        L.marker([r.lat, r.lon], {
+          pane: "statistikTal", interactive: false, keyboard: false,
+          icon: L.divIcon({ className: "stat-tal", html: tal(r.n), iconSize: [40, 16], iconAnchor: [20, 8] }),
+        }).addTo(statLag);
+      }
     }
+    const sorteret = [...rækker].sort((a, b) => b.n - a.n || a.navn.localeCompare(b.navn, "da"));
+    $("klist").innerHTML = `<div class="day">${esc(kvt(k))} · alle anmeldte indbrud i beboelse</div>` + sorteret.map((r) => {
+      const ændring = r.fjor ? ` · året før ${tal(r.fjor)} (${r.n >= r.fjor ? "+" : "−"}${tal(Math.abs(Math.round(((r.n - r.fjor) / r.fjor) * 100)))} %)` : "";
+      return `<button class="item" data-kode="${esc(r.kode)}"><i class="sw s"></i><span class="st">${esc(r.navn)} <b class="kn">${tal(r.n)}</b></span>` +
+        `<span class="t">${tal(r.rate, 2)} pr. 1.000 indb.${ændring}</span></button>`;
+    }).join("");
     statLag.addTo(map);
     const total = rækker.reduce((a, r) => a + r.n, 0);
     $("statInfo").textContent = `${tal(total)} anmeldte indbrud i beboelse i Jylland i ${kvt(k)} (alle politikredse).`;
@@ -216,6 +238,17 @@
     tegnStatistik();
   }).catch(() => { /* statistikken er valgfri */ });
   $("visStat").addEventListener("change", tegnStatistik);
+  $("klist").addEventListener("click", (e) => {
+    const b = e.target.closest(".item"); if (!b) return;
+    const m = statMarkører.get(b.dataset.kode); if (!m) return;
+    map.setView(m.getLatLng(), Math.max(map.getZoom(), 10));
+    m.openPopup();
+  });
+  document.querySelectorAll(".fane").forEach((f) => f.addEventListener("click", () => {
+    document.querySelectorAll(".fane").forEach((x) => x.setAttribute("aria-selected", String(x === f)));
+    $("list").hidden = f.dataset.fane !== "indbrud";
+    $("klist").hidden = f.dataset.fane !== "kommuner";
+  }));
   $("kvartal").addEventListener("change", tegnStatistik);
   $("visEnkelte").addEventListener("change", (e) => { if (e.target.checked) lag.addTo(map); else lag.remove(); });
 

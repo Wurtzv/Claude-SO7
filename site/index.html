@@ -50,8 +50,12 @@
   <div class="main">
     <div id="map" role="region" aria-label="Kort over anmeldte indbrud"></div>
     <aside>
-      <h2>Anmeldte indbrud <small id="cnt"></small></h2>
+      <div class="faner" role="tablist">
+        <button class="fane" role="tab" data-fane="indbrud" aria-selected="true">Enkelte indbrud <small id="cnt"></small></button>
+        <button class="fane" role="tab" data-fane="kommuner" aria-selected="false">Kommuner</button>
+      </div>
       <div class="list" id="list"></div>
+      <div class="list" id="klist" hidden></div>
     </aside>
   </div>
 
