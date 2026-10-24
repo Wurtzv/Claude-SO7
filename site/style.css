@@ -1,7 +1,7 @@
 /* Indbrudskort Jylland – design fra prototypen: kort til venstre, liste til højre, stables på mobil */
 :root{
   --bg:#eef1f3; --panel:#ffffff; --fg:#1b2329; --muted:#5d6b75; --line:#d3dbe0;
-  --hit:#d2462b; --hit-soft:rgba(210,70,43,.16); --biz:#7a4bd1; --sel:#0f5f8a; --approx:#c98a1b; --stat:#2f6f9f;
+  --hit:#d2462b; --hit-soft:rgba(210,70,43,.16); --biz:#7a4bd1; --sel:#0f5f8a; --approx:#c98a1b; --stat:#2f6f9f; --s1:#2a78d6; --s2:#eb6834; --s3:#1baf7a; --ref:#8a949b;
   --f-display:"Barlow Condensed","Arial Narrow",system-ui,sans-serif;
   --f-body:"Source Sans 3",system-ui,-apple-system,"Segoe UI",sans-serif;
   --f-mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
@@ -9,10 +9,10 @@
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
   --bg:#12181c; --panel:#192127; --fg:#e6ecef; --muted:#97a6b0; --line:#2b363e;
-  --hit:#ff6b4d; --hit-soft:rgba(255,107,77,.2); --biz:#b08cff; --sel:#5fb6e6; --approx:#e8b04a; --stat:#6fb3e0; color-scheme:dark}}
+  --hit:#ff6b4d; --hit-soft:rgba(255,107,77,.2); --biz:#b08cff; --sel:#5fb6e6; --approx:#e8b04a; --stat:#6fb3e0; --s1:#3987e5; --s2:#d95926; --s3:#199e70; --ref:#7d8a93; color-scheme:dark}}
 :root[data-theme="dark"]{
   --bg:#12181c; --panel:#192127; --fg:#e6ecef; --muted:#97a6b0; --line:#2b363e;
-  --hit:#ff6b4d; --hit-soft:rgba(255,107,77,.2); --biz:#b08cff; --sel:#5fb6e6; --approx:#e8b04a; --stat:#6fb3e0; color-scheme:dark}
+  --hit:#ff6b4d; --hit-soft:rgba(255,107,77,.2); --biz:#b08cff; --sel:#5fb6e6; --approx:#e8b04a; --stat:#6fb3e0; --s1:#3987e5; --s2:#d95926; --s3:#199e70; --ref:#7d8a93; color-scheme:dark}
 *{box-sizing:border-box}
 [hidden]{display:none!important}
 html,body{margin:0}
@@ -85,3 +85,37 @@ aside h2 small{font-family:var(--f-mono);font-size:12px;font-weight:400;color:va
 .stat-tal{font-family:var(--f-display);font-weight:700;font-size:13px;line-height:16px;text-align:center;color:var(--fg);
   text-shadow:0 0 3px var(--panel),0 0 3px var(--panel),0 0 2px var(--panel)}
 .enh{font-family:var(--f-mono);font-size:11px;color:var(--muted);margin-left:3px;font-weight:400}
+
+/* graf over udvikling pr. kvartal */
+.grafboks{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px 14px 10px;display:grid;gap:8px;min-width:0}
+.grafboks h2{font-family:var(--f-display);font-size:22px;font-weight:700;margin:0}
+.gsub{margin:0;color:var(--muted);font-size:13.5px}
+.gstyr{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.gvalg{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.gchip{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);border-radius:999px;padding:3px 4px 3px 10px;font-size:14px}
+.gchip i{width:14px;height:3px;border-radius:2px;display:inline-block}
+.gchip button{border:0;background:transparent;color:var(--muted);font-size:16px;line-height:1;width:22px;height:22px;border-radius:50%}
+.gchip button:hover{background:var(--bg);color:var(--fg)}
+.ghint{font-size:12px;color:var(--muted);font-family:var(--f-mono)}
+.gwrap{position:relative;min-width:0}
+#graf{width:100%;height:280px;display:block;overflow:visible;touch-action:pan-y}
+#graf .gl{stroke:var(--line);stroke-width:1}
+#graf .ax{fill:var(--muted);font-family:var(--f-mono);font-size:11px}
+#graf .ax.år{fill:var(--fg)}
+#graf .ln{fill:none;stroke-width:2;stroke-linejoin:round;stroke-linecap:round}
+#graf .ln.ref{stroke-width:2;stroke-dasharray:none;opacity:.9}
+#graf .pt{stroke:var(--panel);stroke-width:2}
+#graf .lead{stroke-width:1.5}
+#graf .glbl{fill:var(--fg);font-size:12.5px;font-weight:600;font-family:var(--f-body)}
+@media (max-width:560px){#graf .glbl{font-size:11px}}
+#graf .lv{fill:var(--muted);font-family:var(--f-mono);font-weight:400}
+#graf .kryds{stroke:var(--muted);stroke-width:1}
+.gtip{position:absolute;top:6px;background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:8px 10px;font-size:13px;box-shadow:0 4px 18px rgba(0,0,0,.14);pointer-events:none;min-width:150px;z-index:2}
+.gtip div{display:flex;align-items:center;gap:6px}
+.gtip i{width:10px;height:3px;border-radius:2px;flex:none}
+.gtip span{margin-left:auto;padding-left:12px;font-family:var(--f-mono);font-variant-numeric:tabular-nums}
+.grafboks details summary{cursor:pointer;color:var(--sel);font-size:13.5px}
+.gtabel{overflow-x:auto}
+.gtabel table{border-collapse:collapse;font-size:13px;font-variant-numeric:tabular-nums;margin-top:6px}
+.gtabel th,.gtabel td{padding:4px 10px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}
+.gtabel th:first-child,.gtabel td:first-child{text-align:left}

@@ -89,6 +89,8 @@ Tre af de fem jyske kredse udgiver ingen døgnrapporter, så kortet har et ekstr
 
 Husstande (beboede hjem) hentes fra `FAM55N`. På kortet kan man vælge, om cirkler, tal og kommunelisten skal vise **antal indbrud**, **pr. 1.000 indbyggere** eller **pr. 1.000 husstande**. Jo større og mørkere cirkel, jo højere tal. Laget kan slås fra, og man kan vælge periode: et helt kalenderår (det igangværende år vises som fx "2026 (1.–3. kvt.)" og sammenlignes med de samme kvartaler året før) eller et enkelt kvartal. Danmarks Statistik udgiver tallene ca. tre uger efter kvartalets udgang. Kommuner uden anmeldte indbrud i et kvartal står ikke i tabellen og vises som 0.
 
+Under kortet er der en **graf over udviklingen pr. kvartal** for op til tre valgte kommuner (klik på en kommune på kortet eller i listen, eller vælg i feltet). Grafen følger valget af antal / pr. indbygger / pr. husstand, viser "Jylland i alt" som reference ved tallene pr. indbygger og husstand, og kan vises som tabel.
+
 ### Afsnitsformatet (Nordjylland)
 
 Et afsnit tæller med, når overskriften begynder med "Indbrud" (ikke "Tyveri", "Forsøg på indbrud" eller indbrud i biler). Fra brødtekstens første sætning hentes by/bydel ("i Vejgaard-området", "i Vesthimmerlands kommune", "i Aalborgs Vestby"), eventuel vej ("på Boysenbærvej"), antal ("i to villaer") og tidspunkt ("Natten til onsdag" omsat til seneste onsdag før rapportdatoen). Typen er *privat* (villa, lejlighed, fritidshus …), *erhverv* (butik, værksted, prøvehus, kirke …) eller *andet* (fx garage). Afsnittets tekst gemmes i feltet `beskrivelse` og vises på kortet.

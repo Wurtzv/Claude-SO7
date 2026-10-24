@@ -66,6 +66,21 @@
     </aside>
   </div>
 
+  <section class="grafboks" id="grafBoks" hidden aria-labelledby="grafTitel">
+    <h2 id="grafTitel">Udvikling pr. kvartal</h2>
+    <p class="gsub">Danmarks Statistik, alle anmeldte indbrud i beboelse. Vælg op til tre kommuner – klik også på en kommune på kortet eller i listen. Målet følger "Vis kommuner efter".</p>
+    <div class="gstyr">
+      <div id="grafValg" class="gvalg"></div>
+      <select id="grafTilføj" aria-label="Tilføj kommune til grafen"></select>
+    </div>
+    <div class="gwrap">
+      <svg id="graf" role="img" aria-label="Linjegraf over anmeldte indbrud pr. kvartal for de valgte kommuner"></svg>
+      <div id="grafTip" class="gtip" hidden></div>
+      <p id="grafTom" class="empty" hidden>Vælg en kommune for at se udviklingen.</p>
+    </div>
+    <details><summary>Vis som tabel</summary><div id="grafTabel" class="gtabel"></div></details>
+  </section>
+
   <div class="notes">
     <p><b>Datagrundlag.</b> Østjyllands Politi lister alle anmeldte indbrud i privat beboelse med vej og bydel. Nordjyllands Politi beskriver udvalgte indbrud i nyhedsafsnit med by eller bydel. Midt- og Vestjyllands, Sydøstjyllands og Syd- og Sønderjyllands Politi udgiver ikke døgnrapporter – fra dem kommer kun enkeltsager om indbrud på Via Ritzau med. Kortet er derfor langt mere komplet for Øst- og Nordjylland end for resten af Jylland. Samme indbrud nævnt flere gange (samme vej, by og gerningstid) tælles kun én gang. Siden opdateres hver morgen.</p>
     <p><b>Kommunetal.</b> De store cirkler viser alle anmeldte indbrud i beboelse pr. jysk kommune i den valgte periode – et helt år eller et kvartal – fra Danmarks Statistik (tabel STRAF11) – også i Midt- og Vestjylland, Sydøstjylland og Sønderjylland, hvor politiet ikke udgiver døgnrapporter. Vælg om cirklerne skal vise antal indbrud, indbrud pr. 1.000 indbyggere eller pr. 1.000 husstande (beboede hjem, tabel FAM55N) – jo større og mørkere cirkel, jo højere tal. Antal pr. indbygger eller husstand gør små og store kommuner sammenlignelige. Tallene kommer ca. tre uger efter kvartalets udgang.</p>

@@ -169,7 +169,7 @@
   $("kreds").addEventListener("change", (e) => { state.kreds = e.target.value; state.omraade = ""; state.valgt = null; fyldVælgere(); tegn(true); });
   $("nulstil").addEventListener("click", () => { Object.assign(state, { periode: 14, dato: "", omraade: "", kreds: "", valgt: null }); fyldVælgere(); tegn(true); });
   $("list").addEventListener("click", (e) => { const b = e.target.closest(".item"); if (b) vælg(b.dataset.id, "liste"); });
-  matchMedia("(prefers-color-scheme: dark)").addEventListener?.("change", () => { tegn(false); tegnStatistik(); });
+  matchMedia("(prefers-color-scheme: dark)").addEventListener?.("change", () => { tegn(false); tegnStatistik(); tegnGraf(); });
 
   // ---------- statistik pr. kommune (Danmarks Statistik) ----------
   map.createPane("statistik");
@@ -253,6 +253,7 @@
         `<div class="t">Kilde: <a href="${esc(STAT.kilde_url)}" target="_blank" rel="noopener">Danmarks Statistik</a></div></div>`, { maxWidth: 280 });
       m.bindTooltip(`${r.navn}: ${vis(r)}${mål.enhed}`, { direction: "top" });
       m.addTo(statLag);
+      m.on("click", () => tilføjGraf(r.kode));
       statMarkører.set(r.kode, m);
       if (andel >= 0.04 || mål !== MÅL.antal) {
         L.marker([r.lat, r.lon], {
@@ -275,6 +276,131 @@
   }
 
 
+
+  // ---------- graf: udvikling pr. kvartal for valgte kommuner ----------
+  const SLOTS = ["--s1", "--s2", "--s3"]; // faste farver; en kommune beholder sin farve, mens den er valgt
+  let grafValg = []; // [{kode, slot}]
+
+  function grafVærdi(x, q, mål) {
+    const n = x.antal[q] || 0;
+    if (mål === "indbyggere") return x.indbyggere ? (n / x.indbyggere) * 1000 : null;
+    if (mål === "husstande") return x.husstande ? (n / x.husstande) * 1000 : null;
+    return n;
+  }
+
+  function tilføjGraf(kode) {
+    if (!STAT || grafValg.some((g) => g.kode === kode)) return;
+    if (grafValg.length >= SLOTS.length) grafValg.shift();
+    const brugt = new Set(grafValg.map((g) => g.slot));
+    grafValg.push({ kode, slot: SLOTS.find((s) => !brugt.has(s)) });
+    tegnGraf();
+  }
+
+  function pænTrin(maks) {
+    const rå = maks / 4, p = 10 ** Math.floor(Math.log10(rå || 1));
+    const t = [1, 2, 2.5, 5, 10].map((m) => m * p).find((x) => x >= rå) || p * 10;
+    return t;
+  }
+
+  function tegnGraf() {
+    if (!STAT) return;
+    const mål = $("maal").value, M = MÅL[mål] || MÅL.antal;
+    const kv = STAT.kvartaler;
+    const kom = new Map(STAT.kommuner.map((x) => [x.kode, x]));
+    const serier = grafValg.filter((g) => kom.has(g.kode)).map((g) => ({
+      navn: kom.get(g.kode).navn, farve: css(g.slot), kode: g.kode, slot: g.slot,
+      v: kv.map((q) => grafVærdi(kom.get(g.kode), q, mål)),
+    }));
+    if (mål !== "antal") {
+      const alle = STAT.kommuner;
+      const nævner = (x) => (mål === "indbyggere" ? x.indbyggere : x.husstande) || 0;
+      const total = alle.reduce((a, x) => a + nævner(x), 0);
+      serier.push({ navn: "Jylland i alt", farve: css("--ref"), ref: true,
+        v: kv.map((q) => (alle.reduce((a, x) => a + (x.antal[q] || 0), 0) / total) * 1000) });
+    }
+    $("grafTitel").textContent = `Anmeldte indbrud i beboelse pr. kvartal – ${M.navn}`;
+    $("grafValg").innerHTML = grafValg.map((g) => {
+      const x = kom.get(g.kode);
+      return `<span class="gchip"><i style="background:var(${g.slot})"></i>${esc(x ? x.navn : g.kode)}` +
+        `<button type="button" data-fjern="${esc(g.kode)}" aria-label="Fjern ${esc(x ? x.navn : g.kode)}">×</button></span>`;
+    }).join("") + (grafValg.length < SLOTS.length ? "" : '<span class="ghint">Maks. 3 – en ny erstatter den ældste</span>');
+    $("grafTilføj").innerHTML = '<option value="">+ Tilføj kommune…</option>' +
+      [...STAT.kommuner].sort((a, b) => a.navn.localeCompare(b.navn, "da"))
+        .filter((x) => !grafValg.some((g) => g.kode === x.kode))
+        .map((x) => `<option value="${esc(x.kode)}">${esc(x.navn)}</option>`).join("");
+
+    const svg = $("graf"), W = Math.max(320, svg.clientWidth || 600), H = 280;
+    const smal = W < 560;
+    const m = { l: 40, r: smal ? 96 : 124, t: 14, b: smal ? 26 : 40 };
+    const iw = W - m.l - m.r, ih = H - m.t - m.b;
+    svg.setAttribute("viewBox", `0 0 ${W} ${H}`);
+    if (!serier.length) { svg.innerHTML = ""; $("grafTabel").innerHTML = ""; $("grafTom").hidden = false; return; }
+    $("grafTom").hidden = true;
+    const maks = Math.max(1e-9, ...serier.flatMap((s) => s.v.filter((x) => x != null)));
+    const trin = pænTrin(maks), top = Math.ceil(maks / trin) * trin;
+    const X = (i) => m.l + (kv.length === 1 ? iw / 2 : (i * iw) / (kv.length - 1));
+    const Y = (v) => m.t + ih - (v / top) * ih;
+    let h = "";
+    for (let t = 0; t <= top + 1e-9; t += trin) {
+      h += `<line class="gl" x1="${m.l}" x2="${m.l + iw}" y1="${Y(t)}" y2="${Y(t)}"/>` +
+        `<text class="ax" x="${m.l - 8}" y="${Y(t) + 4}" text-anchor="end">${tal(t, M.dec && trin < 1 ? 1 : 0)}</text>`;
+    }
+    kv.forEach((q, i) => {
+      if (!smal) h += `<text class="ax" x="${X(i)}" y="${m.t + ih + 16}" text-anchor="middle">${q.slice(5)}. kv</text>`;
+      // årstal ved 1. kvartal; et ufuldstændigt første år kun hvis der er plads før næste årstal
+      const førsteK1 = kv.findIndex((x) => x.endsWith("K1"));
+      const vis = q.endsWith("K1") || (i === 0 && (førsteK1 < 0 || førsteK1 >= 3));
+      if (vis) h += `<text class="ax år" x="${X(i)}" y="${m.t + ih + (smal ? 16 : 32)}" text-anchor="middle">${q.slice(0, 4)}</text>`;
+    });
+    // linjer: reference først, så de valgte kommuner ligger øverst
+    for (const s of [...serier].sort((a, b) => (b.ref ? 1 : 0) - (a.ref ? 1 : 0))) {
+      const pts = s.v.map((v, i) => (v == null ? null : [X(i), Y(v)])).filter(Boolean);
+      h += `<polyline class="ln${s.ref ? " ref" : ""}" style="stroke:${s.farve}" points="${pts.map((p) => p.join(",")).join(" ")}"/>`;
+      if (!s.ref) h += pts.map((p) => `<circle class="pt" cx="${p[0]}" cy="${p[1]}" r="4" style="fill:${s.farve}"/>`).join("");
+    }
+    // direkte etiketter ved linjernes ende, skubbet fra hinanden hvis de overlapper
+    const ender = serier.map((s) => ({ s, y: Y(s.v[s.v.length - 1] ?? 0) })).sort((a, b) => a.y - b.y);
+    for (let i = 1; i < ender.length; i++) if (ender[i].y - ender[i - 1].y < 15) ender[i].y = ender[i - 1].y + 15;
+    for (const e of ender) {
+      const yEnd = Y(e.s.v[e.s.v.length - 1] ?? 0), x0 = X(kv.length - 1);
+      h += `<line class="lead" x1="${x0 + 6}" x2="${x0 + 14}" y1="${yEnd}" y2="${e.y}" style="stroke:${e.s.farve}"/>` +
+        `<text class="glbl" x="${x0 + 18}" y="${e.y + 4}">${esc(e.s.navn)} <tspan class="lv">${tal(e.s.v[e.s.v.length - 1] ?? 0, M.dec)}</tspan></text>`;
+    }
+    h += `<line id="kryds" class="kryds" y1="${m.t}" y2="${m.t + ih}" visibility="hidden"/>` +
+      `<rect id="grafHit" x="${m.l - 10}" y="${m.t}" width="${iw + 20}" height="${ih}" fill="transparent"/>`;
+    svg.innerHTML = h;
+
+    const tip = $("grafTip");
+    const vis = (ev) => {
+      const r = svg.getBoundingClientRect(), sx = ((ev.clientX - r.left) / r.width) * W;
+      const i = Math.max(0, Math.min(kv.length - 1, Math.round(((sx - m.l) / iw) * (kv.length - 1))));
+      const k = svg.querySelector("#kryds");
+      k.setAttribute("x1", X(i)); k.setAttribute("x2", X(i)); k.setAttribute("visibility", "visible");
+      const rækker = serier.map((s) => ({ s, v: s.v[i] })).filter((x) => x.v != null).sort((a, b) => b.v - a.v);
+      tip.innerHTML = `<b>${esc(kvt(kv[i]))}</b>` + rækker.map((x) =>
+        `<div><i style="background:${x.s.farve}"></i>${esc(x.s.navn)}<span>${tal(x.v, M.dec)}</span></div>`).join("");
+      tip.hidden = false;
+      const px = (X(i) / W) * r.width;
+      tip.style.left = Math.min(r.width - tip.offsetWidth - 4, Math.max(4, px + 12)) + "px";
+    };
+    const skjul = () => { tip.hidden = true; svg.querySelector("#kryds")?.setAttribute("visibility", "hidden"); };
+    const hit = svg.querySelector("#grafHit");
+    hit.addEventListener("pointermove", vis); hit.addEventListener("pointerdown", vis); hit.addEventListener("pointerleave", skjul);
+
+    // tabelvisning (samme tal som grafen)
+    $("grafTabel").innerHTML = `<table><thead><tr><th>Kvartal</th>${serier.map((s) => `<th>${esc(s.navn)}</th>`).join("")}</tr></thead><tbody>` +
+      kv.map((q, i) => `<tr><td>${esc(kvt(q))}</td>${serier.map((s) => `<td>${s.v[i] == null ? "–" : tal(s.v[i], M.dec)}</td>`).join("")}</tr>`).reverse().join("") +
+      "</tbody></table>";
+  }
+
+  $("grafValg").addEventListener("click", (e) => {
+    const b = e.target.closest("[data-fjern]"); if (!b) return;
+    grafValg = grafValg.filter((g) => g.kode !== b.dataset.fjern); tegnGraf();
+  });
+  $("grafTilføj").addEventListener("change", (e) => { if (e.target.value) tilføjGraf(e.target.value); });
+  let grafTimer;
+  addEventListener("resize", () => { clearTimeout(grafTimer); grafTimer = setTimeout(tegnGraf, 150); });
+
   hentData("statistik.json").then((d) => {
     STAT = d;
     PERIODER = byggPerioder(d.kvartaler);
@@ -284,10 +410,16 @@
       `<optgroup label="Kvartaler">${PERIODER.filter((p) => !p.år).map(opt).join("")}</optgroup>`;
     $("statGrp").hidden = false;
     tegnStatistik();
+    // Start grafen med de tre kommuner med flest indbrud i det seneste kvartal
+    const sidste = d.kvartaler[d.kvartaler.length - 1];
+    [...d.kommuner].sort((a, b) => (b.antal[sidste] || 0) - (a.antal[sidste] || 0)).slice(0, 3).forEach((x) => tilføjGraf(x.kode));
+    $("grafBoks").hidden = false;
+    tegnGraf();
   }).catch(() => { /* statistikken er valgfri */ });
   $("visStat").addEventListener("change", tegnStatistik);
   $("klist").addEventListener("click", (e) => {
     const b = e.target.closest(".item"); if (!b) return;
+    tilføjGraf(b.dataset.kode);
     const m = statMarkører.get(b.dataset.kode); if (!m) return;
     map.setView(m.getLatLng(), Math.max(map.getZoom(), 10));
     m.openPopup();
@@ -298,7 +430,7 @@
     $("klist").hidden = f.dataset.fane !== "kommuner";
   }));
   $("kvartal").addEventListener("change", tegnStatistik);
-  $("maal").addEventListener("change", tegnStatistik);
+  $("maal").addEventListener("change", () => { tegnStatistik(); tegnGraf(); });
   $("visEnkelte").addEventListener("change", (e) => { if (e.target.checked) lag.addTo(map); else lag.remove(); });
 
   // ---------- data ----------
