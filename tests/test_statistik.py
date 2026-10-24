@@ -25,3 +25,12 @@ def test_byg():
     aarhus = next(k for k in d["kommuner"] if k["navn"] == "Aarhus")
     assert aarhus["antal"]["2026K3"] == 491 and aarhus["indbyggere"] == 378270
     assert d["kvartaler"][-1] == "2026K3" and len(d["kvartaler"]) == 5
+
+
+def test_husstande_csv_med_bom():
+    rækker = parse_bulk((FIX / "statbank_fam55n.csv").read_text("utf-8"))
+    husst = {kode: v for kode, _, _, v in rækker}
+    assert husst["751"] > 150_000 and husst["563"] < 5_000  # Aarhus, Fanø
+    d = byg(parse_bulk((FIX / "statbank_straf11.csv").read_text("utf-8")), {}, lambda n: (10, 56), husst)
+    aarhus = next(k for k in d["kommuner"] if k["navn"] == "Aarhus")
+    assert aarhus["husstande"] == husst["751"]

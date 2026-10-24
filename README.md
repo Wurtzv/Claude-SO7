@@ -85,9 +85,9 @@ Rettelser af bynavne ligger i `BY_ALIASER` i `parse.py`.
 
 ### Kommunestatistik for hele Jylland (Danmarks Statistik)
 
-Tre af de fem jyske kredse udgiver ingen døgnrapporter, så kortet har et ekstra lag med **alle anmeldte indbrud i beboelse pr. jysk kommune pr. kvartal**. Tallene kommer fra Danmarks Statistiks åbne API: tabel `STRAF11` (overtrædelse 1320 "Indbrud i beboelser") og `FOLK1A` (befolkning). `indbrudskort/statistik.py` henter de seneste 5 kvartaler for kommunekoder 500–989 (de jyske kommuner) ved hver kørsel, finder kommunens midtpunkt via Nominatim (cachet) og gemmer `data/statistik.json`. Kører kun statistikken fejl, fortsætter resten. Brug `--uden-statistik` for at springe den over.
+Tre af de fem jyske kredse udgiver ingen døgnrapporter, så kortet har et ekstra lag med **alle anmeldte indbrud i beboelse pr. jysk kommune pr. kvartal**. Tallene kommer fra Danmarks Statistiks åbne API: tabel `STRAF11` (overtrædelse 1320 "Indbrud i beboelser"), `FOLK1A` (befolkning) og `FAM55N` (husstande). `indbrudskort/statistik.py` henter de seneste 5 kvartaler for kommunekoder 500–989 (de jyske kommuner) ved hver kørsel, finder kommunens midtpunkt via Nominatim (cachet) og gemmer `data/statistik.json`. Kører kun statistikken fejl, fortsætter resten. Brug `--uden-statistik` for at springe den over.
 
-På kortet er cirklens størrelse antallet, og farvens styrke er antal pr. 1.000 indbyggere. Laget kan slås fra, og man kan vælge kvartal. Danmarks Statistik udgiver tallene ca. tre uger efter kvartalets udgang. Kommuner uden anmeldte indbrud i et kvartal står ikke i tabellen og vises som 0.
+Husstande (beboede hjem) hentes fra `FAM55N`. På kortet kan man vælge, om cirkler, tal og kommunelisten skal vise **antal indbrud**, **pr. 1.000 indbyggere** eller **pr. 1.000 husstande**. Jo større og mørkere cirkel, jo højere tal. Laget kan slås fra, og man kan vælge kvartal. Danmarks Statistik udgiver tallene ca. tre uger efter kvartalets udgang. Kommuner uden anmeldte indbrud i et kvartal står ikke i tabellen og vises som 0.
 
 ### Afsnitsformatet (Nordjylland)
 

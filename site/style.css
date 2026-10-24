@@ -84,3 +84,4 @@ aside h2 small{font-family:var(--f-mono);font-size:12px;font-weight:400;color:va
 .kn{font-family:var(--f-display);font-size:17px;color:var(--stat);margin-left:4px}
 .stat-tal{font-family:var(--f-display);font-weight:700;font-size:13px;line-height:16px;text-align:center;color:var(--fg);
   text-shadow:0 0 3px var(--panel),0 0 3px var(--panel),0 0 2px var(--panel)}
+.enh{font-family:var(--f-mono);font-size:11px;color:var(--muted);margin-left:3px;font-weight:400}
