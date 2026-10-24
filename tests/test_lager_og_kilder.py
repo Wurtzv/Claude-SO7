@@ -162,7 +162,7 @@ def test_omraadestatistik_pr_kommune():
         {"rapportdato": "2026-10-02", "politikreds": "Østjyllands Politi", "omraade": "Aarhus", "by": "Viby J"},
     ]
     kommuner = {"Risskov": "Aarhus", "Viby J": "Aarhus", "Assentoft": "Randers"}
-    d = byg(r, lambda by, omraade: kommuner.get(by))
+    d = byg(r, lambda by, omraade, kreds: kommuner.get(by))
     aarhus = next(k for k in d["kommuner"] if k["navn"] == "Aarhus")
     assert aarhus["antal"] == {"2026-09": 1, "2026-10": 1}
     assert {k["navn"] for k in d["kommuner"]} == {"Aarhus", "Randers"}
@@ -170,7 +170,8 @@ def test_omraadestatistik_pr_kommune():
 
 def test_kommune_fra_cache(tmp_path):
     cache = tmp_path / "c.json"
-    cache.write_text(json.dumps({"kommune|Risskov": "Aarhus"}))
+    cache.write_text(json.dumps({"kommune|Østjyllands Politi|Hinnerup": "Favrskov"}))
     g = Geokoder(cache, token="")
-    assert g.kommune("Risskov") == "Aarhus"            # intet netværkskald
+    assert g.kommune("Hinnerup", "Hinnerup", "Østjyllands Politi") == "Favrskov"  # intet netværkskald
+    assert g.kommune("Hasle", "Aarhus", "Østjyllands Politi") == "Aarhus"        # bydel -> områdets kommune
     assert g.kommune("Vesthimmerlands Kommune") == "Vesthimmerlands"

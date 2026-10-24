@@ -12,7 +12,7 @@ from pathlib import Path
 
 
 def byg(indbrud: list[dict], kommune_for=None) -> dict:
-    """`kommune_for(by, omraade)` giver kommunenavnet (fx 'Aarhus') eller None."""
+    """`kommune_for(by, omraade, kreds)` giver kommunenavnet (fx 'Aarhus') eller None."""
     by_tæl: dict[tuple, dict] = defaultdict(lambda: defaultdict(int))
     kom_tæl: dict[tuple, dict] = defaultdict(lambda: defaultdict(int))
     kommuner_for: dict[tuple, str | None] = {}
@@ -26,7 +26,7 @@ def byg(indbrud: list[dict], kommune_for=None) -> dict:
         by_tæl[(kreds, r["omraade"], r["by"])][md] += 1
         omr_tæl[(kreds, r["omraade"])][md] += 1
         if kommune_for:
-            nøgle = (r["by"], r["omraade"])
+            nøgle = (r["by"], r["omraade"], kreds)
             if nøgle not in kommuner_for:
                 kommuner_for[nøgle] = kommune_for(*nøgle)
             if kommuner_for[nøgle]:
