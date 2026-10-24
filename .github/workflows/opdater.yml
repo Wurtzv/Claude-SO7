@@ -59,7 +59,7 @@ jobs:
         run: |
           mkdir _site
           cp site/* _site/
-          cp data/indbrud.json data/statistik.json _site/
+          cp data/indbrud.json data/statistik.json data/omraader.json _site/
           # Nyt versionsnummer ved hver udgivelse, så browsere ikke bruger en gammel app.js/style.css
           v="${GITHUB_SHA::7}-${GITHUB_RUN_ID}"
           sed -i "s/style\.css\"/style.css?v=$v\"/; s/app\.js\"/app.js?v=$v\"/" _site/index.html

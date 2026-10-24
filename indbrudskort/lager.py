@@ -8,7 +8,7 @@ import re
 from datetime import date, datetime, timezone
 from pathlib import Path
 
-from .parse import Indbrud
+from .parse import Indbrud, omraade_for, rens_sted
 
 
 def _norm(s: str) -> str:
@@ -89,6 +89,39 @@ class Lager:
                 gammel["rapportdato"], gammel["kilde_url"] = ny["rapportdato"], url
         self.behandlet[url] = rapportdato.isoformat()
         return nye
+
+    def normaliser(self) -> int:
+        """Retter vej/by i gemte poster med den nuværende parser-logik og fletter poster,
+        der derved bliver til det samme indbrud. Returnerer antal ændrede poster."""
+        ændret = 0
+        nye: dict[str, dict] = {}
+        tælling: dict[tuple[str, str], int] = {}
+        for r in sorted(self.indbrud, key=lambda r: (r["rapportdato"], r["kilde_url"], r["id"])):
+            vej, by = rens_sted(r["vej"], r["by"])
+            if not by and re.match(r"^\d", vej):  # løsrevet linjestump, ikke et indbrud
+                ændret += 1
+                continue
+            if (vej, by) != (r["vej"], r["by"]):
+                ændret += 1
+                r.update(vej=vej, by=by)
+                r.pop("lat", None); r.pop("lon", None); r.pop("praecision", None); r.pop("geokilde", None)
+            if "omraade_navn" not in r and r.get("politikreds") != "Nordjyllands Politi":
+                r["omraade"] = omraade_for(by)
+            basis = basisnøgle(vej, by, r.get("tid_fra"), r.get("tid_til"))
+            k = (basis, r["kilde_url"])
+            tælling[k] = tælling.get(k, 0) + 1
+            id_ = hashlib.sha1(f"{basis}|{tælling[k]}".encode()).hexdigest()[:12]
+            if id_ in nye:  # samme indbrud set i en tidligere meddelelse
+                g = nye[id_]
+                for kilde in r["kilder"]:
+                    if kilde["url"] not in {x["url"] for x in g["kilder"]}:
+                        g["kilder"].append(kilde)
+                continue
+            r["id"] = id_
+            nye[id_] = r
+        self.indbrud = list(nye.values())
+        self._indeks = dict(nye)
+        return ændret
 
     def mangler_koordinater(self) -> list[dict]:
         return [r for r in self.indbrud if r.get("lat") is None or r.get("praecision") == "by"]

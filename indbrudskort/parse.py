@@ -37,6 +37,13 @@ BY_ALIASER = {
     "tranbjerg": "Tranbjerg J",
     "harlev": "Harlev J",
     "gjerlev": "Gjerlev J",
+    "grenå": "Grenaa",
+    "åbyshøj": "Åbyhøj",
+    "højberg": "Højbjerg",
+    "trambjerg j": "Tranbjerg J",
+    "viby i": "Viby J",
+    "aarhus vest": "Aarhus V",
+    "århus vest": "Aarhus V",
 }
 
 # Byer og bydele, der vises samlet som "Aarhus" i områdefilteret.
@@ -180,6 +187,8 @@ def del_sammenskrevne(linje: str) -> list[str]:
 def _rens_by(by: str) -> str:
     by = by.strip(" ,.-")
     by = re.sub(r"\s+", " ", by)
+    by = re.sub(r"\s*b?egået$", "", by)  # "Hammelegået", "Brabrand egået"
+    by = re.sub(r"\s(c|n|v|j|s|ø|nv|nø|sv|sø)$", lambda m: " " + m.group(1).upper(), by)  # "Viby j", "Randers Sø"
     key = by.casefold()
     if key in BY_ALIASER:
         return BY_ALIASER[key]
@@ -224,8 +233,38 @@ def _tidspunkter(tekst: str, rapportdato: date) -> list[Tidspunkt]:
     return ud
 
 
+POSTNR_RE = re.compile(
+    r"^(?P<vej>.+?)(?:,|\s+\d{1,4}[A-Za-z]?)?\s*,?\s+(?P<pnr>\d{4})\s+(?P<by>[^\d,]+?)(?:\s+\d{4})?(?:\s+i\s+.+)?$")
+
+
+def del_sted(sted: str) -> tuple[str, str]:
+    """'Klintevej i Hammel' / 'Tornhøjvej, 8260 Viby J' / 'Hellerupvej 003 8000 Aarhus C'
+    / 'Sletterhagevej Risskov' -> (vej, by)."""
+    m = POSTNR_RE.match(sted)
+    if m:
+        return m.group("vej"), m.group("by")
+    m = re.match(r"^(.*?)\s+[iI]\s+(.+)$", sted)
+    if m:
+        return m.group(1), m.group(2)
+    m = VEJ_ENDELSE_RE.match(sted)
+    return (m.group(1), m.group(2)) if m else (sted, "")
+
+
+def rens_sted(vej: str, by: str) -> tuple[str, str]:
+    """Retter vej/by i allerede gemte poster (bruges ved oprydning af ældre data)."""
+    if POSTNR_RE.match(vej):  # postnummer i vejfeltet, fx "Råhøjparken, 8260 Viby J"
+        v, b = del_sted(vej)
+        return re.sub(r"\s+", " ", v).strip(" ,."), _rens_by(b)
+    if not by or re.search(r"\d", by):
+        v, b = del_sted(f"{vej} {by}".strip())
+        return re.sub(r"\s+", " ", v).strip(" ,."), _rens_by(b)
+    return vej, _rens_by(by)
+
+
 def parse_linje(linje: str, rapportdato: date) -> Indbrud | None:
     rå = linje
+    if re.match(r"^\d", linje.strip()) and not re.match(r"^\s*\d+\s+indbrud\b", linje, re.I):
+        return None  # løsrevet stump af en linje, fx "00 og lørdag den 29/8 kl. 08:00"
     s = ret_ocr(re.sub(r"\s+", " ", linje)).strip(" .;")
     antal = 1
     m = re.match(r"^(\d+|to|tre|fire|fem)\s+indbrud\s+på\s+", s, re.I)
@@ -242,12 +281,7 @@ def parse_linje(linje: str, rapportdato: date) -> Indbrud | None:
     if not sted or not DATO_RE.search(tid):
         return None
 
-    m = re.match(r"^(.*?)\s+[iI]\s+(.+)$", sted)
-    if m:
-        vej, by = m.group(1), m.group(2)
-    else:
-        m = VEJ_ENDELSE_RE.match(sted)
-        vej, by = (m.group(1), m.group(2)) if m else (sted, "")
+    vej, by = del_sted(sted)
     vej = re.sub(r"\s+", " ", vej).strip(" ,.")
     if not vej:
         return None

@@ -32,8 +32,12 @@ class PolitiDk:
 
     udgiver = "politi.dk"
 
-    def __init__(self, politikreds: str, distrikt: str, sti: str, format: str = "liste"):
+    def __init__(self, politikreds: str, distrikt: str, sti: str, format: str = "liste",
+                 historik: tuple[str, ...] = ()):
         self.politikreds = politikreds
+        # Skabeloner for ældre rapporters adresser (oversigten viser kun ca. 30 dage).
+        # Pladsholdere: {d} {dd} {m} {mm} {mnavn} {yyyy} {yy}
+        self.historik = historik
         self.distrikt = distrikt  # fx "OEstjyllands-Politi"
         self.sti = sti  # fx "oestjyllands-politi"
         # "liste": fast liste over indbrud i privat beboelse (Østjylland)
@@ -66,7 +70,27 @@ class PolitiDk:
         return [m for m in self.parse_liste(net.hent_tekst(self.liste_url())) if m.dato >= siden]
 
     def hent(self, m: Meddelelse) -> str:
-        return net.hent_tekst(m.url)
+        return m.indhold or net.hent_tekst(m.url)
+
+    def historiske_urls(self, dato: date) -> list[str]:
+        v = {"d": dato.day, "dd": f"{dato.day:02d}", "m": dato.month, "mm": f"{dato.month:02d}",
+             "mnavn": MÅNEDER[dato.month - 1], "yyyy": dato.year, "yy": f"{dato.year % 100:02d}"}
+        sti = f"https://politi.dk/{self.sti}/doegnrapporter/"
+        return [sti + s.format(**v) + f"/{dato.year}/{dato.month:02d}/{dato.day:02d}" for s in self.historik]
+
+    def hent_historisk(self, dato: date) -> Meddelelse | None:
+        """Prøver skabelonerne en for en; None hvis ingen rapport findes for dagen."""
+        for url in self.historiske_urls(dato):
+            try:
+                side = net.hent_tekst(url, forsøg=2)
+            except Exception as e:  # 404 = ikke denne skabelon
+                if getattr(e, "code", None) == 404:
+                    continue
+                raise
+            titel = re.search(r"<title>\s*([^<|]+)", side)
+            return Meddelelse(url, html.unescape(titel.group(1).strip()) if titel else f"Døgnrapport {dato}",
+                              dato, self.udgiver, self.politikreds, side)
+        return None
 
     def parse(self, m: Meddelelse, indhold: str) -> list[Indbrud]:
         if self.format == "afsnit":
@@ -112,13 +136,22 @@ class Ritzau:
 # De fem jyske politikredse. Kun Øst- og Nordjylland lægger døgnrapporter på politi.dk;
 # de tre andre udgiver kun enkeltsager på Via Ritzau.
 KILDER = [
-    PolitiDk("Østjyllands Politi", "OEstjyllands-Politi", "oestjyllands-politi"),
+    PolitiDk("Østjyllands Politi", "OEstjyllands-Politi", "oestjyllands-politi", historik=(
+        "oestjyllands-politi-uddrag-af-doegnrapporten-{d}-{mnavn}-{yyyy}",
+        "doegnrapport{dd}{mm}{yyyy}",
+        "oestjyllands-politi-uddrag-af-doegnrapporten-{d}-{mnavn}",
+        "uddrag-af-doegnrapporten-{d}-{mnavn}-{yyyy}",
+    )),
     PolitiDk("Nordjyllands Politi", "Nordjyllands-Politi", "nordjyllands-politi", format="afsnit"),
     Ritzau("Østjyllands Politi", 90721),
     Ritzau("Sydøstjyllands Politi", 90720),
     Ritzau("Midt- og Vestjyllands Politi", 90687),
     Ritzau("Syd- og Sønderjyllands Politi", 90686),
 ]
+
+
+MÅNEDER = ["januar", "februar", "marts", "april", "maj", "juni", "juli", "august",
+           "september", "oktober", "november", "december"]
 
 
 def siden(dage: int, i_dag: date | None = None) -> date:

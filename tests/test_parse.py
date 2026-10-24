@@ -134,3 +134,23 @@ def test_ritzau_doegnrapport_med_to_paa_samme_vej():
 def test_ritzau_andre_meddelelser_ignoreres():
     assert ritzau(15229496) == []  # "Indbrud i frisørsalon" er ikke døgnets liste
     assert ritzau(15225189) == []  # døgnrapport udgivet som billeder
+
+
+# ---------- ældre formater (2026 og tidligere) ----------
+
+@pytest.mark.parametrize("linje,vej,by", [
+    ("På Hellerupvej 003 8000 Aarhus C fredag den 21/8 26 kl.1700 til lørdag den 22/8 26 kl.08.30", "Hellerupvej", "Aarhus C"),
+    ("På Søkjærvej 009 8260 Viby J i Aarhus begået den fredag den 14/8 26 kl.12.30", "Søkjærvej", "Viby J"),
+    ("På Tornhøjvej, 8260 Viby J, begået mellem fredag den 28/8 kl. 14:00 og lørdag den 29/8 kl. 09:45", "Tornhøjvej", "Viby J"),
+    ("På J. L. Heibergs Vej, 8230 Åbyhøj, begået mellem onsdag den 26/8 kl. 17:00 og fredag den 28/8", "J. L. Heibergs Vej", "Åbyhøj"),
+    ("På Møllevangen i Hammelegået mellem d. 19/9 og d. 20/9", "Møllevangen", "Hammel"),
+    ("På Balagervej i Viby i begået mellem den 06/07 kl. 08.00 og den 10/07 kl. 13.45.", "Balagervej", "Viby J"),
+    ("På Markedsgade i Grenå begået mellem den 09/7 kl. 08.13 og den 10/7 kl. 08.00.", "Markedsgade", "Grenaa"),
+])
+def test_aeldre_formater(linje, vej, by):
+    ib = parse_linje(linje, date(2026, 8, 30))
+    assert (ib.vej, ib.by) == (vej, by)
+
+
+def test_loesrevet_stump_ignoreres():
+    assert parse_linje("00 og lørdag den 29/8 kl. 08:00", date(2026, 8, 30)) is None

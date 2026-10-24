@@ -74,11 +74,34 @@
       <select id="grafTilføj" aria-label="Tilføj kommune til grafen"></select>
     </div>
     <div class="gwrap">
-      <svg id="graf" role="img" aria-label="Linjegraf over anmeldte indbrud pr. kvartal for de valgte kommuner"></svg>
+      <svg id="graf" class="lgraf" role="img" aria-label="Linjegraf over anmeldte indbrud pr. kvartal for de valgte kommuner"></svg>
       <div id="grafTip" class="gtip" hidden></div>
       <p id="grafTom" class="empty" hidden>Vælg en kommune for at se udviklingen.</p>
     </div>
     <details><summary>Vis som tabel</summary><div id="grafTabel" class="gtabel"></div></details>
+  </section>
+
+  <section class="grafboks" id="egenBoks" hidden aria-labelledby="egenTitel">
+    <h2 id="egenTitel">Egen statistik fra døgnrapporterne</h2>
+    <p class="gsub" id="egenSub"></p>
+    <div class="gstyr">
+      <label><span class="lbl">Politikreds</span><select id="egenKreds"></select></label>
+      <label><span class="lbl">Niveau</span>
+        <select id="egenNiveau"><option value="omraader">Områder (fx Aarhus, Randers)</option><option value="byer">Byer og bydele</option></select></label>
+      <label><span class="lbl">Inddeling</span>
+        <select id="egenInddeling"><option value="maaned">Måned</option><option value="kvartal">Kvartal</option><option value="aar">År</option></select></label>
+    </div>
+    <div class="gstyr">
+      <div id="egenValg" class="gvalg"></div>
+      <select id="egenTilføj" aria-label="Tilføj område til grafen"></select>
+    </div>
+    <div class="gwrap">
+      <svg id="egenGraf" class="lgraf" role="img" aria-label="Linjegraf over indbrud fra døgnrapporterne for de valgte områder"></svg>
+      <div id="egenTip" class="gtip" hidden></div>
+      <p id="egenTom" class="empty" hidden>Vælg et område for at se udviklingen.</p>
+    </div>
+    <details><summary>Vis som tabel</summary><div id="egenTabel" class="gtabel"></div></details>
+    <div id="egenRang" class="gtabel rang"></div>
   </section>
 
   <div class="notes">

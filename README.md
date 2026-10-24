@@ -91,6 +91,22 @@ Husstande (beboede hjem) hentes fra `FAM55N`. På kortet kan man vælge, om cirk
 
 Under kortet er der en **graf over udviklingen pr. kvartal** for op til tre valgte kommuner (klik på en kommune på kortet eller i listen, eller vælg i feltet). Grafen følger valget af antal / pr. indbygger / pr. husstand, viser "Jylland i alt" som reference ved tallene pr. indbygger og husstand, og kan vises som tabel.
 
+### Historik og egen langtidsstatistik
+
+politi.dk's oversigt viser kun ca. 30 dage, men de ældre døgnrapporter ligger der stadig. Deres adresser følger faste mønstre (fx `.../oestjyllands-politi-uddrag-af-doegnrapporten-5-marts-2024/2024/03/05` eller `.../doegnrapport24082026/...`), som står som `historik`-skabeloner på kilden i `kilder.py`. Kommandoen
+
+```bash
+python -m indbrudskort historik --fra 2023-01-01 --til 2026-09-17
+```
+
+prøver skabelonerne dag for dag (ca. én forespørgsel pr. sekund), parser rapporterne og fletter dem ind uden dubletter. Dage uden rapport gemmes i `data/historik.json`, så en afbrudt kørsel kan fortsætte, hvor den slap. For Østjylland findes rapporterne mindst tilbage til 2022. Nordjyllands ældre rapporter har ingen gættelige adresser, så her vokser historikken fra dag til dag.
+
+Ældre rapporter har andre formater (fx `På Hellerupvej 003 8000 Aarhus C …` eller `Tornhøjvej, 8260 Viby J, begået …`), som parseren også forstår. `Lager.normaliser()` køres ved hver gemning og retter allerede gemte poster, når parseren bliver forbedret, og fletter poster, der derved viser sig at være samme indbrud.
+
+`indbrudskort/omraader.py` tæller indbruddene pr. område og pr. by/bydel pr. måned (efter rapportdato) i `data/omraader.json`. Kortsiden bruger filen i afsnittet **"Egen statistik fra døgnrapporterne"**: graf for op til tre områder eller bydele pr. måned, kvartal eller år, og en rangliste over de seneste 12 hele måneder sammenlignet med de 12 før.
+
+Geokodning af mange nye veje tager tid (Nominatim tillader ét kald pr. sekund). Den daglige kørsel bruger derfor højst 20 minutter på geokodning (`--geokodning-minutter`), nyeste indbrud først, og tager resten de følgende dage. Statistikken pr. by/bydel kræver ikke koordinater.
+
 ### Afsnitsformatet (Nordjylland)
 
 Et afsnit tæller med, når overskriften begynder med "Indbrud" (ikke "Tyveri", "Forsøg på indbrud" eller indbrud i biler). Fra brødtekstens første sætning hentes by/bydel ("i Vejgaard-området", "i Vesthimmerlands kommune", "i Aalborgs Vestby"), eventuel vej ("på Boysenbærvej"), antal ("i to villaer") og tidspunkt ("Natten til onsdag" omsat til seneste onsdag før rapportdatoen). Typen er *privat* (villa, lejlighed, fritidshus …), *erhverv* (butik, værksted, prøvehus, kirke …) eller *andet* (fx garage). Afsnittets tekst gemmes i feltet `beskrivelse` og vises på kortet.
