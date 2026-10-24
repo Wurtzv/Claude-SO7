@@ -175,3 +175,11 @@ def test_kommune_fra_cache(tmp_path):
     assert g.kommune("Hinnerup", "Hinnerup", "Østjyllands Politi") == "Favrskov"  # intet netværkskald
     assert g.kommune("Hasle", "Aarhus", "Østjyllands Politi") == "Aarhus"        # bydel -> områdets kommune
     assert g.kommune("Vesthimmerlands Kommune") == "Vesthimmerlands"
+
+
+def test_kun_kredsens_egne_kommuner():
+    from indbrudskort.omraader import byg
+    r = [{"rapportdato": "2026-09-21", "politikreds": "Østjyllands Politi", "omraade": "Ulstrup", "by": "Ulstrup"},
+         {"rapportdato": "2026-09-21", "politikreds": "Østjyllands Politi", "omraade": "Hinnerup", "by": "Hinnerup"}]
+    d = byg(r, lambda by, o, k: {"Ulstrup": "Viborg", "Hinnerup": "Favrskov"}[by])
+    assert [k["navn"] for k in d["kommuner"]] == ["Favrskov"]

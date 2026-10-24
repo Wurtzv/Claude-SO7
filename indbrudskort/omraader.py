@@ -11,6 +11,15 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 
+# Kommuner i hver politikreds. Kun de kommuner, kredsen dækker, får en kommunetal-række,
+# så en landsby ved kredsgrænsen ikke giver et misvisende lavt tal pr. husstand i nabokommunen.
+KREDS_KOMMUNER = {
+    "Østjyllands Politi": {"Aarhus", "Randers", "Favrskov", "Norddjurs", "Syddjurs", "Odder", "Samsø"},
+    "Nordjyllands Politi": {"Aalborg", "Brønderslev", "Frederikshavn", "Hjørring", "Jammerbugt", "Læsø",
+                            "Mariagerfjord", "Morsø", "Rebild", "Thisted", "Vesthimmerlands"},
+}
+
+
 def byg(indbrud: list[dict], kommune_for=None) -> dict:
     """`kommune_for(by, omraade, kreds)` giver kommunenavnet (fx 'Aarhus') eller None."""
     by_tæl: dict[tuple, dict] = defaultdict(lambda: defaultdict(int))
@@ -29,8 +38,9 @@ def byg(indbrud: list[dict], kommune_for=None) -> dict:
             nøgle = (r["by"], r["omraade"], kreds)
             if nøgle not in kommuner_for:
                 kommuner_for[nøgle] = kommune_for(*nøgle)
-            if kommuner_for[nøgle]:
-                kom_tæl[(kreds, kommuner_for[nøgle])][md] += 1
+            k = kommuner_for[nøgle]
+            if k and k in KREDS_KOMMUNER.get(kreds, {k}):
+                kom_tæl[(kreds, k)][md] += 1
         d = dækning.setdefault(kreds, [r["rapportdato"], r["rapportdato"]])
         d[0], d[1] = min(d[0], r["rapportdato"]), max(d[1], r["rapportdato"])
     måneder = sorted({md for t in omr_tæl.values() for md in t})
