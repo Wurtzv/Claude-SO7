@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Indbrudskort Jylland</title>
+<meta name="description" content="Kort over anmeldte indbrud i privat beboelse fra politiets døgnrapporter, opdateret dagligt.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Source+Sans+3:wght@400;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="eyebrow" id="eyebrow">Politiets døgnrapporter</div>
+    <h1>Indbrudskort Jylland</h1>
+    <p class="lede">Anmeldte indbrud fra politiets offentlige døgnrapporter. Hvert punkt sidder midt på den oplyste vej, ikke ved et husnummer.</p>
+    <div class="stats" id="stats"></div>
+  </header>
+
+  <div class="filters" role="group" aria-label="Filtre">
+    <div class="grp">
+      <span class="lbl">Periode</span>
+      <div class="chips" id="periode">
+        <button class="chip" data-p="7" aria-pressed="false">7 dage</button>
+        <button class="chip" data-p="14" aria-pressed="true">14 dage</button>
+        <button class="chip" data-p="30" aria-pressed="false">30 dage</button>
+        <button class="chip" data-p="0" aria-pressed="false">Alt</button>
+      </div>
+    </div>
+    <label><span class="lbl">Rapportdato</span><select id="dato"></select></label>
+    <label><span class="lbl">Område</span><select id="omraade"></select></label>
+    <button class="reset" id="nulstil" type="button">Nulstil</button>
+  </div>
+
+  <div class="main">
+    <div id="map" role="region" aria-label="Kort over anmeldte indbrud"></div>
+    <aside>
+      <h2>Anmeldte indbrud <small id="cnt"></small></h2>
+      <div class="list" id="list"></div>
+    </aside>
+  </div>
+
+  <div class="notes">
+    <p><b>Datagrundlag.</b> Indbrud i privat beboelse fra Østjyllands Politis døgnrapporter på politi.dk og deres meddelelser på Via Ritzau. Samme indbrud nævnt i flere meddelelser (samme vej, bydel og gerningstid) tælles kun én gang. Siden opdateres hver morgen.</p>
+    <p><b>Placering.</b> Politiet oplyser kun vej og by. Punktet sidder midt på vejen. Kunne vejen ikke findes, sidder punktet ved byens midte og er vist med stiplet kant.</p>
+    <p id="opdateret"></p>
+  </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

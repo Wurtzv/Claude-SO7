@@ -1,1 +1,140 @@
-# Claude-SO7
+# Indbrudskort Jylland
+
+Et kort over anmeldte indbrud i privat beboelse, bygget på politiets offentlige døgnrapporter.
+Et Python-script henter de nye rapporter hver morgen, trækker vej, by, gerningstid og type ud,
+finder vejens midtpunkt og gemmer det hele i `data/indbrud.json`. En statisk side med Leaflet og
+OpenStreetMap viser indbruddene på et kort, og den bliver lagt på GitHub Pages.
+
+> Mappen `SO7/` hører til et skoleprojekt og har ikke noget med kortet at gøre.
+
+## Indhold
+
+| Sti | Hvad |
+|---|---|
+| `indbrudskort/parse.py` | Finder listen over indbrud i en rapport og tolker hver linje |
+| `indbrudskort/kilder.py` | Kilderne: politi.dk-døgnrapporter og Via Ritzau. **Nye kredse og kilder tilføjes her** |
+| `indbrudskort/geokod.py` | Vej + by → koordinat midt på vejen, med cache |
+| `indbrudskort/lager.py` | `data/indbrud.json`: fletning uden dubletter |
+| `data/indbrud.json` | Alle indbrud (bliver opdateret automatisk) |
+| `data/geokode-cache.json` | Cache over geokodede veje og byer |
+| `data/startdata.json` | De 31 indbrud fra prototypen (17.–22. okt. 2026), som blev brugt som startdata |
+| `site/` | Kortsiden (`index.html`, `app.js`, `style.css`) |
+| `tests/` | Tests med gemte rapporter i `tests/fixtures/` |
+| `.github/workflows/opdater.yml` | Daglig kørsel kl. 08:30 UTC, commit af nye data og udgivelse på GitHub Pages |
+| `.github/workflows/test.yml` | Tests og en prøvekørsel mod de rigtige kilder ved hvert push til en gren |
+
+## Kom i gang lokalt
+
+Det kræver Python 3.10 eller nyere. Selve scriptet bruger kun standardbiblioteket, og `pytest` skal kun bruges til testene.
+
+```bash
+pip install pytest
+python -m pytest                          # kør testene
+python -m indbrudskort opdater            # hent de seneste 14 dages rapporter og geokod dem
+python -m indbrudskort opdater --dage 30  # kig længere tilbage
+python -m indbrudskort opdater --prøvekørsel --uden-geokodning   # hent og parse, men gem intet
+```
+
+Sådan ser du kortet lokalt:
+
+```bash
+python -m http.server 8000
+# åbn http://localhost:8000/site/  (siden henter ../data/indbrud.json, når den kører lokalt)
+```
+
+## Opsætning på GitHub
+
+1. **Slå GitHub Pages til:** Gå til *Settings → Pages → Build and deployment → Source* og vælg **GitHub Actions**.
+2. **Giv Actions lov til at skrive:** Gå til *Settings → Actions → General → Workflow permissions* og vælg **Read and write permissions**, så workflowet kan committe nye data.
+3. **Valgfrit: Dansk adresse-API.** Opret en gratis bruger på Dataforsyningen og lav en token. Læg den som repository-secret med navnet `DATAFORSYNINGEN_TOKEN` under *Settings → Secrets and variables → Actions*. Uden token bruges kun Nominatim.
+4. Kør workflowet **Opdater indbrudskort** én gang manuelt (*Actions → Opdater indbrudskort → Run workflow*). Bagefter kører det selv hver dag kl. 08:30 UTC. Det kører også ved push til `main`, når kode, side eller startdata ændres.
+
+Workflowet kører først testene. Hvis politiet ændrer formatet, så parseren går i stykker, bliver kørslen rød i stedet for at gemme forkerte data. Kørslen fejler også, hvis ingen af kilderne kan nås.
+
+## Sådan virker det
+
+### Kilder
+
+- **politi.dk:** Oversigten `https://politi.dk/doegnrapporter?district=OEstjyllands-Politi` har listen over rapporter som JSON inde i HTML'en (felterne `Link`, `ListDate` og `Headline`), så scriptet behøver ikke køre JavaScript. I hver rapport står indbruddene efter sætningen *"Der er det seneste døgn anmeldt … indbrud i privat beboelse"*.
+- **Via Ritzau:** `https://via.ritzau.dk/json/v2/releases?publisher=90721` giver Østjyllands Politis pressemeddelelser med brødtekst. Her ligger "Døgnets indbrud i privat beboelse", og det er også her, døgnrapporten bliver lagt, når politi.dk har tekniske problemer.
+
+Meddelelser, der er behandlet én gang, bliver husket i `behandlede_meddelelser` i `data/indbrud.json` og hentes ikke igen. Brug `--alle` for at genbehandle dem.
+
+### Parseren
+
+Formatet varierer en del, og testene dækker bl.a.:
+
+- `På Klintevej i Hammel begået mellem onsdag d. 14/10 og søndag d. 18/10`
+- `Sehierupsvej i Højbjerg mellem d. 12/10 kl. 10.00 til d. 16/10 kl. 08.15`
+- `På Farøvænget i Tilst begået den 10/10 mellem kl. 10:45 og den kl. 17:07.`
+- `Sletterhagevej Risskov d. 15/10 …` (uden "i" mellem vej og by)
+- `2 indbrud på Reventlowsvej i Viby - gerningstid 18/10` (bliver til to indbrud)
+- Flere indbrud skrevet i én linje, OCR-agtige fejl som `16/l0` og `kl. l0.59`, og stavefejl som `Riiskov` og `Århus N`.
+
+Rettelser af bynavne ligger i `BY_ALIASER` i `parse.py`.
+
+### Dubletter
+
+To linjer er det samme indbrud, hvis **vej + by + gerningstid** er ens. Der sammenlignes kun på datoer, fordi samme sag kan stå som "17/10" ét sted og "17/10 kl. 03.03" et andet. Den mest detaljerede gerningstid og den tidligste rapportdato bliver gemt, og alle kildelinks samles i `kilder`. To ens linjer i *samme* meddelelse er to forskellige indbrud.
+
+### Geokodning
+
+Status pr. oktober 2026:
+
+- **DAWA er lukket.** `api.dataforsyningen.dk/vejstykker` og de andre DAWA-endpoints svarer `410 Gone`.
+- **Dataforsyningens gsearch** (`/rest/gsearch/v2.0/navngivenvej`) virker, men kræver en gratis token. Den bruges først, når `DATAFORSYNINGEN_TOKEN` er sat. Koden er skrevet uden en token at teste med, så den læser svaret defensivt (GeoJSON eller WKT, og UTM32 bliver omregnet). Hvis svaret ikke kan bruges, falder den tilbage til Nominatim.
+- **Datafordeleren** (DAR) kræver også login eller API-nøgle, og den gamle REST-tjeneste kan kun slå op på ID.
+- **Nominatim (OpenStreetMap)** virker uden nøgle og er den kilde, der bruges i praksis. Der laves højst ét kald pr. sekund, og der sendes en User-Agent, som Nominatims brugsregler kræver.
+
+Punktet sidder **halvvejs langs vejen**, beregnet ud fra hele vejens geometri, og aldrig ved et husnummer. Vejen skal ligge inden for 12 km af byens midte. Ellers er det sandsynligvis en anden vej med samme navn. Kan vejen ikke findes, bliver punktet sat ved byens midte med `"praecision": "by"` og vist med stiplet kant på kortet. Den slags opslag og mislykkede opslag prøves igen efter 14 dage. Alle opslag bliver gemt i `data/geokode-cache.json`.
+
+### Dataformat (`data/indbrud.json`)
+
+```json
+{
+  "opdateret": "2026-10-24T08:30:12+00:00",
+  "antal": 53,
+  "indbrud": [{
+    "id": "3f2a…",
+    "vej": "Klintevej", "by": "Hammel", "omraade": "Hammel", "type": "privat",
+    "gerningstid": "14/10 – 18/10", "tid_fra": "2026-10-14", "tid_til": "2026-10-18",
+    "rapportdato": "2026-10-19",
+    "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/…",
+    "kilder": [{"url": "…", "titel": "…", "rapportdato": "2026-10-19", "udgiver": "politi.dk"}],
+    "politikreds": "Østjyllands Politi",
+    "lat": 56.26228, "lon": 9.861224, "praecision": "vej", "geokilde": "nominatim"
+  }],
+  "behandlede_meddelelser": {"https://…": "2026-10-19"}
+}
+```
+
+## Tilføj flere politikredse eller nyhedskilder
+
+**En ny politikreds på politi.dk:** Tilføj en linje i `KILDER` i `indbrudskort/kilder.py`:
+
+```python
+PolitiDk("Midt- og Vestjyllands Politi", "Midt-og-Vestjyllands-Politi", "midt-og-vestjyllands-politi"),
+```
+
+Find distriktsnavnet i adressen, når du vælger kredsen på `https://politi.dk/doegnrapporter`, og stien i rapporternes egne links. Vær opmærksom på, at i dag er det kun Østjyllands Politi, der skriver en fast liste med *"indbrud i privat beboelse"*. Andre kredse skriver indbrud som almindelige nyhedsafsnit. Parseren finder kun listen, så der kommer ingen falske træffere, men der kommer heller ingen data, før den nye kreds' format er understøttet. Gør sådan her:
+
+1. Gem 2–3 af kredsens rapporter i `tests/fixtures/` og skriv tests for, hvad der bør komme ud.
+2. Udvid `find_indbrudslinjer`/`parse_linje` i `parse.py` (eller lav en egen parser til kredsen) til testene består.
+3. Tilføj kredsens byer og bydele til `omraade_for`/`AARHUS_OMRAADE`, hvis områdefiltret skal samle dem.
+
+**En ny politikreds på Via Ritzau:** Find udgiverens ID i adressen på kredsens nyhedsrum (`https://via.ritzau.dk/nyhedsrum/<id>/…`) og tilføj `Ritzau("Kredsens navn", <id>)` i `KILDER`.
+
+**En helt anden nyhedskilde:** Lav en klasse i `kilder.py` med samme tre ting som de eksisterende:
+
+- `udgiver` og `politikreds`
+- `find(siden: date) -> list[Meddelelse]`
+- `hent(meddelelse) -> str`, der returnerer HTML eller tekst
+
+Tilføj den til `KILDER`. Resten (parsing, dubletter, geokodning og kortet) virker uden ændringer. Skriv tests med gemte eksempler, før kilden kommer med i den daglige kørsel.
+
+## Begrænsninger
+
+- Politiet oplyser kun vej og by. Kortet viser derfor *hvor i området* der har været indbrud, ikke adresser.
+- Enkelte døgnrapporter bliver udgivet som billeder (fx Via Ritzau 14/10 2026). De kan ikke læses og bliver sprunget over.
+- Indbrud beskrevet i almindelige nyhedsafsnit, fx "Indbrud udviklede sig til røveri i Sabro", kommer kun med, hvis de også står på politiets liste. Undtagelsen er et erhvervsindbrud i Sabro, som stammer fra prototypens startdata.
+- Kortfliser © OpenStreetMaps bidragydere. Geokodning © OpenStreetMap via Nominatim.

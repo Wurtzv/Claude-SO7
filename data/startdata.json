@@ -1,0 +1,133 @@
+{
+ "beskrivelse": "Startdata fra prototypen indbrudskort.html (31 indbrud, Østjyllands Politi 17.-22. okt 2026). Indlæses én gang pr. kilde-URL og flettes uden dubletter med det, scriptet selv henter.",
+ "meddelelser": [
+  {
+   "rapportdato": "2026-10-17",
+   "url": "https://via.ritzau.dk/release/15229519",
+   "titel": "Døgnets indbrud i privat beboelse",
+   "udgiver": "Via Ritzau",
+   "politikreds": "Østjyllands Politi",
+   "linjer": [
+    "Sehierupsvej i Højbjerg d. 12/10 kl. 10.00 – 16/10 kl. 08.15",
+    "Egensvej i Risskov d. 13/10 kl. 13.00 – 16/10 kl. 15.00",
+    "Kirkevænget i Tranbjerg d. 16/10 kl. 15.00 – 17/10 kl. 00.40",
+    "Sophus Bauditz Vej i Åbyhøj d. 17/10 kl. 03.03",
+    "Østervænget i Tilst d. 15/10 kl. 10.59",
+    "Skovgaardsgade i Aarhus C d. 16/10 kl. 06.40",
+    "Sletterhagevej i Risskov d. 15/10 kl. 07.00 – 15.20",
+    "Solklintvej i Egå d. 16/10 kl. 10.40 – 14.45"
+   ],
+   "typer": [
+    "privat",
+    "privat",
+    "privat",
+    "privat",
+    "privat",
+    "privat",
+    "privat",
+    "privat"
+   ]
+  },
+  {
+   "rapportdato": "2026-10-18",
+   "url": "https://via.ritzau.dk/pressemeddelelse/15230173/dognrapport-fra-ostjyllands-politi-18-oktober-2026?publisherId=90721",
+   "titel": "Døgnrapport 18/10 (startdata fra prototypen)",
+   "udgiver": "Via Ritzau",
+   "politikreds": "Østjyllands Politi",
+   "linjer": [
+    "Frodesvej i Åbyhøj d. 13/10 – 17/10",
+    "Kanehaven i Risskov d. 12/10 – 17/10",
+    "Reventlowsvej i Viby J d. 18/10",
+    "Reventlowsvej i Viby J d. 18/10",
+    "Møllevangs Allé i Aarhus N d. 13/10 – 17/10",
+    "Visbygade i Aarhus N d. 9/10 – 17/10"
+   ],
+   "typer": [
+    "privat",
+    "privat",
+    "privat",
+    "privat",
+    "privat",
+    "privat"
+   ]
+  },
+  {
+   "rapportdato": "2026-10-19",
+   "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-19-oktober-2026/2026/10/19",
+   "titel": "Døgnrapport 19/10 (startdata fra prototypen)",
+   "udgiver": "politi.dk",
+   "politikreds": "Østjyllands Politi",
+   "linjer": [
+    "Klintevej i Hammel d. 14/10 – 18/10",
+    "Solbakken i Hammel d. 8/10 – 18/10",
+    "Selandersvej i Randers NV d. 15/10 – 18/10",
+    "Cederlunden i Randers SØ d. 4/10 – 18/10",
+    "Fejøvænget i Tilst d. 16/10 – 18/10",
+    "Stokrosevej i Beder d. 11/10 – 18/10",
+    "Thongvallagade i Aarhus N d. 16/10 – 18/10",
+    "Skt. Pauls Gade i Aarhus C d. 19/10",
+    "Kontorhotel (vej ikke oplyst) i Sabro d. 18/10"
+   ],
+   "typer": [
+    "privat",
+    "privat",
+    "privat",
+    "privat",
+    "privat",
+    "privat",
+    "privat",
+    "privat",
+    "erhverv"
+   ]
+  },
+  {
+   "rapportdato": "2026-10-20",
+   "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-20-oktober-2026/2026/10/20",
+   "titel": "Døgnrapport 20/10 (startdata fra prototypen)",
+   "udgiver": "politi.dk",
+   "politikreds": "Østjyllands Politi",
+   "linjer": [
+    "Karetmagervej i Randers NV d. 19/10",
+    "Christiansborgvej i Randers NØ d. 8/10 – 14/10",
+    "Munkebakken i Ebeltoft d. 14/10 – 19/10",
+    "Irisvej i Grenaa d. 17/10",
+    "Hostrupvej i Langå d. 19/10",
+    "Willemoesgade i Aarhus N d. 20/10"
+   ],
+   "typer": [
+    "privat",
+    "privat",
+    "privat",
+    "privat",
+    "privat",
+    "privat"
+   ]
+  },
+  {
+   "rapportdato": "2026-10-21",
+   "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-21-oktober-2026/2026/10/21",
+   "titel": "Døgnrapport 21/10 (startdata fra prototypen)",
+   "udgiver": "politi.dk",
+   "politikreds": "Østjyllands Politi",
+   "linjer": [
+    "Åskrænten i Egå mellem d. 15/10"
+   ],
+   "typer": [
+    "privat"
+   ]
+  },
+  {
+   "rapportdato": "2026-10-22",
+   "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-22-oktober-2026/2026/10/22",
+   "titel": "Døgnrapport 22/10 (startdata fra prototypen)",
+   "udgiver": "politi.dk",
+   "politikreds": "Østjyllands Politi",
+   "linjer": [
+    "Ingerslev Boulevard i Aarhus C d. 12/10 – 21/10"
+   ],
+   "typer": [
+    "privat"
+   ]
+  }
+ ]
+}
