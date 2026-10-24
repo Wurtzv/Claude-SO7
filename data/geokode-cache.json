@@ -1,4 +1,10 @@
 {
+ "Boysenbærvej|Ålbæk": {
+  "geokilde": "nominatim",
+  "lat": 57.575011,
+  "lon": 10.415451,
+  "praecision": "vej"
+ },
  "Egensvej|Risskov": {
   "geokilde": "nominatim",
   "lat": 56.196533,
@@ -78,6 +84,22 @@
   "lon": 10.2134046,
   "praecision": "by"
  },
+ "|Aabybro": {
+  "lat": 57.160639,
+  "lon": 9.733963
+ },
+ "|Aalborg": {
+  "lat": 57.046263,
+  "lon": 9.921526
+ },
+ "|Aalborg SV": {
+  "lat": 57.046263,
+  "lon": 9.921526
+ },
+ "|Aalborg SØ": {
+  "lat": 57.046263,
+  "lon": 9.921526
+ },
  "|Aarhus C": {
   "lat": 56.149628,
   "lon": 10.213405
@@ -90,6 +112,18 @@
   "lat": 56.43145,
   "lon": 10.378186
  },
+ "|Frederikshavn Kommune": {
+  "lat": 57.46112,
+  "lon": 10.454184
+ },
+ "|Hirtshals": {
+  "lat": 57.590803,
+  "lon": 9.964974
+ },
+ "|Hobro": {
+  "lat": 56.637175,
+  "lon": 9.79398
+ },
  "|Højbjerg": {
   "lat": 56.113385,
   "lon": 10.206361
@@ -97,6 +131,18 @@
  "|Langå": {
   "lat": 56.390979,
   "lon": 9.89363
+ },
+ "|Løkken": {
+  "lat": 57.370486,
+  "lon": 9.71125
+ },
+ "|Mariagerfjord Kommune": {
+  "lat": 56.705633,
+  "lon": 9.920088
+ },
+ "|Nibe": {
+  "lat": 56.982381,
+  "lon": 9.642871
  },
  "|Randers SØ": {
   "lat": 56.435543,
@@ -109,5 +155,45 @@
  "|Sabro": {
   "lat": 56.212136,
   "lon": 10.034151
+ },
+ "|Sindal": {
+  "lat": 57.475513,
+  "lon": 10.199427
+ },
+ "|Skagen": {
+  "lat": 57.72597,
+  "lon": 10.58446
+ },
+ "|Støvring": {
+  "lat": 56.88472,
+  "lon": 9.833064
+ },
+ "|Svenstrup": {
+  "lat": 56.977321,
+  "lon": 9.852584
+ },
+ "|Sæby": {
+  "lat": 57.331276,
+  "lon": 10.519881
+ },
+ "|Vejgaard": {
+  "lat": 57.033748,
+  "lon": 9.956446
+ },
+ "|Vesthimmerlands Kommune": {
+  "lat": 56.824475,
+  "lon": 9.405645
+ },
+ "|Vodskov": {
+  "lat": 57.10956,
+  "lon": 10.022829
+ },
+ "|Åbyhøj": {
+  "lat": 56.155315,
+  "lon": 10.165488
+ },
+ "|Ålbæk": {
+  "lat": 57.592542,
+  "lon": 10.411592
  }
 }

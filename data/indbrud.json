@@ -1,6 +1,6 @@
 {
- "opdateret": "2026-10-24T09:33:02+00:00",
- "antal": 53,
+ "opdateret": "2026-10-24T09:46:38+00:00",
+ "antal": 81,
  "indbrud": [
   {
    "id": "05af33e92f82",
@@ -125,6 +125,188 @@
    "lat": 56.258188,
    "lon": 10.157088,
    "praecision": "vej",
+   "geokilde": "nominatim"
+  },
+  {
+   "id": "c803d93fac32",
+   "vej": "",
+   "by": "Hirtshals",
+   "omraade": "Hirtshals",
+   "type": "erhverv",
+   "gerningstid": "Torsdag morgen 22/10",
+   "tid_fra": "2026-10-22",
+   "tid_til": null,
+   "rapportdato": "2026-10-23",
+   "kilde_url": "https://politi.dk/nordjyllands-politi/doegnrapporter/dr231026/2026/10/23",
+   "politikreds": "Nordjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/nordjyllands-politi/doegnrapporter/dr231026/2026/10/23",
+     "titel": "Nordjyllands Politi: uddrag af politirapporterne 21. - 23. oktober",
+     "rapportdato": "2026-10-23",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "beskrivelse": "Torsdag morgen modtog politiet en anmeldelse om indbrud på et værksted i Hirtshals. Gerningspersonerne var kommet ind ved at bryde en dør op. Fra stedet blev der stjålet en større mængde fyringsolie samt diverse el- og håndværktøj.",
+   "lat": 57.590803,
+   "lon": 9.964974,
+   "praecision": "by",
+   "geokilde": "nominatim"
+  },
+  {
+   "id": "b96b5fa412da",
+   "vej": "",
+   "by": "Løkken",
+   "omraade": "Løkken",
+   "type": "privat",
+   "gerningstid": "I løbet af torsdag 22/10",
+   "tid_fra": "2026-10-22",
+   "tid_til": null,
+   "rapportdato": "2026-10-23",
+   "kilde_url": "https://politi.dk/nordjyllands-politi/doegnrapporter/dr231026/2026/10/23",
+   "politikreds": "Nordjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/nordjyllands-politi/doegnrapporter/dr231026/2026/10/23",
+     "titel": "Nordjyllands Politi: uddrag af politirapporterne 21. - 23. oktober",
+     "rapportdato": "2026-10-23",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "beskrivelse": "Der har i løbet af torsdag været indbrud i et fritidshus i Løkken. Gerningspersonerne var kommet ind gennem en opbrudt dør til et teknikrum. Fra stedet blev der stjålet træpiller, fyringsolie, en pizzaovn og en trailer.",
+   "lat": 57.370486,
+   "lon": 9.71125,
+   "praecision": "by",
+   "geokilde": "nominatim"
+  },
+  {
+   "id": "914f412be214",
+   "vej": "",
+   "by": "Hobro",
+   "omraade": "Hobro",
+   "type": "privat",
+   "gerningstid": "Torsdag eftermiddag 22/10",
+   "tid_fra": "2026-10-22",
+   "tid_til": null,
+   "rapportdato": "2026-10-23",
+   "kilde_url": "https://politi.dk/nordjyllands-politi/doegnrapporter/dr231026/2026/10/23",
+   "politikreds": "Nordjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/nordjyllands-politi/doegnrapporter/dr231026/2026/10/23",
+     "titel": "Nordjyllands Politi: uddrag af politirapporterne 21. - 23. oktober",
+     "rapportdato": "2026-10-23",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "beskrivelse": "Torsdag eftermiddag modtog politiet en anmeldelse om indbrud i en lejlighed i Hobro-området. Gerningspersonerne var kommet ind gennem et vindue, der stod på klem, og havde været rundt i hele lejligheden. Fra stedet blev der stjålet en større mængde værktøj samt tilbehør hertil.",
+   "lat": 56.637175,
+   "lon": 9.79398,
+   "praecision": "by",
+   "geokilde": "nominatim"
+  },
+  {
+   "id": "56c765e6541a",
+   "vej": "",
+   "by": "Vejgaard",
+   "omraade": "Aalborg",
+   "type": "privat",
+   "gerningstid": "Natten til onsdag 21/10",
+   "tid_fra": "2026-10-21",
+   "tid_til": null,
+   "rapportdato": "2026-10-23",
+   "kilde_url": "https://politi.dk/nordjyllands-politi/doegnrapporter/dr231026/2026/10/23",
+   "politikreds": "Nordjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/nordjyllands-politi/doegnrapporter/dr231026/2026/10/23",
+     "titel": "Nordjyllands Politi: uddrag af politirapporterne 21. - 23. oktober",
+     "rapportdato": "2026-10-23",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "beskrivelse": "Natten til onsdag har der været indbrud i to villaer i Vejgaard-området. I begge tilfælde er gerningspersonerne kommet ind gennem et opbrudt vindue og har tilsyneladende været målrettet efter designerlamper. Der er ikke umiddelbart tegn på yderligere færden i villaerne eller på, at der er stjålet andre genstande.",
+   "lat": 57.033748,
+   "lon": 9.956446,
+   "praecision": "by",
+   "geokilde": "nominatim"
+  },
+  {
+   "id": "9502c6bcaa0c",
+   "vej": "",
+   "by": "Vejgaard",
+   "omraade": "Aalborg",
+   "type": "privat",
+   "gerningstid": "Natten til onsdag 21/10",
+   "tid_fra": "2026-10-21",
+   "tid_til": null,
+   "rapportdato": "2026-10-23",
+   "kilde_url": "https://politi.dk/nordjyllands-politi/doegnrapporter/dr231026/2026/10/23",
+   "politikreds": "Nordjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/nordjyllands-politi/doegnrapporter/dr231026/2026/10/23",
+     "titel": "Nordjyllands Politi: uddrag af politirapporterne 21. - 23. oktober",
+     "rapportdato": "2026-10-23",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "beskrivelse": "Natten til onsdag har der været indbrud i to villaer i Vejgaard-området. I begge tilfælde er gerningspersonerne kommet ind gennem et opbrudt vindue og har tilsyneladende været målrettet efter designerlamper. Der er ikke umiddelbart tegn på yderligere færden i villaerne eller på, at der er stjålet andre genstande.",
+   "lat": 57.033748,
+   "lon": 9.956446,
+   "praecision": "by",
+   "geokilde": "nominatim"
+  },
+  {
+   "id": "471c39dbdd80",
+   "vej": "",
+   "by": "Svenstrup",
+   "omraade": "Aalborg",
+   "type": "erhverv",
+   "gerningstid": "Onsdag morgen 21/10",
+   "tid_fra": "2026-10-21",
+   "tid_til": null,
+   "rapportdato": "2026-10-23",
+   "kilde_url": "https://politi.dk/nordjyllands-politi/doegnrapporter/dr231026/2026/10/23",
+   "politikreds": "Nordjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/nordjyllands-politi/doegnrapporter/dr231026/2026/10/23",
+     "titel": "Nordjyllands Politi: uddrag af politirapporterne 21. - 23. oktober",
+     "rapportdato": "2026-10-23",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "beskrivelse": "Onsdag morgen blev der anmeldt et indbrud i et prøvehus i Svenstrup. Gerningspersonerne er kommet afsted med en større mængde pakker med trægulve af mærket Vicanders.",
+   "lat": 56.977321,
+   "lon": 9.852584,
+   "praecision": "by",
+   "geokilde": "nominatim"
+  },
+  {
+   "id": "d86c5cd9d0bc",
+   "vej": "",
+   "by": "Vodskov",
+   "omraade": "Aalborg",
+   "type": "privat",
+   "gerningstid": "Onsdag aften 21/10",
+   "tid_fra": "2026-10-21",
+   "tid_til": null,
+   "rapportdato": "2026-10-23",
+   "kilde_url": "https://politi.dk/nordjyllands-politi/doegnrapporter/dr231026/2026/10/23",
+   "politikreds": "Nordjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/nordjyllands-politi/doegnrapporter/dr231026/2026/10/23",
+     "titel": "Nordjyllands Politi: uddrag af politirapporterne 21. - 23. oktober",
+     "rapportdato": "2026-10-23",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "beskrivelse": "Onsdag aften blev der anmeldt et indbrud i Vodskov. Gerningspersonerne var kommet ind gennem et aflistet vindue, og størstedelen af skuffer og skabe var gennemrodet. Der er blevet stjålet et mindre beløb i amerikanske dollars samt et professionelt kamera med tilhørende udstyr.",
+   "lat": 57.10956,
+   "lon": 10.022829,
+   "praecision": "by",
    "geokilde": "nominatim"
   },
   {
@@ -299,6 +481,32 @@
    ],
    "lat": 56.390979,
    "lon": 9.8936301,
+   "praecision": "by",
+   "geokilde": "nominatim"
+  },
+  {
+   "id": "2d47063de46c",
+   "vej": "",
+   "by": "Aalborg SØ",
+   "omraade": "Aalborg",
+   "type": "privat",
+   "gerningstid": "Søndag eftermiddag 18/10",
+   "tid_fra": "2026-10-18",
+   "tid_til": null,
+   "rapportdato": "2026-10-20",
+   "kilde_url": "https://politi.dk/nordjyllands-politi/doegnrapporter/dr201026/2026/10/20",
+   "politikreds": "Nordjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/nordjyllands-politi/doegnrapporter/dr201026/2026/10/20",
+     "titel": "Nordjyllands Politi: uddrag af politirapporterne 17. - 20. oktober",
+     "rapportdato": "2026-10-20",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "beskrivelse": "Søndag eftermiddag blev der anmeldt indbrud i en bolig i Aalborg SØ. Gerningspersonerne havde skaffet sig adgang gennem et opbrudt vindue. Flere rum i boligen var gennemrodet, og der var blevet stjålet en større mængde sølvtøj af mærket Georg Jensen.",
+   "lat": 57.046263,
+   "lon": 9.921526,
    "praecision": "by",
    "geokilde": "nominatim"
   },
@@ -919,6 +1127,32 @@
    "geokilde": "nominatim"
   },
   {
+   "id": "fa8d36b8f108",
+   "vej": "",
+   "by": "Åbyhøj",
+   "omraade": "Aarhus",
+   "type": "erhverv",
+   "gerningstid": "Fredag 16/10",
+   "tid_fra": "2026-10-16",
+   "tid_til": null,
+   "rapportdato": "2026-10-17",
+   "kilde_url": "https://via.ritzau.dk/pressemeddelelse/15229496/indbrud-i-frisorsalon-i-abyhoj?publisherId=90721&lang=da",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://via.ritzau.dk/pressemeddelelse/15229496/indbrud-i-frisorsalon-i-abyhoj?publisherId=90721&lang=da",
+     "titel": "Indbrud i frisørsalon i Åbyhøj",
+     "rapportdato": "2026-10-17",
+     "udgiver": "Via Ritzau"
+    }
+   ],
+   "beskrivelse": "Østjyllands Politi modtog fredag kl. 23.53 via 1-1-2 en melding om indbrud i en frisørsalon i Åbyhøj. Gerningsmanden var set løbe fra stedet, og der kunne gives et signalement af manden. Der blev hurtigt sendt patruljer, hundepatruljer og dronefører til stedet. Det lykkedes droneføreren at lokalisere en mand, der gemte sig i en have, hvorefter hundeføreren kunne udfinde gerningsmanden og foretage anholdelse.",
+   "lat": 56.155315,
+   "lon": 10.165488,
+   "praecision": "by",
+   "geokilde": "nominatim"
+  },
+  {
    "id": "f33e9cc5bb93",
    "vej": "Egensvej",
    "by": "Risskov",
@@ -1080,6 +1314,58 @@
    "geokilde": "nominatim"
   },
   {
+   "id": "53e7348ab44d",
+   "vej": "Boysenbærvej",
+   "by": "Ålbæk",
+   "omraade": "Ålbæk",
+   "type": "erhverv",
+   "gerningstid": "Natten til torsdag 15/10",
+   "tid_fra": "2026-10-15",
+   "tid_til": null,
+   "rapportdato": "2026-10-16",
+   "kilde_url": "https://politi.dk/nordjyllands-politi/doegnrapporter/pr161026/2026/10/16",
+   "politikreds": "Nordjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/nordjyllands-politi/doegnrapporter/pr161026/2026/10/16",
+     "titel": "Nordjyllands Politi: uddrag af politirapporterne 14. - 16. oktober",
+     "rapportdato": "2026-10-16",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "beskrivelse": "Der har natten til torsdag været indbrud i et prøvehus på Boysenbærvej i Ålbæk. Tyvene kom ind gennem en opbrudt dør. Fra huset blev der stjålet en større mængde elværktøj. Derudover blev der stjålet tilbehør og ladere til værktøjet.",
+   "lat": 57.575011,
+   "lon": 10.415451,
+   "praecision": "vej",
+   "geokilde": "nominatim"
+  },
+  {
+   "id": "86fce8807fdd",
+   "vej": "",
+   "by": "Aabybro",
+   "omraade": "Aabybro",
+   "type": "privat",
+   "gerningstid": "Torsdag morgen 15/10",
+   "tid_fra": "2026-10-15",
+   "tid_til": null,
+   "rapportdato": "2026-10-16",
+   "kilde_url": "https://politi.dk/nordjyllands-politi/doegnrapporter/pr161026/2026/10/16",
+   "politikreds": "Nordjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/nordjyllands-politi/doegnrapporter/pr161026/2026/10/16",
+     "titel": "Nordjyllands Politi: uddrag af politirapporterne 14. - 16. oktober",
+     "rapportdato": "2026-10-16",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "beskrivelse": "Torsdag morgen blev der anmeldt indbrud i en villa under renovering i Aabybro. Gerningspersonerne var kommet ind gennem et opbrudt vindue. Her blev der stjålet en større mængde værktøj, herunder forskellige maskiner og tilbehør. Alt det stjålne værktøj var af mærket Makita.",
+   "lat": 57.160639,
+   "lon": 9.733963,
+   "praecision": "by",
+   "geokilde": "nominatim"
+  },
+  {
    "id": "99f06105a59a",
    "vej": "Pottemagertoften",
    "by": "Højbjerg",
@@ -1127,6 +1413,32 @@
    "lat": 56.206708,
    "lon": 10.20742,
    "praecision": "vej",
+   "geokilde": "nominatim"
+  },
+  {
+   "id": "06f0ef2dfb7d",
+   "vej": "",
+   "by": "Aalborg",
+   "omraade": "Aalborg",
+   "type": "privat",
+   "gerningstid": "Onsdag morgen 14/10",
+   "tid_fra": "2026-10-14",
+   "tid_til": null,
+   "rapportdato": "2026-10-16",
+   "kilde_url": "https://politi.dk/nordjyllands-politi/doegnrapporter/pr161026/2026/10/16",
+   "politikreds": "Nordjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/nordjyllands-politi/doegnrapporter/pr161026/2026/10/16",
+     "titel": "Nordjyllands Politi: uddrag af politirapporterne 14. - 16. oktober",
+     "rapportdato": "2026-10-16",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "beskrivelse": "Der blev onsdag morgen anmeldt et indbrud i Aalborg midtby. Tyvene fandt vej gennem et opbrudt køkkenvindue og har gennemrodet alle husets rum. Her blev stjålet flere guldsmykker samt et mindre kontantbeløb.",
+   "lat": 57.046263,
+   "lon": 9.921526,
+   "praecision": "by",
    "geokilde": "nominatim"
   },
   {
@@ -1202,6 +1514,84 @@
    "lat": 56.145972,
    "lon": 10.194471,
    "praecision": "vej",
+   "geokilde": "nominatim"
+  },
+  {
+   "id": "bb36e8339b96",
+   "vej": "",
+   "by": "Aalborg",
+   "omraade": "Aalborg",
+   "type": "privat",
+   "gerningstid": "Natten til søndag 11/10",
+   "tid_fra": "2026-10-11",
+   "tid_til": null,
+   "rapportdato": "2026-10-13",
+   "kilde_url": "https://politi.dk/nordjyllands-politi/doegnrapporter/dr131026/2026/10/13",
+   "politikreds": "Nordjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/nordjyllands-politi/doegnrapporter/dr131026/2026/10/13",
+     "titel": "Nordjyllands Politi: uddrag af politirapporterne 10. - 13. oktober",
+     "rapportdato": "2026-10-13",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "beskrivelse": "Der blev natten til søndag anmeldt et indbrud i en villa i Aalborg. Tyvene havde opbrudt et vindue i husets soveværelse, hvorefter hele huset var gennemrodet. De kom afsted med flere smykker, en el-cykel samt et større kontantbeløb.",
+   "lat": 57.046263,
+   "lon": 9.921526,
+   "praecision": "by",
+   "geokilde": "nominatim"
+  },
+  {
+   "id": "cd13206e88e3",
+   "vej": "",
+   "by": "Sæby",
+   "omraade": "Sæby",
+   "type": "privat",
+   "gerningstid": "Søndag morgen 11/10",
+   "tid_fra": "2026-10-11",
+   "tid_til": null,
+   "rapportdato": "2026-10-13",
+   "kilde_url": "https://politi.dk/nordjyllands-politi/doegnrapporter/dr131026/2026/10/13",
+   "politikreds": "Nordjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/nordjyllands-politi/doegnrapporter/dr131026/2026/10/13",
+     "titel": "Nordjyllands Politi: uddrag af politirapporterne 10. - 13. oktober",
+     "rapportdato": "2026-10-13",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "beskrivelse": "Der blev søndag morgen anmeldt et indbrud i et rækkehus i Sæby. Gerningspersonerne var kommet ind gennem en opbrudt hoveddør. De kom afsted med en større mængde guld- og sølvsmykker samt flere perlesmykker. Derudover blev en pung med et mindre kontantbeløb også stjålet.",
+   "lat": 57.331276,
+   "lon": 10.519881,
+   "praecision": "by",
+   "geokilde": "nominatim"
+  },
+  {
+   "id": "1aec497bda82",
+   "vej": "",
+   "by": "Frederikshavn Kommune",
+   "omraade": "Frederikshavn Kommune",
+   "type": "erhverv",
+   "gerningstid": "Lørdag eftermiddag 10/10",
+   "tid_fra": "2026-10-10",
+   "tid_til": null,
+   "rapportdato": "2026-10-13",
+   "kilde_url": "https://politi.dk/nordjyllands-politi/doegnrapporter/dr131026/2026/10/13",
+   "politikreds": "Nordjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/nordjyllands-politi/doegnrapporter/dr131026/2026/10/13",
+     "titel": "Nordjyllands Politi: uddrag af politirapporterne 10. - 13. oktober",
+     "rapportdato": "2026-10-13",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "beskrivelse": "Et indbrud blev anmeldt lørdag eftermiddag i Frederikshavn kommune. Gerningspersonerne havde skaffet sig adgang gennem en opbrudt dør til en stor lade og bevæget sig rundt i hele bygningen. Tyvene kom afsted med to store varmtvandsrensere.",
+   "lat": 57.46112,
+   "lon": 10.454184,
+   "praecision": "by",
    "geokilde": "nominatim"
   },
   {
@@ -1428,9 +1818,356 @@
    "lon": 10.02655,
    "praecision": "vej",
    "geokilde": "nominatim"
+  },
+  {
+   "id": "bcde90904584",
+   "vej": "",
+   "by": "Mariagerfjord Kommune",
+   "omraade": "Mariagerfjord Kommune",
+   "type": "erhverv",
+   "gerningstid": "Natten til onsdag 7/10",
+   "tid_fra": "2026-10-07",
+   "tid_til": null,
+   "rapportdato": "2026-10-09",
+   "kilde_url": "https://politi.dk/nordjyllands-politi/doegnrapporter/dr091026/2026/10/09",
+   "politikreds": "Nordjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/nordjyllands-politi/doegnrapporter/dr091026/2026/10/09",
+     "titel": "Nordjyllands Politi: uddrag af politirapporterne 7. - 9. oktober",
+     "rapportdato": "2026-10-09",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "beskrivelse": "Der har natten til onsdag været indbrud i en kirke i Mariagerfjord kommune. Gerningspersonerne havde opbrudt en nøgleboks og dermed skaffet sig adgang til kirken. Der er stjålet flere sølvfade og en stor mængde sølvbægre.",
+   "lat": 56.705633,
+   "lon": 9.920088,
+   "praecision": "by",
+   "geokilde": "nominatim"
+  },
+  {
+   "id": "092b2de9ec9b",
+   "vej": "",
+   "by": "Støvring",
+   "omraade": "Støvring",
+   "type": "privat",
+   "gerningstid": "Onsdag eftermiddag 7/10",
+   "tid_fra": "2026-10-07",
+   "tid_til": null,
+   "rapportdato": "2026-10-09",
+   "kilde_url": "https://politi.dk/nordjyllands-politi/doegnrapporter/dr091026/2026/10/09",
+   "politikreds": "Nordjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/nordjyllands-politi/doegnrapporter/dr091026/2026/10/09",
+     "titel": "Nordjyllands Politi: uddrag af politirapporterne 7. - 9. oktober",
+     "rapportdato": "2026-10-09",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "beskrivelse": "Der blev onsdag eftermiddag anmeldt et indbrud i flere huse under renovering. Tyvene havde fundet vej gennem husenes kældre og kom afsted med en større mængde el-værktøj og tilbehør hertil.",
+   "lat": 56.88472,
+   "lon": 9.833064,
+   "praecision": "by",
+   "geokilde": "nominatim"
+  },
+  {
+   "id": "e8326e1a79f3",
+   "vej": "",
+   "by": "Aalborg",
+   "omraade": "Aalborg",
+   "type": "erhverv",
+   "gerningstid": "Onsdag aften 7/10",
+   "tid_fra": "2026-10-07",
+   "tid_til": null,
+   "rapportdato": "2026-10-09",
+   "kilde_url": "https://politi.dk/nordjyllands-politi/doegnrapporter/dr091026/2026/10/09",
+   "politikreds": "Nordjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/nordjyllands-politi/doegnrapporter/dr091026/2026/10/09",
+     "titel": "Nordjyllands Politi: uddrag af politirapporterne 7. - 9. oktober",
+     "rapportdato": "2026-10-09",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "beskrivelse": "En butik i Aalborg midtby havde onsdag aften indbrud. Gerningspersonerne var gået direkte efter Pokémonkort og var kommet afsted med en stor mængde heraf.",
+   "lat": 57.046263,
+   "lon": 9.921526,
+   "praecision": "by",
+   "geokilde": "nominatim"
+  },
+  {
+   "id": "2a03e741f5fc",
+   "vej": "",
+   "by": "Vesthimmerlands Kommune",
+   "omraade": "Vesthimmerlands Kommune",
+   "type": "erhverv",
+   "gerningstid": "Natten til søndag 4/10",
+   "tid_fra": "2026-10-04",
+   "tid_til": null,
+   "rapportdato": "2026-10-06",
+   "kilde_url": "https://politi.dk/nordjyllands-politi/doegnrapporter/061026prnjyl/2026/10/06",
+   "politikreds": "Nordjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/nordjyllands-politi/doegnrapporter/061026prnjyl/2026/10/06",
+     "titel": "Nordjyllands Politi: uddrag af politirapporterne 3. - 6. oktober",
+     "rapportdato": "2026-10-06",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "beskrivelse": "Der har natten til søndag været indbrud i en kirke i Vesthimmerlands kommune. Gerningspersonerne fandt vej gennem en opbrudt dør og havde bevæget sig gennem hele kirken samt kontoret i graverbygningen. Tyvene kom afsted med 11 alterbærere i sølv.",
+   "lat": 56.824475,
+   "lon": 9.405645,
+   "praecision": "by",
+   "geokilde": "nominatim"
+  },
+  {
+   "id": "11806f50da09",
+   "vej": "",
+   "by": "Skagen",
+   "omraade": "Skagen",
+   "type": "privat",
+   "gerningstid": "Natten til søndag 4/10",
+   "tid_fra": "2026-10-04",
+   "tid_til": null,
+   "rapportdato": "2026-10-06",
+   "kilde_url": "https://politi.dk/nordjyllands-politi/doegnrapporter/061026prnjyl/2026/10/06",
+   "politikreds": "Nordjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/nordjyllands-politi/doegnrapporter/061026prnjyl/2026/10/06",
+     "titel": "Nordjyllands Politi: uddrag af politirapporterne 3. - 6. oktober",
+     "rapportdato": "2026-10-06",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "beskrivelse": "Der har natten til søndag været indbrud i et fritidshus i Skagen. Tyvene var kommet ind gennem et opbrudt dør og var gået direkte til designerlampe, som hang i husets entré. Ikke andet sås gennemrodet eller stjålet.",
+   "lat": 57.72597,
+   "lon": 10.58446,
+   "praecision": "by",
+   "geokilde": "nominatim"
+  },
+  {
+   "id": "9e8ea9adf3ff",
+   "vej": "",
+   "by": "Sindal",
+   "omraade": "Sindal",
+   "type": "andet",
+   "gerningstid": "Natten til lørdag 3/10",
+   "tid_fra": "2026-10-03",
+   "tid_til": null,
+   "rapportdato": "2026-10-06",
+   "kilde_url": "https://politi.dk/nordjyllands-politi/doegnrapporter/061026prnjyl/2026/10/06",
+   "politikreds": "Nordjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/nordjyllands-politi/doegnrapporter/061026prnjyl/2026/10/06",
+     "titel": "Nordjyllands Politi: uddrag af politirapporterne 3. - 6. oktober",
+     "rapportdato": "2026-10-06",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "beskrivelse": "Der har natten til lørdag været indbrud i en garage i Sindal. Tyvene havde opbrudt døren og havde stjålet diverse haveredskaber og tilbehør hertil.",
+   "lat": 57.475513,
+   "lon": 10.199427,
+   "praecision": "by",
+   "geokilde": "nominatim"
+  },
+  {
+   "id": "21a9650e46bb",
+   "vej": "",
+   "by": "Vesthimmerlands Kommune",
+   "omraade": "Vesthimmerlands Kommune",
+   "type": "privat",
+   "gerningstid": "Lørdag formiddag 3/10",
+   "tid_fra": "2026-10-03",
+   "tid_til": null,
+   "rapportdato": "2026-10-06",
+   "kilde_url": "https://politi.dk/nordjyllands-politi/doegnrapporter/061026prnjyl/2026/10/06",
+   "politikreds": "Nordjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/nordjyllands-politi/doegnrapporter/061026prnjyl/2026/10/06",
+     "titel": "Nordjyllands Politi: uddrag af politirapporterne 3. - 6. oktober",
+     "rapportdato": "2026-10-06",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "beskrivelse": "Der blev lørdag formiddag anmeldt et indbrud i Vesthimmerlands kommune. Tyvene havde fundet vej gennem en knust rude og havde bevæget sig gennem hele huset. Gerningspersonerne kom afsted med en større mængde malerier samt flere spiritusflasker.",
+   "lat": 56.824475,
+   "lon": 9.405645,
+   "praecision": "by",
+   "geokilde": "nominatim"
+  },
+  {
+   "id": "021c907e7697",
+   "vej": "",
+   "by": "Aalborg SV",
+   "omraade": "Aalborg",
+   "type": "erhverv",
+   "gerningstid": "Natten til onsdag 30/9",
+   "tid_fra": "2026-09-30",
+   "tid_til": null,
+   "rapportdato": "2026-10-02",
+   "kilde_url": "https://politi.dk/nordjyllands-politi/doegnrapporter/021026prnjyl/2026/10/02",
+   "politikreds": "Nordjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/nordjyllands-politi/doegnrapporter/021026prnjyl/2026/10/02",
+     "titel": "Nordjyllands Politi: uddrag af politirapporterne 30. september - 2. oktober",
+     "rapportdato": "2026-10-02",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "beskrivelse": "Der har natten til onsdag været flere indbrud på en større byggeplads i Aalborg SV. Tyvene har bevæget sig rundt på hele byggepladsen og stjålet værktøj, maskiner og tilbehør fra flere aflåste rum, som de har fået adgang til gennem smadrede ruder og opbrudte døre. Derudover er en arbejdsbil tæt på byggepladsen blevet brudt op og tømt for værktøj, maskiner og tilbehør.",
+   "lat": 57.046263,
+   "lon": 9.921526,
+   "praecision": "by",
+   "geokilde": "nominatim"
+  },
+  {
+   "id": "bd74bb025c51",
+   "vej": "",
+   "by": "Nibe",
+   "omraade": "Aalborg",
+   "type": "privat",
+   "gerningstid": "Onsdag eftermiddag 30/9",
+   "tid_fra": "2026-09-30",
+   "tid_til": null,
+   "rapportdato": "2026-10-02",
+   "kilde_url": "https://politi.dk/nordjyllands-politi/doegnrapporter/021026prnjyl/2026/10/02",
+   "politikreds": "Nordjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/nordjyllands-politi/doegnrapporter/021026prnjyl/2026/10/02",
+     "titel": "Nordjyllands Politi: uddrag af politirapporterne 30. september - 2. oktober",
+     "rapportdato": "2026-10-02",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "beskrivelse": "Der blev onsdag eftermiddag anmeldt et indbrud i Nibe. Tyvene havde knust en terrassedør og havde gennemrodet alle husets rum. De var kommet afsted med både guld- og sølvsmykker.",
+   "lat": 56.982381,
+   "lon": 9.642871,
+   "praecision": "by",
+   "geokilde": "nominatim"
+  },
+  {
+   "id": "555a591cdcd2",
+   "vej": "",
+   "by": "Nibe",
+   "omraade": "Aalborg",
+   "type": "privat",
+   "gerningstid": "Mandag eftermiddag 28/9",
+   "tid_fra": "2026-09-28",
+   "tid_til": null,
+   "rapportdato": "2026-09-29",
+   "kilde_url": "https://politi.dk/nordjyllands-politi/doegnrapporter/290926prnjyl/2026/09/29",
+   "politikreds": "Nordjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/nordjyllands-politi/doegnrapporter/290926prnjyl/2026/09/29",
+     "titel": "Nordjyllands Politi: uddrag af pollitirapporterne 26. - 29. september",
+     "rapportdato": "2026-09-29",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "beskrivelse": "Der blev mandag eftermiddag anmeldt et indbrud i en landejendom i Nibe. Tyvene havde knust en rude i en terrassedør og på den måde skaffet sig adgang til huset. Herfra havde de stjålet flere arvesmykker og vaser samt en større mængde Royal Copenhagen-figurer og en bærbar computer.",
+   "lat": 56.982381,
+   "lon": 9.642871,
+   "praecision": "by",
+   "geokilde": "nominatim"
+  },
+  {
+   "id": "ad11a5a33d97",
+   "vej": "",
+   "by": "Vesthimmerlands Kommune",
+   "omraade": "Vesthimmerlands Kommune",
+   "type": "privat",
+   "gerningstid": "Lørdag eftermiddag 26/9",
+   "tid_fra": "2026-09-26",
+   "tid_til": null,
+   "rapportdato": "2026-09-29",
+   "kilde_url": "https://politi.dk/nordjyllands-politi/doegnrapporter/290926prnjyl/2026/09/29",
+   "politikreds": "Nordjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/nordjyllands-politi/doegnrapporter/290926prnjyl/2026/09/29",
+     "titel": "Nordjyllands Politi: uddrag af pollitirapporterne 26. - 29. september",
+     "rapportdato": "2026-09-29",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "beskrivelse": "Et indbrud i Vesthimmerlands kommune blev anmeldt lørdag eftermiddag. Tyvene var kommet ind gennem et opbrudt vindue, hvorefter de havde gennemrodet skabe og skuffer i hele huset. Flere perlesmykker blev stjålet.",
+   "lat": 56.824475,
+   "lon": 9.405645,
+   "praecision": "by",
+   "geokilde": "nominatim"
+  },
+  {
+   "id": "98bf40e90680",
+   "vej": "",
+   "by": "Aalborg",
+   "omraade": "Aalborg",
+   "type": "privat",
+   "gerningstid": "Weekenden 26/9 – 27/9",
+   "tid_fra": "2026-09-26",
+   "tid_til": "2026-09-27",
+   "rapportdato": "2026-09-29",
+   "kilde_url": "https://politi.dk/nordjyllands-politi/doegnrapporter/290926prnjyl/2026/09/29",
+   "politikreds": "Nordjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/nordjyllands-politi/doegnrapporter/290926prnjyl/2026/09/29",
+     "titel": "Nordjyllands Politi: uddrag af pollitirapporterne 26. - 29. september",
+     "rapportdato": "2026-09-29",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "beskrivelse": "Der har i løbet af weekenden været indbrud i et hus i Aalborgs Vestby. Tyvene havde fjernet et vindue, hvorefter de havde gennemrodet husets skabe og skuffer. Der blev stjålet flere sølv- og guldsmykker samt en PS5, som dog blev efterladt ved vinduet.",
+   "lat": 57.046263,
+   "lon": 9.921526,
+   "praecision": "by",
+   "geokilde": "nominatim"
+  },
+  {
+   "id": "ceaa1a2346c3",
+   "vej": "",
+   "by": "Aalborg",
+   "omraade": "Aalborg",
+   "type": "erhverv",
+   "gerningstid": "Natten til torsdag 24/9",
+   "tid_fra": "2026-09-24",
+   "tid_til": null,
+   "rapportdato": "2026-09-25",
+   "kilde_url": "https://politi.dk/nordjyllands-politi/doegnrapporter/dr-250926/2026/09/25",
+   "politikreds": "Nordjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/nordjyllands-politi/doegnrapporter/dr-250926/2026/09/25",
+     "titel": "Nordjyllands Politi: uddrag af politirapporterne 23.- 25. september",
+     "rapportdato": "2026-09-25",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "beskrivelse": "Natten til torsdag blev der anmeldt et indbrud i en butik i Aalborg midtby. Tyvene havde brudt et vindue op og gennemgået samtlige af virksomhedens rum. De opbrød en glasmontre med figurer og stjal disse samt to PlayStation 5-konsoller.",
+   "lat": 57.046263,
+   "lon": 9.921526,
+   "praecision": "by",
+   "geokilde": "nominatim"
   }
  ],
  "behandlede_meddelelser": {
+  "https://politi.dk/nordjyllands-politi/doegnrapporter/021026prnjyl/2026/10/02": "2026-10-02",
+  "https://politi.dk/nordjyllands-politi/doegnrapporter/061026prnjyl/2026/10/06": "2026-10-06",
+  "https://politi.dk/nordjyllands-politi/doegnrapporter/290926prnjyl/2026/09/29": "2026-09-29",
+  "https://politi.dk/nordjyllands-politi/doegnrapporter/dr-250926/2026/09/25": "2026-09-25",
+  "https://politi.dk/nordjyllands-politi/doegnrapporter/dr091026/2026/10/09": "2026-10-09",
+  "https://politi.dk/nordjyllands-politi/doegnrapporter/dr131026/2026/10/13": "2026-10-13",
+  "https://politi.dk/nordjyllands-politi/doegnrapporter/dr201026/2026/10/20": "2026-10-20",
+  "https://politi.dk/nordjyllands-politi/doegnrapporter/dr231026/2026/10/23": "2026-10-23",
+  "https://politi.dk/nordjyllands-politi/doegnrapporter/pr161026/2026/10/16": "2026-10-16",
   "https://politi.dk/oestjyllands-politi/doegnrapporter/doegnrapport13102026/2026/10/13": "2026-10-13",
   "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-11-oktober-2026/2026/10/11": "2026-10-11",
   "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-12-oktober-2026/2026/10/12": "2026-10-12",
@@ -1441,27 +2178,87 @@
   "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-21-oktober-2026/2026/10/21": "2026-10-21",
   "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-22-oktober-2026/2026/10/22": "2026-10-22",
   "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-23-oktober-2026/2026/10/23": "2026-10-23",
+  "https://via.ritzau.dk/pressemeddelelse/15211627/eftersogning-viborg?publisherId=90687&lang=da": "2026-10-07",
+  "https://via.ritzau.dk/pressemeddelelse/15211823/aflysning-af-efterlysning?publisherId=90687&lang=da": "2026-10-07",
+  "https://via.ritzau.dk/pressemeddelelse/15212089/eftersogning-viborg?publisherId=90687&lang=da": "2026-10-07",
   "https://via.ritzau.dk/pressemeddelelse/15212562/midlertidigt-militaert-omrade-pa-havnen-i-aarhus?publisherId=90721&lang=da": "2026-10-07",
   "https://via.ritzau.dk/pressemeddelelse/15212588/midlertidigt-militaert-omrade-pa-havnen-i-aarhus?publisherId=90721&lang=da": "2026-10-07",
+  "https://via.ritzau.dk/pressemeddelelse/15217361/aflysning-af-efterlysning-efterlysning-af-formodet-gerningsmand-til-knivstikkeri-i-herning?publisherId=90687&lang=da": "2026-10-09",
+  "https://via.ritzau.dk/pressemeddelelse/15219349/84-arige-kvinde-i-vildbjerg-fundet-aflyst?publisherId=90687&lang=da": "2026-10-09",
+  "https://via.ritzau.dk/pressemeddelelse/15219449/84-arige-kvinde-i-vildbjerg-fundet-aflyst?publisherId=90687&lang=da": "2026-10-10",
   "https://via.ritzau.dk/pressemeddelelse/15221230/tilskuer-sigtet-for-vold-til-handboldkamp-i-aarhus?publisherId=90721&lang=da": "2026-10-12",
   "https://via.ritzau.dk/pressemeddelelse/15221234/tilskuer-sigtet-for-vold-til-handboldkamp-i-aarhus?publisherId=90721&lang=da": "2026-10-12",
   "https://via.ritzau.dk/pressemeddelelse/15225189/uddrag-af-dognrapporten-fra-ostjyllands-politi?publisherId=90721&lang=da": "2026-10-14",
   "https://via.ritzau.dk/pressemeddelelse/15225224/kom-og-mod-os-ved-den-mobile-politistation-i-risskov?publisherId=90721&lang=da": "2026-10-14",
   "https://via.ritzau.dk/pressemeddelelse/15225319/kom-og-mod-os-ved-den-mobile-politistation-i-risskov?publisherId=90721&lang=da": "2026-10-14",
+  "https://via.ritzau.dk/pressemeddelelse/15225458/hjaelp-politiet-i-sag-fra-vejle-kender-du-denne-mand?publisherId=90720&lang=da": "2026-10-14",
   "https://via.ritzau.dk/pressemeddelelse/15225722/anholdelse?publisherId=90721&lang=da": "2026-10-14",
+  "https://via.ritzau.dk/pressemeddelelse/15225726/brand-ved-gudso?publisherId=90720&lang=da": "2026-10-14",
+  "https://via.ritzau.dk/pressemeddelelse/15225786/brand-ved-gudso?publisherId=90720&lang=da": "2026-10-14",
+  "https://via.ritzau.dk/pressemeddelelse/15225979/brand-ved-gudso?publisherId=90720&lang=da": "2026-10-14",
+  "https://via.ritzau.dk/pressemeddelelse/15226506/aflysning-af-efterlysning-vedr-voldssag-i-vejle?publisherId=90720&lang=da": "2026-10-15",
+  "https://via.ritzau.dk/pressemeddelelse/15228400/alvorligt-faerdselsuheld?publisherId=90686&lang=da": "2026-10-16",
   "https://via.ritzau.dk/pressemeddelelse/15229494/salg-af-narkotika-i-aarhus-vest?publisherId=90721&lang=da": "2026-10-17",
   "https://via.ritzau.dk/pressemeddelelse/15229496/indbrud-i-frisorsalon-i-abyhoj?publisherId=90721&lang=da": "2026-10-17",
   "https://via.ritzau.dk/pressemeddelelse/15229508/brand-i-personbiler-i-risskov?publisherId=90721&lang=da": "2026-10-17",
   "https://via.ritzau.dk/pressemeddelelse/15229519/dognets-indbrud-i-privat-beboelse?publisherId=90721&lang=da": "2026-10-17",
+  "https://via.ritzau.dk/pressemeddelelse/15229645/vi-efterlyser-87-arige-arne?publisherId=90720&lang=da": "2026-10-17",
+  "https://via.ritzau.dk/pressemeddelelse/15229843/vi-efterlyser-87-arige-arne?publisherId=90720&lang=da": "2026-10-17",
+  "https://via.ritzau.dk/pressemeddelelse/15230008/vi-efterlyser-87-arige-arne?publisherId=90720&lang=da": "2026-10-18",
   "https://via.ritzau.dk/pressemeddelelse/15230173/dognrapport-fra-ostjyllands-politi-18-oktober-2026?publisherId=90721": "2026-10-18",
   "https://via.ritzau.dk/pressemeddelelse/15230173/dognrapport-fra-ostjyllands-politi-18-oktober-2026?publisherId=90721&lang=da": "2026-10-18",
+  "https://via.ritzau.dk/pressemeddelelse/15230272/vi-efterlyser-87-arige-arne?publisherId=90720&lang=da": "2026-10-18",
+  "https://via.ritzau.dk/pressemeddelelse/15230437/vejlefjordbroen?publisherId=90720&lang=da": "2026-10-18",
+  "https://via.ritzau.dk/pressemeddelelse/15230506/vi-efterlyser-87-arige-arne?publisherId=90720&lang=da": "2026-10-18",
+  "https://via.ritzau.dk/pressemeddelelse/15230536/eftersogning-ved-ribe-a?publisherId=90686&lang=da": "2026-10-18",
+  "https://via.ritzau.dk/pressemeddelelse/15230602/eftersogning-ved-ribe-a?publisherId=90686&lang=da": "2026-10-18",
+  "https://via.ritzau.dk/pressemeddelelse/15231889/uheld-holstebromotorvejen?publisherId=90687&lang=da": "2026-10-19",
+  "https://via.ritzau.dk/pressemeddelelse/15231976/uheld-holstebromotorvejen?publisherId=90687&lang=da": "2026-10-19",
+  "https://via.ritzau.dk/pressemeddelelse/15232175/uheld-holstebromotorvejen?publisherId=90687&lang=da": "2026-10-19",
+  "https://via.ritzau.dk/pressemeddelelse/15232959/uheld-holstebromotorvejen?publisherId=90687&lang=da": "2026-10-19",
+  "https://via.ritzau.dk/pressemeddelelse/15234628/uheld-holstebromotorvejen?publisherId=90687&lang=da": "2026-10-20",
+  "https://via.ritzau.dk/pressemeddelelse/15234720/uheld-holstebromotorvejen?publisherId=90687&lang=da": "2026-10-20",
   "https://via.ritzau.dk/pressemeddelelse/15235274/mand-fundet-livlos-i-vandet-i-odder?publisherId=90721&lang=da": "2026-10-20",
+  "https://via.ritzau.dk/pressemeddelelse/15235361/grundlovsforhor-1300-retten-i-sonderborg?publisherId=90686&lang=da": "2026-10-20",
+  "https://via.ritzau.dk/pressemeddelelse/15236089/vi-over-os-ved-mch-i-herning?publisherId=90687&lang=da": "2026-10-20",
+  "https://via.ritzau.dk/pressemeddelelse/15236569/grundlovsforhor-1300-retten-i-sonderborg?publisherId=90686&lang=da": "2026-10-20",
+  "https://via.ritzau.dk/pressemeddelelse/15236683/bekymring-for-kvinde-i-varde?publisherId=90686&lang=da": "2026-10-20",
+  "https://via.ritzau.dk/pressemeddelelse/15237137/bekymring-for-kvinde-i-varde?publisherId=90686&lang=da": "2026-10-20",
   "https://via.ritzau.dk/pressemeddelelse/15237647/brand-i-bygning-i-aarhus-c?publisherId=90721&lang=da": "2026-10-21",
+  "https://via.ritzau.dk/pressemeddelelse/15237697/faerdselsuheld-pa-taulovmotorvejen?publisherId=90720&lang=da": "2026-10-21",
+  "https://via.ritzau.dk/pressemeddelelse/15237723/faerdselsuheld-sonderjyske-motorvej?publisherId=90720&lang=da": "2026-10-21",
   "https://via.ritzau.dk/pressemeddelelse/15238281/brand-i-bygning-i-aarhus-c?publisherId=90721&lang=da": "2026-10-21",
+  "https://via.ritzau.dk/pressemeddelelse/15238306/faerdselsuheld-pa-motorvejen-ved-kolding-o?publisherId=90720&lang=da": "2026-10-21",
+  "https://via.ritzau.dk/pressemeddelelse/15238313/faerdselsuheld-pa-motorvejen-ved-kolding-o?publisherId=90720&lang=da": "2026-10-21",
   "https://via.ritzau.dk/pressemeddelelse/15238420/brand-i-bygning-i-aarhus-c?publisherId=90721&lang=da": "2026-10-21",
   "https://via.ritzau.dk/pressemeddelelse/15238849/faerdselsuheld-i-det-vestlige-aarhus-flere-koretojer-involveret?publisherId=90721&lang=da": "2026-10-21",
   "https://via.ritzau.dk/pressemeddelelse/15239053/faerdselsuheld-i-det-vestlige-aarhus-flere-koretojer-involveret?publisherId=90721&lang=da": "2026-10-21",
+  "https://via.ritzau.dk/pressemeddelelse/15239530/mistaenkeligt-forhold?publisherId=90720&lang=da": "2026-10-21",
   "https://via.ritzau.dk/pressemeddelelse/15239908/buschauffor-overfaldet-af-passagerer?publisherId=90721&lang=da": "2026-10-22",
+  "https://via.ritzau.dk/pressemeddelelse/15240092/mistaenkeligt-forhold?publisherId=90720&lang=da": "2026-10-22",
+  "https://via.ritzau.dk/pressemeddelelse/15240097/mistaenkeligt-forhold?publisherId=90720&lang=da": "2026-10-22",
+  "https://via.ritzau.dk/pressemeddelelse/15240166/den-mobile-politistation-kommer-til-vejle?publisherId=90720&lang=da": "2026-10-22",
+  "https://via.ritzau.dk/pressemeddelelse/15240169/den-mobile-politistation-kommer-til-vejle?publisherId=90720&lang=da": "2026-10-22",
+  "https://via.ritzau.dk/pressemeddelelse/15240248/varsling-bygningsbrand-i-haderslev?publisherId=90686&lang=da": "2026-10-22",
+  "https://via.ritzau.dk/pressemeddelelse/15240373/grundlovsforhor-1300-retten-i-sonderborg?publisherId=90686&lang=da": "2026-10-22",
+  "https://via.ritzau.dk/pressemeddelelse/15240811/varsling-bygningsbrand-i-haderslev?publisherId=90686&lang=da": "2026-10-22",
+  "https://via.ritzau.dk/pressemeddelelse/15241204/alvorligt-faerdselsuheld?publisherId=90687&lang=da": "2026-10-22",
+  "https://via.ritzau.dk/pressemeddelelse/15241392/grundlovsforhor-1300-retten-i-sonderborg?publisherId=90686&lang=da": "2026-10-22",
+  "https://via.ritzau.dk/pressemeddelelse/15241455/faerdseluheld-aulum-fortsat?publisherId=90687&lang=da": "2026-10-22",
+  "https://via.ritzau.dk/pressemeddelelse/15241547/faerdseluheld-aulum-fortsat?publisherId=90687&lang=da": "2026-10-22",
+  "https://via.ritzau.dk/pressemeddelelse/15241877/vi-undersoger-mistaenkeligt-forhold-i-karup?publisherId=90687&lang=da": "2026-10-22",
+  "https://via.ritzau.dk/pressemeddelelse/15241973/faerdseluheld-aulum-fortsat?publisherId=90687&lang=da": "2026-10-22",
+  "https://via.ritzau.dk/pressemeddelelse/15242008/politiet-undersoger-mistaenkeligt-forhold-i-aabenraa?publisherId=90686&lang=da": "2026-10-22",
+  "https://via.ritzau.dk/pressemeddelelse/15242045/politiet-undersoger-dodsfald?publisherId=90686&lang=da": "2026-10-22",
+  "https://via.ritzau.dk/pressemeddelelse/15242059/to-personer-er-anholdt-i-aabenraa?publisherId=90686&lang=da": "2026-10-22",
+  "https://via.ritzau.dk/pressemeddelelse/15242103/politiet-undersoger-dodsfald?publisherId=90686&lang=da": "2026-10-22",
+  "https://via.ritzau.dk/pressemeddelelse/15242138/vi-undersoger-mistaenkeligt-forhold-i-karup?publisherId=90687&lang=da": "2026-10-22",
+  "https://via.ritzau.dk/pressemeddelelse/15244197/efterlysning-af-bankbud-i-midt-og-vestjylland?publisherId=90687&lang=da": "2026-10-23",
+  "https://via.ritzau.dk/pressemeddelelse/15244283/faerdselsuheld-mellem-norre-nebel-og-outrup?publisherId=90686&lang=da": "2026-10-23",
+  "https://via.ritzau.dk/pressemeddelelse/15244398/faerdselsuheld-mellem-norre-nebel-og-outrup?publisherId=90686&lang=da": "2026-10-23",
+  "https://via.ritzau.dk/pressemeddelelse/15244435/brand-i-arosund?publisherId=90686&lang=da": "2026-10-23",
+  "https://via.ritzau.dk/pressemeddelelse/15244561/brand-i-container?publisherId=90686&lang=da": "2026-10-23",
+  "https://via.ritzau.dk/pressemeddelelse/15244967/brand-i-arosund?publisherId=90686&lang=da": "2026-10-24",
   "https://via.ritzau.dk/release/15229519": "2026-10-17"
  }
 }

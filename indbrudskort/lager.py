@@ -71,6 +71,8 @@ class Lager:
                 "politikreds": politikreds,
                 "kilder": [kilde],
             }
+            if ib.beskrivelse:
+                ny["beskrivelse"] = ib.beskrivelse
             gammel = self._indeks.get(id_)
             if gammel is None:
                 self.indbrud.append(ny)

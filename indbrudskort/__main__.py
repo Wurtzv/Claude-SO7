@@ -52,7 +52,7 @@ def opdater(args) -> int:
             if m.url in lager.behandlet and not args.alle:
                 continue
             try:
-                poster = parse_rapport(kilde.hent(m), m.dato, m.titel)
+                poster = kilde.parse(m, kilde.hent(m))
             except Exception as e:
                 print(f"  FEJL ved {m.url}: {e}")
                 continue
@@ -61,6 +61,8 @@ def opdater(args) -> int:
             nye += n
             if poster:
                 print(f"  {m.dato} {m.titel[:60]}: {len(poster)} indbrud, {n} nye")
+            elif kilde.udgiver == "politi.dk":
+                print(f"  {m.dato} {m.titel[:60]}: ingen indbrud fundet")
 
     if not args.uden_geokodning:
         geo = Geokoder(DATA / "geokode-cache.json")

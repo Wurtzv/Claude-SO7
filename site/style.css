@@ -53,7 +53,8 @@ button{font:inherit;cursor:pointer}
 .legend span{display:flex;align-items:center;gap:6px}
 .sw{width:10px;height:10px;border-radius:50%;background:var(--hit);flex:none;display:inline-block}
 .sw.b{background:var(--biz)}
-.sw.a{background:transparent;border:2px dashed var(--approx)}
+.sw.a{outline:2px dashed var(--approx);outline-offset:1px}
+.sw.o{background:transparent}
 
 aside{background:var(--panel);border:1px solid var(--line);border-radius:10px;min-width:0}
 aside h2{font-family:var(--f-display);font-size:20px;font-weight:700;margin:0;padding:12px 14px 10px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:baseline}
