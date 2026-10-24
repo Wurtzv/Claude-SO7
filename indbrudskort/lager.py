@@ -97,16 +97,14 @@ class Lager:
         nye: dict[str, dict] = {}
         tælling: dict[tuple[str, str], int] = {}
         for r in sorted(self.indbrud, key=lambda r: (r["rapportdato"], r["kilde_url"], r["id"])):
-            vej, by = rens_sted(r["vej"], r["by"])
+            vej, by, nær = rens_sted(r["vej"], r["by"])
             if not by and re.match(r"^\d", vej):  # løsrevet linjestump, ikke et indbrud
                 ændret += 1
                 continue
             if (vej, by) != (r["vej"], r["by"]):
                 ændret += 1
-                r.update(vej=vej, by=by)
+                r.update(vej=vej, by=by, omraade=omraade_for(nær or by))
                 r.pop("lat", None); r.pop("lon", None); r.pop("praecision", None); r.pop("geokilde", None)
-            if "omraade_navn" not in r and r.get("politikreds") != "Nordjyllands Politi":
-                r["omraade"] = omraade_for(by)
             basis = basisnøgle(vej, by, r.get("tid_fra"), r.get("tid_til"))
             k = (basis, r["kilde_url"])
             tælling[k] = tælling.get(k, 0) + 1

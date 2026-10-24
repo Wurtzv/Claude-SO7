@@ -16,6 +16,8 @@ def byg(indbrud: list[dict]) -> dict:
     omr_tæl: dict[tuple, dict] = defaultdict(lambda: defaultdict(int))
     dækning: dict[str, list[str]] = {}
     for r in indbrud:
+        if not r.get("by"):  # politiet nævnte kun vejen
+            continue
         md = r["rapportdato"][:7]
         kreds = r.get("politikreds", "")
         by_tæl[(kreds, r["omraade"], r["by"])][md] += 1
