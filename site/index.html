@@ -35,6 +35,18 @@
     <button class="reset" id="nulstil" type="button">Nulstil</button>
   </div>
 
+  <div class="filters lag" role="group" aria-label="Kortlag">
+    <div class="grp">
+      <span class="lbl">Kortlag</span>
+      <div class="chips">
+        <label class="check"><input type="checkbox" id="visEnkelte" checked> Enkelte indbrud (døgnrapporter)</label>
+        <label class="check"><input type="checkbox" id="visStat" checked> Alle indbrud pr. kommune (Danmarks Statistik)</label>
+      </div>
+    </div>
+    <label id="statGrp" hidden><span class="lbl">Kvartal</span><select id="kvartal"></select></label>
+    <p class="statinfo" id="statInfo"></p>
+  </div>
+
   <div class="main">
     <div id="map" role="region" aria-label="Kort over anmeldte indbrud"></div>
     <aside>
@@ -45,6 +57,7 @@
 
   <div class="notes">
     <p><b>Datagrundlag.</b> Østjyllands Politi lister alle anmeldte indbrud i privat beboelse med vej og bydel. Nordjyllands Politi beskriver udvalgte indbrud i nyhedsafsnit med by eller bydel. Midt- og Vestjyllands, Sydøstjyllands og Syd- og Sønderjyllands Politi udgiver ikke døgnrapporter – fra dem kommer kun enkeltsager om indbrud på Via Ritzau med. Kortet er derfor langt mere komplet for Øst- og Nordjylland end for resten af Jylland. Samme indbrud nævnt flere gange (samme vej, by og gerningstid) tælles kun én gang. Siden opdateres hver morgen.</p>
+    <p><b>Kommunetal.</b> De store cirkler viser alle anmeldte indbrud i beboelse pr. jysk kommune i det valgte kvartal fra Danmarks Statistik (tabel STRAF11) – også i Midt- og Vestjylland, Sydøstjylland og Sønderjylland, hvor politiet ikke udgiver døgnrapporter. Cirklens størrelse er antallet; jo mørkere, jo flere indbrud pr. 1.000 indbyggere. Tallene kommer ca. tre uger efter kvartalets udgang.</p>
     <p><b>Placering.</b> Politiet oplyser højst vej og by. Punktet sidder midt på vejen. Er der kun oplyst by eller område, eller kunne vejen ikke findes, sidder punktet ved byens midte og er vist med stiplet kant.</p>
     <p id="opdateret"></p>
   </div>

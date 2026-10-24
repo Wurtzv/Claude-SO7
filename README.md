@@ -14,6 +14,7 @@ OpenStreetMap viser indbruddene på et kort, og den bliver lagt på GitHub Pages
 | `indbrudskort/kilder.py` | Kilderne: politi.dk-døgnrapporter og Via Ritzau. **Nye kredse og kilder tilføjes her** |
 | `indbrudskort/geokod.py` | Vej + by → koordinat midt på vejen, med cache |
 | `indbrudskort/lager.py` | `data/indbrud.json`: fletning uden dubletter |
+| `indbrudskort/statistik.py` | Anmeldte indbrud pr. jysk kommune pr. kvartal fra Danmarks Statistik → `data/statistik.json` |
 | `data/indbrud.json` | Alle indbrud (bliver opdateret automatisk) |
 | `data/geokode-cache.json` | Cache over geokodede veje og byer |
 | `data/startdata.json` | De 31 indbrud fra prototypen (17.–22. okt. 2026), som blev brugt som startdata |
@@ -81,6 +82,12 @@ Formatet varierer en del, og testene dækker bl.a.:
 - Flere indbrud skrevet i én linje, OCR-agtige fejl som `16/l0` og `kl. l0.59`, og stavefejl som `Riiskov` og `Århus N`.
 
 Rettelser af bynavne ligger i `BY_ALIASER` i `parse.py`.
+
+### Kommunestatistik for hele Jylland (Danmarks Statistik)
+
+Tre af de fem jyske kredse udgiver ingen døgnrapporter, så kortet har et ekstra lag med **alle anmeldte indbrud i beboelse pr. jysk kommune pr. kvartal**. Tallene kommer fra Danmarks Statistiks åbne API: tabel `STRAF11` (overtrædelse 1320 "Indbrud i beboelser") og `FOLK1A` (befolkning). `indbrudskort/statistik.py` henter de seneste 5 kvartaler for kommunekoder 500–989 (de jyske kommuner) ved hver kørsel, finder kommunens midtpunkt via Nominatim (cachet) og gemmer `data/statistik.json`. Kører kun statistikken fejl, fortsætter resten. Brug `--uden-statistik` for at springe den over.
+
+På kortet er cirklens størrelse antallet, og farvens styrke er antal pr. 1.000 indbyggere. Laget kan slås fra, og man kan vælge kvartal. Danmarks Statistik udgiver tallene ca. tre uger efter kvartalets udgang. Kommuner uden anmeldte indbrud i et kvartal står ikke i tabellen og vises som 0.
 
 ### Afsnitsformatet (Nordjylland)
 

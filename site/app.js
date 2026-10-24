@@ -25,7 +25,7 @@
   const legend = L.control({ position: "bottomleft" });
   legend.onAdd = () => {
     const d = L.DomUtil.create("div", "legend");
-    d.innerHTML = '<span><i class="sw"></i>Privat beboelse</span><span><i class="sw b"></i>Erhverv og andet</span><span><i class="sw a o"></i>Ca. placering (by)</span>';
+    d.innerHTML = '<span><i class="sw"></i>Privat beboelse</span><span><i class="sw b"></i>Erhverv og andet</span><span><i class="sw a o"></i>Ca. placering (by)</span><span><i class="sw s"></i>Kommune: alle indbrud i kvartalet</span>';
     return d;
   };
   legend.addTo(map);
@@ -169,11 +169,59 @@
   $("kreds").addEventListener("change", (e) => { state.kreds = e.target.value; state.omraade = ""; state.valgt = null; fyldVælgere(); tegn(true); });
   $("nulstil").addEventListener("click", () => { Object.assign(state, { periode: 14, dato: "", omraade: "", kreds: "", valgt: null }); fyldVælgere(); tegn(true); });
   $("list").addEventListener("click", (e) => { const b = e.target.closest(".item"); if (b) vælg(b.dataset.id, "liste"); });
-  matchMedia("(prefers-color-scheme: dark)").addEventListener?.("change", () => tegn(false));
+  matchMedia("(prefers-color-scheme: dark)").addEventListener?.("change", () => { tegn(false); tegnStatistik(); });
+
+  // ---------- statistik pr. kommune (Danmarks Statistik) ----------
+  map.createPane("statistik");
+  map.getPane("statistik").style.zIndex = 350; // under de enkelte indbrud
+  const statLag = L.layerGroup();
+  let STAT = null;
+  const kvt = (k) => `${k.slice(5)}. kvt. ${k.slice(0, 4)}`;
+  const tal = (n, d = 0) => n.toLocaleString("da-DK", { minimumFractionDigits: d, maximumFractionDigits: d });
+
+  function tegnStatistik() {
+    statLag.clearLayers();
+    if (!STAT || !$("visStat").checked) { statLag.remove(); return; }
+    const k = $("kvartal").value;
+    const kv = STAT.kvartaler, iFjor = kv[kv.indexOf(k) - 4];
+    const rækker = STAT.kommuner.filter((x) => x.lat != null).map((x) => {
+      const n = x.antal[k] || 0;
+      return { ...x, n, rate: x.indbyggere ? (n / x.indbyggere) * 1000 : 0, fjor: iFjor ? x.antal[iFjor] || 0 : null };
+    });
+    const maksN = Math.max(1, ...rækker.map((r) => r.n));
+    const maksRate = Math.max(0.01, ...rækker.map((r) => r.rate));
+    for (const r of rækker) {
+      const m = L.circleMarker([r.lat, r.lon], {
+        pane: "statistik",
+        radius: 4 + 26 * Math.sqrt(r.n / maksN),
+        color: css("--stat"), weight: 1.5,
+        fillColor: css("--stat"), fillOpacity: 0.12 + 0.55 * (r.rate / maksRate),
+      });
+      const fjor = r.fjor == null ? "" : `<div class="t">Samme kvartal året før: ${tal(r.fjor)}</div>`;
+      m.bindPopup(`<div class="pop"><strong>${esc(r.navn)} Kommune</strong>${tal(r.n)} anmeldte indbrud i beboelse, ${kvt(k)}` +
+        `<div class="t">${tal(r.rate, 2)} pr. 1.000 indbyggere</div>${fjor}` +
+        `<div class="t">Kilde: <a href="${esc(STAT.kilde_url)}" target="_blank" rel="noopener">Danmarks Statistik, STRAF11</a></div></div>`, { maxWidth: 260 });
+      m.bindTooltip(`${r.navn}: ${tal(r.n)}`, { direction: "top" });
+      m.addTo(statLag);
+    }
+    statLag.addTo(map);
+    const total = rækker.reduce((a, r) => a + r.n, 0);
+    $("statInfo").textContent = `${tal(total)} anmeldte indbrud i beboelse i Jylland i ${kvt(k)} (alle politikredse).`;
+  }
+
+  hentData("statistik.json").then((d) => {
+    STAT = d;
+    $("kvartal").innerHTML = [...d.kvartaler].reverse().map((k) => `<option value="${k}">${kvt(k)}</option>`).join("");
+    $("statGrp").hidden = false;
+    tegnStatistik();
+  }).catch(() => { /* statistikken er valgfri */ });
+  $("visStat").addEventListener("change", tegnStatistik);
+  $("kvartal").addEventListener("change", tegnStatistik);
+  $("visEnkelte").addEventListener("change", (e) => { if (e.target.checked) lag.addTo(map); else lag.remove(); });
 
   // ---------- data ----------
-  async function hentData() {
-    for (const url of ["indbrud.json", "../data/indbrud.json"]) {
+  async function hentData(navn = "indbrud.json") {
+    for (const url of [navn, "../data/" + navn]) {
       try { const r = await fetch(url, { cache: "no-cache" }); if (r.ok) return r.json(); } catch (e) { /* prøv næste */ }
     }
     throw new Error("data mangler");
@@ -187,7 +235,8 @@
     if (datoer.length) $("eyebrow").textContent = `Jyske politikredse · døgnrapporter ${dag(datoer[0])} – ${dag(datoer[datoer.length - 1])}`;
     $("opdateret").innerHTML = `<b>Opdateret.</b> ${esc(new Date(d.opdateret).toLocaleString("da-DK", { dateStyle: "long", timeStyle: "short" }))}.`;
     fyldVælgere();
-    tegn(true);
+    tegn(false);
+    map.fitBounds([[54.8, 8.05], [57.75, 10.95]]); // hele Jylland ved første visning
   }).catch(() => {
     $("list").innerHTML = '<p class="empty">Kunne ikke hente data/indbrud.json.</p>';
   });
