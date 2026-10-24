@@ -84,6 +84,10 @@
   "lon": 10.2134046,
   "praecision": "by"
  },
+ "|Aabenraa Kommune": {
+  "lat": 54.984104,
+  "lon": 9.352211
+ },
  "|Aabybro": {
   "lat": 57.160639,
   "lon": 9.733963
@@ -91,6 +95,10 @@
  "|Aalborg": {
   "lat": 57.046263,
   "lon": 9.921526
+ },
+ "|Aalborg Kommune": {
+  "lat": 56.945065,
+  "lon": 10.051992
  },
  "|Aalborg SV": {
   "lat": 57.046263,
@@ -104,6 +112,10 @@
   "lat": 56.149628,
   "lon": 10.213405
  },
+ "|Aarhus Kommune": {
+  "lat": 56.163091,
+  "lon": 10.093924
+ },
  "|Aarhus N": {
   "lat": 56.149628,
   "lon": 10.213405
@@ -112,25 +124,89 @@
   "lat": 56.43145,
   "lon": 10.378186
  },
+ "|Billund Kommune": {
+  "lat": 55.7446,
+  "lon": 8.993306
+ },
+ "|Brønderslev Kommune": {
+  "lat": 57.206541,
+  "lon": 10.188893
+ },
+ "|Esbjerg Kommune": {
+  "lat": 55.408795,
+  "lon": 8.74784
+ },
+ "|Fanø Kommune": {
+  "lat": 55.406478,
+  "lon": 8.4246
+ },
+ "|Favrskov Kommune": {
+  "lat": 56.319419,
+  "lon": 9.928782
+ },
+ "|Fredericia Kommune": {
+  "lat": 55.568637,
+  "lon": 9.669425
+ },
  "|Frederikshavn Kommune": {
   "lat": 57.46112,
   "lon": 10.454184
+ },
+ "|Haderslev Kommune": {
+  "lat": 55.253974,
+  "lon": 9.251541
+ },
+ "|Hedensted Kommune": {
+  "lat": 55.796872,
+  "lon": 9.781253
+ },
+ "|Herning Kommune": {
+  "lat": 56.146787,
+  "lon": 8.860699
  },
  "|Hirtshals": {
   "lat": 57.590803,
   "lon": 9.964974
  },
+ "|Hjørring Kommune": {
+  "lat": 57.462657,
+  "lon": 10.075541
+ },
  "|Hobro": {
   "lat": 56.637175,
   "lon": 9.79398
+ },
+ "|Holstebro Kommune": {
+  "lat": 56.396664,
+  "lon": 8.709863
+ },
+ "|Horsens Kommune": {
+  "lat": 55.9338,
+  "lon": 9.770196
  },
  "|Højbjerg": {
   "lat": 56.113385,
   "lon": 10.206361
  },
+ "|Ikast-Brande Kommune": {
+  "lat": 56.053358,
+  "lon": 9.256019
+ },
+ "|Jammerbugt Kommune": {
+  "lat": 57.181469,
+  "lon": 9.662506
+ },
+ "|Kolding Kommune": {
+  "lat": 55.469153,
+  "lon": 9.468185
+ },
  "|Langå": {
   "lat": 56.390979,
   "lon": 9.89363
+ },
+ "|Lemvig Kommune": {
+  "lat": 56.528819,
+  "lon": 8.302986
  },
  "|Løkken": {
   "lat": 57.370486,
@@ -140,13 +216,37 @@
   "lat": 56.705633,
   "lon": 9.920088
  },
+ "|Morsø Kommune": {
+  "lat": 56.826847,
+  "lon": 8.729454
+ },
  "|Nibe": {
   "lat": 56.982381,
   "lon": 9.642871
  },
+ "|Norddjurs Kommune": {
+  "lat": 56.451202,
+  "lon": 10.608704
+ },
+ "|Odder Kommune": {
+  "lat": 55.930079,
+  "lon": 10.141337
+ },
+ "|Randers Kommune": {
+  "lat": 56.535528,
+  "lon": 10.002278
+ },
  "|Randers SØ": {
   "lat": 56.435543,
   "lon": 10.042596
+ },
+ "|Rebild Kommune": {
+  "lat": 56.811278,
+  "lon": 10.002461
+ },
+ "|Ringkøbing-Skjern Kommune": {
+  "lat": 56.017552,
+  "lon": 8.547249
  },
  "|Risskov": {
   "lat": 56.201768,
@@ -156,6 +256,14 @@
   "lat": 56.212136,
   "lon": 10.034151
  },
+ "|Samsø Kommune": {
+  "lat": 55.883547,
+  "lon": 10.611407
+ },
+ "|Silkeborg Kommune": {
+  "lat": 56.181779,
+  "lon": 9.608755
+ },
  "|Sindal": {
   "lat": 57.475513,
   "lon": 10.199427
@@ -163,6 +271,18 @@
  "|Skagen": {
   "lat": 57.72597,
   "lon": 10.58446
+ },
+ "|Skanderborg Kommune": {
+  "lat": 56.08514,
+  "lon": 9.851252
+ },
+ "|Skive Kommune": {
+  "lat": 56.645924,
+  "lon": 8.932732
+ },
+ "|Struer Kommune": {
+  "lat": 56.634218,
+  "lon": 8.539354
  },
  "|Støvring": {
   "lat": 56.88472,
@@ -172,17 +292,57 @@
   "lat": 56.977321,
   "lon": 9.852584
  },
+ "|Syddjurs Kommune": {
+  "lat": 56.271469,
+  "lon": 10.662949
+ },
  "|Sæby": {
   "lat": 57.331276,
   "lon": 10.519881
+ },
+ "|Sønderborg Kommune": {
+  "lat": 54.968081,
+  "lon": 9.931923
+ },
+ "|Thisted Kommune": {
+  "lat": 56.914633,
+  "lon": 8.482424
+ },
+ "|Tønder Kommune": {
+  "lat": 55.063272,
+  "lon": 8.889565
+ },
+ "|Uoplyst kommune": {
+  "dato": "2026-10-24",
+  "fejl": true
+ },
+ "|Uoplyst kommune Kommune": {
+  "dato": "2026-10-24",
+  "fejl": true
+ },
+ "|Varde Kommune": {
+  "lat": 55.662994,
+  "lon": 8.50966
+ },
+ "|Vejen Kommune": {
+  "lat": 55.458687,
+  "lon": 9.031663
  },
  "|Vejgaard": {
   "lat": 57.033748,
   "lon": 9.956446
  },
+ "|Vejle Kommune": {
+  "lat": 55.761707,
+  "lon": 9.353262
+ },
  "|Vesthimmerlands Kommune": {
   "lat": 56.824475,
   "lon": 9.405645
+ },
+ "|Viborg Kommune": {
+  "lat": 56.450845,
+  "lon": 9.382808
  },
  "|Vodskov": {
   "lat": 57.10956,

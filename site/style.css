@@ -1,7 +1,7 @@
 /* Indbrudskort Jylland – design fra prototypen: kort til venstre, liste til højre, stables på mobil */
 :root{
   --bg:#eef1f3; --panel:#ffffff; --fg:#1b2329; --muted:#5d6b75; --line:#d3dbe0;
-  --hit:#d2462b; --hit-soft:rgba(210,70,43,.16); --biz:#7a4bd1; --sel:#0f5f8a; --approx:#c98a1b;
+  --hit:#d2462b; --hit-soft:rgba(210,70,43,.16); --biz:#7a4bd1; --sel:#0f5f8a; --approx:#c98a1b; --stat:#2f6f9f;
   --f-display:"Barlow Condensed","Arial Narrow",system-ui,sans-serif;
   --f-body:"Source Sans 3",system-ui,-apple-system,"Segoe UI",sans-serif;
   --f-mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
@@ -9,10 +9,10 @@
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
   --bg:#12181c; --panel:#192127; --fg:#e6ecef; --muted:#97a6b0; --line:#2b363e;
-  --hit:#ff6b4d; --hit-soft:rgba(255,107,77,.2); --biz:#b08cff; --sel:#5fb6e6; --approx:#e8b04a; color-scheme:dark}}
+  --hit:#ff6b4d; --hit-soft:rgba(255,107,77,.2); --biz:#b08cff; --sel:#5fb6e6; --approx:#e8b04a; --stat:#6fb3e0; color-scheme:dark}}
 :root[data-theme="dark"]{
   --bg:#12181c; --panel:#192127; --fg:#e6ecef; --muted:#97a6b0; --line:#2b363e;
-  --hit:#ff6b4d; --hit-soft:rgba(255,107,77,.2); --biz:#b08cff; --sel:#5fb6e6; --approx:#e8b04a; color-scheme:dark}
+  --hit:#ff6b4d; --hit-soft:rgba(255,107,77,.2); --biz:#b08cff; --sel:#5fb6e6; --approx:#e8b04a; --stat:#6fb3e0; color-scheme:dark}
 *{box-sizing:border-box}
 html,body{margin:0}
 body{background:var(--bg);color:var(--fg);font-family:var(--f-body);font-size:15px;line-height:1.45}
@@ -71,3 +71,7 @@ aside h2 small{font-family:var(--f-mono);font-size:12px;font-weight:400;color:va
 .empty{padding:14px;color:var(--muted);margin:0}
 .notes{font-size:13.5px;color:var(--muted);display:grid;gap:6px;max-width:85ch}
 .notes p{margin:0}
+.sw.s{background:color-mix(in srgb,var(--stat) 45%,transparent);border:1.5px solid var(--stat);width:12px;height:12px}
+.filters .check{display:flex;align-items:center;gap:6px;font-size:14px;cursor:pointer;border:1px solid var(--line);border-radius:999px;padding:5px 12px;background:var(--panel)}
+.check input{accent-color:var(--sel);margin:0}
+.statinfo{margin:0;font-family:var(--f-mono);font-size:12.5px;color:var(--muted);flex:1 1 220px;align-self:center}

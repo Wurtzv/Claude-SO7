@@ -11,6 +11,7 @@ from pathlib import Path
 from .geokod import Geokoder
 from .kilder import KILDER, siden
 from .lager import Lager
+from . import statistik
 from .parse import parse_rapport
 
 RODEN = Path(__file__).resolve().parent.parent
@@ -77,6 +78,15 @@ def opdater(args) -> int:
             if not args.prøvekørsel:
                 geo.gem()
 
+    if not args.uden_statistik and not args.prøvekørsel:
+        try:
+            geo_s = Geokoder(DATA / "geokode-cache.json")
+            s = statistik.opdater(DATA / "statistik.json", geo_s)
+            geo_s.gem()
+            print(f"Statistik: {len(s['kommuner'])} jyske kommuner, kvartaler {s['kvartaler'][0]}–{s['kvartaler'][-1]}")
+        except Exception as e:  # statistikken er et ekstra lag; den må ikke stoppe resten
+            print(f"FEJL: kunne ikke hente statistik fra Danmarks Statistik: {e}")
+
     print(f"I alt {len(lager.indbrud)} indbrud, {nye} nye.")
     if not args.prøvekørsel:
         lager.gem()
@@ -91,6 +101,7 @@ def main(argv=None) -> int:
     o.add_argument("--dage", type=int, default=14, help="hvor mange dage tilbage der kigges (standard 14)")
     o.add_argument("--alle", action="store_true", help="genbehandl også meddelelser, der er set før")
     o.add_argument("--uden-geokodning", action="store_true")
+    o.add_argument("--uden-statistik", action="store_true", help="spring kommunestatistikken fra Danmarks Statistik over")
     o.add_argument("--prøvekørsel", action="store_true", help="hent og parse, men gem intet")
     args = p.parse_args(argv)
     return opdater(args)
