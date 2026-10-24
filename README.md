@@ -14,6 +14,7 @@ OpenStreetMap viser indbruddene på et kort, og den bliver lagt på GitHub Pages
 | `indbrudskort/kilder.py` | Kilderne: politi.dk-døgnrapporter og Via Ritzau. **Nye kredse og kilder tilføjes her** |
 | `indbrudskort/geokod.py` | Vej + by → koordinat midt på vejen, med cache |
 | `indbrudskort/lager.py` | `data/indbrud.json`: fletning uden dubletter |
+| `indbrudskort/naboer.py` | Naboveje: vejene inden for ca. 500 m af hvert indbrud fra de seneste 30 dage → `data/naboveje.json` |
 | `indbrudskort/ugerapport.py` | Ugens opsummering (seneste 7 dage mod de 7 før) → `data/ugerapport.json` og Markdown til mail |
 | `indbrudskort/statistik.py` | Anmeldte indbrud pr. jysk kommune pr. kvartal fra Danmarks Statistik → `data/statistik.json` |
 | `data/indbrud.json` | Alle indbrud (bliver opdateret automatisk) |
@@ -118,6 +119,12 @@ Hvert placeret indbrud får et **postnummer** (feltet `postnr`) ved et omvendt o
 **Hotspots** på kortsiden tæller indbrud pr. by/bydel, postnummer eller vej i de seneste 30, 90 eller 365 dage (efter rapportdato, regnet fra nyeste døgnrapport) og sammenligner med lige så mange dage før. Listen kan sorteres efter flest indbrud eller størst stigning. "Størst stigning" kræver mindst 2 indbrud i perioden, så ét enkelt indbrud et nyt sted ikke fylder listen.
 
 **Ugens overblik** (`python -m indbrudskort ugerapport`) sammenligner de seneste 7 dages døgnrapporter med de 7 før og viser, hvor det steg mest pr. bydel, postnummer og vej, plus de jyske kommuner med størst stigning i Danmarks Statistiks seneste kvartal mod samme kvartal året før. Den daglige kørsel gemmer det i `data/ugerapport.json` til kortsiden, og mandagens workflow sender det som issue.
+
+### Indbrud nær mig og naboveje
+
+Knappen **"Indbrud nær mig"** bruger telefonens eller computerens placering (browseren spørger om lov) og viser alle indbrud fra døgnrapporterne inden for **5 km** fra de seneste **14 dage**, nærmeste først. Kortet zoomer ind med en 5 km-cirkel. Placeringen bliver kun brugt i browseren og sendes ingen steder hen. Den kræver, at siden åbnes via https (det gør GitHub Pages).
+
+Efter et indbrud er risikoen forhøjet i nabolaget i de følgende uger. Derfor viser popup'en og listen **naboveje**: vejene inden for ca. 500 m. De findes ved at slå vejnavnet op i 20 punkter i ringe på ca. 150, 300 og 500 m omkring indbruddet (omvendt opslag i Nominatim). Det sker for indbrud fra de seneste 30 dage, hvor vejen er kendt. Opslagene caches i `data/geokode-cache.json`, og den daglige kørsel bruger højst 8 minutter på dem (`--naboveje-minutter`). Listen er en stikprøve af vejene, så meget korte veje kan mangle.
 
 ### Afsnitsformatet (Nordjylland)
 

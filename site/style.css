@@ -133,3 +133,11 @@ aside h2 small{font-family:var(--f-mono);font-size:12px;font-weight:400;color:va
 .ugegrid .op{color:var(--hit)}
 .rang .bar{display:inline-block;height:8px;border-radius:2px;background:var(--hit);vertical-align:middle;margin-left:6px;opacity:.75}
 .rang .sub{color:var(--muted);font-size:12px}
+.naer{border:1px solid var(--sel);background:var(--sel);color:#fff;border-radius:999px;padding:6px 14px;font-size:14px;font-weight:600;cursor:pointer}
+.naer:disabled{opacity:.6;cursor:progress}
+.naerliste{display:grid;gap:0}
+.naerliste .item{grid-template-columns:58px minmax(0,1fr);border-top:1px solid var(--line);padding:9px 4px}
+.naerliste .km{font-family:var(--f-mono);font-size:13px;font-weight:500;color:var(--hit);grid-row:span 3}
+.naerliste .nabo{grid-column:2;font-size:12.5px;color:var(--muted)}
+.pop .nabo{margin-top:4px;font-size:12.5px}
+.pop .nabo b{font-weight:600}
