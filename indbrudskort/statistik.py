@@ -1,7 +1,7 @@
 """Anmeldte indbrud i beboelse pr. jysk kommune pr. kvartal fra Danmarks Statistik.
 
-Tabel STRAF11 (anmeldte forbrydelser, overtrædelse 1320 "Indbrud i beboelser") og
-FOLK1A (befolkning) hentes fra statistikbankens åbne API. Det dækker hele Jylland,
+Tabel STRAF11 (anmeldte forbrydelser, overtrædelse 1320 "Indbrud i beboelser"),
+FOLK1A (befolkning) og FAM55N (husstande, dvs. beboede boliger) hentes fra statistikbankens åbne API. Det dækker hele Jylland,
 også de politikredse, der ikke udgiver døgnrapporter. Resultatet gemmes i
 data/statistik.json.
 """
@@ -28,7 +28,7 @@ def er_jysk(kode: str) -> bool:
 def parse_bulk(csv: str) -> list[tuple[str, str, str, int | None]]:
     """Statistikbankens BULK-format (semikolon, 'kode tekst' i hver kolonne) ->
     [(områdekode, områdenavn, kvartal, værdi)]."""
-    linjer = [l for l in csv.strip().splitlines() if l.strip()]
+    linjer = [l for l in csv.lstrip("\ufeff").strip().splitlines() if l.strip()]
     hoved = linjer[0].split(";")
     i_omr, i_tid, i_val = hoved.index("OMRÅDE"), hoved.index("TID"), hoved.index("INDHOLD")
     ud = []
@@ -55,20 +55,28 @@ def hent_befolkning() -> dict[str, int]:
     return {kode: v for kode, _, _, v in parse_bulk(csv) if v}
 
 
-def byg(indbrud, befolkning: dict[str, int], centrum) -> dict:
+def hent_husstande() -> dict[str, int]:
+    # CSV-formatet (ikke BULK) tillader, at husstandstype m.m. summeres til i alt.
+    csv = net.hent_tekst(API.format(tabel="FAM55N").replace("/BULK", "/CSV"), params={
+        "lang": "da", "OMRÅDE": "*", "Tid": "(-n+1)", "valuePresentation": "CodeAndValue"})
+    return {kode: v for kode, _, _, v in parse_bulk(csv) if v}
+
+
+def byg(indbrud, befolkning: dict[str, int], centrum, husstande: dict[str, int] | None = None) -> dict:
     """Samler tallene pr. jysk kommune. `centrum(navn)` giver (lon, lat) eller None."""
     kvartaler = sorted({t for _, _, t, _ in indbrud})
     kommuner: dict[str, dict] = {}
     for kode, navn, tid, v in indbrud:
         if not er_jysk(kode):
             continue
-        k = kommuner.setdefault(kode, {"kode": kode, "navn": navn, "indbyggere": befolkning.get(kode), "antal": {}})
+        k = kommuner.setdefault(kode, {"kode": kode, "navn": navn, "indbyggere": befolkning.get(kode),
+                                       "husstande": (husstande or {}).get(kode), "antal": {}})
         k["antal"][tid] = v
     for k in kommuner.values():
         p = centrum(k["navn"])
         k["lon"], k["lat"] = (round(p[0], 5), round(p[1], 5)) if p else (None, None)
     return {
-        "kilde": "Danmarks Statistik, tabel STRAF11 (anmeldte indbrud i beboelser) og FOLK1A (befolkning)",
+        "kilde": "Danmarks Statistik, tabel STRAF11 (anmeldte indbrud i beboelser), FOLK1A (befolkning) og FAM55N (husstande)",
         "kilde_url": "https://www.statistikbanken.dk/STRAF11",
         "opdateret": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "kvartaler": kvartaler,
@@ -80,6 +88,6 @@ def opdater(fil: Path, geokoder) -> dict:
     def centrum(navn: str):
         return geokoder.by(f"{navn} Kommune") or geokoder.by(navn)
 
-    data = byg(hent_indbrud(), hent_befolkning(), centrum)
+    data = byg(hent_indbrud(), hent_befolkning(), centrum, hent_husstande())
     fil.write_text(json.dumps(data, ensure_ascii=False, indent=1) + "\n", "utf-8")
     return data

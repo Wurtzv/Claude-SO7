@@ -1,7 +1,7 @@
 {
- "kilde": "Danmarks Statistik, tabel STRAF11 (anmeldte indbrud i beboelser) og FOLK1A (befolkning)",
+ "kilde": "Danmarks Statistik, tabel STRAF11 (anmeldte indbrud i beboelser), FOLK1A (befolkning) og FAM55N (husstande)",
  "kilde_url": "https://www.statistikbanken.dk/STRAF11",
- "opdateret": "2026-10-24T10:12:52+00:00",
+ "opdateret": "2026-10-24T10:16:34+00:00",
  "kvartaler": [
   "2025K3",
   "2025K4",
@@ -14,6 +14,7 @@
    "kode": "580",
    "navn": "Aabenraa",
    "indbyggere": 58249,
+   "husstande": 28355,
    "antal": {
     "2025K3": 17,
     "2025K4": 11,
@@ -28,6 +29,7 @@
    "kode": "851",
    "navn": "Aalborg",
    "indbyggere": 226404,
+   "husstande": 116937,
    "antal": {
     "2025K3": 76,
     "2025K4": 135,
@@ -42,6 +44,7 @@
    "kode": "751",
    "navn": "Aarhus",
    "indbyggere": 378270,
+   "husstande": 186792,
    "antal": {
     "2025K3": 348,
     "2025K4": 462,
@@ -56,6 +59,7 @@
    "kode": "530",
    "navn": "Billund",
    "indbyggere": 27276,
+   "husstande": 12683,
    "antal": {
     "2025K3": 19,
     "2025K4": 41,
@@ -70,6 +74,7 @@
    "kode": "810",
    "navn": "Brønderslev",
    "indbyggere": 36639,
+   "husstande": 17122,
    "antal": {
     "2025K3": 14,
     "2025K4": 10,
@@ -84,6 +89,7 @@
    "kode": "561",
    "navn": "Esbjerg",
    "indbyggere": 114824,
+   "husstande": 57062,
    "antal": {
     "2025K3": 51,
     "2025K4": 77,
@@ -98,6 +104,7 @@
    "kode": "563",
    "navn": "Fanø",
    "indbyggere": 3322,
+   "husstande": 1743,
    "antal": {
     "2025K3": 1
    },
@@ -108,6 +115,7 @@
    "kode": "710",
    "navn": "Favrskov",
    "indbyggere": 50028,
+   "husstande": 21101,
    "antal": {
     "2025K3": 35,
     "2025K4": 30,
@@ -122,6 +130,7 @@
    "kode": "607",
    "navn": "Fredericia",
    "indbyggere": 53115,
+   "husstande": 26322,
    "antal": {
     "2025K3": 19,
     "2025K4": 34,
@@ -136,6 +145,7 @@
    "kode": "813",
    "navn": "Frederikshavn",
    "indbyggere": 57428,
+   "husstande": 29582,
    "antal": {
     "2025K3": 9,
     "2025K4": 18,
@@ -150,6 +160,7 @@
    "kode": "510",
    "navn": "Haderslev",
    "indbyggere": 55119,
+   "husstande": 27033,
    "antal": {
     "2025K3": 17,
     "2025K4": 40,
@@ -164,6 +175,7 @@
    "kode": "766",
    "navn": "Hedensted",
    "indbyggere": 48813,
+   "husstande": 21709,
    "antal": {
     "2025K3": 52,
     "2025K4": 28,
@@ -178,6 +190,7 @@
    "kode": "657",
    "navn": "Herning",
    "indbyggere": 90910,
+   "husstande": 42402,
    "antal": {
     "2025K3": 61,
     "2025K4": 97,
@@ -192,6 +205,7 @@
    "kode": "860",
    "navn": "Hjørring",
    "indbyggere": 62909,
+   "husstande": 31298,
    "antal": {
     "2025K3": 30,
     "2025K4": 13,
@@ -206,6 +220,7 @@
    "kode": "661",
    "navn": "Holstebro",
    "indbyggere": 59331,
+   "husstande": 27952,
    "antal": {
     "2025K3": 31,
     "2025K4": 55,
@@ -220,6 +235,7 @@
    "kode": "615",
    "navn": "Horsens",
    "indbyggere": 98999,
+   "husstande": 46411,
    "antal": {
     "2025K3": 90,
     "2025K4": 96,
@@ -234,6 +250,7 @@
    "kode": "756",
    "navn": "Ikast-Brande",
    "indbyggere": 43484,
+   "husstande": 19267,
    "antal": {
     "2025K3": 61,
     "2025K4": 55,
@@ -248,6 +265,7 @@
    "kode": "849",
    "navn": "Jammerbugt",
    "indbyggere": 37890,
+   "husstande": 18103,
    "antal": {
     "2025K3": 13,
     "2025K4": 8,
@@ -262,6 +280,7 @@
    "kode": "621",
    "navn": "Kolding",
    "indbyggere": 96140,
+   "husstande": 45450,
    "antal": {
     "2025K3": 72,
     "2025K4": 69,
@@ -276,6 +295,7 @@
    "kode": "665",
    "navn": "Lemvig",
    "indbyggere": 18505,
+   "husstande": 9151,
    "antal": {
     "2025K3": 4,
     "2025K4": 5,
@@ -290,6 +310,7 @@
    "kode": "846",
    "navn": "Mariagerfjord",
    "indbyggere": 41565,
+   "husstande": 20201,
    "antal": {
     "2025K3": 26,
     "2025K4": 27,
@@ -304,6 +325,7 @@
    "kode": "773",
    "navn": "Morsø",
    "indbyggere": 19321,
+   "husstande": 9757,
    "antal": {
     "2025K3": 7,
     "2025K4": 22,
@@ -318,6 +340,7 @@
    "kode": "707",
    "navn": "Norddjurs",
    "indbyggere": 36355,
+   "husstande": 18477,
    "antal": {
     "2025K3": 56,
     "2025K4": 29,
@@ -332,6 +355,7 @@
    "kode": "727",
    "navn": "Odder",
    "indbyggere": 24448,
+   "husstande": 11222,
    "antal": {
     "2025K3": 28,
     "2025K4": 13,
@@ -346,6 +370,7 @@
    "kode": "730",
    "navn": "Randers",
    "indbyggere": 100921,
+   "husstande": 49894,
    "antal": {
     "2025K3": 54,
     "2025K4": 84,
@@ -360,6 +385,7 @@
    "kode": "840",
    "navn": "Rebild",
    "indbyggere": 31369,
+   "husstande": 13531,
    "antal": {
     "2025K3": 33,
     "2025K4": 29,
@@ -374,6 +400,7 @@
    "kode": "760",
    "navn": "Ringkøbing-Skjern",
    "indbyggere": 55205,
+   "husstande": 25744,
    "antal": {
     "2025K3": 25,
     "2025K4": 20,
@@ -388,6 +415,7 @@
    "kode": "741",
    "navn": "Samsø",
    "indbyggere": 3633,
+   "husstande": 1948,
    "antal": {
     "2025K3": 2,
     "2026K1": 2,
@@ -400,6 +428,7 @@
    "kode": "740",
    "navn": "Silkeborg",
    "indbyggere": 103293,
+   "husstande": 46429,
    "antal": {
     "2025K3": 112,
     "2025K4": 112,
@@ -414,6 +443,7 @@
    "kode": "746",
    "navn": "Skanderborg",
    "indbyggere": 66617,
+   "husstande": 27831,
    "antal": {
     "2025K3": 78,
     "2025K4": 68,
@@ -428,6 +458,7 @@
    "kode": "779",
    "navn": "Skive",
    "indbyggere": 43913,
+   "husstande": 22119,
    "antal": {
     "2025K3": 28,
     "2025K4": 48,
@@ -442,6 +473,7 @@
    "kode": "671",
    "navn": "Struer",
    "indbyggere": 20100,
+   "husstande": 9987,
    "antal": {
     "2025K3": 7,
     "2025K4": 6,
@@ -456,6 +488,7 @@
    "kode": "706",
    "navn": "Syddjurs",
    "indbyggere": 44559,
+   "husstande": 20399,
    "antal": {
     "2025K3": 21,
     "2025K4": 33,
@@ -470,6 +503,7 @@
    "kode": "540",
    "navn": "Sønderborg",
    "indbyggere": 73874,
+   "husstande": 36780,
    "antal": {
     "2025K3": 21,
     "2025K4": 22,
@@ -484,6 +518,7 @@
    "kode": "787",
    "navn": "Thisted",
    "indbyggere": 42573,
+   "husstande": 20542,
    "antal": {
     "2025K3": 13,
     "2025K4": 14,
@@ -498,6 +533,7 @@
    "kode": "550",
    "navn": "Tønder",
    "indbyggere": 36172,
+   "husstande": 17680,
    "antal": {
     "2025K3": 12,
     "2025K4": 27,
@@ -512,6 +548,7 @@
    "kode": "573",
    "navn": "Varde",
    "indbyggere": 49454,
+   "husstande": 23024,
    "antal": {
     "2025K3": 27,
     "2025K4": 47,
@@ -526,6 +563,7 @@
    "kode": "575",
    "navn": "Vejen",
    "indbyggere": 42671,
+   "husstande": 19613,
    "antal": {
     "2025K3": 20,
     "2025K4": 32,
@@ -540,6 +578,7 @@
    "kode": "630",
    "navn": "Vejle",
    "indbyggere": 123947,
+   "husstande": 56957,
    "antal": {
     "2025K3": 78,
     "2025K4": 121,
@@ -554,6 +593,7 @@
    "kode": "820",
    "navn": "Vesthimmerlands",
    "indbyggere": 35546,
+   "husstande": 17411,
    "antal": {
     "2025K3": 24,
     "2025K4": 21,
@@ -568,6 +608,7 @@
    "kode": "791",
    "navn": "Viborg",
    "indbyggere": 98104,
+   "husstande": 46754,
    "antal": {
     "2025K3": 67,
     "2025K4": 111,

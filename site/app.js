@@ -183,6 +183,13 @@
   const kvt = (k) => `${k.slice(5)}. kvt. ${k.slice(0, 4)}`;
   const tal = (n, d = 0) => n.toLocaleString("da-DK", { minimumFractionDigits: d, maximumFractionDigits: d });
 
+  // Hvad cirklerne og listen måler. "værdi" er det tal, der vises og sorteres efter.
+  const MÅL = {
+    antal: { navn: "antal indbrud", enhed: "", dec: 0, værdi: (r) => r.n },
+    indbyggere: { navn: "pr. 1.000 indbyggere", enhed: " pr. 1.000 indb.", dec: 2, værdi: (r) => r.prInd },
+    husstande: { navn: "pr. 1.000 husstande", enhed: " pr. 1.000 husst.", dec: 2, værdi: (r) => r.prHus },
+  };
+
   function tegnStatistik() {
     statLag.clearLayers();
     statMarkører.clear();
@@ -192,44 +199,55 @@
       return;
     }
     const k = $("kvartal").value;
+    const mål = MÅL[$("maal").value] || MÅL.antal;
     const kv = STAT.kvartaler, iFjor = kv[kv.indexOf(k) - 4];
     const rækker = STAT.kommuner.filter((x) => x.lat != null).map((x) => {
       const n = x.antal[k] || 0;
-      return { ...x, n, rate: x.indbyggere ? (n / x.indbyggere) * 1000 : 0, fjor: iFjor ? x.antal[iFjor] || 0 : null };
+      return {
+        ...x, n,
+        prInd: x.indbyggere ? (n / x.indbyggere) * 1000 : 0,
+        prHus: x.husstande ? (n / x.husstande) * 1000 : 0,
+        fjor: iFjor ? x.antal[iFjor] || 0 : null,
+      };
     });
-    const maksN = Math.max(1, ...rækker.map((r) => r.n));
-    const maksRate = Math.max(0.01, ...rækker.map((r) => r.rate));
+    const maks = Math.max(1e-9, ...rækker.map(mål.værdi));
+    const vis = (r) => tal(mål.værdi(r), mål.dec);
     for (const r of rækker) {
+      const andel = mål.værdi(r) / maks;
       const m = L.circleMarker([r.lat, r.lon], {
         pane: "statistik",
-        radius: 4 + 26 * Math.sqrt(r.n / maksN),
+        radius: 4 + 26 * Math.sqrt(andel),
         color: css("--stat"), weight: 2,
-        fillColor: css("--stat"), fillOpacity: 0.2 + 0.6 * (r.rate / maksRate),
+        fillColor: css("--stat"), fillOpacity: 0.2 + 0.6 * andel,
       });
       const fjor = r.fjor == null ? "" : `<div class="t">Samme kvartal året før: ${tal(r.fjor)}</div>`;
       m.bindPopup(`<div class="pop"><strong>${esc(r.navn)} Kommune</strong>${tal(r.n)} anmeldte indbrud i beboelse, ${kvt(k)}` +
-        `<div class="t">${tal(r.rate, 2)} pr. 1.000 indbyggere</div>${fjor}` +
-        `<div class="t">Kilde: <a href="${esc(STAT.kilde_url)}" target="_blank" rel="noopener">Danmarks Statistik, STRAF11</a></div></div>`, { maxWidth: 260 });
-      m.bindTooltip(`${r.navn}: ${tal(r.n)}`, { direction: "top" });
+        `<div class="t">${tal(r.prInd, 2)} pr. 1.000 indbyggere (${tal(r.indbyggere || 0)} indb.)</div>` +
+        `<div class="t">${tal(r.prHus, 2)} pr. 1.000 husstande (${tal(r.husstande || 0)} husst.)</div>${fjor}` +
+        `<div class="t">Kilde: <a href="${esc(STAT.kilde_url)}" target="_blank" rel="noopener">Danmarks Statistik</a></div></div>`, { maxWidth: 280 });
+      m.bindTooltip(`${r.navn}: ${vis(r)}${mål.enhed}`, { direction: "top" });
       m.addTo(statLag);
       statMarkører.set(r.kode, m);
-      if (r.n >= maksN * 0.04) {
+      if (andel >= 0.04 || mål !== MÅL.antal) {
         L.marker([r.lat, r.lon], {
           pane: "statistikTal", interactive: false, keyboard: false,
-          icon: L.divIcon({ className: "stat-tal", html: tal(r.n), iconSize: [40, 16], iconAnchor: [20, 8] }),
+          icon: L.divIcon({ className: "stat-tal", html: vis(r), iconSize: [44, 16], iconAnchor: [22, 8] }),
         }).addTo(statLag);
       }
     }
-    const sorteret = [...rækker].sort((a, b) => b.n - a.n || a.navn.localeCompare(b.navn, "da"));
-    $("klist").innerHTML = `<div class="day">${esc(kvt(k))} · alle anmeldte indbrud i beboelse</div>` + sorteret.map((r) => {
+    const sorteret = [...rækker].sort((a, b) => mål.værdi(b) - mål.værdi(a) || a.navn.localeCompare(b.navn, "da"));
+    $("klist").innerHTML = `<div class="day">${esc(kvt(k))} · sorteret efter ${esc(mål.navn)}</div>` + sorteret.map((r) => {
       const ændring = r.fjor ? ` · året før ${tal(r.fjor)} (${r.n >= r.fjor ? "+" : "−"}${tal(Math.abs(Math.round(((r.n - r.fjor) / r.fjor) * 100)))} %)` : "";
-      return `<button class="item" data-kode="${esc(r.kode)}"><i class="sw s"></i><span class="st">${esc(r.navn)} <b class="kn">${tal(r.n)}</b></span>` +
-        `<span class="t">${tal(r.rate, 2)} pr. 1.000 indb.${ændring}</span></button>`;
+      return `<button class="item" data-kode="${esc(r.kode)}"><i class="sw s"></i><span class="st">${esc(r.navn)} <b class="kn">${vis(r)}</b><small class="enh">${esc(mål.enhed)}</small></span>` +
+        `<span class="t">${tal(r.n)} indbrud · ${tal(r.prInd, 2)} pr. 1.000 indb. · ${tal(r.prHus, 2)} pr. 1.000 husst.${ændring}</span></button>`;
     }).join("");
     statLag.addTo(map);
     const total = rækker.reduce((a, r) => a + r.n, 0);
-    $("statInfo").textContent = `${tal(total)} anmeldte indbrud i beboelse i Jylland i ${kvt(k)} (alle politikredse).`;
+    const ind = rækker.reduce((a, r) => a + (r.indbyggere || 0), 0), hus = rækker.reduce((a, r) => a + (r.husstande || 0), 0);
+    $("statInfo").textContent = `${tal(total)} anmeldte indbrud i beboelse i Jylland i ${kvt(k)} – ` +
+      `${tal((total / ind) * 1000, 2)} pr. 1.000 indbyggere, ${tal((total / hus) * 1000, 2)} pr. 1.000 husstande.`;
   }
+
 
   hentData("statistik.json").then((d) => {
     STAT = d;
@@ -250,6 +268,7 @@
     $("klist").hidden = f.dataset.fane !== "kommuner";
   }));
   $("kvartal").addEventListener("change", tegnStatistik);
+  $("maal").addEventListener("change", tegnStatistik);
   $("visEnkelte").addEventListener("change", (e) => { if (e.target.checked) lag.addTo(map); else lag.remove(); });
 
   // ---------- data ----------
