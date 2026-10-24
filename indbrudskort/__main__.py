@@ -59,6 +59,15 @@ def geokod(lager: Lager, prøvekørsel: bool, minutter: float) -> None:
             geo.gem()
 
 
+def gem_omraader(lager: Lager) -> None:
+    """Egen statistik pr. område, by og kommune (kommuner slås op én gang og caches)."""
+    geo = Geokoder(DATA / "geokode-cache.json")
+    try:
+        omraader.gem(lager.indbrud, DATA / "omraader.json", geo.kommune)
+    finally:
+        geo.gem()
+
+
 def historik(args) -> int:
     """Henter ældre døgnrapporter dag for dag (kun kredse med historik-skabeloner)."""
     lager = Lager(DATA / "indbrud.json")
@@ -104,7 +113,7 @@ def historik(args) -> int:
     hfil.write_text(json.dumps(ikke_fundet, indent=1) + "\n", "utf-8")
     lager.normaliser()
     lager.gem()
-    omraader.gem(lager.indbrud, DATA / "omraader.json")
+    gem_omraader(lager)
     print(f"Historik: {behandlet} dage behandlet, {nye} nye indbrud. I alt {len(lager.indbrud)}.")
     return 0
 
@@ -155,7 +164,7 @@ def opdater(args) -> int:
     if not args.prøvekørsel:
         lager.normaliser()
         lager.gem()
-        omraader.gem(lager.indbrud, DATA / "omraader.json")
+        gem_omraader(lager)
     # Rødt flag i Actions, hvis ingen kilder kunne nås.
     return 1 if fejl == len(KILDER) else 0
 

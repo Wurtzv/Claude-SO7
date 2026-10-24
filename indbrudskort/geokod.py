@@ -172,6 +172,18 @@ def samme_vej(osm_navn: str, vej: str) -> bool:
     return False
 
 
+# Områder, hvis bydele alle ligger i én kommune
+OMRAADE_KOMMUNE = {"Aarhus": "Aarhus", "Aalborg": "Aalborg", "Randers": "Randers"}
+# Groft rektangel om hver politikreds (vest, nord, øst, syd) til Nominatims viewbox
+KREDS_BOKS = {
+    "Østjyllands Politi": "9.55,56.80,11.75,55.80",
+    "Nordjyllands Politi": "8.15,57.80,11.25,56.45",
+    "Sydøstjyllands Politi": "8.85,56.05,10.65,55.15",
+    "Midt- og Vestjyllands Politi": "8.05,57.15,9.95,55.55",
+    "Syd- og Sønderjyllands Politi": "8.05,55.75,10.15,54.75",
+}
+
+
 def by_uden_postdistrikt(by: str) -> str:
     return re.sub(r"\s+(C|N|V|J|S|Ø|NV|NØ|SV|SØ)$", "", by)
 
@@ -238,6 +250,36 @@ class Geokoder:
                 break
         self.cache[nøgle] = {"lon": round(p[0], 6), "lat": round(p[1], 6)} if p else {"fejl": True, "dato": self.i_dag.isoformat()}
         return p
+
+    def kommune(self, by: str, omraade: str = "", kreds: str = "") -> str | None:
+        """Kommunen en by/bydel ligger i, fx 'Risskov' -> 'Aarhus' (navn uden 'Kommune').
+        Søgningen holdes inden for politikredsen, så 'Hasle' ikke bliver til Hasle på Bornholm."""
+        if not by:
+            return None
+        if by.endswith(" Kommune"):
+            return by[: -len(" Kommune")]
+        if omraade in OMRAADE_KOMMUNE:
+            return OMRAADE_KOMMUNE[omraade]
+        nøgle = f"kommune|{kreds}|{by}"
+        hit = self.cache.get(nøgle)
+        if hit is not None and not (isinstance(hit, dict) and self._forældet_fejl(hit)):
+            return hit if isinstance(hit, str) else None
+        navn = None
+        for q in dict.fromkeys(x for x in (by, by_uden_postdistrikt(by), omraade) if x):
+            try:
+                boks = KREDS_BOKS.get(kreds)
+                ekstra = {"viewbox": boks, "bounded": 1} if boks else {}
+                r = self._nominatim({"q": q, "countrycodes": "dk", "featureType": "settlement", "addressdetails": 1,
+                                     "limit": 1, **ekstra})
+            except Exception as e:
+                print(f"  kommuneopslag fejlede for {q}: {e}")
+                return None
+            m = (r[0].get("address", {}).get("municipality") if r else None) or ""
+            if m:
+                navn = re.sub(r"\s+Kommune$", "", m)
+                break
+        self.cache[nøgle] = navn or {"fejl": True, "dato": self.i_dag.isoformat()}
+        return navn
 
     # -- kilder --
 

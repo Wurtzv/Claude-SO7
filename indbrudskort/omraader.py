@@ -11,8 +11,20 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 
-def byg(indbrud: list[dict]) -> dict:
+# Kommuner i hver politikreds. Kun de kommuner, kredsen dækker, får en kommunetal-række,
+# så en landsby ved kredsgrænsen ikke giver et misvisende lavt tal pr. husstand i nabokommunen.
+KREDS_KOMMUNER = {
+    "Østjyllands Politi": {"Aarhus", "Randers", "Favrskov", "Norddjurs", "Syddjurs", "Odder", "Samsø"},
+    "Nordjyllands Politi": {"Aalborg", "Brønderslev", "Frederikshavn", "Hjørring", "Jammerbugt", "Læsø",
+                            "Mariagerfjord", "Morsø", "Rebild", "Thisted", "Vesthimmerlands"},
+}
+
+
+def byg(indbrud: list[dict], kommune_for=None) -> dict:
+    """`kommune_for(by, omraade, kreds)` giver kommunenavnet (fx 'Aarhus') eller None."""
     by_tæl: dict[tuple, dict] = defaultdict(lambda: defaultdict(int))
+    kom_tæl: dict[tuple, dict] = defaultdict(lambda: defaultdict(int))
+    kommuner_for: dict[tuple, str | None] = {}
     omr_tæl: dict[tuple, dict] = defaultdict(lambda: defaultdict(int))
     dækning: dict[str, list[str]] = {}
     for r in indbrud:
@@ -22,6 +34,13 @@ def byg(indbrud: list[dict]) -> dict:
         kreds = r.get("politikreds", "")
         by_tæl[(kreds, r["omraade"], r["by"])][md] += 1
         omr_tæl[(kreds, r["omraade"])][md] += 1
+        if kommune_for:
+            nøgle = (r["by"], r["omraade"], kreds)
+            if nøgle not in kommuner_for:
+                kommuner_for[nøgle] = kommune_for(*nøgle)
+            k = kommuner_for[nøgle]
+            if k and k in KREDS_KOMMUNER.get(kreds, {k}):
+                kom_tæl[(kreds, k)][md] += 1
         d = dækning.setdefault(kreds, [r["rapportdato"], r["rapportdato"]])
         d[0], d[1] = min(d[0], r["rapportdato"]), max(d[1], r["rapportdato"])
     måneder = sorted({md for t in omr_tæl.values() for md in t})
@@ -34,10 +53,12 @@ def byg(indbrud: list[dict]) -> dict:
                      for (k, o), t in sorted(omr_tæl.items())],
         "byer": [{"kreds": k, "omraade": o, "navn": b, "antal": dict(sorted(t.items()))}
                  for (k, o, b), t in sorted(by_tæl.items())],
+        "kommuner": [{"kreds": k, "navn": n, "antal": dict(sorted(t.items()))}
+                     for (k, n), t in sorted(kom_tæl.items())],
     }
 
 
-def gem(indbrud: list[dict], fil: Path) -> dict:
-    data = byg(indbrud)
+def gem(indbrud: list[dict], fil: Path, kommune_for=None) -> dict:
+    data = byg(indbrud, kommune_for)
     fil.write_text(json.dumps(data, ensure_ascii=False, separators=(",", ":")) + "\n", "utf-8")
     return data

@@ -152,3 +152,34 @@ def test_normaliser_retter_og_fletter(tmp_path):
     [r] = lager.indbrud
     assert (r["vej"], r["by"], r["omraade"]) == ("Råhøjparken", "Viby J", "Aarhus")
     assert {k["url"] for k in r["kilder"]} == {"u1", "u2"}
+
+
+def test_omraadestatistik_pr_kommune():
+    from indbrudskort.omraader import byg
+    r = [
+        {"rapportdato": "2026-09-21", "politikreds": "Østjyllands Politi", "omraade": "Aarhus", "by": "Risskov"},
+        {"rapportdato": "2026-09-22", "politikreds": "Østjyllands Politi", "omraade": "Randers", "by": "Assentoft"},
+        {"rapportdato": "2026-10-02", "politikreds": "Østjyllands Politi", "omraade": "Aarhus", "by": "Viby J"},
+    ]
+    kommuner = {"Risskov": "Aarhus", "Viby J": "Aarhus", "Assentoft": "Randers"}
+    d = byg(r, lambda by, omraade, kreds: kommuner.get(by))
+    aarhus = next(k for k in d["kommuner"] if k["navn"] == "Aarhus")
+    assert aarhus["antal"] == {"2026-09": 1, "2026-10": 1}
+    assert {k["navn"] for k in d["kommuner"]} == {"Aarhus", "Randers"}
+
+
+def test_kommune_fra_cache(tmp_path):
+    cache = tmp_path / "c.json"
+    cache.write_text(json.dumps({"kommune|Østjyllands Politi|Hinnerup": "Favrskov"}))
+    g = Geokoder(cache, token="")
+    assert g.kommune("Hinnerup", "Hinnerup", "Østjyllands Politi") == "Favrskov"  # intet netværkskald
+    assert g.kommune("Hasle", "Aarhus", "Østjyllands Politi") == "Aarhus"        # bydel -> områdets kommune
+    assert g.kommune("Vesthimmerlands Kommune") == "Vesthimmerlands"
+
+
+def test_kun_kredsens_egne_kommuner():
+    from indbrudskort.omraader import byg
+    r = [{"rapportdato": "2026-09-21", "politikreds": "Østjyllands Politi", "omraade": "Ulstrup", "by": "Ulstrup"},
+         {"rapportdato": "2026-09-21", "politikreds": "Østjyllands Politi", "omraade": "Hinnerup", "by": "Hinnerup"}]
+    d = byg(r, lambda by, o, k: {"Ulstrup": "Viborg", "Hinnerup": "Favrskov"}[by])
+    assert [k["navn"] for k in d["kommuner"]] == ["Favrskov"]
