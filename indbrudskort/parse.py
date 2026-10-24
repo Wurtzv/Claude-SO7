@@ -19,6 +19,13 @@ import re
 from dataclasses import dataclass, field
 from datetime import date, datetime
 
+# Bydele og forstæder, der vises samlet under én by i områdefilteret.
+AALBORG_OMRAADE = {
+    "Aalborg", "Vejgaard", "Vestbyen", "Hasseris", "Gug", "Nørresundby", "Svenstrup", "Vodskov",
+    "Klarup", "Storvorde", "Hals", "Nibe", "Vadum", "Sulsted", "Hjallerup", "Godthåb", "Frejlev",
+    "Tylstrup", "Lindholm", "Skalborg", "Smedegaard",
+}
+
 # Stavefejl og varianter, der er set i rapporterne.
 BY_ALIASER = {
     "riiskov": "Risskov",
@@ -87,15 +94,20 @@ class Indbrud:
     antal: int = 1
     type: str = "privat"
     linje: str = field(default="", repr=False)
+    beskrivelse: str = ""  # brødtekst, når indbruddet stammer fra et nyhedsafsnit
+    tidsangivelse: str = ""  # fx "Natten til onsdag"
+    omraade_navn: str | None = None
 
     @property
     def omraade(self) -> str:
-        return omraade_for(self.by)
+        return self.omraade_navn or omraade_for(self.by)
 
     def gerningstid(self) -> str:
         """Ensartet visning, fx '12/10 kl. 10.00 – 16/10 kl. 08.15'."""
         if not self.fra:
             return self.gerningstid_tekst
+        if self.tidsangivelse:
+            return f"{self.tidsangivelse} {self.fra.vis()}" + (f" – {self.til.vis()}" if self.til else "")
         if self.til is None:
             return ("fra " if self.aaben else "") + self.fra.vis()
         if self.til.dato == self.fra.dato and self.fra.tid and self.til.tid:
@@ -177,6 +189,8 @@ def _rens_by(by: str) -> str:
 def omraade_for(by: str) -> str:
     if by in AARHUS_OMRAADE:
         return "Aarhus"
+    if by in AALBORG_OMRAADE or re.match(r"Aalborg\b", by):
+        return "Aalborg"
     return re.sub(r"\s+(C|N|V|J|S|Ø|NV|NØ|SV|SØ)$", "", by)
 
 

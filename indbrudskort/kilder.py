@@ -9,7 +9,8 @@ from dataclasses import dataclass
 from datetime import date, timedelta
 
 from . import net
-from .parse import dato_fra_tekst
+from .afsnit import parse_afsnit_rapport
+from .parse import Indbrud, dato_fra_tekst, parse_rapport
 
 
 @dataclass
@@ -31,10 +32,13 @@ class PolitiDk:
 
     udgiver = "politi.dk"
 
-    def __init__(self, politikreds: str, distrikt: str, sti: str):
+    def __init__(self, politikreds: str, distrikt: str, sti: str, format: str = "liste"):
         self.politikreds = politikreds
         self.distrikt = distrikt  # fx "OEstjyllands-Politi"
         self.sti = sti  # fx "oestjyllands-politi"
+        # "liste": fast liste over indbrud i privat beboelse (Østjylland)
+        # "afsnit": indbrud skrevet som nyhedsafsnit med overskriften "Indbrud i ..." (Nordjylland)
+        self.format = format
 
     def liste_url(self) -> str:
         return f"https://politi.dk/doegnrapporter?district={self.distrikt}"
@@ -63,6 +67,11 @@ class PolitiDk:
 
     def hent(self, m: Meddelelse) -> str:
         return net.hent_tekst(m.url)
+
+    def parse(self, m: Meddelelse, indhold: str) -> list[Indbrud]:
+        if self.format == "afsnit":
+            return parse_afsnit_rapport(indhold, m.dato)
+        return parse_rapport(indhold, m.dato, m.titel)
 
 
 class Ritzau:
@@ -94,10 +103,21 @@ class Ritzau:
     def hent(self, m: Meddelelse) -> str:
         return m.indhold or ""
 
+    def parse(self, m: Meddelelse, indhold: str) -> list[Indbrud]:
+        """Først listeformatet ("Døgnets indbrud i privat beboelse"); ellers en enkeltsag,
+        hvis titlen begynder med "Indbrud" (fx "Indbrud i frisørsalon i Åbyhøj")."""
+        return parse_rapport(indhold, m.dato, m.titel) or parse_afsnit_rapport(indhold, m.dato, m.titel)
 
+
+# De fem jyske politikredse. Kun Øst- og Nordjylland lægger døgnrapporter på politi.dk;
+# de tre andre udgiver kun enkeltsager på Via Ritzau.
 KILDER = [
     PolitiDk("Østjyllands Politi", "OEstjyllands-Politi", "oestjyllands-politi"),
+    PolitiDk("Nordjyllands Politi", "Nordjyllands-Politi", "nordjyllands-politi", format="afsnit"),
     Ritzau("Østjyllands Politi", 90721),
+    Ritzau("Sydøstjyllands Politi", 90720),
+    Ritzau("Midt- og Vestjyllands Politi", 90687),
+    Ritzau("Syd- og Sønderjyllands Politi", 90686),
 ]
 
 

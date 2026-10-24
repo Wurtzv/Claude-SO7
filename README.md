@@ -1,17 +1,16 @@
 # Indbrudskort Jylland
 
-Et kort over anmeldte indbrud i privat beboelse, bygget på politiets offentlige døgnrapporter.
+Et kort over anmeldte indbrud i Jylland, bygget på de jyske politikredses offentlige døgnrapporter.
 Et Python-script henter de nye rapporter hver morgen, trækker vej, by, gerningstid og type ud,
 finder vejens midtpunkt og gemmer det hele i `data/indbrud.json`. En statisk side med Leaflet og
 OpenStreetMap viser indbruddene på et kort, og den bliver lagt på GitHub Pages.
-
-> Mappen `SO7/` hører til et skoleprojekt og har ikke noget med kortet at gøre.
 
 ## Indhold
 
 | Sti | Hvad |
 |---|---|
-| `indbrudskort/parse.py` | Finder listen over indbrud i en rapport og tolker hver linje |
+| `indbrudskort/parse.py` | Listeformatet (Østjylland): finder listen over indbrud og tolker hver linje |
+| `indbrudskort/afsnit.py` | Afsnitsformatet (Nordjylland, enkeltsager på Ritzau): "Indbrud i villa" + brødtekst |
 | `indbrudskort/kilder.py` | Kilderne: politi.dk-døgnrapporter og Via Ritzau. **Nye kredse og kilder tilføjes her** |
 | `indbrudskort/geokod.py` | Vej + by → koordinat midt på vejen, med cache |
 | `indbrudskort/lager.py` | `data/indbrud.json`: fletning uden dubletter |
@@ -53,9 +52,19 @@ Workflowet kører først testene. Hvis politiet ændrer formatet, så parseren g
 
 ## Sådan virker det
 
-### Kilder
+### Kilder og politikredse
 
-- **politi.dk:** Oversigten `https://politi.dk/doegnrapporter?district=OEstjyllands-Politi` har listen over rapporter som JSON inde i HTML'en (felterne `Link`, `ListDate` og `Headline`), så scriptet behøver ikke køre JavaScript. I hver rapport står indbruddene efter sætningen *"Der er det seneste døgn anmeldt … indbrud i privat beboelse"*.
+| Politikreds | Hvor | Format | Hvad kommer med |
+|---|---|---|---|
+| Østjyllands Politi | politi.dk + Via Ritzau (90721) | Fast liste "anmeldt … indbrud i privat beboelse" | Alle anmeldte indbrud i privat beboelse, med vej og bydel |
+| Nordjyllands Politi | politi.dk | Nyhedsafsnit "Indbrud i …" | Udvalgte indbrud (privat og erhverv), med by/bydel og ugedag – sjældent vej |
+| Sydøstjyllands Politi | Via Ritzau (90720) | Enkeltsager | Kun meddelelser, hvis titel begynder med "Indbrud" |
+| Midt- og Vestjyllands Politi | Via Ritzau (90687) | Enkeltsager | Som ovenfor |
+| Syd- og Sønderjyllands Politi | Via Ritzau (90686) | Enkeltsager | Som ovenfor |
+
+Midt- og Vestjylland, Sydøstjylland og Syd- og Sønderjylland lægger (oktober 2026) ingen døgnrapporter på politi.dk, og deres Ritzau-meddelelser handler næsten aldrig om indbrud. Kortet er derfor langt mere komplet for Øst- og Nordjylland. Begynder en af kredsene at udgive døgnrapporter, tilføjes den som beskrevet nederst.
+
+- **politi.dk:** Oversigten `https://politi.dk/doegnrapporter?district=OEstjyllands-Politi` (og `Nordjyllands-Politi`) har listen over rapporter som JSON inde i HTML'en (felterne `Link`, `ListDate` og `Headline`), så scriptet behøver ikke køre JavaScript. I hver rapport står indbruddene efter sætningen *"Der er det seneste døgn anmeldt … indbrud i privat beboelse"*.
 - **Via Ritzau:** `https://via.ritzau.dk/json/v2/releases?publisher=90721` giver Østjyllands Politis pressemeddelelser med brødtekst. Her ligger "Døgnets indbrud i privat beboelse", og det er også her, døgnrapporten bliver lagt, når politi.dk har tekniske problemer.
 
 Meddelelser, der er behandlet én gang, bliver husket i `behandlede_meddelelser` i `data/indbrud.json` og hentes ikke igen. Brug `--alle` for at genbehandle dem.
@@ -72,6 +81,10 @@ Formatet varierer en del, og testene dækker bl.a.:
 - Flere indbrud skrevet i én linje, OCR-agtige fejl som `16/l0` og `kl. l0.59`, og stavefejl som `Riiskov` og `Århus N`.
 
 Rettelser af bynavne ligger i `BY_ALIASER` i `parse.py`.
+
+### Afsnitsformatet (Nordjylland)
+
+Et afsnit tæller med, når overskriften begynder med "Indbrud" (ikke "Tyveri", "Forsøg på indbrud" eller indbrud i biler). Fra brødtekstens første sætning hentes by/bydel ("i Vejgaard-området", "i Vesthimmerlands kommune", "i Aalborgs Vestby"), eventuel vej ("på Boysenbærvej"), antal ("i to villaer") og tidspunkt ("Natten til onsdag" omsat til seneste onsdag før rapportdatoen). Typen er *privat* (villa, lejlighed, fritidshus …), *erhverv* (butik, værksted, prøvehus, kirke …) eller *andet* (fx garage). Afsnittets tekst gemmes i feltet `beskrivelse` og vises på kortet.
 
 ### Dubletter
 
@@ -113,8 +126,10 @@ Punktet sidder **halvvejs langs vejen**, beregnet ud fra hele vejens geometri, o
 **En ny politikreds på politi.dk:** Tilføj en linje i `KILDER` i `indbrudskort/kilder.py`:
 
 ```python
-PolitiDk("Midt- og Vestjyllands Politi", "Midt-og-Vestjyllands-Politi", "midt-og-vestjyllands-politi"),
+PolitiDk("Midt- og Vestjyllands Politi", "Midt-og-Vestjyllands-Politi", "midt-og-vestjyllands-politi", format="afsnit"),
 ```
+
+`format="liste"` bruges til Østjyllands faste liste og `format="afsnit"` til nyhedsafsnit som Nordjyllands.
 
 Find distriktsnavnet i adressen, når du vælger kredsen på `https://politi.dk/doegnrapporter`, og stien i rapporternes egne links. Vær opmærksom på, at i dag er det kun Østjyllands Politi, der skriver en fast liste med *"indbrud i privat beboelse"*. Andre kredse skriver indbrud som almindelige nyhedsafsnit. Parseren finder kun listen, så der kommer ingen falske træffere, men der kommer heller ingen data, før den nye kreds' format er understøttet. Gør sådan her:
 
@@ -134,7 +149,8 @@ Tilføj den til `KILDER`. Resten (parsing, dubletter, geokodning og kortet) virk
 
 ## Begrænsninger
 
-- Politiet oplyser kun vej og by. Kortet viser derfor *hvor i området* der har været indbrud, ikke adresser.
+- Politiet oplyser højst vej og by. Kortet viser derfor *hvor i området* der har været indbrud, ikke adresser. Nordjyske indbrud sidder som regel ved byens eller kommunens midte.
+- Dækningen er ujævn: Østjylland har alle anmeldte indbrud i privat beboelse, Nordjylland et udvalg, og de tre øvrige kredse næsten intet (se tabellen ovenfor).
 - Enkelte døgnrapporter bliver udgivet som billeder (fx Via Ritzau 14/10 2026). De kan ikke læses og bliver sprunget over.
-- Indbrud beskrevet i almindelige nyhedsafsnit, fx "Indbrud udviklede sig til røveri i Sabro", kommer kun med, hvis de også står på politiets liste. Undtagelsen er et erhvervsindbrud i Sabro, som stammer fra prototypens startdata.
+- I Østjyllands rapporter bruges kun listen; nyhedsafsnit som "Indbrud udviklede sig til røveri i Sabro" kommer ikke med (undtagen erhvervsindbruddet i Sabro fra prototypens startdata).
 - Kortfliser © OpenStreetMaps bidragydere. Geokodning © OpenStreetMap via Nominatim.

@@ -15,7 +15,7 @@
   <header>
     <div class="eyebrow" id="eyebrow">Politiets døgnrapporter</div>
     <h1>Indbrudskort Jylland</h1>
-    <p class="lede">Anmeldte indbrud fra politiets offentlige døgnrapporter. Hvert punkt sidder midt på den oplyste vej, ikke ved et husnummer.</p>
+    <p class="lede">Anmeldte indbrud fra de jyske politikredses offentlige døgnrapporter. Hvert punkt sidder midt på den oplyste vej – eller ved byen, når politiet ikke nævner vejen.</p>
     <div class="stats" id="stats"></div>
   </header>
 
@@ -30,6 +30,7 @@
       </div>
     </div>
     <label><span class="lbl">Rapportdato</span><select id="dato"></select></label>
+    <label><span class="lbl">Politikreds</span><select id="kreds"></select></label>
     <label><span class="lbl">Område</span><select id="omraade"></select></label>
     <button class="reset" id="nulstil" type="button">Nulstil</button>
   </div>
@@ -43,8 +44,8 @@
   </div>
 
   <div class="notes">
-    <p><b>Datagrundlag.</b> Indbrud i privat beboelse fra Østjyllands Politis døgnrapporter på politi.dk og deres meddelelser på Via Ritzau. Samme indbrud nævnt i flere meddelelser (samme vej, bydel og gerningstid) tælles kun én gang. Siden opdateres hver morgen.</p>
-    <p><b>Placering.</b> Politiet oplyser kun vej og by. Punktet sidder midt på vejen. Kunne vejen ikke findes, sidder punktet ved byens midte og er vist med stiplet kant.</p>
+    <p><b>Datagrundlag.</b> Østjyllands Politi lister alle anmeldte indbrud i privat beboelse med vej og bydel. Nordjyllands Politi beskriver udvalgte indbrud i nyhedsafsnit med by eller bydel. Midt- og Vestjyllands, Sydøstjyllands og Syd- og Sønderjyllands Politi udgiver ikke døgnrapporter – fra dem kommer kun enkeltsager om indbrud på Via Ritzau med. Kortet er derfor langt mere komplet for Øst- og Nordjylland end for resten af Jylland. Samme indbrud nævnt flere gange (samme vej, by og gerningstid) tælles kun én gang. Siden opdateres hver morgen.</p>
+    <p><b>Placering.</b> Politiet oplyser højst vej og by. Punktet sidder midt på vejen. Er der kun oplyst by eller område, eller kunne vejen ikke findes, sidder punktet ved byens midte og er vist med stiplet kant.</p>
     <p id="opdateret"></p>
   </div>
 </div>

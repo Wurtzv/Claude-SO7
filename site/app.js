@@ -8,7 +8,9 @@
   const dag = (iso) => { const d = new Date(iso + "T12:00:00"); return `${UGEDAG[d.getDay()]} ${d.getDate()}. ${MD[d.getMonth()]}`; };
   const css = (v) => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
 
-  const state = { periode: 14, dato: "", omraade: "", valgt: null };
+  const state = { periode: 14, dato: "", omraade: "", kreds: "", valgt: null };
+  const TYPE = { privat: "privat beboelse", erhverv: "erhverv", andet: "andet (fx garage)" };
+  const navn = (r) => (r.vej ? `${r.vej}, ${r.by}` : r.by);
   let DATA = [], seneste = "";
 
   // ---------- kort ----------
@@ -23,7 +25,7 @@
   const legend = L.control({ position: "bottomleft" });
   legend.onAdd = () => {
     const d = L.DomUtil.create("div", "legend");
-    d.innerHTML = '<span><i class="sw"></i>Privat beboelse</span><span><i class="sw b"></i>Erhverv</span><span><i class="sw a"></i>Ca. placering (by)</span>';
+    d.innerHTML = '<span><i class="sw"></i>Privat beboelse</span><span><i class="sw b"></i>Erhverv og andet</span><span><i class="sw a o"></i>Ca. placering (by)</span>';
     return d;
   };
   legend.addTo(map);
@@ -48,10 +50,14 @@
     grænse.setDate(grænse.getDate() - state.periode + 1);
     return new Date(r.rapportdato + "T12:00:00") >= grænse;
   }
-  const synlige = () => DATA.filter((r) => iPeriode(r) && (!state.omraade || r.omraade === state.omraade));
+  const iKreds = (r) => !state.kreds || r.politikreds === state.kreds;
+  const synlige = () => DATA.filter((r) => iPeriode(r) && iKreds(r) && (!state.omraade || r.omraade === state.omraade));
 
   function fyldVælgere() {
-    const inden = DATA.filter(iPeriode);
+    const inden = DATA.filter((r) => iPeriode(r) && iKreds(r));
+    const kredse = [...new Set(DATA.map((r) => r.politikreds))].sort((a, b) => a.localeCompare(b, "da"));
+    $("kreds").innerHTML = '<option value="">Alle jyske kredse</option>' +
+      kredse.map((k) => `<option value="${esc(k)}"${k === state.kreds ? " selected" : ""}>${esc(k)} (${DATA.filter((r) => r.politikreds === k && iPeriode(r)).length})</option>`).join("");
     const datoer = [...new Set(DATA.map((r) => r.rapportdato))].sort().reverse();
     $("dato").innerHTML = '<option value="">Alle i perioden</option>' +
       datoer.map((d) => `<option value="${d}"${d === state.dato ? " selected" : ""}>${dag(d)} (${DATA.filter((r) => r.rapportdato === d).length})</option>`).join("");
@@ -68,10 +74,13 @@
   // ---------- tegning ----------
   function popup(r) {
     const kilder = r.kilder.map((k) => `<a href="${esc(k.url)}" target="_blank" rel="noopener">${esc(k.udgiver)} ${esc(dag(k.rapportdato))}</a>`).join(" · ");
-    return `<div class="pop"><strong>${esc(r.vej)}</strong>${esc(r.by)} · ${r.type === "erhverv" ? "erhverv" : "privat beboelse"}` +
+    const tekst = r.beskrivelse ? (r.beskrivelse.length > 240 ? r.beskrivelse.slice(0, 237) + "…" : r.beskrivelse) : "";
+    return `<div class="pop"><strong>${esc(r.vej || r.by)}</strong>${r.vej ? esc(r.by) + " · " : ""}${esc(TYPE[r.type] || r.type)}` +
+      (tekst ? `<div class="t" style="font-family:inherit;margin:4px 0">${esc(tekst)}</div>` : "") +
       `<div class="t">Gerningstid: ${esc(r.gerningstid)}</div>` +
       `<div class="t">Døgnrapport ${esc(dag(r.rapportdato))}</div>` +
-      (r.praecision === "by" ? '<div class="t">Vejen blev ikke fundet – punktet sidder ved byens midte.</div>' : "") +
+      (r.praecision === "by" ? `<div class="t">${r.vej ? "Vejen blev ikke fundet – punktet" : "Kun by/område oplyst – punktet"} sidder ved byens midte.</div>` : "") +
+      `<div class="t">${esc(r.politikreds)}</div>` +
       `<div class="t">Kilde: ${kilder}</div></div>`;
   }
 
@@ -82,7 +91,7 @@
     for (const r of v) {
       if (!r._ll) continue;
       const m = L.circleMarker(r._ll, stil(r)).bindPopup(popup(r), { maxWidth: 280 });
-      m.bindTooltip(`${r.vej}, ${r.by}`, { direction: "top", offset: [0, -6] });
+      m.bindTooltip(navn(r), { direction: "top", offset: [0, -6] });
       m.on("click", () => vælg(r.id, "kort"));
       m.addTo(lag);
       markører.set(r.id, m);
@@ -104,8 +113,8 @@
       h += `<div class="day">Døgnrapport ${esc(dag(d))} · ${ds.length}</div>`;
       for (const r of ds) {
         h += `<button class="item${state.valgt === r.id ? " sel" : ""}" data-id="${esc(r.id)}" id="it-${esc(r.id)}">` +
-          `<i class="sw${r.type === "erhverv" ? " b" : ""}${r.praecision === "by" ? " a" : ""}"></i>` +
-          `<span class="st">${esc(r.vej)}, ${esc(r.by)}</span><span class="t">${esc(r.gerningstid)}</span></button>`;
+          `<i class="sw${r.type !== "privat" ? " b" : ""}${r.praecision === "by" ? " a" : ""}"></i>` +
+          `<span class="st">${esc(navn(r))}</span><span class="t">${esc(r.gerningstid)}</span></button>`;
       }
     }
     $("list").innerHTML = h || '<p class="empty">Ingen indbrud med de valgte filtre.</p>';
@@ -113,8 +122,8 @@
 
   function stats(v) {
     const byer = new Set(v.map((r) => r.by)).size;
-    const aarhus = v.filter((r) => r.omraade === "Aarhus").length;
-    $("stats").innerHTML = `<span><b>${v.length}</b>anmeldte indbrud</span><span><b>${aarhus}</b>i Aarhus-området</span><span><b>${byer}</b>byer og bydele</span>`;
+    const kredse = new Set(v.map((r) => r.politikreds)).size;
+    $("stats").innerHTML = `<span><b>${v.length}</b>anmeldte indbrud</span><span><b>${byer}</b>byer og bydele</span><span><b>${kredse}</b>politikredse</span>`;
   }
 
   function stil(r) {
@@ -124,7 +133,7 @@
       color: ca ? css("--approx") : css("--panel") || "#fff",
       weight: ca ? 2.5 : 1.5,
       dashArray: ca ? "3 3" : null,
-      fillColor: valgt ? css("--sel") : r.type === "erhverv" ? css("--biz") : css("--hit"),
+      fillColor: valgt ? css("--sel") : r.type === "privat" ? css("--hit") : css("--biz"),
       fillOpacity: 0.9,
     };
   }
@@ -157,7 +166,8 @@
   });
   $("dato").addEventListener("change", (e) => { state.dato = e.target.value; state.valgt = null; fyldVælgere(); tegn(true); });
   $("omraade").addEventListener("change", (e) => { state.omraade = e.target.value; state.valgt = null; fyldVælgere(); tegn(true); });
-  $("nulstil").addEventListener("click", () => { Object.assign(state, { periode: 14, dato: "", omraade: "", valgt: null }); fyldVælgere(); tegn(true); });
+  $("kreds").addEventListener("change", (e) => { state.kreds = e.target.value; state.omraade = ""; state.valgt = null; fyldVælgere(); tegn(true); });
+  $("nulstil").addEventListener("click", () => { Object.assign(state, { periode: 14, dato: "", omraade: "", kreds: "", valgt: null }); fyldVælgere(); tegn(true); });
   $("list").addEventListener("click", (e) => { const b = e.target.closest(".item"); if (b) vælg(b.dataset.id, "liste"); });
   matchMedia("(prefers-color-scheme: dark)").addEventListener?.("change", () => tegn(false));
 
@@ -173,9 +183,8 @@
     DATA = d.indbrud.filter((r) => r.lat != null);
     seneste = DATA.reduce((m, r) => (r.rapportdato > m ? r.rapportdato : m), "");
     spred(DATA);
-    const kredse = [...new Set(d.indbrud.map((r) => r.politikreds))].join(", ");
     const datoer = DATA.map((r) => r.rapportdato).sort();
-    if (datoer.length) $("eyebrow").textContent = `${kredse} · døgnrapporter ${dag(datoer[0])} – ${dag(datoer[datoer.length - 1])}`;
+    if (datoer.length) $("eyebrow").textContent = `Jyske politikredse · døgnrapporter ${dag(datoer[0])} – ${dag(datoer[datoer.length - 1])}`;
     $("opdateret").innerHTML = `<b>Opdateret.</b> ${esc(new Date(d.opdateret).toLocaleString("da-DK", { dateStyle: "long", timeStyle: "short" }))}.`;
     fyldVælgere();
     tegn(true);

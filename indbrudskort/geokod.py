@@ -193,6 +193,9 @@ class Geokoder:
 
     def vej(self, vej: str, by: str) -> dict | None:
         """Returnerer {'lat','lon','praecision','geokilde'} eller None."""
+        if not vej:  # kun by oplyst (fx Nordjyllands nyhedsafsnit)
+            c = self.by(by)
+            return {"lon": c[0], "lat": c[1], "praecision": "by", "geokilde": "nominatim"} if c else None
         nøgle = f"{vej}|{by}"
         hit = self.cache.get(nøgle)
         if hit and not self._forældet_fejl(hit):
