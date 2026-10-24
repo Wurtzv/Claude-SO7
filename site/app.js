@@ -255,7 +255,7 @@
   // ---------- data ----------
   async function hentData(navn = "indbrud.json") {
     for (const url of [navn, "../data/" + navn]) {
-      try { const r = await fetch(url, { cache: "no-cache" }); if (r.ok) return r.json(); } catch (e) { /* prøv næste */ }
+      try { const r = await fetch(url, { cache: "no-store" }); if (r.ok) return r.json(); } catch (e) { /* prøv næste */ }
     }
     throw new Error("data mangler");
   }

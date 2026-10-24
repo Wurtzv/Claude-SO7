@@ -14,6 +14,7 @@
   --bg:#12181c; --panel:#192127; --fg:#e6ecef; --muted:#97a6b0; --line:#2b363e;
   --hit:#ff6b4d; --hit-soft:rgba(255,107,77,.2); --biz:#b08cff; --sel:#5fb6e6; --approx:#e8b04a; --stat:#6fb3e0; color-scheme:dark}
 *{box-sizing:border-box}
+[hidden]{display:none!important}
 html,body{margin:0}
 body{background:var(--bg);color:var(--fg);font-family:var(--f-body);font-size:15px;line-height:1.45}
 .wrap{max-width:1240px;margin:0 auto;padding-block:20px 32px;
