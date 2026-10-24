@@ -104,7 +104,8 @@ class Lager:
             if (vej, by) != (r["vej"], r["by"]):
                 ændret += 1
                 r.update(vej=vej, by=by, omraade=omraade_for(nær or by))
-                r.pop("lat", None); r.pop("lon", None); r.pop("praecision", None); r.pop("geokilde", None)
+                for k in ("lat", "lon", "praecision", "geokilde", "postnr"):
+                    r.pop(k, None)
             basis = basisnøgle(vej, by, r.get("tid_fra"), r.get("tid_til"))
             k = (basis, r["kilde_url"])
             tælling[k] = tælling.get(k, 0) + 1

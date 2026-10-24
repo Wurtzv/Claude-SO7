@@ -76,7 +76,7 @@
   function popup(r) {
     const kilder = r.kilder.map((k) => `<a href="${esc(k.url)}" target="_blank" rel="noopener">${esc(k.udgiver)} ${esc(dag(k.rapportdato))}</a>`).join(" · ");
     const tekst = r.beskrivelse ? (r.beskrivelse.length > 240 ? r.beskrivelse.slice(0, 237) + "…" : r.beskrivelse) : "";
-    return `<div class="pop"><strong>${esc(r.vej || r.by)}</strong>${r.vej ? esc(r.by) + " · " : ""}${esc(TYPE[r.type] || r.type)}` +
+    return `<div class="pop"><strong>${esc(r.vej || r.by)}</strong>${r.postnr ? esc(r.postnr) + " " : ""}${r.vej ? esc(r.by) + " · " : ""}${esc(TYPE[r.type] || r.type)}` +
       (tekst ? `<div class="t" style="font-family:inherit;margin:4px 0">${esc(tekst)}</div>` : "") +
       `<div class="t">Gerningstid: ${esc(r.gerningstid)}</div>` +
       `<div class="t">Døgnrapport ${esc(dag(r.rapportdato))}</div>` +
@@ -580,7 +580,83 @@
     throw new Error("data mangler");
   }
 
+  // ---------- hotspots ----------
+  // Tæller efter rapportdato i de seneste N dage (regnet fra nyeste døgnrapport) mod de N dage før.
+  let ALLE = [];
+  const HOT_NØGLE = {
+    bydele: (r) => r.by || null,
+    postnumre: (r) => r.postnr || null,
+    veje: (r) => (r.vej && r.by ? `${r.vej}, ${r.by}` : null),
+  };
+  function tegnHotspots() {
+    const niveau = $("hotNiveau").value, dage = +$("hotDage").value, sort = $("hotSort").value, kreds = $("hotKreds").value;
+    const slut = new Date(seneste + "T12:00:00");
+    const dato = (n) => { const d = new Date(slut); d.setDate(d.getDate() - n); return d.toISOString().slice(0, 10); };
+    const nuFra = dato(dage - 1), førFra = dato(2 * dage - 1);
+    const nøgle = HOT_NØGLE[niveau], rækker = new Map();
+    for (const r of ALLE) {
+      if (r.rapportdato < førFra || (kreds && r.politikreds !== kreds)) continue;
+      const k = nøgle(r); if (!k) continue;
+      if (!rækker.has(k)) rækker.set(k, { navn: k, n: 0, f: 0, byer: {}, ids: [] });
+      const x = rækker.get(k);
+      if (r.rapportdato >= nuFra) { x.n++; x.ids.push(r.id); if (r.by) x.byer[r.by] = (x.byer[r.by] || 0) + 1; } else x.f++;
+    }
+    let liste = [...rækker.values()].filter((x) => x.n > 0);
+    if (sort === "forskel") liste = liste.filter((x) => x.n - x.f > 0 && x.n >= 2).sort((a, b) => (b.n - b.f) - (a.n - a.f) || b.n - a.n);
+    else liste.sort((a, b) => b.n - a.n || (b.n - b.f) - (a.n - a.f) || a.navn.localeCompare(b.navn, "da"));
+    liste = liste.slice(0, 25);
+    const maks = Math.max(1, ...liste.map((x) => x.n));
+    const kol = { bydele: "By/bydel", postnumre: "Postnummer", veje: "Vej" }[niveau];
+    const manglerPnr = niveau === "postnumre" ? ALLE.filter((r) => r.rapportdato >= nuFra && r.lat != null && !r.postnr).length : 0;
+    $("hotTabel").innerHTML = (liste.length
+      ? `<table><thead><tr><th>#</th><th>${kol}</th><th>Indbrud</th><th>Før</th><th>Ændring</th></tr></thead><tbody>` +
+        liste.map((x, i) => {
+          const d = x.n - x.f;
+          const byer = niveau === "postnumre" ? Object.entries(x.byer).sort((a, b) => b[1] - a[1]).slice(0, 3).map((e) => e[0]).join(", ") : "";
+          return `<tr data-ids="${esc(x.ids.join(","))}"><td>${i + 1}</td><td>${esc(x.navn)}${byer ? ` <span class="sub">${esc(byer)}</span>` : ""}</td>` +
+            `<td>${tal(x.n)}<i class="bar" style="width:${Math.round((x.n / maks) * 60)}px"></i></td><td>${tal(x.f)}</td>` +
+            `<td class="${d > 0 ? "op" : d < 0 ? "ned" : ""}">${d > 0 ? "+" : d < 0 ? "−" : ""}${tal(Math.abs(d))}</td></tr>`;
+        }).join("") + "</tbody></table>"
+      : `<p class="empty">${sort === "forskel" ? "Ingen steder med mindst 2 indbrud og en stigning i perioden." : "Ingen indbrud i perioden."}</p>`) +
+      (manglerPnr ? `<p class="ghint">${tal(manglerPnr)} indbrud i perioden mangler endnu postnummer – de slås op ved de daglige kørsler.</p>` : "");
+  }
+  ["hotNiveau", "hotDage", "hotSort", "hotKreds"].forEach((id) => $(id).addEventListener("change", tegnHotspots));
+  $("hotTabel").addEventListener("click", (e) => {
+    const tr = e.target.closest("tr[data-ids]"); if (!tr) return;
+    const ids = new Set(tr.dataset.ids.split(","));
+    const punkter = DATA.filter((r) => ids.has(r.id) && r._ll);
+    if (!punkter.length) return;
+    // vis samme periode på kortet som i listen, så rækkens punkter er tegnet
+    state.dato = ""; state.periode = +$("hotDage").value; state.omraade = ""; state.kreds = $("hotKreds").value;
+    fyldVælgere(); tegn(false);
+    $("map").scrollIntoView({ behavior: "smooth", block: "center" });
+    map.fitBounds(L.latLngBounds(punkter.map((r) => r._ll)), { padding: [40, 40], maxZoom: 15 });
+  });
+
+  // ---------- ugens overblik ----------
+  function tegnUge(d) {
+    const u = d.uge, kort = (iso) => { const x = new Date(iso + "T12:00:00"); return `${x.getDate()}/${x.getMonth() + 1}`; };
+    const diff = u.antal - u.foer;
+    $("ugeSub").innerHTML = `<b>${tal(u.antal)}</b> anmeldte indbrud i døgnrapporterne ${kort(u.fra)}–${kort(u.til)} ` +
+      `(${diff >= 0 ? "+" : "−"}${tal(Math.abs(diff))} mod ugen før). ${esc(d.kredse.join(", "))}.`;
+    const blok = (titel, rækker, tom) => `<div><h3>${titel}</h3>` + (rækker.length
+      ? `<ol>${rækker.slice(0, 5).map((r) => `<li>${esc(r.navn)}${r.byer ? ` <span>${esc(r.byer.join(", "))}</span>` : ""} <span>${tal(r.antal)} <b class="op">+${tal(r.forskel)}</b></span></li>`).join("")}</ol>`
+      : `<p class="ghint">${tom}</p>`) + "</div>";
+    const tom = "Ingen steder med mindst 2 indbrud og en stigning.";
+    let h = blok("Størst stigning · bydele", u.bydele.stigning, tom) +
+      blok("Størst stigning · postnumre", u.postnumre.stigning, tom) +
+      blok("Størst stigning · veje", u.veje.stigning, tom);
+    if (d.dst && d.dst.stigning.length) {
+      h += `<div><h3>Danmarks Statistik · ${esc(d.dst.kvartal.replace("K", ". kvt. "))} mod året før</h3><ol>` +
+        d.dst.stigning.slice(0, 5).map((r) => `<li>${esc(r.navn)} <span>${tal(r.antal)} <b class="op">+${tal(r.forskel)}</b></span></li>`).join("") + "</ol></div>";
+    }
+    $("ugeGrid").innerHTML = h;
+    $("ugeBoks").hidden = false;
+  }
+  hentData("ugerapport.json").then(tegnUge).catch(() => { /* ugerapporten er valgfri */ });
+
   hentData().then((d) => {
+    ALLE = d.indbrud;
     DATA = d.indbrud.filter((r) => r.lat != null);
     seneste = DATA.reduce((m, r) => (r.rapportdato > m ? r.rapportdato : m), "");
     spred(DATA);
@@ -589,6 +665,10 @@
     $("opdateret").innerHTML = `<b>Opdateret.</b> ${esc(new Date(d.opdateret).toLocaleString("da-DK", { dateStyle: "long", timeStyle: "short" }))}.`;
     fyldVælgere();
     tegn(false);
+    const kredse = [...new Set(ALLE.map((r) => r.politikreds))].sort();
+    $("hotKreds").innerHTML = '<option value="">Alle kredse</option>' + kredse.map((k) => `<option value="${esc(k)}">${esc(k)}</option>`).join("");
+    tegnHotspots();
+    $("hotBoks").hidden = false;
     map.fitBounds([[54.8, 8.05], [57.75, 10.95]]); // hele Jylland ved første visning
   }).catch(() => {
     $("list").innerHTML = '<p class="empty">Kunne ikke hente data/indbrud.json.</p>';

@@ -14,6 +14,7 @@ OpenStreetMap viser indbruddene på et kort, og den bliver lagt på GitHub Pages
 | `indbrudskort/kilder.py` | Kilderne: politi.dk-døgnrapporter og Via Ritzau. **Nye kredse og kilder tilføjes her** |
 | `indbrudskort/geokod.py` | Vej + by → koordinat midt på vejen, med cache |
 | `indbrudskort/lager.py` | `data/indbrud.json`: fletning uden dubletter |
+| `indbrudskort/ugerapport.py` | Ugens opsummering (seneste 7 dage mod de 7 før) → `data/ugerapport.json` og Markdown til mail |
 | `indbrudskort/statistik.py` | Anmeldte indbrud pr. jysk kommune pr. kvartal fra Danmarks Statistik → `data/statistik.json` |
 | `data/indbrud.json` | Alle indbrud (bliver opdateret automatisk) |
 | `data/geokode-cache.json` | Cache over geokodede veje og byer |
@@ -21,6 +22,7 @@ OpenStreetMap viser indbruddene på et kort, og den bliver lagt på GitHub Pages
 | `site/` | Kortsiden (`index.html`, `app.js`, `style.css`) |
 | `tests/` | Tests med gemte rapporter i `tests/fixtures/` |
 | `.github/workflows/opdater.yml` | Daglig kørsel kl. 08:30 UTC, commit af nye data og udgivelse på GitHub Pages |
+| `.github/workflows/ugerapport.yml` | Hver mandag kl. 10:15 UTC: opretter et GitHub-issue med ugens overblik (kommer på mail) |
 | `.github/workflows/test.yml` | Tests og en prøvekørsel mod de rigtige kilder ved hvert push til en gren |
 
 ## Kom i gang lokalt
@@ -48,6 +50,8 @@ python -m http.server 8000
 2. **Giv Actions lov til at skrive:** Gå til *Settings → Actions → General → Workflow permissions* og vælg **Read and write permissions**, så workflowet kan committe nye data.
 3. **Valgfrit: Dansk adresse-API.** Opret en gratis bruger på Dataforsyningen og lav en token. Læg den som repository-secret med navnet `DATAFORSYNINGEN_TOKEN` under *Settings → Secrets and variables → Actions*. Uden token bruges kun Nominatim.
 4. Kør workflowet **Opdater indbrudskort** én gang manuelt (*Actions → Opdater indbrudskort → Run workflow*). Bagefter kører det selv hver dag kl. 08:30 UTC. Det kører også ved push til `main`, når kode, side eller startdata ændres.
+
+5. **Ugerapport på mail:** Workflowet **Ugerapport** opretter hver mandag et issue med ugens overblik og lukker sidste uges. GitHub sender nye issues på mail, når du følger repoet (*Watch → All Activity*, eller *Custom → Issues*) og har mail slået til under *Settings → Notifications* på din GitHub-profil. Den kan også køres manuelt under *Actions → Ugerapport → Run workflow*.
 
 Workflowet kører først testene. Hvis politiet ændrer formatet, så parseren går i stykker, bliver kørslen rød i stedet for at gemme forkerte data. Kørslen fejler også, hvis ingen af kilderne kan nås.
 
@@ -107,6 +111,14 @@ prøver skabelonerne dag for dag (ca. én forespørgsel pr. sekund), parser rapp
 
 Geokodning af mange nye veje tager tid (Nominatim tillader ét kald pr. sekund). Den daglige kørsel bruger derfor højst 20 minutter på geokodning (`--geokodning-minutter`), nyeste indbrud først, og tager resten de følgende dage. Statistikken pr. by/bydel kræver ikke koordinater.
 
+### Postnumre, hotspots og ugens overblik
+
+Hvert placeret indbrud får et **postnummer** (feltet `postnr`) ved et omvendt opslag i Nominatim ud fra punktet midt på vejen. Opslagene caches pr. ca. 100 m i `data/geokode-cache.json`, og den daglige kørsel bruger højst 10 minutter på dem (`--postnummer-minutter`). Indbrud, der kun er placeret ved byens midte, får byens postnummer.
+
+**Hotspots** på kortsiden tæller indbrud pr. by/bydel, postnummer eller vej i de seneste 30, 90 eller 365 dage (efter rapportdato, regnet fra nyeste døgnrapport) og sammenligner med lige så mange dage før. Listen kan sorteres efter flest indbrud eller størst stigning. "Størst stigning" kræver mindst 2 indbrud i perioden, så ét enkelt indbrud et nyt sted ikke fylder listen.
+
+**Ugens overblik** (`python -m indbrudskort ugerapport`) sammenligner de seneste 7 dages døgnrapporter med de 7 før og viser, hvor det steg mest pr. bydel, postnummer og vej, plus de jyske kommuner med størst stigning i Danmarks Statistiks seneste kvartal mod samme kvartal året før. Den daglige kørsel gemmer det i `data/ugerapport.json` til kortsiden, og mandagens workflow sender det som issue.
+
 ### Afsnitsformatet (Nordjylland)
 
 Et afsnit tæller med, når overskriften begynder med "Indbrud" (ikke "Tyveri", "Forsøg på indbrud" eller indbrud i biler). Fra brødtekstens første sætning hentes by/bydel ("i Vejgaard-området", "i Vesthimmerlands kommune", "i Aalborgs Vestby"), eventuel vej ("på Boysenbærvej"), antal ("i to villaer") og tidspunkt ("Natten til onsdag" omsat til seneste onsdag før rapportdatoen). Typen er *privat* (villa, lejlighed, fritidshus …), *erhverv* (butik, værksted, prøvehus, kirke …) eller *andet* (fx garage). Afsnittets tekst gemmes i feltet `beskrivelse` og vises på kortet.
@@ -140,7 +152,7 @@ Punktet sidder **halvvejs langs vejen**, beregnet ud fra hele vejens geometri, o
     "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/…",
     "kilder": [{"url": "…", "titel": "…", "rapportdato": "2026-10-19", "udgiver": "politi.dk"}],
     "politikreds": "Østjyllands Politi",
-    "lat": 56.26228, "lon": 9.861224, "praecision": "vej", "geokilde": "nominatim"
+    "lat": 56.26228, "lon": 9.861224, "praecision": "vej", "geokilde": "nominatim", "postnr": "8450"
   }],
   "behandlede_meddelelser": {"https://…": "2026-10-19"}
 }
