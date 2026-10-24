@@ -1,0 +1,68 @@
+name: Opdater indbrudskort
+
+on:
+  schedule:
+    - cron: "30 8 * * *"   # hver dag kl. 08:30 UTC
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["indbrudskort/**", "site/**", "data/startdata.json", ".github/workflows/opdater.yml"]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: indbrudskort-opdater
+  cancel-in-progress: false
+
+jobs:
+  opdater:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - run: pip install pytest
+      - name: Tests
+        run: python -m pytest -q
+      - name: Hent døgnrapporter og geokod
+        env:
+          DATAFORSYNINGEN_TOKEN: ${{ secrets.DATAFORSYNINGEN_TOKEN }}
+        run: python -m indbrudskort opdater --dage 14
+      - name: Commit nye data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/
+          if git diff --cached --quiet; then
+            echo "Ingen nye data."
+          else
+            git commit -m "Opdater indbrudsdata $(date -u +%F)"
+            git pull --rebase origin "${GITHUB_REF_NAME}"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          fi
+
+  deploy:
+    needs: opdater
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: ${{ github.ref_name }}   # inkl. det commit, opdater-jobbet lige har lavet
+      - name: Byg siden
+        run: |
+          mkdir _site
+          cp site/* _site/
+          cp data/indbrud.json _site/
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+      - id: deployment
+        uses: actions/deploy-pages@v4

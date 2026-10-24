@@ -1,0 +1,33 @@
+name: Test
+
+on:
+  push:
+    branches-ignore: [main]   # main testes af "Opdater indbrudskort"
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - run: pip install pytest
+      - name: Tests med gemte rapporter
+        run: python -m pytest -q
+      - name: Prøvekørsel mod politi.dk og Via Ritzau (gemmer intet)
+        run: python -m indbrudskort opdater --dage 14 --alle --prøvekørsel --uden-geokodning
+      - name: Prøv geokodning af én vej (Nominatim, uden cache)
+        env:
+          DATAFORSYNINGEN_TOKEN: ${{ secrets.DATAFORSYNINGEN_TOKEN }}
+        run: |
+          python - <<'EOF'
+          import tempfile, pathlib
+          from indbrudskort.geokod import Geokoder
+          g = Geokoder(pathlib.Path(tempfile.mkdtemp()) / "c.json")
+          r = g.vej("Klintevej", "Hammel")
+          print(r)
+          assert r and r["praecision"] == "vej" and abs(r["lat"] - 56.262) < 0.01, r
+          EOF

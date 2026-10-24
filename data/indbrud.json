@@ -1,0 +1,1467 @@
+{
+ "opdateret": "2026-10-24T09:20:56+00:00",
+ "antal": 53,
+ "indbrud": [
+  {
+   "id": "05af33e92f82",
+   "vej": "Søndre Ringgade",
+   "by": "Aarhus C",
+   "omraade": "Aarhus",
+   "type": "privat",
+   "gerningstid": "22/10",
+   "tid_fra": "2026-10-22",
+   "tid_til": null,
+   "rapportdato": "2026-10-23",
+   "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-23-oktober-2026/2026/10/23",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-23-oktober-2026/2026/10/23",
+     "titel": "Østjyllands Politi: uddrag af døgnrapporten 23. oktober 2026",
+     "rapportdato": "2026-10-23",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "lat": 56.145905,
+   "lon": 10.186466,
+   "praecision": "vej",
+   "geokilde": "nominatim"
+  },
+  {
+   "id": "80e591c1b80d",
+   "vej": "Jægergårdsgade",
+   "by": "Aarhus C",
+   "omraade": "Aarhus",
+   "type": "privat",
+   "gerningstid": "22/10",
+   "tid_fra": "2026-10-22",
+   "tid_til": null,
+   "rapportdato": "2026-10-23",
+   "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-23-oktober-2026/2026/10/23",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-23-oktober-2026/2026/10/23",
+     "titel": "Østjyllands Politi: uddrag af døgnrapporten 23. oktober 2026",
+     "rapportdato": "2026-10-23",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "lat": 56.148246,
+   "lon": 10.203271,
+   "praecision": "vej",
+   "geokilde": "nominatim"
+  },
+  {
+   "id": "30e91275b7ad",
+   "vej": "Jægergårdsgade",
+   "by": "Aarhus C",
+   "omraade": "Aarhus",
+   "type": "privat",
+   "gerningstid": "22/10",
+   "tid_fra": "2026-10-22",
+   "tid_til": null,
+   "rapportdato": "2026-10-23",
+   "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-23-oktober-2026/2026/10/23",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-23-oktober-2026/2026/10/23",
+     "titel": "Østjyllands Politi: uddrag af døgnrapporten 23. oktober 2026",
+     "rapportdato": "2026-10-23",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "lat": 56.148246,
+   "lon": 10.203271,
+   "praecision": "vej",
+   "geokilde": "nominatim"
+  },
+  {
+   "id": "ab2befeb78a8",
+   "vej": "Eghovedvej",
+   "by": "Malling",
+   "omraade": "Aarhus",
+   "type": "privat",
+   "gerningstid": "22/10",
+   "tid_fra": "2026-10-22",
+   "tid_til": null,
+   "rapportdato": "2026-10-23",
+   "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-23-oktober-2026/2026/10/23",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-23-oktober-2026/2026/10/23",
+     "titel": "Østjyllands Politi: uddrag af døgnrapporten 23. oktober 2026",
+     "rapportdato": "2026-10-23",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "lat": 56.043816,
+   "lon": 10.198562,
+   "praecision": "vej",
+   "geokilde": "nominatim"
+  },
+  {
+   "id": "7334ebca79f0",
+   "vej": "Byhøjparken",
+   "by": "Trige",
+   "omraade": "Aarhus",
+   "type": "privat",
+   "gerningstid": "22/10",
+   "tid_fra": "2026-10-22",
+   "tid_til": null,
+   "rapportdato": "2026-10-23",
+   "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-23-oktober-2026/2026/10/23",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-23-oktober-2026/2026/10/23",
+     "titel": "Østjyllands Politi: uddrag af døgnrapporten 23. oktober 2026",
+     "rapportdato": "2026-10-23",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "lat": 56.258188,
+   "lon": 10.157088,
+   "praecision": "vej",
+   "geokilde": "nominatim"
+  },
+  {
+   "id": "c2d27fdd6998",
+   "vej": "Solbakkevej",
+   "by": "Viby J",
+   "omraade": "Aarhus",
+   "type": "privat",
+   "gerningstid": "19/10 – 21/10",
+   "tid_fra": "2026-10-19",
+   "tid_til": "2026-10-21",
+   "rapportdato": "2026-10-23",
+   "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-23-oktober-2026/2026/10/23",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-23-oktober-2026/2026/10/23",
+     "titel": "Østjyllands Politi: uddrag af døgnrapporten 23. oktober 2026",
+     "rapportdato": "2026-10-23",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "lat": 56.123836,
+   "lon": 10.155366,
+   "praecision": "vej",
+   "geokilde": "nominatim"
+  },
+  {
+   "id": "a3549dddcc5a",
+   "vej": "Haslehøjvej",
+   "by": "Aarhus V",
+   "omraade": "Aarhus",
+   "type": "privat",
+   "gerningstid": "18/10 – 22/10",
+   "tid_fra": "2026-10-18",
+   "tid_til": "2026-10-22",
+   "rapportdato": "2026-10-23",
+   "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-23-oktober-2026/2026/10/23",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-23-oktober-2026/2026/10/23",
+     "titel": "Østjyllands Politi: uddrag af døgnrapporten 23. oktober 2026",
+     "rapportdato": "2026-10-23",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "lat": 56.16923,
+   "lon": 10.165917,
+   "praecision": "vej",
+   "geokilde": "nominatim"
+  },
+  {
+   "id": "f505d6d82753",
+   "vej": "Ingerslev Boulevard",
+   "by": "Aarhus C",
+   "omraade": "Aarhus",
+   "type": "privat",
+   "gerningstid": "12/10 – 21/10",
+   "tid_fra": "2026-10-12",
+   "tid_til": "2026-10-21",
+   "rapportdato": "2026-10-22",
+   "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-22-oktober-2026/2026/10/22",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-22-oktober-2026/2026/10/22",
+     "titel": "Døgnrapport 22/10 (startdata fra prototypen)",
+     "rapportdato": "2026-10-22",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "lat": 56.1496278,
+   "lon": 10.2134046,
+   "praecision": "by",
+   "geokilde": "nominatim"
+  },
+  {
+   "id": "3a27697b159e",
+   "vej": "Åskrænten",
+   "by": "Egå",
+   "omraade": "Aarhus",
+   "type": "privat",
+   "gerningstid": "fra 15/10",
+   "tid_fra": "2026-10-15",
+   "tid_til": null,
+   "rapportdato": "2026-10-21",
+   "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-21-oktober-2026/2026/10/21",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-21-oktober-2026/2026/10/21",
+     "titel": "Døgnrapport 21/10 (startdata fra prototypen)",
+     "rapportdato": "2026-10-21",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "lat": 56.203141,
+   "lon": 10.264423,
+   "praecision": "vej",
+   "geokilde": "nominatim"
+  },
+  {
+   "id": "017ef5b7e635",
+   "vej": "Willemoesgade",
+   "by": "Aarhus N",
+   "omraade": "Aarhus",
+   "type": "privat",
+   "gerningstid": "20/10",
+   "tid_fra": "2026-10-20",
+   "tid_til": null,
+   "rapportdato": "2026-10-20",
+   "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-20-oktober-2026/2026/10/20",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-20-oktober-2026/2026/10/20",
+     "titel": "Døgnrapport 20/10 (startdata fra prototypen)",
+     "rapportdato": "2026-10-20",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "lat": 56.17164,
+   "lon": 10.212863,
+   "praecision": "vej",
+   "geokilde": "nominatim"
+  },
+  {
+   "id": "8ad555631418",
+   "vej": "Karetmagervej",
+   "by": "Randers NV",
+   "omraade": "Randers",
+   "type": "privat",
+   "gerningstid": "19/10",
+   "tid_fra": "2026-10-19",
+   "tid_til": null,
+   "rapportdato": "2026-10-20",
+   "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-20-oktober-2026/2026/10/20",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-20-oktober-2026/2026/10/20",
+     "titel": "Døgnrapport 20/10 (startdata fra prototypen)",
+     "rapportdato": "2026-10-20",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "lat": 56.47083,
+   "lon": 10.002113,
+   "praecision": "vej",
+   "geokilde": "nominatim"
+  },
+  {
+   "id": "cd37f2ea4e59",
+   "vej": "Hostrupvej",
+   "by": "Langå",
+   "omraade": "Langå",
+   "type": "privat",
+   "gerningstid": "19/10",
+   "tid_fra": "2026-10-19",
+   "tid_til": null,
+   "rapportdato": "2026-10-20",
+   "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-20-oktober-2026/2026/10/20",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-20-oktober-2026/2026/10/20",
+     "titel": "Døgnrapport 20/10 (startdata fra prototypen)",
+     "rapportdato": "2026-10-20",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "lat": 56.390979,
+   "lon": 9.8936301,
+   "praecision": "by",
+   "geokilde": "nominatim"
+  },
+  {
+   "id": "4a788515653b",
+   "vej": "Irisvej",
+   "by": "Grenaa",
+   "omraade": "Grenaa",
+   "type": "privat",
+   "gerningstid": "17/10",
+   "tid_fra": "2026-10-17",
+   "tid_til": null,
+   "rapportdato": "2026-10-20",
+   "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-20-oktober-2026/2026/10/20",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-20-oktober-2026/2026/10/20",
+     "titel": "Døgnrapport 20/10 (startdata fra prototypen)",
+     "rapportdato": "2026-10-20",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "lat": 56.418244,
+   "lon": 10.873933,
+   "praecision": "vej",
+   "geokilde": "nominatim"
+  },
+  {
+   "id": "815e217c3c57",
+   "vej": "Munkebakken",
+   "by": "Ebeltoft",
+   "omraade": "Ebeltoft",
+   "type": "privat",
+   "gerningstid": "14/10 – 19/10",
+   "tid_fra": "2026-10-14",
+   "tid_til": "2026-10-19",
+   "rapportdato": "2026-10-20",
+   "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-20-oktober-2026/2026/10/20",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-20-oktober-2026/2026/10/20",
+     "titel": "Døgnrapport 20/10 (startdata fra prototypen)",
+     "rapportdato": "2026-10-20",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "lat": 56.190849,
+   "lon": 10.674478,
+   "praecision": "vej",
+   "geokilde": "nominatim"
+  },
+  {
+   "id": "d263b5c24ce7",
+   "vej": "Christiansborgvej",
+   "by": "Randers NØ",
+   "omraade": "Randers",
+   "type": "privat",
+   "gerningstid": "8/10 – 14/10",
+   "tid_fra": "2026-10-08",
+   "tid_til": "2026-10-14",
+   "rapportdato": "2026-10-20",
+   "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-20-oktober-2026/2026/10/20",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-20-oktober-2026/2026/10/20",
+     "titel": "Døgnrapport 20/10 (startdata fra prototypen)",
+     "rapportdato": "2026-10-20",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "lat": 56.474045,
+   "lon": 10.048422,
+   "praecision": "vej",
+   "geokilde": "nominatim"
+  },
+  {
+   "id": "0f5228cfb043",
+   "vej": "Skt. Pauls Gade",
+   "by": "Aarhus C",
+   "omraade": "Aarhus",
+   "type": "privat",
+   "gerningstid": "19/10",
+   "tid_fra": "2026-10-19",
+   "tid_til": null,
+   "rapportdato": "2026-10-19",
+   "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-19-oktober-2026/2026/10/19",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-19-oktober-2026/2026/10/19",
+     "titel": "Døgnrapport 19/10 (startdata fra prototypen)",
+     "rapportdato": "2026-10-19",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "lat": 56.146432,
+   "lon": 10.204099,
+   "praecision": "vej",
+   "geokilde": "nominatim"
+  },
+  {
+   "id": "c64eb74a0fd2",
+   "vej": "Kontorhotel (vej ikke oplyst)",
+   "by": "Sabro",
+   "omraade": "Aarhus",
+   "type": "erhverv",
+   "gerningstid": "18/10",
+   "tid_fra": "2026-10-18",
+   "tid_til": null,
+   "rapportdato": "2026-10-19",
+   "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-19-oktober-2026/2026/10/19",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-19-oktober-2026/2026/10/19",
+     "titel": "Døgnrapport 19/10 (startdata fra prototypen)",
+     "rapportdato": "2026-10-19",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "lat": 56.2121365,
+   "lon": 10.0341514,
+   "praecision": "by",
+   "geokilde": "nominatim"
+  },
+  {
+   "id": "62c94855a403",
+   "vej": "Thongvallagade",
+   "by": "Aarhus N",
+   "omraade": "Aarhus",
+   "type": "privat",
+   "gerningstid": "16/10 – 18/10",
+   "tid_fra": "2026-10-16",
+   "tid_til": "2026-10-18",
+   "rapportdato": "2026-10-19",
+   "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-19-oktober-2026/2026/10/19",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-19-oktober-2026/2026/10/19",
+     "titel": "Døgnrapport 19/10 (startdata fra prototypen)",
+     "rapportdato": "2026-10-19",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "lat": 56.1496278,
+   "lon": 10.2134046,
+   "praecision": "by",
+   "geokilde": "nominatim"
+  },
+  {
+   "id": "ca27ed6e93e0",
+   "vej": "Fejøvænget",
+   "by": "Tilst",
+   "omraade": "Aarhus",
+   "type": "privat",
+   "gerningstid": "16/10 – 18/10",
+   "tid_fra": "2026-10-16",
+   "tid_til": "2026-10-18",
+   "rapportdato": "2026-10-19",
+   "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-19-oktober-2026/2026/10/19",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-19-oktober-2026/2026/10/19",
+     "titel": "Døgnrapport 19/10 (startdata fra prototypen)",
+     "rapportdato": "2026-10-19",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "lat": 56.178147,
+   "lon": 10.102305,
+   "praecision": "vej",
+   "geokilde": "nominatim"
+  },
+  {
+   "id": "7b20c60def29",
+   "vej": "Selandersvej",
+   "by": "Randers NV",
+   "omraade": "Randers",
+   "type": "privat",
+   "gerningstid": "15/10 – 18/10",
+   "tid_fra": "2026-10-15",
+   "tid_til": "2026-10-18",
+   "rapportdato": "2026-10-19",
+   "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-19-oktober-2026/2026/10/19",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-19-oktober-2026/2026/10/19",
+     "titel": "Døgnrapport 19/10 (startdata fra prototypen)",
+     "rapportdato": "2026-10-19",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "lat": 56.459804,
+   "lon": 9.976578,
+   "praecision": "vej",
+   "geokilde": "nominatim"
+  },
+  {
+   "id": "dd8ddc424bf7",
+   "vej": "Klintevej",
+   "by": "Hammel",
+   "omraade": "Hammel",
+   "type": "privat",
+   "gerningstid": "14/10 – 18/10",
+   "tid_fra": "2026-10-14",
+   "tid_til": "2026-10-18",
+   "rapportdato": "2026-10-19",
+   "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-19-oktober-2026/2026/10/19",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-19-oktober-2026/2026/10/19",
+     "titel": "Døgnrapport 19/10 (startdata fra prototypen)",
+     "rapportdato": "2026-10-19",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "lat": 56.26228,
+   "lon": 9.861224,
+   "praecision": "vej",
+   "geokilde": "nominatim"
+  },
+  {
+   "id": "57518d31f168",
+   "vej": "Stokrosevej",
+   "by": "Beder",
+   "omraade": "Aarhus",
+   "type": "privat",
+   "gerningstid": "11/10 – 18/10",
+   "tid_fra": "2026-10-11",
+   "tid_til": "2026-10-18",
+   "rapportdato": "2026-10-19",
+   "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-19-oktober-2026/2026/10/19",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-19-oktober-2026/2026/10/19",
+     "titel": "Døgnrapport 19/10 (startdata fra prototypen)",
+     "rapportdato": "2026-10-19",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "lat": 56.062899,
+   "lon": 10.216322,
+   "praecision": "vej",
+   "geokilde": "nominatim"
+  },
+  {
+   "id": "5db8c4585fa5",
+   "vej": "Solbakken",
+   "by": "Hammel",
+   "omraade": "Hammel",
+   "type": "privat",
+   "gerningstid": "8/10 – 18/10",
+   "tid_fra": "2026-10-08",
+   "tid_til": "2026-10-18",
+   "rapportdato": "2026-10-19",
+   "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-19-oktober-2026/2026/10/19",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-19-oktober-2026/2026/10/19",
+     "titel": "Døgnrapport 19/10 (startdata fra prototypen)",
+     "rapportdato": "2026-10-19",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "lat": 56.265493,
+   "lon": 9.867537,
+   "praecision": "vej",
+   "geokilde": "nominatim"
+  },
+  {
+   "id": "18d2bec02f8c",
+   "vej": "Cederlunden",
+   "by": "Randers SØ",
+   "omraade": "Randers",
+   "type": "privat",
+   "gerningstid": "4/10 – 18/10",
+   "tid_fra": "2026-10-04",
+   "tid_til": "2026-10-18",
+   "rapportdato": "2026-10-19",
+   "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-19-oktober-2026/2026/10/19",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-19-oktober-2026/2026/10/19",
+     "titel": "Døgnrapport 19/10 (startdata fra prototypen)",
+     "rapportdato": "2026-10-19",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "lat": 56.451223,
+   "lon": 10.083836,
+   "praecision": "vej",
+   "geokilde": "nominatim"
+  },
+  {
+   "id": "24b74603372f",
+   "vej": "Reventlowsvej",
+   "by": "Viby J",
+   "omraade": "Aarhus",
+   "type": "privat",
+   "gerningstid": "18/10",
+   "tid_fra": "2026-10-18",
+   "tid_til": null,
+   "rapportdato": "2026-10-18",
+   "kilde_url": "https://via.ritzau.dk/pressemeddelelse/15230173/dognrapport-fra-ostjyllands-politi-18-oktober-2026?publisherId=90721",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://via.ritzau.dk/pressemeddelelse/15230173/dognrapport-fra-ostjyllands-politi-18-oktober-2026?publisherId=90721",
+     "titel": "Døgnrapport 18/10 (startdata fra prototypen)",
+     "rapportdato": "2026-10-18",
+     "udgiver": "Via Ritzau"
+    },
+    {
+     "url": "https://via.ritzau.dk/pressemeddelelse/15230173/dognrapport-fra-ostjyllands-politi-18-oktober-2026?publisherId=90721&lang=da",
+     "titel": "Døgnrapport fra Østjyllands Politi 18. oktober 2026",
+     "rapportdato": "2026-10-18",
+     "udgiver": "Via Ritzau"
+    }
+   ],
+   "lat": 56.124357,
+   "lon": 10.160625,
+   "praecision": "vej",
+   "geokilde": "nominatim"
+  },
+  {
+   "id": "b1e1b426e5ae",
+   "vej": "Reventlowsvej",
+   "by": "Viby J",
+   "omraade": "Aarhus",
+   "type": "privat",
+   "gerningstid": "18/10",
+   "tid_fra": "2026-10-18",
+   "tid_til": null,
+   "rapportdato": "2026-10-18",
+   "kilde_url": "https://via.ritzau.dk/pressemeddelelse/15230173/dognrapport-fra-ostjyllands-politi-18-oktober-2026?publisherId=90721",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://via.ritzau.dk/pressemeddelelse/15230173/dognrapport-fra-ostjyllands-politi-18-oktober-2026?publisherId=90721",
+     "titel": "Døgnrapport 18/10 (startdata fra prototypen)",
+     "rapportdato": "2026-10-18",
+     "udgiver": "Via Ritzau"
+    },
+    {
+     "url": "https://via.ritzau.dk/pressemeddelelse/15230173/dognrapport-fra-ostjyllands-politi-18-oktober-2026?publisherId=90721&lang=da",
+     "titel": "Døgnrapport fra Østjyllands Politi 18. oktober 2026",
+     "rapportdato": "2026-10-18",
+     "udgiver": "Via Ritzau"
+    }
+   ],
+   "lat": 56.124357,
+   "lon": 10.160625,
+   "praecision": "vej",
+   "geokilde": "nominatim"
+  },
+  {
+   "id": "eaf4bfaba208",
+   "vej": "Møllevangs Allé",
+   "by": "Aarhus N",
+   "omraade": "Aarhus",
+   "type": "privat",
+   "gerningstid": "13/10 – 17/10",
+   "tid_fra": "2026-10-13",
+   "tid_til": "2026-10-17",
+   "rapportdato": "2026-10-18",
+   "kilde_url": "https://via.ritzau.dk/pressemeddelelse/15230173/dognrapport-fra-ostjyllands-politi-18-oktober-2026?publisherId=90721",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://via.ritzau.dk/pressemeddelelse/15230173/dognrapport-fra-ostjyllands-politi-18-oktober-2026?publisherId=90721",
+     "titel": "Døgnrapport 18/10 (startdata fra prototypen)",
+     "rapportdato": "2026-10-18",
+     "udgiver": "Via Ritzau"
+    },
+    {
+     "url": "https://via.ritzau.dk/pressemeddelelse/15230173/dognrapport-fra-ostjyllands-politi-18-oktober-2026?publisherId=90721&lang=da",
+     "titel": "Døgnrapport fra Østjyllands Politi 18. oktober 2026",
+     "rapportdato": "2026-10-18",
+     "udgiver": "Via Ritzau"
+    }
+   ],
+   "lat": 56.173079,
+   "lon": 10.185299,
+   "praecision": "vej",
+   "geokilde": "nominatim"
+  },
+  {
+   "id": "4be2e4d81a23",
+   "vej": "Frodesvej",
+   "by": "Åbyhøj",
+   "omraade": "Aarhus",
+   "type": "privat",
+   "gerningstid": "13/10 – 17/10",
+   "tid_fra": "2026-10-13",
+   "tid_til": "2026-10-17",
+   "rapportdato": "2026-10-18",
+   "kilde_url": "https://via.ritzau.dk/pressemeddelelse/15230173/dognrapport-fra-ostjyllands-politi-18-oktober-2026?publisherId=90721",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://via.ritzau.dk/pressemeddelelse/15230173/dognrapport-fra-ostjyllands-politi-18-oktober-2026?publisherId=90721",
+     "titel": "Døgnrapport 18/10 (startdata fra prototypen)",
+     "rapportdato": "2026-10-18",
+     "udgiver": "Via Ritzau"
+    },
+    {
+     "url": "https://via.ritzau.dk/pressemeddelelse/15230173/dognrapport-fra-ostjyllands-politi-18-oktober-2026?publisherId=90721&lang=da",
+     "titel": "Døgnrapport fra Østjyllands Politi 18. oktober 2026",
+     "rapportdato": "2026-10-18",
+     "udgiver": "Via Ritzau"
+    }
+   ],
+   "lat": 56.153603,
+   "lon": 10.169769,
+   "praecision": "vej",
+   "geokilde": "nominatim"
+  },
+  {
+   "id": "966a6fe4f18d",
+   "vej": "Kanehaven",
+   "by": "Risskov",
+   "omraade": "Aarhus",
+   "type": "privat",
+   "gerningstid": "12/10 – 17/10",
+   "tid_fra": "2026-10-12",
+   "tid_til": "2026-10-17",
+   "rapportdato": "2026-10-18",
+   "kilde_url": "https://via.ritzau.dk/pressemeddelelse/15230173/dognrapport-fra-ostjyllands-politi-18-oktober-2026?publisherId=90721",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://via.ritzau.dk/pressemeddelelse/15230173/dognrapport-fra-ostjyllands-politi-18-oktober-2026?publisherId=90721",
+     "titel": "Døgnrapport 18/10 (startdata fra prototypen)",
+     "rapportdato": "2026-10-18",
+     "udgiver": "Via Ritzau"
+    },
+    {
+     "url": "https://via.ritzau.dk/pressemeddelelse/15230173/dognrapport-fra-ostjyllands-politi-18-oktober-2026?publisherId=90721&lang=da",
+     "titel": "Døgnrapport fra Østjyllands Politi 18. oktober 2026",
+     "rapportdato": "2026-10-18",
+     "udgiver": "Via Ritzau"
+    }
+   ],
+   "lat": 56.207238,
+   "lon": 10.214206,
+   "praecision": "vej",
+   "geokilde": "nominatim"
+  },
+  {
+   "id": "47f937ef92c4",
+   "vej": "Visbygade",
+   "by": "Aarhus N",
+   "omraade": "Aarhus",
+   "type": "privat",
+   "gerningstid": "9/10 – 17/10",
+   "tid_fra": "2026-10-09",
+   "tid_til": "2026-10-17",
+   "rapportdato": "2026-10-18",
+   "kilde_url": "https://via.ritzau.dk/pressemeddelelse/15230173/dognrapport-fra-ostjyllands-politi-18-oktober-2026?publisherId=90721",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://via.ritzau.dk/pressemeddelelse/15230173/dognrapport-fra-ostjyllands-politi-18-oktober-2026?publisherId=90721",
+     "titel": "Døgnrapport 18/10 (startdata fra prototypen)",
+     "rapportdato": "2026-10-18",
+     "udgiver": "Via Ritzau"
+    },
+    {
+     "url": "https://via.ritzau.dk/pressemeddelelse/15230173/dognrapport-fra-ostjyllands-politi-18-oktober-2026?publisherId=90721&lang=da",
+     "titel": "Døgnrapport fra Østjyllands Politi 18. oktober 2026",
+     "rapportdato": "2026-10-18",
+     "udgiver": "Via Ritzau"
+    }
+   ],
+   "lat": 56.180364,
+   "lon": 10.193418,
+   "praecision": "vej",
+   "geokilde": "nominatim"
+  },
+  {
+   "id": "f9098981dae2",
+   "vej": "Sophus Bauditz Vej",
+   "by": "Åbyhøj",
+   "omraade": "Aarhus",
+   "type": "privat",
+   "gerningstid": "17/10 kl. 03.03",
+   "tid_fra": "2026-10-17T03:03",
+   "tid_til": null,
+   "rapportdato": "2026-10-17",
+   "kilde_url": "https://via.ritzau.dk/release/15229519",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://via.ritzau.dk/release/15229519",
+     "titel": "Døgnets indbrud i privat beboelse",
+     "rapportdato": "2026-10-17",
+     "udgiver": "Via Ritzau"
+    },
+    {
+     "url": "https://via.ritzau.dk/pressemeddelelse/15229519/dognets-indbrud-i-privat-beboelse?publisherId=90721&lang=da",
+     "titel": "Døgnets indbrud i privat beboelse",
+     "rapportdato": "2026-10-17",
+     "udgiver": "Via Ritzau"
+    },
+    {
+     "url": "https://via.ritzau.dk/pressemeddelelse/15230173/dognrapport-fra-ostjyllands-politi-18-oktober-2026?publisherId=90721&lang=da",
+     "titel": "Døgnrapport fra Østjyllands Politi 18. oktober 2026",
+     "rapportdato": "2026-10-18",
+     "udgiver": "Via Ritzau"
+    }
+   ],
+   "lat": 56.158081,
+   "lon": 10.159991,
+   "praecision": "vej",
+   "geokilde": "nominatim"
+  },
+  {
+   "id": "2659d6165198",
+   "vej": "Kirkevænget",
+   "by": "Tranbjerg J",
+   "omraade": "Aarhus",
+   "type": "privat",
+   "gerningstid": "16/10 kl. 15.00 – 17/10 kl. 00.40",
+   "tid_fra": "2026-10-16T15:00",
+   "tid_til": "2026-10-17T00:40",
+   "rapportdato": "2026-10-17",
+   "kilde_url": "https://via.ritzau.dk/release/15229519",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://via.ritzau.dk/release/15229519",
+     "titel": "Døgnets indbrud i privat beboelse",
+     "rapportdato": "2026-10-17",
+     "udgiver": "Via Ritzau"
+    },
+    {
+     "url": "https://via.ritzau.dk/pressemeddelelse/15229519/dognets-indbrud-i-privat-beboelse?publisherId=90721&lang=da",
+     "titel": "Døgnets indbrud i privat beboelse",
+     "rapportdato": "2026-10-17",
+     "udgiver": "Via Ritzau"
+    }
+   ],
+   "lat": 56.086646,
+   "lon": 10.130196,
+   "praecision": "vej",
+   "geokilde": "nominatim"
+  },
+  {
+   "id": "d678cefc06c3",
+   "vej": "Solklintvej",
+   "by": "Egå",
+   "omraade": "Aarhus",
+   "type": "privat",
+   "gerningstid": "16/10 kl. 10.40 – 14.45",
+   "tid_fra": "2026-10-16T10:40",
+   "tid_til": "2026-10-16T14:45",
+   "rapportdato": "2026-10-17",
+   "kilde_url": "https://via.ritzau.dk/release/15229519",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://via.ritzau.dk/release/15229519",
+     "titel": "Døgnets indbrud i privat beboelse",
+     "rapportdato": "2026-10-17",
+     "udgiver": "Via Ritzau"
+    },
+    {
+     "url": "https://via.ritzau.dk/pressemeddelelse/15229519/dognets-indbrud-i-privat-beboelse?publisherId=90721&lang=da",
+     "titel": "Døgnets indbrud i privat beboelse",
+     "rapportdato": "2026-10-17",
+     "udgiver": "Via Ritzau"
+    }
+   ],
+   "lat": 56.204523,
+   "lon": 10.277293,
+   "praecision": "vej",
+   "geokilde": "nominatim"
+  },
+  {
+   "id": "4fda65bed11b",
+   "vej": "Skovgaardsgade",
+   "by": "Aarhus C",
+   "omraade": "Aarhus",
+   "type": "privat",
+   "gerningstid": "16/10 kl. 06.40",
+   "tid_fra": "2026-10-16T06:40",
+   "tid_til": null,
+   "rapportdato": "2026-10-17",
+   "kilde_url": "https://via.ritzau.dk/release/15229519",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://via.ritzau.dk/release/15229519",
+     "titel": "Døgnets indbrud i privat beboelse",
+     "rapportdato": "2026-10-17",
+     "udgiver": "Via Ritzau"
+    },
+    {
+     "url": "https://via.ritzau.dk/pressemeddelelse/15229519/dognets-indbrud-i-privat-beboelse?publisherId=90721&lang=da",
+     "titel": "Døgnets indbrud i privat beboelse",
+     "rapportdato": "2026-10-17",
+     "udgiver": "Via Ritzau"
+    }
+   ],
+   "lat": 56.151613,
+   "lon": 10.192203,
+   "praecision": "vej",
+   "geokilde": "nominatim"
+  },
+  {
+   "id": "f33e9cc5bb93",
+   "vej": "Egensvej",
+   "by": "Risskov",
+   "omraade": "Aarhus",
+   "type": "privat",
+   "gerningstid": "13/10 kl. 13.00 – 16/10 kl. 15.00",
+   "tid_fra": "2026-10-13T13:00",
+   "tid_til": "2026-10-16T15:00",
+   "rapportdato": "2026-10-17",
+   "kilde_url": "https://via.ritzau.dk/release/15229519",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://via.ritzau.dk/release/15229519",
+     "titel": "Døgnets indbrud i privat beboelse",
+     "rapportdato": "2026-10-17",
+     "udgiver": "Via Ritzau"
+    },
+    {
+     "url": "https://via.ritzau.dk/pressemeddelelse/15229519/dognets-indbrud-i-privat-beboelse?publisherId=90721&lang=da",
+     "titel": "Døgnets indbrud i privat beboelse",
+     "rapportdato": "2026-10-17",
+     "udgiver": "Via Ritzau"
+    }
+   ],
+   "lat": 56.196533,
+   "lon": 10.227527,
+   "praecision": "vej",
+   "geokilde": "nominatim"
+  },
+  {
+   "id": "5be44f93dfe7",
+   "vej": "Sehierupsvej",
+   "by": "Højbjerg",
+   "omraade": "Aarhus",
+   "type": "privat",
+   "gerningstid": "12/10 kl. 10.00 – 16/10 kl. 08.15",
+   "tid_fra": "2026-10-12T10:00",
+   "tid_til": "2026-10-16T08:15",
+   "rapportdato": "2026-10-17",
+   "kilde_url": "https://via.ritzau.dk/release/15229519",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://via.ritzau.dk/release/15229519",
+     "titel": "Døgnets indbrud i privat beboelse",
+     "rapportdato": "2026-10-17",
+     "udgiver": "Via Ritzau"
+    },
+    {
+     "url": "https://via.ritzau.dk/pressemeddelelse/15229519/dognets-indbrud-i-privat-beboelse?publisherId=90721&lang=da",
+     "titel": "Døgnets indbrud i privat beboelse",
+     "rapportdato": "2026-10-17",
+     "udgiver": "Via Ritzau"
+    }
+   ],
+   "lat": 56.1133853,
+   "lon": 10.206361,
+   "praecision": "by",
+   "geokilde": "nominatim"
+  },
+  {
+   "id": "15cc8d8fa831",
+   "vej": "Østervænget",
+   "by": "Tilst",
+   "omraade": "Aarhus",
+   "type": "privat",
+   "gerningstid": "15/10 kl. 10.59",
+   "tid_fra": "2026-10-15T10:59",
+   "tid_til": null,
+   "rapportdato": "2026-10-16",
+   "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-16-oktober-2026/2026/10/16",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-16-oktober-2026/2026/10/16",
+     "titel": "Østjyllands Politi: uddrag af døgnrapporten 16. oktober 2026",
+     "rapportdato": "2026-10-16",
+     "udgiver": "politi.dk"
+    },
+    {
+     "url": "https://via.ritzau.dk/release/15229519",
+     "titel": "Døgnets indbrud i privat beboelse",
+     "rapportdato": "2026-10-17",
+     "udgiver": "Via Ritzau"
+    },
+    {
+     "url": "https://via.ritzau.dk/pressemeddelelse/15229519/dognets-indbrud-i-privat-beboelse?publisherId=90721&lang=da",
+     "titel": "Døgnets indbrud i privat beboelse",
+     "rapportdato": "2026-10-17",
+     "udgiver": "Via Ritzau"
+    }
+   ],
+   "lat": 56.190338,
+   "lon": 10.126757,
+   "praecision": "vej",
+   "geokilde": "nominatim"
+  },
+  {
+   "id": "f5e6a5c091b2",
+   "vej": "Sletterhagevej",
+   "by": "Risskov",
+   "omraade": "Aarhus",
+   "type": "privat",
+   "gerningstid": "15/10 kl. 07.00 – 15.20",
+   "tid_fra": "2026-10-15T07:00",
+   "tid_til": "2026-10-15T15:20",
+   "rapportdato": "2026-10-16",
+   "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-16-oktober-2026/2026/10/16",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-16-oktober-2026/2026/10/16",
+     "titel": "Østjyllands Politi: uddrag af døgnrapporten 16. oktober 2026",
+     "rapportdato": "2026-10-16",
+     "udgiver": "politi.dk"
+    },
+    {
+     "url": "https://via.ritzau.dk/release/15229519",
+     "titel": "Døgnets indbrud i privat beboelse",
+     "rapportdato": "2026-10-17",
+     "udgiver": "Via Ritzau"
+    },
+    {
+     "url": "https://via.ritzau.dk/pressemeddelelse/15229519/dognets-indbrud-i-privat-beboelse?publisherId=90721&lang=da",
+     "titel": "Døgnets indbrud i privat beboelse",
+     "rapportdato": "2026-10-17",
+     "udgiver": "Via Ritzau"
+    }
+   ],
+   "lat": 56.195964,
+   "lon": 10.235767,
+   "praecision": "vej",
+   "geokilde": "nominatim"
+  },
+  {
+   "id": "e677d8973cde",
+   "vej": "Steen Blichers Gade",
+   "by": "Randers C",
+   "omraade": "Randers",
+   "type": "privat",
+   "gerningstid": "15/10",
+   "tid_fra": "2026-10-15",
+   "tid_til": null,
+   "rapportdato": "2026-10-16",
+   "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-16-oktober-2026/2026/10/16",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-16-oktober-2026/2026/10/16",
+     "titel": "Østjyllands Politi: uddrag af døgnrapporten 16. oktober 2026",
+     "rapportdato": "2026-10-16",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "lat": 56.462525,
+   "lon": 10.028871,
+   "praecision": "vej",
+   "geokilde": "nominatim"
+  },
+  {
+   "id": "99f06105a59a",
+   "vej": "Pottemagertoften",
+   "by": "Højbjerg",
+   "omraade": "Aarhus",
+   "type": "privat",
+   "gerningstid": "14/10 – 15/10",
+   "tid_fra": "2026-10-14",
+   "tid_til": "2026-10-15",
+   "rapportdato": "2026-10-16",
+   "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-16-oktober-2026/2026/10/16",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-16-oktober-2026/2026/10/16",
+     "titel": "Østjyllands Politi: uddrag af døgnrapporten 16. oktober 2026",
+     "rapportdato": "2026-10-16",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "lat": 56.104663,
+   "lon": 10.168642,
+   "praecision": "vej",
+   "geokilde": "nominatim"
+  },
+  {
+   "id": "d4b58526530d",
+   "vej": "Krogagre",
+   "by": "Risskov",
+   "omraade": "Aarhus",
+   "type": "privat",
+   "gerningstid": "14/10 – 15/10",
+   "tid_fra": "2026-10-14",
+   "tid_til": "2026-10-15",
+   "rapportdato": "2026-10-16",
+   "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-16-oktober-2026/2026/10/16",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-16-oktober-2026/2026/10/16",
+     "titel": "Østjyllands Politi: uddrag af døgnrapporten 16. oktober 2026",
+     "rapportdato": "2026-10-16",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "lat": 56.206708,
+   "lon": 10.20742,
+   "praecision": "vej",
+   "geokilde": "nominatim"
+  },
+  {
+   "id": "e9afe48aa4a9",
+   "vej": "Frederiksgade",
+   "by": "Randers NØ",
+   "omraade": "Randers",
+   "type": "privat",
+   "gerningstid": "13/10 – 14/10",
+   "tid_fra": "2026-10-13",
+   "tid_til": "2026-10-14",
+   "rapportdato": "2026-10-15",
+   "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-15-oktober-2026/2026/10/15",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-15-oktober-2026/2026/10/15",
+     "titel": "Østjyllands Politi: uddrag af døgnrapporten 15. oktober 2026",
+     "rapportdato": "2026-10-15",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "lat": 56.472373,
+   "lon": 10.037024,
+   "praecision": "vej",
+   "geokilde": "nominatim"
+  },
+  {
+   "id": "b0b13ee73d25",
+   "vej": "Kornbakken",
+   "by": "Malling",
+   "omraade": "Aarhus",
+   "type": "privat",
+   "gerningstid": "12/10",
+   "tid_fra": "2026-10-12",
+   "tid_til": null,
+   "rapportdato": "2026-10-13",
+   "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/doegnrapport13102026/2026/10/13",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/doegnrapport13102026/2026/10/13",
+     "titel": "Østjyllands Politi: uddrag af døgnrapporten 13. oktober 2026",
+     "rapportdato": "2026-10-13",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "lat": 56.040575,
+   "lon": 10.198851,
+   "praecision": "vej",
+   "geokilde": "nominatim"
+  },
+  {
+   "id": "f2d87b42816b",
+   "vej": "Dannebrogsgade",
+   "by": "Aarhus C",
+   "omraade": "Aarhus",
+   "type": "privat",
+   "gerningstid": "12/10",
+   "tid_fra": "2026-10-12",
+   "tid_til": null,
+   "rapportdato": "2026-10-13",
+   "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/doegnrapport13102026/2026/10/13",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/doegnrapport13102026/2026/10/13",
+     "titel": "Østjyllands Politi: uddrag af døgnrapporten 13. oktober 2026",
+     "rapportdato": "2026-10-13",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "lat": 56.145972,
+   "lon": 10.194471,
+   "praecision": "vej",
+   "geokilde": "nominatim"
+  },
+  {
+   "id": "6f547a533033",
+   "vej": "Langgade",
+   "by": "Randers NV",
+   "omraade": "Randers",
+   "type": "privat",
+   "gerningstid": "9/10 – 12/10",
+   "tid_fra": "2026-10-09",
+   "tid_til": "2026-10-12",
+   "rapportdato": "2026-10-13",
+   "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/doegnrapport13102026/2026/10/13",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/doegnrapport13102026/2026/10/13",
+     "titel": "Østjyllands Politi: uddrag af døgnrapporten 13. oktober 2026",
+     "rapportdato": "2026-10-13",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "lat": 56.471079,
+   "lon": 10.027215,
+   "praecision": "vej",
+   "geokilde": "nominatim"
+  },
+  {
+   "id": "dcb5b9a4485c",
+   "vej": "Oust Møllevej",
+   "by": "Randers NV",
+   "omraade": "Randers",
+   "type": "privat",
+   "gerningstid": "8/10 – 12/10",
+   "tid_fra": "2026-10-08",
+   "tid_til": "2026-10-12",
+   "rapportdato": "2026-10-13",
+   "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/doegnrapport13102026/2026/10/13",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/doegnrapport13102026/2026/10/13",
+     "titel": "Østjyllands Politi: uddrag af døgnrapporten 13. oktober 2026",
+     "rapportdato": "2026-10-13",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "lat": 56.47672,
+   "lon": 9.991449,
+   "praecision": "vej",
+   "geokilde": "nominatim"
+  },
+  {
+   "id": "d1bfbe6bba02",
+   "vej": "Cederlunden",
+   "by": "Randers SØ",
+   "omraade": "Randers",
+   "type": "privat",
+   "gerningstid": "8/10 – 11/10",
+   "tid_fra": "2026-10-08",
+   "tid_til": "2026-10-11",
+   "rapportdato": "2026-10-12",
+   "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-12-oktober-2026/2026/10/12",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-12-oktober-2026/2026/10/12",
+     "titel": "Østjyllands Politi: uddrag af døgnrapporten 12. oktober 2026",
+     "rapportdato": "2026-10-12",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "lat": 56.451223,
+   "lon": 10.083836,
+   "praecision": "vej",
+   "geokilde": "nominatim"
+  },
+  {
+   "id": "554562f160ee",
+   "vej": "Ydesvej",
+   "by": "Grenaa",
+   "omraade": "Grenaa",
+   "type": "privat",
+   "gerningstid": "11/10 kl. 00.50",
+   "tid_fra": "2026-10-11T00:50",
+   "tid_til": null,
+   "rapportdato": "2026-10-11",
+   "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-11-oktober-2026/2026/10/11",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-11-oktober-2026/2026/10/11",
+     "titel": "Østjyllands politi: Uddrag af døgnrapporten 11. oktober 2026",
+     "rapportdato": "2026-10-11",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "lat": 56.401949,
+   "lon": 10.890195,
+   "praecision": "vej",
+   "geokilde": "nominatim"
+  },
+  {
+   "id": "26ac81059b95",
+   "vej": "Holmgårdsvej",
+   "by": "Randers SØ",
+   "omraade": "Randers",
+   "type": "privat",
+   "gerningstid": "10/10 kl. 18.30",
+   "tid_fra": "2026-10-10T18:30",
+   "tid_til": null,
+   "rapportdato": "2026-10-11",
+   "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-11-oktober-2026/2026/10/11",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-11-oktober-2026/2026/10/11",
+     "titel": "Østjyllands politi: Uddrag af døgnrapporten 11. oktober 2026",
+     "rapportdato": "2026-10-11",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "lat": 56.4355428,
+   "lon": 10.0425957,
+   "praecision": "by",
+   "geokilde": "nominatim"
+  },
+  {
+   "id": "e9c9e448916b",
+   "vej": "Jegstrupvænget",
+   "by": "Tranbjerg J",
+   "omraade": "Aarhus",
+   "type": "privat",
+   "gerningstid": "10/10 kl. 16.30 – 23.53",
+   "tid_fra": "2026-10-10T16:30",
+   "tid_til": "2026-10-10T23:53",
+   "rapportdato": "2026-10-11",
+   "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-11-oktober-2026/2026/10/11",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-11-oktober-2026/2026/10/11",
+     "titel": "Østjyllands politi: Uddrag af døgnrapporten 11. oktober 2026",
+     "rapportdato": "2026-10-11",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "lat": 56.088167,
+   "lon": 10.127395,
+   "praecision": "vej",
+   "geokilde": "nominatim"
+  },
+  {
+   "id": "df227424daf7",
+   "vej": "Møllermindevej",
+   "by": "Auning",
+   "omraade": "Auning",
+   "type": "privat",
+   "gerningstid": "10/10 kl. 16.15 – 16.45",
+   "tid_fra": "2026-10-10T16:15",
+   "tid_til": "2026-10-10T16:45",
+   "rapportdato": "2026-10-11",
+   "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-11-oktober-2026/2026/10/11",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-11-oktober-2026/2026/10/11",
+     "titel": "Østjyllands politi: Uddrag af døgnrapporten 11. oktober 2026",
+     "rapportdato": "2026-10-11",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "lat": 56.4314503,
+   "lon": 10.3781855,
+   "praecision": "by",
+   "geokilde": "nominatim"
+  },
+  {
+   "id": "e12849bc4ca8",
+   "vej": "Farøvænget",
+   "by": "Tilst",
+   "omraade": "Aarhus",
+   "type": "privat",
+   "gerningstid": "10/10 kl. 10.45 – 17.07",
+   "tid_fra": "2026-10-10T10:45",
+   "tid_til": "2026-10-10T17:07",
+   "rapportdato": "2026-10-11",
+   "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-11-oktober-2026/2026/10/11",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-11-oktober-2026/2026/10/11",
+     "titel": "Østjyllands politi: Uddrag af døgnrapporten 11. oktober 2026",
+     "rapportdato": "2026-10-11",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "lat": 56.175972,
+   "lon": 10.101241,
+   "praecision": "vej",
+   "geokilde": "nominatim"
+  },
+  {
+   "id": "16c2c6286b8f",
+   "vej": "Energivej",
+   "by": "Randers NV",
+   "omraade": "Randers",
+   "type": "privat",
+   "gerningstid": "9/10 kl. 22.00 – 10/10 kl. 13.24",
+   "tid_fra": "2026-10-09T22:00",
+   "tid_til": "2026-10-10T13:24",
+   "rapportdato": "2026-10-11",
+   "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-11-oktober-2026/2026/10/11",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-11-oktober-2026/2026/10/11",
+     "titel": "Østjyllands politi: Uddrag af døgnrapporten 11. oktober 2026",
+     "rapportdato": "2026-10-11",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "lat": 56.472049,
+   "lon": 10.02655,
+   "praecision": "vej",
+   "geokilde": "nominatim"
+  }
+ ],
+ "behandlede_meddelelser": {
+  "https://politi.dk/oestjyllands-politi/doegnrapporter/doegnrapport13102026/2026/10/13": "2026-10-13",
+  "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-11-oktober-2026/2026/10/11": "2026-10-11",
+  "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-12-oktober-2026/2026/10/12": "2026-10-12",
+  "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-15-oktober-2026/2026/10/15": "2026-10-15",
+  "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-16-oktober-2026/2026/10/16": "2026-10-16",
+  "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-19-oktober-2026/2026/10/19": "2026-10-19",
+  "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-20-oktober-2026/2026/10/20": "2026-10-20",
+  "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-21-oktober-2026/2026/10/21": "2026-10-21",
+  "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-22-oktober-2026/2026/10/22": "2026-10-22",
+  "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-23-oktober-2026/2026/10/23": "2026-10-23",
+  "https://via.ritzau.dk/pressemeddelelse/15212562/midlertidigt-militaert-omrade-pa-havnen-i-aarhus?publisherId=90721&lang=da": "2026-10-07",
+  "https://via.ritzau.dk/pressemeddelelse/15212588/midlertidigt-militaert-omrade-pa-havnen-i-aarhus?publisherId=90721&lang=da": "2026-10-07",
+  "https://via.ritzau.dk/pressemeddelelse/15221230/tilskuer-sigtet-for-vold-til-handboldkamp-i-aarhus?publisherId=90721&lang=da": "2026-10-12",
+  "https://via.ritzau.dk/pressemeddelelse/15221234/tilskuer-sigtet-for-vold-til-handboldkamp-i-aarhus?publisherId=90721&lang=da": "2026-10-12",
+  "https://via.ritzau.dk/pressemeddelelse/15225189/uddrag-af-dognrapporten-fra-ostjyllands-politi?publisherId=90721&lang=da": "2026-10-14",
+  "https://via.ritzau.dk/pressemeddelelse/15225224/kom-og-mod-os-ved-den-mobile-politistation-i-risskov?publisherId=90721&lang=da": "2026-10-14",
+  "https://via.ritzau.dk/pressemeddelelse/15225319/kom-og-mod-os-ved-den-mobile-politistation-i-risskov?publisherId=90721&lang=da": "2026-10-14",
+  "https://via.ritzau.dk/pressemeddelelse/15225722/anholdelse?publisherId=90721&lang=da": "2026-10-14",
+  "https://via.ritzau.dk/pressemeddelelse/15229494/salg-af-narkotika-i-aarhus-vest?publisherId=90721&lang=da": "2026-10-17",
+  "https://via.ritzau.dk/pressemeddelelse/15229496/indbrud-i-frisorsalon-i-abyhoj?publisherId=90721&lang=da": "2026-10-17",
+  "https://via.ritzau.dk/pressemeddelelse/15229508/brand-i-personbiler-i-risskov?publisherId=90721&lang=da": "2026-10-17",
+  "https://via.ritzau.dk/pressemeddelelse/15229519/dognets-indbrud-i-privat-beboelse?publisherId=90721&lang=da": "2026-10-17",
+  "https://via.ritzau.dk/pressemeddelelse/15230173/dognrapport-fra-ostjyllands-politi-18-oktober-2026?publisherId=90721": "2026-10-18",
+  "https://via.ritzau.dk/pressemeddelelse/15230173/dognrapport-fra-ostjyllands-politi-18-oktober-2026?publisherId=90721&lang=da": "2026-10-18",
+  "https://via.ritzau.dk/pressemeddelelse/15235274/mand-fundet-livlos-i-vandet-i-odder?publisherId=90721&lang=da": "2026-10-20",
+  "https://via.ritzau.dk/pressemeddelelse/15237647/brand-i-bygning-i-aarhus-c?publisherId=90721&lang=da": "2026-10-21",
+  "https://via.ritzau.dk/pressemeddelelse/15238281/brand-i-bygning-i-aarhus-c?publisherId=90721&lang=da": "2026-10-21",
+  "https://via.ritzau.dk/pressemeddelelse/15238420/brand-i-bygning-i-aarhus-c?publisherId=90721&lang=da": "2026-10-21",
+  "https://via.ritzau.dk/pressemeddelelse/15238849/faerdselsuheld-i-det-vestlige-aarhus-flere-koretojer-involveret?publisherId=90721&lang=da": "2026-10-21",
+  "https://via.ritzau.dk/pressemeddelelse/15239053/faerdselsuheld-i-det-vestlige-aarhus-flere-koretojer-involveret?publisherId=90721&lang=da": "2026-10-21",
+  "https://via.ritzau.dk/pressemeddelelse/15239908/buschauffor-overfaldet-af-passagerer?publisherId=90721&lang=da": "2026-10-22",
+  "https://via.ritzau.dk/release/15229519": "2026-10-17"
+ }
+}

@@ -1,0 +1,113 @@
+{
+ "Egensvej|Risskov": {
+  "geokilde": "nominatim",
+  "lat": 56.196533,
+  "lon": 10.227527,
+  "praecision": "vej"
+ },
+ "Holmgårdsvej|Randers SØ": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 56.4355428,
+  "lon": 10.0425957,
+  "praecision": "by"
+ },
+ "Hostrupvej|Langå": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 56.390979,
+  "lon": 9.8936301,
+  "praecision": "by"
+ },
+ "Ingerslev Boulevard|Aarhus C": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 56.1496278,
+  "lon": 10.2134046,
+  "praecision": "by"
+ },
+ "Kanehaven|Risskov": {
+  "geokilde": "nominatim",
+  "lat": 56.207238,
+  "lon": 10.214206,
+  "praecision": "vej"
+ },
+ "Kontorhotel (vej ikke oplyst)|Sabro": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 56.2121365,
+  "lon": 10.0341514,
+  "praecision": "by"
+ },
+ "Krogagre|Risskov": {
+  "geokilde": "nominatim",
+  "lat": 56.206708,
+  "lon": 10.20742,
+  "praecision": "vej"
+ },
+ "Møllermindevej|Auning": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 56.4314503,
+  "lon": 10.3781855,
+  "praecision": "by"
+ },
+ "Pottemagertoften|Højbjerg": {
+  "geokilde": "nominatim",
+  "lat": 56.104663,
+  "lon": 10.168642,
+  "praecision": "vej"
+ },
+ "Sehierupsvej|Højbjerg": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 56.1133853,
+  "lon": 10.206361,
+  "praecision": "by"
+ },
+ "Skt. Pauls Gade|Aarhus C": {
+  "geokilde": "nominatim",
+  "lat": 56.146432,
+  "lon": 10.204099,
+  "praecision": "vej"
+ },
+ "Thongvallagade|Aarhus N": {
+  "dato": "2026-10-24",
+  "geokilde": "nominatim",
+  "lat": 56.1496278,
+  "lon": 10.2134046,
+  "praecision": "by"
+ },
+ "|Aarhus C": {
+  "lat": 56.149628,
+  "lon": 10.213405
+ },
+ "|Aarhus N": {
+  "lat": 56.149628,
+  "lon": 10.213405
+ },
+ "|Auning": {
+  "lat": 56.43145,
+  "lon": 10.378186
+ },
+ "|Højbjerg": {
+  "lat": 56.113385,
+  "lon": 10.206361
+ },
+ "|Langå": {
+  "lat": 56.390979,
+  "lon": 9.89363
+ },
+ "|Randers SØ": {
+  "lat": 56.435543,
+  "lon": 10.042596
+ },
+ "|Risskov": {
+  "lat": 56.201768,
+  "lon": 10.241958
+ },
+ "|Sabro": {
+  "lat": 56.212136,
+  "lon": 10.034151
+ }
+}
