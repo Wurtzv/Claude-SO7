@@ -417,10 +417,10 @@
 
   function egneEnheder() {
     const kreds = $("egenKreds").value, niveau = $("egenNiveau").value;
-    const liste = niveau === "byer" ? OMR.byer : OMR.omraader;
+    const liste = niveau === "byer" ? OMR.byer : niveau === "kommuner" ? (OMR.kommuner || []) : OMR.omraader;
     return liste.filter((x) => x.kreds === kreds).map((x) => ({
       ...x, kode: niveau === "byer" ? `${x.omraade}|${x.navn}` : x.navn,
-      vis: niveau === "byer" && x.omraade !== x.navn ? `${x.navn} (${x.omraade})` : x.navn,
+      vis: niveau === "byer" && x.omraade !== x.navn ? `${x.navn} (${x.omraade})` : niveau === "kommuner" ? `${x.navn} Kommune` : x.navn,
       total: Object.values(x.antal).reduce((a, b) => a + b, 0),
     }));
   }
@@ -471,9 +471,23 @@
     egenValg = egenValg.filter((g) => enheder.has(g.kode));
     const perioder = egnePerioder();
     const sum = (x, mdr) => mdr.reduce((a, md) => a + (x.antal[md] || 0), 0);
-    const serier = egenValg.map((g) => ({ navn: enheder.get(g.kode).vis, farve: css(g.slot), v: perioder.map((p) => sum(enheder.get(g.kode), p.mdr)) }));
+    // Mål: antal, eller pr. 1.000 indbyggere/husstande (kun kommuner – Danmarks Statistiks tal findes pr. kommune)
+    const niveauNu = $("egenNiveau").value;
+    const kanRate = niveauNu === "kommuner" && STAT;
+    for (const o of $("egenMaal").options) if (o.value !== "antal") o.disabled = !kanRate;
+    if (!kanRate) $("egenMaal").value = "antal";
+    const mål = $("egenMaal").value, M = MÅL[mål] || MÅL.antal;
+    $("egenMaalHint").hidden = !!kanRate;
+    const nævner = (x) => {
+      if (mål === "antal") return 1;
+      const k = STAT && STAT.kommuner.find((s) => s.navn === x.navn);
+      const n = k && (mål === "indbyggere" ? k.indbyggere : k.husstande);
+      return n ? n / 1000 : null;
+    };
+    const værdi = (x, mdr) => { const n = nævner(x); return n ? sum(x, mdr) / n : null; };
+    const serier = egenValg.map((g) => ({ navn: enheder.get(g.kode).vis, farve: css(g.slot), v: perioder.map((p) => værdi(enheder.get(g.kode), p.mdr)) }));
     chips(egenValg, (g) => (enheder.get(g.kode) || {}).vis || g.kode, $("egenValg"), SLOTS.length);
-    const niv = $("egenNiveau").value === "byer" ? "by/bydel" : "område";
+    const niv = niveauNu === "byer" ? "by/bydel" : niveauNu === "kommuner" ? "kommune" : "område";
     $("egenTilføj").innerHTML = `<option value="">+ Tilføj ${niv}…</option>` +
       [...enheder.values()].filter((x) => !egenValg.some((g) => g.kode === x.kode))
         .sort((a, b) => a.vis.localeCompare(b.vis, "da")).map((x) => `<option value="${esc(x.kode)}">${esc(x.vis)} (${tal(x.total)})</option>`).join("");
@@ -481,18 +495,19 @@
     const fmt = (iso) => new Date(iso + "T12:00:00").toLocaleDateString("da-DK", { day: "numeric", month: "long", year: "numeric" });
     $("egenSub").textContent = `${kreds}: ${tal([...enheder.values()].reduce((a, x) => a + x.total, 0))} indbrud fra døgnrapporterne ${fmt(d.fra)} – ${fmt(d.til)}, talt efter rapportdato.` +
       (kreds === "Nordjyllands Politi" ? " Nordjylland nævner kun udvalgte indbrud." : " Østjylland lister alle anmeldte indbrud i privat beboelse.");
-    linjegraf({ svg: $("egenGraf"), tip: $("egenTip"), tabel: $("egenTabel"), tom: $("egenTom"), perioder, serier, kolonne: "Periode" });
+    $("egenTitel").textContent = `Egen statistik fra døgnrapporterne${mål === "antal" ? "" : " – " + M.navn}`;
+    linjegraf({ svg: $("egenGraf"), tip: $("egenTip"), tabel: $("egenTabel"), tom: $("egenTom"), perioder, serier, dec: M.dec, kolonne: "Periode" });
 
     // rangliste: seneste 12 hele måneder mod de 12 før
     const alle = månederMellem(d.fra.slice(0, 7), d.til.slice(0, 7)).slice(0, -1);
     const nu = alle.slice(-12), før = alle.slice(-24, -12);
-    const rang = [...enheder.values()].map((x) => ({ x, n: sum(x, nu), f: før.length === 12 ? sum(x, før) : null }))
+    const rang = [...enheder.values()].map((x) => ({ x, n: værdi(x, nu), f: før.length === 12 ? værdi(x, før) : null }))
       .filter((r) => r.n > 0).sort((a, b) => b.n - a.n).slice(0, 15);
     const periodeTekst = nu.length ? `${MDR_LANG[+nu[0].slice(5) - 1]} ${nu[0].slice(0, 4)} – ${MDR_LANG[+nu[nu.length - 1].slice(5) - 1]} ${nu[nu.length - 1].slice(0, 4)}` : "";
-    $("egenRang").innerHTML = `<div class="day">Flest indbrud · ${esc(periodeTekst)}</div><table><thead><tr><th>#</th><th>${niv[0].toUpperCase() + niv.slice(1)}</th><th>Indbrud</th><th>12 mdr. før</th></tr></thead><tbody>` +
+    $("egenRang").innerHTML = `<div class="day">Flest indbrud · ${esc(periodeTekst)}</div><table><thead><tr><th>#</th><th>${niv[0].toUpperCase() + niv.slice(1)}</th><th>${mål === "antal" ? "Indbrud" : "Indbrud " + esc(M.navn)}</th><th>12 mdr. før</th></tr></thead><tbody>` +
       rang.map((r, i) => {
         const æ = r.f ? ` <span class="${r.n > r.f ? "op" : r.n < r.f ? "ned" : ""}">(${r.n >= r.f ? "+" : "−"}${tal(Math.abs(Math.round(((r.n - r.f) / r.f) * 100)))} %)</span>` : "";
-        return `<tr data-kode="${esc(r.x.kode)}"><td>${i + 1}</td><td>${esc(r.x.vis)}</td><td>${tal(r.n)}</td><td>${r.f == null ? "–" : tal(r.f) + æ}</td></tr>`;
+        return `<tr data-kode="${esc(r.x.kode)}"><td>${i + 1}</td><td>${esc(r.x.vis)}</td><td>${tal(r.n, M.dec)}</td><td>${r.f == null ? "–" : tal(r.f, M.dec) + æ}</td></tr>`;
       }).join("") + "</tbody></table>";
   }
 
@@ -507,6 +522,7 @@
   }).catch(() => { /* valgfri */ });
   for (const id of ["egenKreds", "egenNiveau"]) $(id).addEventListener("change", () => { standardEgen(); tegnEgen(); });
   $("egenInddeling").addEventListener("change", tegnEgen);
+  $("egenMaal").addEventListener("change", tegnEgen);
   $("egenTilføj").addEventListener("change", (e) => { if (e.target.value) tilføjEgen(e.target.value); });
   $("egenValg").addEventListener("click", (e) => {
     const b = e.target.closest("[data-fjern]"); if (!b) return;
@@ -537,6 +553,7 @@
     [...d.kommuner].sort((a, b) => (b.antal[sidste] || 0) - (a.antal[sidste] || 0)).slice(0, 3).forEach((x) => tilføjGraf(x.kode));
     $("grafBoks").hidden = false;
     tegnGraf();
+    tegnEgen(); // pr. indbygger/husstand i egen statistik bruger Danmarks Statistiks tal
   }).catch(() => { /* statistikken er valgfri */ });
   $("visStat").addEventListener("change", tegnStatistik);
   $("klist").addEventListener("click", (e) => {

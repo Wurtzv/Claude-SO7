@@ -87,9 +87,12 @@
     <div class="gstyr">
       <label><span class="lbl">Politikreds</span><select id="egenKreds"></select></label>
       <label><span class="lbl">Niveau</span>
-        <select id="egenNiveau"><option value="omraader">Områder (fx Aarhus, Randers)</option><option value="byer">Byer og bydele</option></select></label>
+        <select id="egenNiveau"><option value="omraader">Områder (fx Aarhus, Randers)</option><option value="byer">Byer og bydele</option><option value="kommuner">Kommuner</option></select></label>
       <label><span class="lbl">Inddeling</span>
         <select id="egenInddeling"><option value="maaned">Måned</option><option value="kvartal">Kvartal</option><option value="aar">År</option></select></label>
+      <label><span class="lbl">Vis</span>
+        <select id="egenMaal"><option value="antal">Antal indbrud</option><option value="indbyggere">Pr. 1.000 indbyggere</option><option value="husstande">Pr. 1.000 husstande (hjem)</option></select></label>
+      <p class="ghint" id="egenMaalHint">Pr. indbygger og pr. husstand kan vælges ved niveauet "Kommuner" – Danmarks Statistik har kun indbyggere og husstande pr. kommune.</p>
     </div>
     <div class="gstyr">
       <div id="egenValg" class="gvalg"></div>

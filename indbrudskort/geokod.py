@@ -239,6 +239,30 @@ class Geokoder:
         self.cache[nøgle] = {"lon": round(p[0], 6), "lat": round(p[1], 6)} if p else {"fejl": True, "dato": self.i_dag.isoformat()}
         return p
 
+    def kommune(self, by: str, omraade: str = "") -> str | None:
+        """Kommunen en by/bydel ligger i, fx 'Risskov' -> 'Aarhus' (navn uden 'Kommune')."""
+        if not by:
+            return None
+        if by.endswith(" Kommune"):
+            return by[: -len(" Kommune")]
+        nøgle = f"kommune|{by}"
+        hit = self.cache.get(nøgle)
+        if hit is not None and not (isinstance(hit, dict) and self._forældet_fejl(hit)):
+            return hit if isinstance(hit, str) else None
+        navn = None
+        for q in dict.fromkeys(x for x in (by, by_uden_postdistrikt(by), omraade) if x):
+            try:
+                r = self._nominatim({"q": q, "countrycodes": "dk", "featureType": "settlement", "addressdetails": 1, "limit": 1})
+            except Exception as e:
+                print(f"  kommuneopslag fejlede for {q}: {e}")
+                return None
+            m = (r[0].get("address", {}).get("municipality") if r else None) or ""
+            if m:
+                navn = re.sub(r"\s+Kommune$", "", m)
+                break
+        self.cache[nøgle] = navn or {"fejl": True, "dato": self.i_dag.isoformat()}
+        return navn
+
     # -- kilder --
 
     def _forældet_fejl(self, hit: dict) -> bool:
