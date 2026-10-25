@@ -712,6 +712,10 @@
       h += `<div><h3>Danmarks Statistik · ${esc(d.dst.kvartal.replace("K", ". kvt. "))} mod året før</h3><ol>` +
         d.dst.stigning.slice(0, 5).map((r) => `<li>${esc(r.navn)} <span>${tal(r.antal)} <b class="op">+${tal(r.forskel)}</b></span></li>`).join("") + "</ol></div>";
     }
+    if (d.dst && d.dst.stigning_forrige && d.dst.stigning_forrige.length) {
+      h += `<div><h3>Danmarks Statistik · ${esc(d.dst.kvartal.replace("K", ". kvt. "))} mod kvartalet før</h3><ol>` +
+        d.dst.stigning_forrige.slice(0, 5).map((r) => `<li>${esc(r.navn)} <span>${tal(r.antal)} <b class="op">+${tal(r.forskel)}</b></span></li>`).join("") + "</ol></div>";
+    }
     $("ugeGrid").innerHTML = h;
     $("ugeBoks").hidden = false;
   }

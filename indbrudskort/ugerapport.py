@@ -78,24 +78,35 @@ def sammenlign(indbrud: list[dict], slut: date, dage: int = DAGE) -> dict:
     return resultat
 
 
+def _forrige_kvartal(kv: str) -> str:
+    år, k = map(int, kv.split("K"))
+    return f"{år - 1}K4" if k == 1 else f"{år}K{k - 1}"
+
+
 def dst_stigninger(statistik: dict | None, top: int = TOP) -> dict | None:
-    """Kommuner med størst stigning i seneste kvartal i forhold til samme kvartal året før."""
+    """Kommuner med størst stigning i seneste kvartal, både mod samme kvartal året før
+    (uden sæsonudsving) og mod kvartalet før (den seneste udvikling)."""
     if not statistik or not statistik.get("kvartaler"):
         return None
     sidste = statistik["kvartaler"][-1]
     år, k = sidste.split("K")
     fjor = f"{int(år) - 1}K{k}"
-    rækker = []
-    for x in statistik["kommuner"]:
-        a, b = x["antal"].get(sidste), x["antal"].get(fjor)
-        if a is None or b is None:
-            continue
-        r = {"navn": x["navn"], "antal": a, "foer": b, "forskel": a - b}
-        if x.get("husstande"):
-            r["pr_1000_husstande"] = round(a / x["husstande"] * 1000, 2)
-        rækker.append(r)
-    return {"kvartal": sidste, "fjor": fjor,
-            "stigning": sorted((r for r in rækker if r["forskel"] > 0), key=lambda r: -r["forskel"])[:top]}
+    forrige = _forrige_kvartal(sidste)
+
+    def stigning(mod: str) -> list[dict]:
+        rækker = []
+        for x in statistik["kommuner"]:
+            a, b = x["antal"].get(sidste), x["antal"].get(mod)
+            if a is None or b is None:
+                continue
+            r = {"navn": x["navn"], "antal": a, "foer": b, "forskel": a - b}
+            if x.get("husstande"):
+                r["pr_1000_husstande"] = round(a / x["husstande"] * 1000, 2)
+            rækker.append(r)
+        return sorted((r for r in rækker if r["forskel"] > 0), key=lambda r: -r["forskel"])[:top]
+
+    return {"kvartal": sidste, "fjor": fjor, "stigning": stigning(fjor),
+            "forrige": forrige, "stigning_forrige": stigning(forrige)}
 
 
 def byg(indbrud: list[dict], statistik: dict | None = None, slut: date | None = None) -> dict:
@@ -153,6 +164,10 @@ def markdown(rapport: dict, side_url: str = "") -> str:
     if dst and dst["stigning"]:
         linjer += [f"### Danmarks Statistik: størst stigning {dst['kvartal']} mod {dst['fjor']} (alle jyske kommuner)", ""]
         linjer += [f"- {r['navn']}: {r['antal']} indbrud ({_forskel(r)})" for r in dst["stigning"][:5]]
+        linjer.append("")
+    if dst and dst.get("stigning_forrige"):
+        linjer += [f"### Danmarks Statistik: størst stigning {dst['kvartal']} mod kvartalet før ({dst['forrige']})", ""]
+        linjer += [f"- {r['navn']}: {r['antal']} indbrud ({_forskel(r)})" for r in dst["stigning_forrige"][:5]]
         linjer.append("")
     if side_url:
         linjer += [f"Se kortet og hotspot-listen: {side_url}", ""]
