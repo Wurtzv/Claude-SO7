@@ -42,16 +42,19 @@ def test_sammenlign_uge_mod_ugen_foer():
 
 def test_byg_bruger_nyeste_rapportdato_og_dst():
     stat = {"kvartaler": ["2025K3", "2026K2", "2026K3"], "kommuner": [
-        {"navn": "Aarhus", "husstande": 170000, "antal": {"2025K3": 348, "2026K3": 491}},
-        {"navn": "Odder", "husstande": 10000, "antal": {"2025K3": 20, "2026K3": 12}},
+        {"navn": "Aarhus", "husstande": 170000, "antal": {"2025K3": 348, "2026K2": 500, "2026K3": 491}},
+        {"navn": "Odder", "husstande": 10000, "antal": {"2025K3": 20, "2026K2": 5, "2026K3": 12}},
     ]}
     d = ugerapport.byg(DATA, stat)
     assert d["uge"]["til"] == "2026-10-23"
     assert d["kredse"] == ["Østjyllands Politi"]
     assert d["dst"]["kvartal"] == "2026K3" and d["dst"]["fjor"] == "2025K3"
     assert [r["navn"] for r in d["dst"]["stigning"]] == ["Aarhus"]
+    assert d["dst"]["forrige"] == "2026K2"
+    assert [(r["navn"], r["forskel"]) for r in d["dst"]["stigning_forrige"]] == [("Odder", 7)]
     md = ugerapport.markdown(d, "https://eksempel.dk/")
     assert "Viby J | 3 | 0 | +3" in md
     assert "8260 (Viby J)" in md
     assert "Aarhus: 491 indbrud (+143)" in md
+    assert "mod kvartalet før (2026K2)" in md and "Odder: 12 indbrud (+7)" in md
     assert "https://eksempel.dk/" in md
