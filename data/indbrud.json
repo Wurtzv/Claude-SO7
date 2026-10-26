@@ -1,7 +1,475 @@
 {
- "opdateret": "2026-10-25T13:28:41+00:00",
- "antal": 4610,
+ "opdateret": "2026-10-26T11:16:03+00:00",
+ "antal": 4628,
  "indbrud": [
+  {
+   "id": "df9b18fd2a80",
+   "vej": "Østergade",
+   "by": "Odder",
+   "omraade": "Odder",
+   "type": "privat",
+   "gerningstid": "25/10",
+   "tid_fra": "2026-10-25",
+   "tid_til": null,
+   "rapportdato": "2026-10-26",
+   "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/doegnrapport26102026/2026/10/26",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/doegnrapport26102026/2026/10/26",
+     "titel": "Østjyllands Politi: uddrag af døgnrapporten 26. oktober 2026",
+     "rapportdato": "2026-10-26",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "lat": 55.974869,
+   "lon": 10.156566,
+   "praecision": "vej",
+   "geokilde": "nominatim",
+   "postnr": "8300"
+  },
+  {
+   "id": "9bc5fc33b9eb",
+   "vej": "Rypevej",
+   "by": "Højbjerg",
+   "omraade": "Aarhus",
+   "type": "privat",
+   "gerningstid": "25/10",
+   "tid_fra": "2026-10-25",
+   "tid_til": null,
+   "rapportdato": "2026-10-26",
+   "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/doegnrapport26102026/2026/10/26",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/doegnrapport26102026/2026/10/26",
+     "titel": "Østjyllands Politi: uddrag af døgnrapporten 26. oktober 2026",
+     "rapportdato": "2026-10-26",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "lat": 56.116808,
+   "lon": 10.214516,
+   "praecision": "vej",
+   "geokilde": "nominatim",
+   "postnr": "8270"
+  },
+  {
+   "id": "c87a27019071",
+   "vej": "Porskær",
+   "by": "Brabrand",
+   "omraade": "Aarhus",
+   "type": "privat",
+   "gerningstid": "25/10",
+   "tid_fra": "2026-10-25",
+   "tid_til": null,
+   "rapportdato": "2026-10-26",
+   "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/doegnrapport26102026/2026/10/26",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/doegnrapport26102026/2026/10/26",
+     "titel": "Østjyllands Politi: uddrag af døgnrapporten 26. oktober 2026",
+     "rapportdato": "2026-10-26",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "lat": 56.160781,
+   "lon": 10.088798,
+   "praecision": "vej",
+   "geokilde": "nominatim",
+   "postnr": "8220"
+  },
+  {
+   "id": "20d401a80065",
+   "vej": "Majvej",
+   "by": "Aarhus V",
+   "omraade": "Aarhus",
+   "type": "privat",
+   "gerningstid": "25/10",
+   "tid_fra": "2026-10-25",
+   "tid_til": null,
+   "rapportdato": "2026-10-26",
+   "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/doegnrapport26102026/2026/10/26",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/doegnrapport26102026/2026/10/26",
+     "titel": "Østjyllands Politi: uddrag af døgnrapporten 26. oktober 2026",
+     "rapportdato": "2026-10-26",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "lat": 56.175618,
+   "lon": 10.161369,
+   "praecision": "vej",
+   "geokilde": "nominatim",
+   "postnr": "8210"
+  },
+  {
+   "id": "ad9808bc2253",
+   "vej": "Klokkerbakken",
+   "by": "Aarhus V",
+   "omraade": "Aarhus",
+   "type": "privat",
+   "gerningstid": "25/10",
+   "tid_fra": "2026-10-25",
+   "tid_til": null,
+   "rapportdato": "2026-10-26",
+   "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/doegnrapport26102026/2026/10/26",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/doegnrapport26102026/2026/10/26",
+     "titel": "Østjyllands Politi: uddrag af døgnrapporten 26. oktober 2026",
+     "rapportdato": "2026-10-26",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "lat": 56.164107,
+   "lon": 10.160689,
+   "praecision": "vej",
+   "geokilde": "nominatim",
+   "postnr": "8210"
+  },
+  {
+   "id": "3df1fde22442",
+   "vej": "Højkolvej",
+   "by": "Aarhus V",
+   "omraade": "Aarhus",
+   "type": "privat",
+   "gerningstid": "25/10",
+   "tid_fra": "2026-10-25",
+   "tid_til": null,
+   "rapportdato": "2026-10-26",
+   "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/doegnrapport26102026/2026/10/26",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/doegnrapport26102026/2026/10/26",
+     "titel": "Østjyllands Politi: uddrag af døgnrapporten 26. oktober 2026",
+     "rapportdato": "2026-10-26",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "lat": 56.167788,
+   "lon": 10.169089,
+   "praecision": "vej",
+   "geokilde": "nominatim",
+   "postnr": "8210"
+  },
+  {
+   "id": "bf75892d7ab5",
+   "vej": "Poul M. Møllers Vej",
+   "by": "Aarhus C",
+   "omraade": "Aarhus",
+   "type": "privat",
+   "gerningstid": "fra 24/10",
+   "tid_fra": "2026-10-24",
+   "tid_til": null,
+   "rapportdato": "2026-10-26",
+   "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/doegnrapport26102026/2026/10/26",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/doegnrapport26102026/2026/10/26",
+     "titel": "Østjyllands Politi: uddrag af døgnrapporten 26. oktober 2026",
+     "rapportdato": "2026-10-26",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "lat": 56.149628,
+   "lon": 10.213405,
+   "praecision": "by",
+   "geokilde": "nominatim",
+   "postnr": "8000"
+  },
+  {
+   "id": "4892029cdcf2",
+   "vej": "Klokkerbakken",
+   "by": "Aarhus V",
+   "omraade": "Aarhus",
+   "type": "privat",
+   "gerningstid": "24/10 – 25/10",
+   "tid_fra": "2026-10-24",
+   "tid_til": "2026-10-25",
+   "rapportdato": "2026-10-26",
+   "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/doegnrapport26102026/2026/10/26",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/doegnrapport26102026/2026/10/26",
+     "titel": "Østjyllands Politi: uddrag af døgnrapporten 26. oktober 2026",
+     "rapportdato": "2026-10-26",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "lat": 56.164107,
+   "lon": 10.160689,
+   "praecision": "vej",
+   "geokilde": "nominatim",
+   "postnr": "8210"
+  },
+  {
+   "id": "04e944391634",
+   "vej": "Skåde Højgårdsvej",
+   "by": "Højbjerg",
+   "omraade": "Aarhus",
+   "type": "privat",
+   "gerningstid": "23/10 – 25/10",
+   "tid_fra": "2026-10-23",
+   "tid_til": "2026-10-25",
+   "rapportdato": "2026-10-26",
+   "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/doegnrapport26102026/2026/10/26",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/doegnrapport26102026/2026/10/26",
+     "titel": "Østjyllands Politi: uddrag af døgnrapporten 26. oktober 2026",
+     "rapportdato": "2026-10-26",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "lat": 56.098982,
+   "lon": 10.199778,
+   "praecision": "vej",
+   "geokilde": "nominatim",
+   "postnr": "8270"
+  },
+  {
+   "id": "9e9211e94008",
+   "vej": "Møllevangs Allé",
+   "by": "Aarhus V",
+   "omraade": "Aarhus",
+   "type": "privat",
+   "gerningstid": "23/10 – 25/10",
+   "tid_fra": "2026-10-23",
+   "tid_til": "2026-10-25",
+   "rapportdato": "2026-10-26",
+   "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/doegnrapport26102026/2026/10/26",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/doegnrapport26102026/2026/10/26",
+     "titel": "Østjyllands Politi: uddrag af døgnrapporten 26. oktober 2026",
+     "rapportdato": "2026-10-26",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "lat": 56.173079,
+   "lon": 10.185299,
+   "praecision": "vej",
+   "geokilde": "nominatim",
+   "postnr": "8200"
+  },
+  {
+   "id": "a6c94b57e89a",
+   "vej": "Lyngvej",
+   "by": "Risskov",
+   "omraade": "Aarhus",
+   "type": "privat",
+   "gerningstid": "23/10 – 25/10",
+   "tid_fra": "2026-10-23",
+   "tid_til": "2026-10-25",
+   "rapportdato": "2026-10-26",
+   "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/doegnrapport26102026/2026/10/26",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/doegnrapport26102026/2026/10/26",
+     "titel": "Østjyllands Politi: uddrag af døgnrapporten 26. oktober 2026",
+     "rapportdato": "2026-10-26",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "lat": 56.196144,
+   "lon": 10.244699,
+   "praecision": "vej",
+   "geokilde": "nominatim",
+   "postnr": "8240"
+  },
+  {
+   "id": "fa6d5088a02f",
+   "vej": "H.C. Andersens Vej",
+   "by": "Åbyhøj",
+   "omraade": "Aarhus",
+   "type": "privat",
+   "gerningstid": "23/10 – 25/10",
+   "tid_fra": "2026-10-23",
+   "tid_til": "2026-10-25",
+   "rapportdato": "2026-10-26",
+   "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/doegnrapport26102026/2026/10/26",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/doegnrapport26102026/2026/10/26",
+     "titel": "Østjyllands Politi: uddrag af døgnrapporten 26. oktober 2026",
+     "rapportdato": "2026-10-26",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "lat": 56.151733,
+   "lon": 10.158825,
+   "praecision": "vej",
+   "geokilde": "nominatim",
+   "postnr": "8230"
+  },
+  {
+   "id": "75561535f346",
+   "vej": "Ellebrinken",
+   "by": "Lystrup",
+   "omraade": "Aarhus",
+   "type": "privat",
+   "gerningstid": "23/10 – 25/10",
+   "tid_fra": "2026-10-23",
+   "tid_til": "2026-10-25",
+   "rapportdato": "2026-10-26",
+   "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/doegnrapport26102026/2026/10/26",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/doegnrapport26102026/2026/10/26",
+     "titel": "Østjyllands Politi: uddrag af døgnrapporten 26. oktober 2026",
+     "rapportdato": "2026-10-26",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "lat": 56.231824,
+   "lon": 10.223047,
+   "praecision": "vej",
+   "geokilde": "nominatim",
+   "postnr": "8520"
+  },
+  {
+   "id": "7b6a019acff7",
+   "vej": "Adelvej",
+   "by": "Risskov",
+   "omraade": "Aarhus",
+   "type": "privat",
+   "gerningstid": "23/10 – 25/10",
+   "tid_fra": "2026-10-23",
+   "tid_til": "2026-10-25",
+   "rapportdato": "2026-10-26",
+   "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/doegnrapport26102026/2026/10/26",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/doegnrapport26102026/2026/10/26",
+     "titel": "Østjyllands Politi: uddrag af døgnrapporten 26. oktober 2026",
+     "rapportdato": "2026-10-26",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "lat": 56.196076,
+   "lon": 10.254718,
+   "praecision": "vej",
+   "geokilde": "nominatim",
+   "postnr": "8240"
+  },
+  {
+   "id": "c4c0a56cd852",
+   "vej": "Møddebo Parkvej",
+   "by": "Solbjerg",
+   "omraade": "Aarhus",
+   "type": "privat",
+   "gerningstid": "22/10 kl. 15.00 – 25/10 kl. 09.00",
+   "tid_fra": "2026-10-22T15:00",
+   "tid_til": "2026-10-25T09:00",
+   "rapportdato": "2026-10-26",
+   "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/doegnrapport26102026/2026/10/26",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/doegnrapport26102026/2026/10/26",
+     "titel": "Østjyllands Politi: uddrag af døgnrapporten 26. oktober 2026",
+     "rapportdato": "2026-10-26",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "lat": 56.03979,
+   "lon": 10.090424,
+   "praecision": "by",
+   "geokilde": "nominatim",
+   "postnr": "8355"
+  },
+  {
+   "id": "0116292a7064",
+   "vej": "Ribesvej",
+   "by": "Risskov",
+   "omraade": "Aarhus",
+   "type": "privat",
+   "gerningstid": "22/10 – 25/10",
+   "tid_fra": "2026-10-22",
+   "tid_til": "2026-10-25",
+   "rapportdato": "2026-10-26",
+   "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/doegnrapport26102026/2026/10/26",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/doegnrapport26102026/2026/10/26",
+     "titel": "Østjyllands Politi: uddrag af døgnrapporten 26. oktober 2026",
+     "rapportdato": "2026-10-26",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "lat": 56.188499,
+   "lon": 10.232016,
+   "praecision": "vej",
+   "geokilde": "nominatim",
+   "postnr": "8240"
+  },
+  {
+   "id": "57e3c7084bd3",
+   "vej": "Skåde Højgårdsvej",
+   "by": "Højbjerg",
+   "omraade": "Aarhus",
+   "type": "privat",
+   "gerningstid": "21/10 – 25/10",
+   "tid_fra": "2026-10-21",
+   "tid_til": "2026-10-25",
+   "rapportdato": "2026-10-26",
+   "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/doegnrapport26102026/2026/10/26",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/doegnrapport26102026/2026/10/26",
+     "titel": "Østjyllands Politi: uddrag af døgnrapporten 26. oktober 2026",
+     "rapportdato": "2026-10-26",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "lat": 56.098982,
+   "lon": 10.199778,
+   "praecision": "vej",
+   "geokilde": "nominatim",
+   "postnr": "8270"
+  },
+  {
+   "id": "b702e8237e80",
+   "vej": "Højkolvej",
+   "by": "Aarhus V",
+   "omraade": "Aarhus",
+   "type": "privat",
+   "gerningstid": "21/10 – 25/10",
+   "tid_fra": "2026-10-21",
+   "tid_til": "2026-10-25",
+   "rapportdato": "2026-10-26",
+   "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/doegnrapport26102026/2026/10/26",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/doegnrapport26102026/2026/10/26",
+     "titel": "Østjyllands Politi: uddrag af døgnrapporten 26. oktober 2026",
+     "rapportdato": "2026-10-26",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "lat": 56.167788,
+   "lon": 10.169089,
+   "praecision": "vej",
+   "geokilde": "nominatim",
+   "postnr": "8210"
+  },
   {
    "id": "05af33e92f82",
    "vej": "Søndre Ringgade",
@@ -3093,7 +3561,7 @@
    "postnr": "8240"
   },
   {
-   "id": "a7e066306e47",
+   "id": "fa4c9591cc05",
    "vej": "Bredkær parkvej",
    "by": "Egå",
    "omraade": "Aarhus",
@@ -3197,7 +3665,7 @@
    "postnr": "8250"
   },
   {
-   "id": "fa4c9591cc05",
+   "id": "a7e066306e47",
    "vej": "Bredkær Parkvej",
    "by": "Egå",
    "omraade": "Aarhus",
@@ -3738,7 +4206,7 @@
    "postnr": "8270"
   },
   {
-   "id": "1d4b08aa9caf",
+   "id": "174c6e8beebf",
    "vej": "Montanagade",
    "by": "Aarhus C",
    "omraade": "Aarhus",
@@ -3764,7 +4232,7 @@
    "postnr": "8000"
   },
   {
-   "id": "174c6e8beebf",
+   "id": "1d4b08aa9caf",
    "vej": "Montanagade",
    "by": "Aarhus C",
    "omraade": "Aarhus",
@@ -6280,7 +6748,7 @@
    "postnr": "8462"
   },
   {
-   "id": "a36bc10e1bf0",
+   "id": "2e74fb3e9f82",
    "vej": "Ketting Parkvej",
    "by": "Harlev J",
    "omraade": "Aarhus",
@@ -6306,7 +6774,7 @@
    "postnr": "8462"
   },
   {
-   "id": "2e74fb3e9f82",
+   "id": "a36bc10e1bf0",
    "vej": "Ketting Parkvej",
    "by": "Harlev J",
    "omraade": "Aarhus",
@@ -6566,7 +7034,7 @@
    "postnr": "8270"
   },
   {
-   "id": "f3ef8220f57b",
+   "id": "77c06dc48d96",
    "vej": "Børupvej",
    "by": "Tranbjerg J",
    "omraade": "Aarhus",
@@ -6592,7 +7060,7 @@
    "postnr": "8310"
   },
   {
-   "id": "77c06dc48d96",
+   "id": "f3ef8220f57b",
    "vej": "Børupvej",
    "by": "Tranbjerg J",
    "omraade": "Aarhus",
@@ -12843,7 +13311,7 @@
    "postnr": "8543"
   },
   {
-   "id": "614da2cf26fd",
+   "id": "749f8334564c",
    "vej": "Tendrup Møllevej",
    "by": "Hornslet",
    "omraade": "Hornslet",
@@ -12869,7 +13337,7 @@
    "postnr": "8543"
   },
   {
-   "id": "749f8334564c",
+   "id": "614da2cf26fd",
    "vej": "Tendrup Møllevej",
    "by": "Hornslet",
    "omraade": "Hornslet",
@@ -22433,7 +22901,7 @@
    "postnr": "8240"
   },
   {
-   "id": "8768692d3f6d",
+   "id": "55f7412a6965",
    "vej": "Langager",
    "by": "Hornslet",
    "omraade": "Hornslet",
@@ -22459,7 +22927,7 @@
    "postnr": "8543"
   },
   {
-   "id": "55f7412a6965",
+   "id": "8768692d3f6d",
    "vej": "Langager",
    "by": "Hornslet",
    "omraade": "Hornslet",
@@ -26775,7 +27243,7 @@
    "postnr": "8000"
   },
   {
-   "id": "bbde6b91d6cc",
+   "id": "9b4c14d79448",
    "vej": "Råhøjparken",
    "by": "Viby J",
    "omraade": "Aarhus",
@@ -26801,7 +27269,7 @@
    "postnr": "8220"
   },
   {
-   "id": "9b4c14d79448",
+   "id": "bbde6b91d6cc",
    "vej": "Råhøjparken",
    "by": "Viby J",
    "omraade": "Aarhus",
@@ -27009,7 +27477,7 @@
    "postnr": "8381"
   },
   {
-   "id": "5481e0a9b7f6",
+   "id": "ebac038625bd",
    "vej": "Højbovej",
    "by": "Højbjerg",
    "omraade": "Aarhus",
@@ -27035,7 +27503,7 @@
    "postnr": "8270"
   },
   {
-   "id": "ebac038625bd",
+   "id": "5481e0a9b7f6",
    "vej": "Højbovej",
    "by": "Højbjerg",
    "omraade": "Aarhus",
@@ -31402,7 +31870,7 @@
    "postnr": "8361"
   },
   {
-   "id": "b86beeb47547",
+   "id": "cf61db8b47da",
    "vej": "Porskær",
    "by": "Brabrand",
    "omraade": "Aarhus",
@@ -31480,7 +31948,7 @@
    "postnr": "8000"
   },
   {
-   "id": "cf61db8b47da",
+   "id": "b86beeb47547",
    "vej": "Porskær",
    "by": "Brabrand",
    "omraade": "Aarhus",
@@ -40363,7 +40831,7 @@
    "postnr": "8361"
   },
   {
-   "id": "c92aa1d4a3cf",
+   "id": "69f1f20fa203",
    "vej": "Teglhøjen",
    "by": "Hinnerup",
    "omraade": "Hinnerup",
@@ -40415,7 +40883,7 @@
    "postnr": "8900"
   },
   {
-   "id": "c0dc54958728",
+   "id": "c92aa1d4a3cf",
    "vej": "Teglhøjen",
    "by": "Hinnerup",
    "omraade": "Hinnerup",
@@ -40441,7 +40909,7 @@
    "postnr": "8382"
   },
   {
-   "id": "69f1f20fa203",
+   "id": "c0dc54958728",
    "vej": "Teglhøjen",
    "by": "Hinnerup",
    "omraade": "Hinnerup",
@@ -42074,7 +42542,7 @@
    "postnr": "8361"
   },
   {
-   "id": "8f6aee6d70ef",
+   "id": "a3a79061f2e1",
    "vej": "Ørvadsvej",
    "by": "Årslev",
    "omraade": "Årslev",
@@ -42100,7 +42568,7 @@
    "postnr": "5792"
   },
   {
-   "id": "a3a79061f2e1",
+   "id": "8f6aee6d70ef",
    "vej": "Ørvadsvej",
    "by": "Årslev",
    "omraade": "Årslev",
@@ -51569,7 +52037,7 @@
    "postnr": "8300"
   },
   {
-   "id": "0ee5f31863dc",
+   "id": "b831de450140",
    "vej": "Laskedalen",
    "by": "Brabrand",
    "omraade": "Aarhus",
@@ -51595,7 +52063,7 @@
    "postnr": "8220"
   },
   {
-   "id": "b831de450140",
+   "id": "0ee5f31863dc",
    "vej": "Laskedalen",
    "by": "Brabrand",
    "omraade": "Aarhus",
@@ -70905,9 +71373,9 @@
    "by": "Randers NV",
    "omraade": "Randers",
    "type": "privat",
-   "gerningstid": "19/7 kl. 06.00 – 12.00",
+   "gerningstid": "19/7 kl. 06.00 – 11.37",
    "tid_fra": "2024-07-19T06:00",
-   "tid_til": "2024-07-19T12:00",
+   "tid_til": "2024-07-19T11:37",
    "rapportdato": "2024-07-20",
    "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-20-juli-2024/2024/07/20",
    "politikreds": "Østjyllands Politi",
@@ -70931,9 +71399,9 @@
    "by": "Randers NV",
    "omraade": "Randers",
    "type": "privat",
-   "gerningstid": "19/7 kl. 06.00 – 11.37",
+   "gerningstid": "19/7 kl. 06.00 – 12.00",
    "tid_fra": "2024-07-19T06:00",
-   "tid_til": "2024-07-19T11:37",
+   "tid_til": "2024-07-19T12:00",
    "rapportdato": "2024-07-20",
    "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-20-juli-2024/2024/07/20",
    "politikreds": "Østjyllands Politi",
@@ -80800,7 +81268,7 @@
    "postnr": "8250"
   },
   {
-   "id": "09649c6bed74",
+   "id": "e6767e598970",
    "vej": "I.P. Jacobsens Vej",
    "by": "Åbyhøj",
    "omraade": "Aarhus",
@@ -80826,7 +81294,7 @@
    "postnr": "8230"
   },
   {
-   "id": "e6767e598970",
+   "id": "09649c6bed74",
    "vej": "I.P. Jacobsens Vej",
    "by": "Åbyhøj",
    "omraade": "Aarhus",
@@ -83920,7 +84388,7 @@
    "postnr": "8920"
   },
   {
-   "id": "11d4aef5494a",
+   "id": "3ba4ba443b11",
    "vej": "Bakkevej",
    "by": "Randers SØ",
    "omraade": "Randers",
@@ -83946,7 +84414,7 @@
    "postnr": "8920"
   },
   {
-   "id": "3ba4ba443b11",
+   "id": "11d4aef5494a",
    "vej": "Bakkevej",
    "by": "Randers SØ",
    "omraade": "Randers",
@@ -90472,7 +90940,7 @@
    "postnr": "8963"
   },
   {
-   "id": "aeb2297eecb0",
+   "id": "c79b4f03647b",
    "vej": "Elleparken",
    "by": "Lystrup",
    "omraade": "Aarhus",
@@ -90498,7 +90966,7 @@
    "postnr": "8520"
   },
   {
-   "id": "c79b4f03647b",
+   "id": "aeb2297eecb0",
    "vej": "Elleparken",
    "by": "Lystrup",
    "omraade": "Aarhus",
@@ -100817,7 +101285,7 @@
    "postnr": "8230"
   },
   {
-   "id": "d0789c6087d4",
+   "id": "23ba731e356c",
    "vej": "Sjællandsgade",
    "by": "Aarhus C",
    "omraade": "Aarhus",
@@ -100895,7 +101363,7 @@
    "postnr": "8000"
   },
   {
-   "id": "44f205f7e0a9",
+   "id": "d0789c6087d4",
    "vej": "Sjællandsgade",
    "by": "Aarhus C",
    "omraade": "Aarhus",
@@ -100947,7 +101415,7 @@
    "postnr": "8260"
   },
   {
-   "id": "23ba731e356c",
+   "id": "44f205f7e0a9",
    "vej": "Sjællandsgade",
    "by": "Aarhus C",
    "omraade": "Aarhus",
@@ -110134,7 +110602,7 @@
    "postnr": "8000"
   },
   {
-   "id": "caae2d75f938",
+   "id": "e2d454ce2ad7",
    "vej": "Børupvej",
    "by": "Tranbjerg J",
    "omraade": "Aarhus",
@@ -110160,7 +110628,7 @@
    "postnr": "8310"
   },
   {
-   "id": "e2d454ce2ad7",
+   "id": "caae2d75f938",
    "vej": "Børupvej",
    "by": "Tranbjerg J",
    "omraade": "Aarhus",
@@ -111533,7 +112001,8 @@
    "lat": 56.124541,
    "lon": 10.134917,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8260"
   },
   {
    "id": "961888d54468",
@@ -111558,7 +112027,8 @@
    "lat": 56.442906,
    "lon": 10.810277,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8500"
   },
   {
    "id": "f10a4194b443",
@@ -111583,7 +112053,8 @@
    "lat": 55.183802,
    "lon": 14.706171,
    "praecision": "by",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "3790"
   },
   {
    "id": "69d76e6c2edb",
@@ -111608,7 +112079,8 @@
    "lat": 55.970079,
    "lon": 10.150446,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8300"
   },
   {
    "id": "190379f66782",
@@ -111633,7 +112105,8 @@
    "lat": 56.145197,
    "lon": 10.181412,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8000"
   },
   {
    "id": "2fac6188ddb6",
@@ -111658,7 +112131,8 @@
    "lat": 56.408604,
    "lon": 10.875978,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8500"
   },
   {
    "id": "ffbbed16a1aa",
@@ -111683,7 +112157,8 @@
    "lat": 56.529088,
    "lon": 10.71535,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8585"
   },
   {
    "id": "c1e2a736f8a7",
@@ -111708,7 +112183,8 @@
    "lat": 56.484732,
    "lon": 10.67171,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8585"
   },
   {
    "id": "bba0ad6669ea",
@@ -111733,7 +112209,8 @@
    "lat": 56.327474,
    "lon": 10.065817,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8370"
   },
   {
    "id": "29e3fb42b37a",
@@ -111758,7 +112235,8 @@
    "lat": 56.02937,
    "lon": 10.188647,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8340"
   },
   {
    "id": "20546a3ac7db",
@@ -111783,7 +112261,8 @@
    "lat": 56.03582,
    "lon": 10.200207,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8340"
   },
   {
    "id": "3a393cb5db49",
@@ -111808,7 +112287,8 @@
    "lat": 56.160387,
    "lon": 10.213363,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8000"
   },
   {
    "id": "8964c1ab8f12",
@@ -111833,7 +112313,8 @@
    "lat": 56.16356,
    "lon": 10.21542,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8000"
   },
   {
    "id": "264d8d5834ae",
@@ -111858,7 +112339,8 @@
    "lat": 56.158136,
    "lon": 10.203777,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8000"
   },
   {
    "id": "51422ec6b457",
@@ -111883,7 +112365,8 @@
    "lat": 56.165658,
    "lon": 10.135732,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8210"
   },
   {
    "id": "7e04a4eb2c78",
@@ -111908,7 +112391,8 @@
    "lat": 56.257564,
    "lon": 10.334346,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8541"
   },
   {
    "id": "0db8dfe35a74",
@@ -111933,7 +112417,8 @@
    "lat": 56.268671,
    "lon": 10.314699,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8541"
   },
   {
    "id": "47d6b271effb",
@@ -111958,7 +112443,8 @@
    "lat": 56.204317,
    "lon": 10.681587,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8400"
   },
   {
    "id": "9ac99f7ea461",
@@ -111983,7 +112469,8 @@
    "lat": 56.193584,
    "lon": 10.2256,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8240"
   },
   {
    "id": "37bd447f9870",
@@ -112008,7 +112495,8 @@
    "lat": 56.501699,
    "lon": 9.941774,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8920"
   },
   {
    "id": "596be844065a",
@@ -112033,7 +112521,8 @@
    "lat": 56.340992,
    "lon": 10.384764,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8544"
   },
   {
    "id": "92b00819c14f",
@@ -112058,7 +112547,8 @@
    "lat": 56.113611,
    "lon": 10.19784,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8270"
   },
   {
    "id": "3337d1096795",
@@ -112083,7 +112573,8 @@
    "lat": 56.138668,
    "lon": 10.176587,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8230"
   },
   {
    "id": "c1c61099025b",
@@ -112108,7 +112599,8 @@
    "lat": 56.268307,
    "lon": 10.294163,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8541"
   },
   {
    "id": "f20cd9dfdd3b",
@@ -112133,7 +112625,8 @@
    "lat": 56.451571,
    "lon": 10.0377,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8900"
   },
   {
    "id": "a4ab885f3c69",
@@ -112158,7 +112651,8 @@
    "lat": 56.389745,
    "lon": 10.509768,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8550"
   },
   {
    "id": "e2f673456751",
@@ -112183,7 +112677,8 @@
    "lat": 56.165658,
    "lon": 10.135732,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8210"
   },
   {
    "id": "c10aba2e20d2",
@@ -112229,7 +112724,8 @@
    "lat": 56.187163,
    "lon": 10.107476,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8381"
   },
   {
    "id": "3cdf5258b741",
@@ -112279,7 +112775,8 @@
    "lat": 56.407701,
    "lon": 10.876429,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8500"
   },
   {
    "id": "35d9f6b255d0",
@@ -112329,7 +112826,8 @@
    "lat": 56.163104,
    "lon": 10.165358,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8210"
   },
   {
    "id": "b40e777ae6a5",
@@ -112354,7 +112852,8 @@
    "lat": 56.201768,
    "lon": 10.241958,
    "praecision": "by",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8240"
   },
   {
    "id": "92df30ed6426",
@@ -112379,7 +112878,8 @@
    "lat": 56.423287,
    "lon": 10.881909,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8500"
   },
   {
    "id": "dc8cd0b9d480",
@@ -112425,7 +112925,8 @@
    "lat": 56.147095,
    "lon": 10.201029,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8000"
   },
   {
    "id": "3a6487e3b148",
@@ -112450,7 +112951,8 @@
    "lat": 56.388625,
    "lon": 10.746619,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8570"
   },
   {
    "id": "c5756ff42b92",
@@ -112475,7 +112977,8 @@
    "lat": 56.147429,
    "lon": 10.1602,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8230"
   },
   {
    "id": "a95a9bbe6111",
@@ -112500,7 +113003,8 @@
    "lat": 56.146867,
    "lon": 10.20676,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8000"
   },
   {
    "id": "de46886a7df3",
@@ -112525,7 +113029,8 @@
    "lat": 56.158427,
    "lon": 10.194667,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8000"
   },
   {
    "id": "6fd3484e3017",
@@ -112550,7 +113055,8 @@
    "lat": 56.503136,
    "lon": 10.335097,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8950"
   },
   {
    "id": "85c409c4c514",
@@ -112575,7 +113081,8 @@
    "lat": 56.180311,
    "lon": 10.105801,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8381"
   },
   {
    "id": "4837e6f488dd",
@@ -112600,7 +113107,8 @@
    "lat": 56.471079,
    "lon": 10.027215,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8900"
   },
   {
    "id": "1b5f58c4dc4f",
@@ -112625,7 +113133,8 @@
    "lat": 56.17443,
    "lon": 10.126,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8381"
   },
   {
    "id": "71eb50c24638",
@@ -112650,7 +113159,8 @@
    "lat": 56.176074,
    "lon": 10.097737,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8381"
   },
   {
    "id": "d0860035f188",
@@ -112675,7 +113185,8 @@
    "lat": 56.409064,
    "lon": 10.898323,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8500"
   },
   {
    "id": "2c5735a77466",
@@ -112700,7 +113211,8 @@
    "lat": 56.411783,
    "lon": 10.608322,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8581"
   },
   {
    "id": "a3bc2789607c",
@@ -112725,7 +113237,8 @@
    "lat": 56.457111,
    "lon": 10.853375,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8500"
   },
   {
    "id": "e879ef4744f9",
@@ -112750,7 +113263,8 @@
    "lat": 56.185825,
    "lon": 10.526344,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8420"
   },
   {
    "id": "49cfa2f12f4e",
@@ -112775,7 +113289,8 @@
    "lat": 56.150302,
    "lon": 10.198135,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8000"
   },
   {
    "id": "6afb8b972488",
@@ -112800,7 +113315,8 @@
    "lat": 56.151303,
    "lon": 10.199257,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8000"
   },
   {
    "id": "2f6fc3077cf9",
@@ -112825,7 +113341,8 @@
    "lat": 56.314993,
    "lon": 10.307432,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8543"
   },
   {
    "id": "135032cd9d83",
@@ -112850,7 +113367,8 @@
    "lat": 56.156064,
    "lon": 10.130881,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8220"
   },
   {
    "id": "1aeb1f3f15cd",
@@ -112875,7 +113393,8 @@
    "lat": 56.147552,
    "lon": 10.197529,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8000"
   },
   {
    "id": "61ae899950e9",
@@ -112900,7 +113419,8 @@
    "lat": 56.063177,
    "lon": 10.211462,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8330"
   },
   {
    "id": "755224246587",
@@ -112925,7 +113445,8 @@
    "lat": 56.175977,
    "lon": 10.188724,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8200"
   },
   {
    "id": "131ae18c6f4a",
@@ -112950,7 +113471,8 @@
    "lat": 56.193702,
    "lon": 10.236416,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8240"
   },
   {
    "id": "6ccfa4c3e888",
@@ -112975,7 +113497,8 @@
    "lat": 55.183802,
    "lon": 14.706171,
    "praecision": "by",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "3790"
   },
   {
    "id": "a1553a26df73",
@@ -113000,7 +113523,8 @@
    "lat": 56.180087,
    "lon": 10.151577,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8210"
   },
   {
    "id": "f5cdb844fd89",
@@ -113025,7 +113549,8 @@
    "lat": 56.15433,
    "lon": 10.111255,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8220"
   },
   {
    "id": "ec79c1049679",
@@ -113050,7 +113575,8 @@
    "lat": 56.204358,
    "lon": 10.214378,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8240"
   },
   {
    "id": "47bec3d21540",
@@ -113075,7 +113601,8 @@
    "lat": 56.159137,
    "lon": 10.2077,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8000"
   },
   {
    "id": "4c6949fc6874",
@@ -113100,7 +113627,8 @@
    "lat": 56.113385,
    "lon": 10.206361,
    "praecision": "by",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8270"
   },
   {
    "id": "7b19dfa32c73",
@@ -113125,7 +113653,8 @@
    "lat": 56.511106,
    "lon": 9.907504,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8990"
   },
   {
    "id": "13940bba5672",
@@ -113150,7 +113679,8 @@
    "lat": 56.252126,
    "lon": 10.073323,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8382"
   },
   {
    "id": "34a271647b84",
@@ -113175,7 +113705,8 @@
    "lat": 56.191031,
    "lon": 10.132533,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8381"
   },
   {
    "id": "963ee13c286b",
@@ -113200,7 +113731,8 @@
    "lat": 56.22446,
    "lon": 10.292247,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8250"
   },
   {
    "id": "125461174bd2",
@@ -113225,7 +113757,8 @@
    "lat": 56.155526,
    "lon": 10.100833,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8220"
   },
   {
    "id": "1b8a00da86e3",
@@ -113250,7 +113783,8 @@
    "lat": 56.632673,
    "lon": 10.217735,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8970"
   },
   {
    "id": "5c9c4325c3ce",
@@ -113275,7 +113809,8 @@
    "lat": 56.177551,
    "lon": 10.160834,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8210"
   },
   {
    "id": "51295faabef9",
@@ -113300,7 +113835,8 @@
    "lat": 56.359919,
    "lon": 9.864953,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8870"
   },
   {
    "id": "433257aa003c",
@@ -113325,7 +113861,8 @@
    "lat": 55.183802,
    "lon": 14.706171,
    "praecision": "by",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "3790"
   },
   {
    "id": "576fea685555",
@@ -113350,7 +113887,8 @@
    "lat": 56.175618,
    "lon": 10.161369,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8210"
   },
   {
    "id": "a24b4abe5980",
@@ -113375,7 +113913,8 @@
    "lat": 56.184672,
    "lon": 10.120328,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8381"
   },
   {
    "id": "0c078900531b",
@@ -113400,7 +113939,8 @@
    "lat": 56.168733,
    "lon": 10.18041,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8210"
   },
   {
    "id": "b01a3bf92b15",
@@ -113425,7 +113965,8 @@
    "lat": 56.182384,
    "lon": 10.234983,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8240"
   },
   {
    "id": "242e95c3a4f6",
@@ -113450,7 +113991,8 @@
    "lat": 56.278945,
    "lon": 10.067727,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8382"
   },
   {
    "id": "427cf28574cf",
@@ -113475,7 +114017,8 @@
    "lat": 56.161691,
    "lon": 10.151461,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8210"
   },
   {
    "id": "e0366cee8585",
@@ -113500,7 +114043,8 @@
    "lat": 55.183802,
    "lon": 14.706171,
    "praecision": "by",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "3790"
   },
   {
    "id": "78d3dbd7d98a",
@@ -113525,7 +114069,8 @@
    "lat": 56.107035,
    "lon": 10.226986,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8270"
   },
   {
    "id": "7d9dd0622946",
@@ -113550,7 +114095,8 @@
    "lat": 56.476642,
    "lon": 10.016458,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8900"
   },
   {
    "id": "8c1e313146b9",
@@ -113575,7 +114121,8 @@
    "lat": 56.474592,
    "lon": 10.022827,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8900"
   },
   {
    "id": "cc7696d9738f",
@@ -113600,7 +114147,8 @@
    "lat": 56.17463,
    "lon": 10.177737,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8210"
   },
   {
    "id": "a893eafc88b5",
@@ -113625,7 +114173,8 @@
    "lat": 55.183802,
    "lon": 14.706171,
    "praecision": "by",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "3790"
   },
   {
    "id": "8f2fe9014369",
@@ -113650,7 +114199,8 @@
    "lat": 56.140985,
    "lon": 10.191841,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8000"
   },
   {
    "id": "ad9e7b19f458",
@@ -113675,7 +114225,8 @@
    "lat": 56.188884,
    "lon": 10.22296,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8240"
   },
   {
    "id": "85662e9f1531",
@@ -113700,7 +114251,8 @@
    "lat": 56.156525,
    "lon": 10.169035,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8230"
   },
   {
    "id": "15c5fe038cb0",
@@ -113725,7 +114277,8 @@
    "lat": 56.627521,
    "lon": 10.216281,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8970"
   },
   {
    "id": "0a2f5ddac9fd",
@@ -113750,7 +114303,8 @@
    "lat": 56.147597,
    "lon": 10.199923,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8000"
   },
   {
    "id": "68ba90f3c32f",
@@ -113775,7 +114329,8 @@
    "lat": 56.204828,
    "lon": 10.23286,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8240"
   },
   {
    "id": "78e42fd75a35",
@@ -113800,7 +114355,8 @@
    "lat": 56.156124,
    "lon": 10.150712,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8230"
   },
   {
    "id": "414f6b2de7f3",
@@ -113825,7 +114381,8 @@
    "lat": 56.123831,
    "lon": 10.196563,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8270"
   },
   {
    "id": "d409ddf1bd24",
@@ -113850,7 +114407,8 @@
    "lat": 56.371373,
    "lon": 10.43594,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8550"
   },
   {
    "id": "400b73869a47",
@@ -113875,7 +114433,8 @@
    "lat": 56.128294,
    "lon": 10.17785,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8270"
   },
   {
    "id": "95c68b724663",
@@ -113900,7 +114459,8 @@
    "lat": 56.260286,
    "lon": 9.853453,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8450"
   },
   {
    "id": "3ceb53f4aa1b",
@@ -113925,7 +114485,8 @@
    "lat": 56.129872,
    "lon": 10.168265,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8230"
   },
   {
    "id": "abd9b28f0a0c",
@@ -113950,7 +114511,8 @@
    "lat": 56.186048,
    "lon": 10.12537,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8381"
   },
   {
    "id": "dc409c9276cf",
@@ -113975,7 +114537,8 @@
    "lat": 56.184722,
    "lon": 10.197146,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8200"
   },
   {
    "id": "830ee5d4485c",
@@ -114000,7 +114563,8 @@
    "lat": 56.348595,
    "lon": 10.771194,
    "praecision": "by",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8570"
   },
   {
    "id": "e36ae6d300ca",
@@ -114025,7 +114589,8 @@
    "lat": 56.184876,
    "lon": 10.22402,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8240"
   },
   {
    "id": "41354a3d5388",
@@ -114050,7 +114615,8 @@
    "lat": 56.388301,
    "lon": 10.504573,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8550"
   },
   {
    "id": "13bd8af265b1",
@@ -114075,7 +114641,8 @@
    "lat": 56.102713,
    "lon": 10.065852,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8361"
   },
   {
    "id": "7faba80d2480",
@@ -114100,7 +114667,8 @@
    "lat": 56.242078,
    "lon": 10.240474,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8520"
   },
   {
    "id": "1fd03e0b364c",
@@ -114125,7 +114693,8 @@
    "lat": 56.522354,
    "lon": 10.711601,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8585"
   },
   {
    "id": "822ee2893b87",
@@ -114150,7 +114719,8 @@
    "lat": 56.417378,
    "lon": 10.872378,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8500"
   },
   {
    "id": "5c0596abb032",
@@ -114175,7 +114745,8 @@
    "lat": 56.151033,
    "lon": 10.084746,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8220"
   },
   {
    "id": "6d03581af60d",
@@ -114200,7 +114771,8 @@
    "lat": 56.409076,
    "lon": 10.906237,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8500"
   },
   {
    "id": "0f2877a253cf",
@@ -114225,7 +114797,8 @@
    "lat": 56.162633,
    "lon": 10.206106,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8000"
   },
   {
    "id": "c6c7d9c2f852",
@@ -114250,7 +114823,8 @@
    "lat": 56.035374,
    "lon": 10.07586,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8355"
   },
   {
    "id": "e7aa2777af0a",
@@ -114275,7 +114849,8 @@
    "lat": 56.107389,
    "lon": 10.202891,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8270"
   },
   {
    "id": "68f765ca93e5",
@@ -114300,7 +114875,8 @@
    "lat": 55.970079,
    "lon": 10.150446,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8300"
   },
   {
    "id": "fc68565dae55",
@@ -114325,7 +114901,8 @@
    "lat": 56.2569,
    "lon": 10.063019,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8382"
   },
   {
    "id": "835a09c437ad",
@@ -114350,7 +114927,8 @@
    "lat": 56.0432,
    "lon": 10.093154,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8355"
   },
   {
    "id": "e12d02c393f1",
@@ -114375,7 +114953,8 @@
    "lat": 56.328891,
    "lon": 10.058774,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8370"
   },
   {
    "id": "4aae86b4cffb",
@@ -114400,7 +114979,8 @@
    "lat": 56.390979,
    "lon": 9.89363,
    "praecision": "by",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8870"
   },
   {
    "id": "dc35b8341d4b",
@@ -114425,7 +115005,8 @@
    "lat": 56.398357,
    "lon": 9.889397,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8870"
   },
   {
    "id": "7996a248d862",
@@ -114450,7 +115031,8 @@
    "lat": 56.133124,
    "lon": 10.15675,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8260"
   },
   {
    "id": "113a3e05bcf5",
@@ -114475,7 +115057,8 @@
    "lat": 56.384224,
    "lon": 10.502085,
    "praecision": "by",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8550"
   },
   {
    "id": "f5dd936bc18a",
@@ -114500,7 +115083,8 @@
    "lat": 56.536048,
    "lon": 10.038796,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8981"
   },
   {
    "id": "64553008bf6d",
@@ -114525,7 +115109,8 @@
    "lat": 56.175587,
    "lon": 10.159827,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8210"
   },
   {
    "id": "1ff21fe70708",
@@ -114550,7 +115135,8 @@
    "lat": 56.354767,
    "lon": 9.920769,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8870"
   },
   {
    "id": "3534f2095d6c",
@@ -114575,7 +115161,8 @@
    "lat": 56.356029,
    "lon": 9.922594,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8870"
   },
   {
    "id": "d2eca73861c9",
@@ -114600,7 +115187,8 @@
    "lat": 56.222171,
    "lon": 10.171022,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8200"
   },
   {
    "id": "6648d7d1f0d7",
@@ -114625,7 +115213,8 @@
    "lat": 56.253606,
    "lon": 10.082013,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8382"
   },
   {
    "id": "118f307d58cb",
@@ -114650,7 +115239,8 @@
    "lat": 56.389376,
    "lon": 9.905344,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8870"
   },
   {
    "id": "1ce9a724a3ff",
@@ -114675,7 +115265,8 @@
    "lat": 56.386596,
    "lon": 9.900599,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8870"
   },
   {
    "id": "805b7906fd73",
@@ -114700,7 +115291,8 @@
    "lat": 56.243074,
    "lon": 9.847908,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8450"
   },
   {
    "id": "7004fbaaea06",
@@ -114725,7 +115317,8 @@
    "lat": 56.387273,
    "lon": 9.901882,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8870"
   },
   {
    "id": "a4f5fdfb04e7",
@@ -114750,7 +115343,8 @@
    "lat": 56.044553,
    "lon": 10.092731,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8355"
   },
   {
    "id": "0f29e35a1a2e",
@@ -114775,7 +115369,8 @@
    "lat": 56.178003,
    "lon": 10.171266,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8210"
   },
   {
    "id": "0a3c2ae23f56",
@@ -114800,7 +115395,8 @@
    "lat": 56.243074,
    "lon": 9.847908,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8450"
   },
   {
    "id": "62bab619ef23",
@@ -114825,7 +115421,8 @@
    "lat": 56.099129,
    "lon": 10.124223,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8310"
   },
   {
    "id": "ffcca206600a",
@@ -114850,7 +115447,8 @@
    "lat": 56.335245,
    "lon": 10.040432,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8370"
   },
   {
    "id": "42cb591c42f9",
@@ -114875,7 +115473,8 @@
    "lat": 55.911161,
    "lon": 10.087245,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8350"
   },
   {
    "id": "4d6ecf3f818b",
@@ -114900,7 +115499,8 @@
    "lat": 56.43145,
    "lon": 10.378186,
    "praecision": "by",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8963"
   },
   {
    "id": "d5867734308a",
@@ -114925,7 +115525,8 @@
    "lat": 56.444723,
    "lon": 10.079305,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8960"
   },
   {
    "id": "8530091d721e",
@@ -114950,7 +115551,8 @@
    "lat": 56.464996,
    "lon": 9.992541,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8920"
   },
   {
    "id": "c48314abc155",
@@ -114975,7 +115577,8 @@
    "lat": 56.357295,
    "lon": 9.924039,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8870"
   },
   {
    "id": "c4bb9064257e",
@@ -115000,7 +115603,8 @@
    "lat": 56.198228,
    "lon": 10.259294,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8240"
   },
   {
    "id": "db27a9f19481",
@@ -115025,7 +115629,8 @@
    "lat": 56.104956,
    "lon": 10.101346,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8361"
   },
   {
    "id": "995620c9df5c",
@@ -115050,7 +115655,8 @@
    "lat": 56.384512,
    "lon": 10.501258,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8550"
   },
   {
    "id": "9dc3dfb0b614",
@@ -115075,7 +115681,8 @@
    "lat": 56.196035,
    "lon": 10.05791,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8471"
   },
   {
    "id": "5d0491158f4a",
@@ -115100,7 +115707,8 @@
    "lat": 56.384208,
    "lon": 10.495746,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8550"
   },
   {
    "id": "a500ba5a553d",
@@ -115125,7 +115733,8 @@
    "lat": 56.392881,
    "lon": 9.891384,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8870"
   },
   {
    "id": "05838034606a",
@@ -115150,7 +115759,8 @@
    "lat": 56.398357,
    "lon": 9.889397,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8870"
   },
   {
    "id": "f16bb6e69df0",
@@ -115175,7 +115785,8 @@
    "lat": 56.391722,
    "lon": 9.889625,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8870"
   },
   {
    "id": "6e032d3ebce9",
@@ -115200,7 +115811,8 @@
    "lat": 55.97692,
    "lon": 10.154477,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8300"
   },
   {
    "id": "abd8d97ce55e",
@@ -115225,7 +115837,8 @@
    "lat": 56.150003,
    "lon": 10.157034,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8230"
   },
   {
    "id": "68b1f0859ac9",
@@ -115250,7 +115863,8 @@
    "lat": 56.043816,
    "lon": 10.198562,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8340"
   },
   {
    "id": "8cfaf655926e",
@@ -115275,7 +115889,8 @@
    "lat": 56.132019,
    "lon": 10.167992,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8230"
   },
   {
    "id": "18df85f82fd9",
@@ -115300,7 +115915,8 @@
    "lat": 56.478,
    "lon": 10.045312,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8900"
   },
   {
    "id": "714513788f2b",
@@ -115325,7 +115941,8 @@
    "lat": 56.414211,
    "lon": 10.875469,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8500"
   },
   {
    "id": "bb4999a374a1",
@@ -115350,7 +115967,8 @@
    "lat": 56.46917,
    "lon": 10.013853,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8900"
   },
   {
    "id": "d5e4e5e345dc",
@@ -115375,7 +115993,8 @@
    "lat": 56.191273,
    "lon": 10.109705,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8381"
   },
   {
    "id": "97d2020973d3",
@@ -115400,7 +116019,8 @@
    "lat": 56.154329,
    "lon": 10.206528,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8000"
   },
   {
    "id": "0d11cb3df563",
@@ -115425,7 +116045,8 @@
    "lat": 56.04088,
    "lon": 10.195279,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8340"
   },
   {
    "id": "f59707d57b99",
@@ -115450,7 +116071,8 @@
    "lat": 56.467919,
    "lon": 10.017531,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8900"
   },
   {
    "id": "943a0a9202f6",
@@ -115475,7 +116097,8 @@
    "lat": 56.276859,
    "lon": 10.321302,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8541"
   },
   {
    "id": "321fc57d4213",
@@ -115500,7 +116123,8 @@
    "lat": 56.13143,
    "lon": 10.181485,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8270"
   },
   {
    "id": "3b4a503cc50b",
@@ -115525,7 +116149,8 @@
    "lat": 56.0432,
    "lon": 10.093154,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8355"
   },
   {
    "id": "2894e7305279",
@@ -115550,7 +116175,8 @@
    "lat": 56.267563,
    "lon": 10.208069,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8520"
   },
   {
    "id": "99ff4ee5e5e9",
@@ -115575,7 +116201,8 @@
    "lat": 56.149628,
    "lon": 10.213405,
    "praecision": "by",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8000"
   },
   {
    "id": "562ee8b77760",
@@ -115600,7 +116227,8 @@
    "lat": 56.1474,
    "lon": 10.001939,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8462"
   },
   {
    "id": "0446e9652839",
@@ -115625,7 +116253,8 @@
    "lat": 56.423287,
    "lon": 10.881909,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8500"
   },
   {
    "id": "c3fba36b99cb",
@@ -115650,7 +116279,8 @@
    "lat": 56.203694,
    "lon": 10.050333,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8471"
   },
   {
    "id": "b26500b0b5b0",
@@ -115675,7 +116305,8 @@
    "lat": 56.335245,
    "lon": 10.040432,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8370"
   },
   {
    "id": "38f8dce7ca30",
@@ -115700,7 +116331,8 @@
    "lat": 56.469318,
    "lon": 10.007408,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8900"
   },
   {
    "id": "0f809db5bffb",
@@ -115725,7 +116357,8 @@
    "lat": 56.158971,
    "lon": 10.167224,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8230"
   },
   {
    "id": "062ffc96d9f7",
@@ -115750,7 +116383,8 @@
    "lat": 56.467031,
    "lon": 10.016436,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8900"
   },
   {
    "id": "ba39d28bf530",
@@ -115775,7 +116409,8 @@
    "lat": 56.101498,
    "lon": 10.209542,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8270"
   },
   {
    "id": "a9481315f5c0",
@@ -115800,7 +116435,8 @@
    "lat": 56.126486,
    "lon": 10.175946,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8270"
   },
   {
    "id": "e017ec4a7294",
@@ -115825,7 +116461,8 @@
    "lat": 56.055448,
    "lon": 10.210876,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8330"
   },
   {
    "id": "4b694db81d73",
@@ -115896,7 +116533,8 @@
    "lat": 55.0040202,
    "lon": 12.312887,
    "praecision": "by",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "4780"
   },
   {
    "id": "c9070d508543",
@@ -115921,7 +116559,8 @@
    "lat": 56.231733,
    "lon": 10.297484,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8250"
   },
   {
    "id": "7e3c3be560d9",
@@ -115946,7 +116585,8 @@
    "lat": 55.183802,
    "lon": 14.706171,
    "praecision": "by",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "3790"
   },
   {
    "id": "9ae2a851a03a",
@@ -115971,7 +116611,8 @@
    "lat": 56.238522,
    "lon": 10.224946,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8520"
   },
   {
    "id": "dd1e891e7a75",
@@ -115996,7 +116637,8 @@
    "lat": 55.183802,
    "lon": 14.706171,
    "praecision": "by",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "3790"
   },
   {
    "id": "037a3c50e150",
@@ -116021,7 +116663,8 @@
    "lat": 56.435446,
    "lon": 10.044557,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8940"
   },
   {
    "id": "7c869908112b",
@@ -116046,7 +116689,8 @@
    "lat": 56.091724,
    "lon": 10.192223,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8270"
   },
   {
    "id": "7f8873a214a4",
@@ -116071,7 +116715,8 @@
    "lat": 56.151033,
    "lon": 10.084746,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8220"
   },
   {
    "id": "fa24f6208a6b",
@@ -116096,7 +116741,8 @@
    "lat": 56.151033,
    "lon": 10.084746,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8220"
   },
   {
    "id": "b499ac50894e",
@@ -116121,7 +116767,8 @@
    "lat": 56.444827,
    "lon": 10.076558,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8960"
   },
   {
    "id": "a3de268593bb",
@@ -116146,7 +116793,8 @@
    "lat": 56.263373,
    "lon": 10.29466,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8541"
   },
   {
    "id": "7e2e5c49acaa",
@@ -116171,7 +116819,8 @@
    "lat": 56.293508,
    "lon": 10.216321,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8530"
   },
   {
    "id": "d95b50425744",
@@ -116196,7 +116845,8 @@
    "lat": 56.412805,
    "lon": 10.562714,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8581"
   },
   {
    "id": "42fe3d25b4c1",
@@ -116221,7 +116871,8 @@
    "lat": 56.191074,
    "lon": 10.193442,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8200"
   },
   {
    "id": "b386bdc6f954",
@@ -116246,7 +116897,8 @@
    "lat": 56.145155,
    "lon": 10.208742,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8000"
   },
   {
    "id": "cde89a870c2c",
@@ -116271,7 +116923,8 @@
    "lat": 56.117104,
    "lon": 10.165509,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8270"
   },
   {
    "id": "d668eb23fd6d",
@@ -116296,7 +116949,8 @@
    "lat": 56.156459,
    "lon": 10.149008,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8230"
   },
   {
    "id": "889ff08233c1",
@@ -116321,7 +116975,8 @@
    "lat": 56.117849,
    "lon": 10.180655,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8270"
   },
   {
    "id": "bc7a6ceace86",
@@ -116346,7 +117001,8 @@
    "lat": 56.191871,
    "lon": 10.222257,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8240"
   },
   {
    "id": "93f52d865106",
@@ -116371,7 +117027,8 @@
    "lat": 56.063177,
    "lon": 10.211462,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8330"
   },
   {
    "id": "76bad26e373c",
@@ -116396,7 +117053,8 @@
    "lat": 56.276957,
    "lon": 10.069167,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8382"
   },
   {
    "id": "628cc484bd98",
@@ -116421,7 +117079,8 @@
    "lat": 56.123053,
    "lon": 10.157813,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8260"
   },
   {
    "id": "6a76dbed3d72",
@@ -116446,7 +117105,8 @@
    "lat": 56.257819,
    "lon": 10.337884,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8541"
   },
   {
    "id": "ec4df6a53941",
@@ -116471,7 +117131,8 @@
    "lat": 56.05785,
    "lon": 10.210565,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8330"
   },
   {
    "id": "057303b059a2",
@@ -116496,7 +117157,8 @@
    "lat": 56.132486,
    "lon": 10.164257,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8230"
   },
   {
    "id": "614cb67d7893",
@@ -116521,7 +117183,8 @@
    "lat": 56.293508,
    "lon": 10.216321,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8530"
   },
   {
    "id": "9fd738df60a4",
@@ -116546,7 +117209,8 @@
    "lat": 56.200505,
    "lon": 10.254019,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8240"
   },
   {
    "id": "23897f893ecb",
@@ -116571,7 +117235,8 @@
    "lat": 55.183802,
    "lon": 14.706171,
    "praecision": "by",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "3790"
   },
   {
    "id": "e52ab224df69",
@@ -116596,7 +117261,8 @@
    "lat": 56.357633,
    "lon": 9.913349,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8870"
   },
   {
    "id": "c8ecc347db2b",
@@ -116621,7 +117287,8 @@
    "lat": 56.106626,
    "lon": 10.210751,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8270"
   },
   {
    "id": "701076a6ed30",
@@ -116646,7 +117313,8 @@
    "lat": 56.262976,
    "lon": 10.303932,
    "praecision": "by",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8541"
   },
   {
    "id": "90256ab6897f",
@@ -116671,7 +117339,8 @@
    "lat": 56.461572,
    "lon": 9.97461,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8920"
   },
   {
    "id": "8f11264be9ab",
@@ -116696,7 +117365,8 @@
    "lat": 56.315407,
    "lon": 10.807028,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8444"
   },
   {
    "id": "71f8aad86d39",
@@ -116721,7 +117391,8 @@
    "lat": 55.971545,
    "lon": 10.146467,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8300"
   },
   {
    "id": "3d036cdd2d6c",
@@ -116746,7 +117417,8 @@
    "lat": 56.039446,
    "lon": 10.206838,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8340"
   },
   {
    "id": "0fcb76a34152",
@@ -116771,7 +117443,8 @@
    "lat": 56.124582,
    "lon": 10.18887,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8270"
   },
   {
    "id": "faf8bbf00cd1",
@@ -116796,7 +117469,8 @@
    "lat": 56.253136,
    "lon": 10.150664,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8380"
   },
   {
    "id": "9f15607bc0a4",
@@ -116821,7 +117495,8 @@
    "lat": 56.230314,
    "lon": 10.320511,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8250"
   },
   {
    "id": "8e5fb16a8d9f",
@@ -116846,7 +117521,8 @@
    "lat": 56.204358,
    "lon": 10.214378,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8240"
   },
   {
    "id": "033a98ed5c7f",
@@ -116871,7 +117547,8 @@
    "lat": 56.101498,
    "lon": 10.209542,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8270"
   },
   {
    "id": "8f3e4a523a02",
@@ -116896,7 +117573,8 @@
    "lat": 56.113084,
    "lon": 10.146542,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8260"
   },
   {
    "id": "74bef24776c7",
@@ -116921,7 +117599,8 @@
    "lat": 56.195872,
    "lon": 10.198038,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8200"
   },
   {
    "id": "ac2e6974973e",
@@ -116946,7 +117625,8 @@
    "lat": 56.146432,
    "lon": 10.204099,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8000"
   },
   {
    "id": "d625f70b1888",
@@ -116971,7 +117651,8 @@
    "lat": 56.147095,
    "lon": 10.201029,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8000"
   },
   {
    "id": "eb63277b1eb8",
@@ -116996,7 +117677,8 @@
    "lat": 56.314993,
    "lon": 10.307432,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8543"
   },
   {
    "id": "d05406298b91",
@@ -117021,7 +117703,8 @@
    "lat": 56.147597,
    "lon": 10.199923,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8000"
   },
   {
    "id": "c8696b000436",
@@ -117046,7 +117729,8 @@
    "lat": 56.039666,
    "lon": 10.090787,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8355"
   },
   {
    "id": "c2de27e9b243",
@@ -117071,7 +117755,8 @@
    "lat": 56.429004,
    "lon": 9.931507,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8870"
   },
   {
    "id": "1414b9ac8354",
@@ -117096,7 +117781,8 @@
    "lat": 56.483366,
    "lon": 9.900069,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8920"
   },
   {
    "id": "e5e2f8ea4e82",
@@ -117121,7 +117807,8 @@
    "lat": 56.111759,
    "lon": 10.10355,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8361"
   },
   {
    "id": "40636c2084a0",
@@ -117146,10 +117833,11 @@
    "lat": 56.143883,
    "lon": 10.206703,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8000"
   },
   {
-   "id": "1bb0d1231ec1",
+   "id": "17baa343bdaf",
    "vej": "G. C. Amdrups Vej",
    "by": "Aarhus N",
    "omraade": "Aarhus",
@@ -117171,10 +117859,11 @@
    "lat": 56.176379,
    "lon": 10.211867,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8000"
   },
   {
-   "id": "17baa343bdaf",
+   "id": "1bb0d1231ec1",
    "vej": "G. C. Amdrups Vej",
    "by": "Aarhus N",
    "omraade": "Aarhus",
@@ -117196,7 +117885,8 @@
    "lat": 56.176379,
    "lon": 10.211867,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8000"
   },
   {
    "id": "d8a4b11b2e27",
@@ -117221,7 +117911,8 @@
    "lat": 56.147529,
    "lon": 10.195719,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8000"
   },
   {
    "id": "93c9807ee980",
@@ -117246,7 +117937,8 @@
    "lat": 56.171873,
    "lon": 10.214931,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8000"
   },
   {
    "id": "e33998723427",
@@ -117271,7 +117963,8 @@
    "lat": 56.146432,
    "lon": 10.204099,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8000"
   },
   {
    "id": "551a87b17ced",
@@ -117296,7 +117989,8 @@
    "lat": 56.419219,
    "lon": 10.869499,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8500"
   },
   {
    "id": "c85776482482",
@@ -117321,7 +118015,8 @@
    "lat": 56.038769,
    "lon": 10.194489,
    "praecision": "by",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8340"
   },
   {
    "id": "2d7a578f0d0f",
@@ -117346,7 +118041,8 @@
    "lat": 56.47037,
    "lon": 10.057358,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8900"
   },
   {
    "id": "fd454146c809",
@@ -117371,7 +118067,8 @@
    "lat": 56.428818,
    "lon": 10.370974,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8963"
   },
   {
    "id": "3a0a6a0a7d1e",
@@ -117396,7 +118093,8 @@
    "lat": 56.42825,
    "lon": 10.375025,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8963"
   },
   {
    "id": "d1df3f0b5079",
@@ -117421,7 +118119,8 @@
    "lat": 56.431075,
    "lon": 9.931046,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8870"
   },
   {
    "id": "45e796eebeb1",
@@ -117446,7 +118145,8 @@
    "lat": 56.0432,
    "lon": 10.093154,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8355"
   },
   {
    "id": "bd43fd5b2119",
@@ -117471,7 +118171,8 @@
    "lat": 56.213805,
    "lon": 10.044911,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8471"
   },
   {
    "id": "c084df5b0810",
@@ -117496,7 +118197,8 @@
    "lat": 56.483366,
    "lon": 9.900069,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8920"
   },
   {
    "id": "a39644d280c7",
@@ -117521,7 +118223,8 @@
    "lat": 56.469946,
    "lon": 10.32018,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8963"
   },
   {
    "id": "bf1638f60427",
@@ -117546,7 +118249,8 @@
    "lat": 56.221479,
    "lon": 10.294453,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8250"
   },
   {
    "id": "775d6b42626c",
@@ -117571,7 +118275,8 @@
    "lat": 56.15457,
    "lon": 10.196133,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8000"
   },
   {
    "id": "b96846efa556",
@@ -117596,7 +118301,8 @@
    "lat": 55.932591,
    "lon": 10.062115,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8350"
   },
   {
    "id": "9e4a423b66df",
@@ -117621,7 +118327,8 @@
    "lat": 56.132167,
    "lon": 10.12486,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8260"
   },
   {
    "id": "1a4e68a2d5b9",
@@ -117646,7 +118353,8 @@
    "lat": 56.238623,
    "lon": 10.333789,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8541"
   },
   {
    "id": "6d1723681f28",
@@ -117671,7 +118379,8 @@
    "lat": 56.220051,
    "lon": 10.292506,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8250"
   },
   {
    "id": "08d350b64391",
@@ -117696,7 +118405,8 @@
    "lat": 56.158566,
    "lon": 10.120931,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8220"
   },
   {
    "id": "ab86e2d2266d",
@@ -117721,7 +118431,8 @@
    "lat": 56.159453,
    "lon": 10.101166,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8220"
   },
   {
    "id": "6c7ac9954094",
@@ -117746,7 +118457,8 @@
    "lat": 56.474623,
    "lon": 10.034798,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8900"
   },
   {
    "id": "910000aae72e",
@@ -117771,7 +118483,8 @@
    "lat": 56.535163,
    "lon": 10.029167,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8981"
   },
   {
    "id": "7e3d7761181d",
@@ -117796,7 +118509,8 @@
    "lat": 56.417368,
    "lon": 10.882727,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8500"
   },
   {
    "id": "3347a281471b",
@@ -117821,7 +118535,8 @@
    "lat": 56.465154,
    "lon": 10.01727,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8900"
   },
   {
    "id": "696aa8996880",
@@ -117846,7 +118561,8 @@
    "lat": 56.441675,
    "lon": 9.956166,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8920"
   },
   {
    "id": "35a95f93426d",
@@ -117871,7 +118587,8 @@
    "lat": 56.431968,
    "lon": 10.382123,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8963"
   },
   {
    "id": "db94a3b3a096",
@@ -117896,7 +118613,8 @@
    "lat": 56.158453,
    "lon": 10.208949,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8000"
   },
   {
    "id": "0133ee619fad",
@@ -117921,7 +118639,8 @@
    "lat": 56.15401,
    "lon": 10.100072,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8220"
   },
   {
    "id": "a50c5b1f9c0e",
@@ -117946,7 +118665,8 @@
    "lat": 56.194942,
    "lon": 10.240578,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8240"
   },
   {
    "id": "df121e391abf",
@@ -117971,7 +118691,8 @@
    "lat": 56.160107,
    "lon": 10.214318,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8000"
   },
   {
    "id": "6bed57c37030",
@@ -117996,7 +118717,8 @@
    "lat": 56.384606,
    "lon": 9.896772,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8870"
   },
   {
    "id": "7542a2997a44",
@@ -118021,7 +118743,8 @@
    "lat": 56.109183,
    "lon": 10.119009,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8310"
   },
   {
    "id": "6b89d37c113a",
@@ -118046,7 +118769,8 @@
    "lat": 56.160781,
    "lon": 10.088798,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8220"
   },
   {
    "id": "2de6aee648a0",
@@ -118071,7 +118795,8 @@
    "lat": 56.472751,
    "lon": 10.056086,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8900"
   },
   {
    "id": "aac7dd0d1b50",
@@ -118096,7 +118821,8 @@
    "lat": 56.187633,
    "lon": 10.235404,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8240"
   },
   {
    "id": "3f34eca473a0",
@@ -118121,7 +118847,8 @@
    "lat": 56.195872,
    "lon": 10.198038,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8200"
   },
   {
    "id": "8ee2782cc845",
@@ -118146,7 +118873,8 @@
    "lat": 56.159469,
    "lon": 10.202217,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8000"
   },
   {
    "id": "61032e3d3f0d",
@@ -118171,7 +118899,8 @@
    "lat": 56.195279,
    "lon": 10.188017,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8200"
   },
   {
    "id": "e1b62b85f7a7",
@@ -118196,7 +118925,8 @@
    "lat": 56.482959,
    "lon": 10.01558,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8900"
   },
   {
    "id": "a453d849440f",
@@ -118221,7 +118951,8 @@
    "lat": 56.42493,
    "lon": 10.858926,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8500"
   },
   {
    "id": "4936acebfbb3",
@@ -118246,7 +118977,8 @@
    "lat": 56.178003,
    "lon": 10.171266,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8210"
   },
   {
    "id": "57830cc293d1",
@@ -118271,7 +119003,8 @@
    "lat": 56.417368,
    "lon": 10.882727,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8500"
   },
   {
    "id": "29f606960994",
@@ -118296,7 +119029,8 @@
    "lat": 56.17727,
    "lon": 10.12859,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8381"
   },
   {
    "id": "98523af9b212",
@@ -118321,7 +119055,8 @@
    "lat": 56.189155,
    "lon": 10.225511,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8240"
   },
   {
    "id": "1724de2ffea3",
@@ -118346,7 +119081,8 @@
    "lat": 56.258252,
    "lon": 10.294846,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8541"
   },
   {
    "id": "6efeca7ccda1",
@@ -118371,7 +119107,8 @@
    "lat": 56.249292,
    "lon": 10.262403,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8530"
   },
   {
    "id": "f9473c632354",
@@ -118396,7 +119133,8 @@
    "lat": 56.140985,
    "lon": 10.191841,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8000"
   },
   {
    "id": "70ac198d8146",
@@ -118421,7 +119159,8 @@
    "lat": 56.465074,
    "lon": 10.054794,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8900"
   },
   {
    "id": "b36c19f857e2",
@@ -118446,7 +119185,8 @@
    "lat": 56.169674,
    "lon": 10.181327,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8210"
   },
   {
    "id": "6b6f3bd51151",
@@ -118471,7 +119211,8 @@
    "lat": 56.179389,
    "lon": 10.183549,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8200"
   },
   {
    "id": "f5f328be58f7",
@@ -118496,7 +119237,8 @@
    "lat": 56.164107,
    "lon": 10.160689,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8210"
   },
   {
    "id": "1d00e4e2e902",
@@ -118542,7 +119284,8 @@
    "lat": 55.1838021,
    "lon": 14.7061711,
    "praecision": "by",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "3790"
   },
   {
    "id": "a876e42e268d",
@@ -118567,7 +119310,8 @@
    "lat": 56.098357,
    "lon": 10.219573,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8270"
   },
   {
    "id": "4ff79168d128",
@@ -118592,7 +119336,8 @@
    "lat": 56.195977,
    "lon": 10.20934,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8240"
   },
   {
    "id": "8e8a580de8a4",
@@ -118617,7 +119362,8 @@
    "lat": 56.414514,
    "lon": 10.871203,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8500"
   },
   {
    "id": "8675fbc5cd85",
@@ -118642,7 +119388,8 @@
    "lat": 56.421322,
    "lon": 10.875948,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8500"
   },
   {
    "id": "32b63d64e1cf",
@@ -118667,7 +119414,8 @@
    "lat": 56.340448,
    "lon": 10.699333,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8570"
   },
   {
    "id": "a8030eb2b746",
@@ -118692,7 +119440,8 @@
    "lat": 56.145302,
    "lon": 10.202184,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8000"
   },
   {
    "id": "7ca4100002e0",
@@ -118717,7 +119466,8 @@
    "lat": 56.179389,
    "lon": 10.183549,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8200"
   },
   {
    "id": "c08ef0252e6d",
@@ -118742,7 +119492,8 @@
    "lat": 56.173259,
    "lon": 10.210169,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8000"
   },
   {
    "id": "67741175d9fd",
@@ -118767,7 +119518,8 @@
    "lat": 56.148246,
    "lon": 10.203271,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8000"
   },
   {
    "id": "9a11590fccd2",
@@ -118792,7 +119544,8 @@
    "lat": 56.41514,
    "lon": 10.871767,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8500"
   },
   {
    "id": "09bbb46a1c01",
@@ -118817,7 +119570,8 @@
    "lat": 56.253809,
    "lon": 10.145008,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8380"
   },
   {
    "id": "5f3147170bdc",
@@ -118842,7 +119596,8 @@
    "lat": 55.970522,
    "lon": 10.169468,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8300"
   },
   {
    "id": "25317ffba6e2",
@@ -118867,7 +119622,8 @@
    "lat": 55.970522,
    "lon": 10.169468,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8300"
   },
   {
    "id": "18a7317cf0fa",
@@ -118892,7 +119648,8 @@
    "lat": 56.472049,
    "lon": 10.02655,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8900"
   },
   {
    "id": "dc0b845648a0",
@@ -118917,7 +119674,8 @@
    "lat": 56.101498,
    "lon": 10.209542,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8270"
   },
   {
    "id": "8fdc1bb39b17",
@@ -118942,7 +119700,8 @@
    "lat": 56.171873,
    "lon": 10.214931,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8000"
   },
   {
    "id": "51cb5337d4c7",
@@ -118967,7 +119726,8 @@
    "lat": 56.466168,
    "lon": 10.020831,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8900"
   },
   {
    "id": "f10e8bc2fe5a",
@@ -118992,7 +119752,8 @@
    "lat": 56.194476,
    "lon": 10.198033,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8200"
   },
   {
    "id": "b8b467952d4c",
@@ -119017,7 +119778,8 @@
    "lat": 56.413931,
    "lon": 10.891501,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8500"
   },
   {
    "id": "ccfe0de99e35",
@@ -119042,7 +119804,8 @@
    "lat": 56.464342,
    "lon": 10.336854,
    "praecision": "by",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8963"
   },
   {
    "id": "cdef97bc807b",
@@ -119067,7 +119830,8 @@
    "lat": 56.116107,
    "lon": 10.186109,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8270"
   },
   {
    "id": "c3f49a40a432",
@@ -119092,7 +119856,8 @@
    "lat": 56.113928,
    "lon": 10.149948,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8260"
   },
   {
    "id": "b233a7a468c6",
@@ -119117,7 +119882,8 @@
    "lat": 56.191679,
    "lon": 10.124152,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8381"
   },
   {
    "id": "306f689575f2",
@@ -119142,7 +119908,8 @@
    "lat": 55.974959,
    "lon": 10.152312,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8300"
   },
   {
    "id": "4c1bafc672e3",
@@ -119167,7 +119934,8 @@
    "lat": 55.977852,
    "lon": 10.230589,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8300"
   },
   {
    "id": "22ed4ad76a74",
@@ -119192,7 +119960,8 @@
    "lat": 55.980775,
    "lon": 10.151335,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8300"
   },
   {
    "id": "2c3ae108e911",
@@ -119217,7 +119986,8 @@
    "lat": 56.408518,
    "lon": 10.568165,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8581"
   },
   {
    "id": "ccf5951c4bcf",
@@ -119242,7 +120012,8 @@
    "lat": 56.121652,
    "lon": 10.197868,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8270"
   },
   {
    "id": "1913ee82d0a0",
@@ -119267,7 +120038,8 @@
    "lat": 56.202144,
    "lon": 10.240266,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8240"
   },
   {
    "id": "3cbe2976ec6d",
@@ -119292,7 +120064,8 @@
    "lat": 56.472163,
    "lon": 10.067006,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8930"
   },
   {
    "id": "0502817f67ae",
@@ -119317,7 +120090,8 @@
    "lat": 56.203878,
    "lon": 10.206305,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8200"
   },
   {
    "id": "ba0133bdc380",
@@ -119363,7 +120137,8 @@
    "lat": 56.242225,
    "lon": 10.269538,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8530"
   },
   {
    "id": "7e03e35c0086",
@@ -119388,7 +120163,8 @@
    "lat": 56.055448,
    "lon": 10.210876,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8330"
   },
   {
    "id": "a07e88ebe100",
@@ -119413,7 +120189,8 @@
    "lat": 56.185684,
    "lon": 10.218939,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8240"
   },
   {
    "id": "987fb4a5ac22",
@@ -119438,7 +120215,8 @@
    "lat": 56.158427,
    "lon": 10.194667,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8000"
   },
   {
    "id": "24b41e5f9165",
@@ -119463,7 +120241,8 @@
    "lat": 56.5166824,
    "lon": 9.9438554,
    "praecision": "by",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8920"
   },
   {
    "id": "03637170527b",
@@ -119488,7 +120267,8 @@
    "lat": 56.477418,
    "lon": 10.029126,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8900"
   },
   {
    "id": "e189168e962f",
@@ -119513,7 +120293,8 @@
    "lat": 56.173079,
    "lon": 10.185299,
    "praecision": "vej",
-   "geokilde": "nominatim"
+   "geokilde": "nominatim",
+   "postnr": "8200"
   }
  ],
  "behandlede_meddelelser": {
@@ -119804,6 +120585,7 @@
   "https://politi.dk/oestjyllands-politi/doegnrapporter/doegnrapport26082024/2024/08/26": "2024-08-26",
   "https://politi.dk/oestjyllands-politi/doegnrapporter/doegnrapport26092023/2023/09/26": "2023-09-26",
   "https://politi.dk/oestjyllands-politi/doegnrapporter/doegnrapport26102023/2023/10/26": "2023-10-26",
+  "https://politi.dk/oestjyllands-politi/doegnrapporter/doegnrapport26102026/2026/10/26": "2026-10-26",
   "https://politi.dk/oestjyllands-politi/doegnrapporter/doegnrapport26112024/2024/11/26": "2024-11-26",
   "https://politi.dk/oestjyllands-politi/doegnrapporter/doegnrapport27012026/2026/01/27": "2026-01-27",
   "https://politi.dk/oestjyllands-politi/doegnrapporter/doegnrapport27022024/2024/02/27": "2024-02-27",
@@ -120288,6 +121070,7 @@
   "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-25-oktober-2023/2023/10/25": "2023-10-25",
   "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-25-oktober-2024/2024/10/25": "2024-10-25",
   "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-25-oktober-2025/2025/10/25": "2025-10-25",
+  "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-25-oktober-2026/2026/10/25": "2026-10-25",
   "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-26-april-2024/2024/04/26": "2024-04-26",
   "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-26-april-2025/2025/04/26": "2025-04-26",
   "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-26-april-2026/2026/04/26": "2026-04-26",
@@ -120637,6 +121420,12 @@
   "https://via.ritzau.dk/pressemeddelelse/15244967/brand-i-arosund?publisherId=90686&lang=da": "2026-10-24",
   "https://via.ritzau.dk/pressemeddelelse/15245426/savnet-pige?publisherId=90721&lang=da": "2026-10-25",
   "https://via.ritzau.dk/pressemeddelelse/15245948/efterlysning-af-bankbud-i-midt-og-vestjylland?publisherId=90687&lang=da": "2026-10-25",
+  "https://via.ritzau.dk/pressemeddelelse/15246211/forhojet-vandstand-pa-vestkysten?publisherId=90686&lang=da": "2026-10-25",
+  "https://via.ritzau.dk/pressemeddelelse/15246861/grundlovsforhor-retten-i-sonderborg?publisherId=90686&lang=da": "2026-10-26",
+  "https://via.ritzau.dk/pressemeddelelse/15246863/faerdselsuheld-pa-sonderjyske-motorvej-m50-ved-kolding?publisherId=90720&lang=da": "2026-10-26",
+  "https://via.ritzau.dk/pressemeddelelse/15247024/29-arig-rumaensk-statsborger-varetaegtsfaengslet-i-fire-uger?publisherId=90686&lang=da": "2026-10-26",
+  "https://via.ritzau.dk/pressemeddelelse/15247407/faerdselsuheld-pa-sonderjyske-motorvej-m50-ved-kolding?publisherId=90720&lang=da": "2026-10-26",
+  "https://via.ritzau.dk/pressemeddelelse/15247504/grundlovsforhor-retten-i-sonderborg?publisherId=90686&lang=da": "2026-10-26",
   "https://via.ritzau.dk/release/15229519": "2026-10-17"
  }
 }
