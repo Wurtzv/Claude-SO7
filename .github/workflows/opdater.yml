@@ -2,7 +2,9 @@ name: Opdater indbrudskort
 
 on:
   schedule:
-    - cron: "30 8 * * *"   # hver dag kl. 08:30 UTC
+    # Fire gange om dagen, så døgnrapporter udgivet midt på dagen hurtigt kommer på kortet
+    # (GitHub kan forsinke planlagte kørsler en time eller mere)
+    - cron: "17 6,10,13,17 * * *"   # kl. 06:17, 10:17, 13:17 og 17:17 UTC
   workflow_dispatch:
   push:
     branches: [main]
