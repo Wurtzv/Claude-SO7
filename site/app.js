@@ -21,12 +21,39 @@
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
   }).addTo(map);
   const lag = L.layerGroup().addTo(map);
+  // Varmekort over de filtrerede indbrud. Kun punkter på vejniveau: indbrud, der kun er placeret
+  // ved byens midte, ville ellers give en falsk "varm" plet midt i hver by.
+  const VARME_FARVER = { 0.25: "#ffe08a", 0.5: "#f7a541", 0.75: "#e4572e", 1: "#a3122a" };
+  const VARME_RADIUS = 22;
+  const varme = L.heatLayer ? L.heatLayer([], { radius: VARME_RADIUS, blur: 18, minOpacity: 0.25, gradient: VARME_FARVER }) : null;
+  let varmePkt = [];
+  function tegnVarme(v) {
+    if (!varme) return;
+    if (v) varmePkt = v.filter((r) => r.praecision === "vej").map((r) => [r.lat, r.lon, 1]);
+    // Skalaen følger zoomniveauet: hvert indbrud tæller 1, og den tætteste klynge på
+    // det viste niveau bliver mørkerød. Ellers bliver hele Østjylland én rød plet, når
+    // man ser hele Jylland, og enkelte indbrud forsvinder, når man zoomer ind.
+    const z = map.getZoom(), celler = new Map();
+    let tættest = 1;
+    for (const [la, lo] of varmePkt) {
+      const p = map.project([la, lo], z), k = `${Math.floor(p.x / VARME_RADIUS)},${Math.floor(p.y / VARME_RADIUS)}`;
+      const n = (celler.get(k) || 0) + 1;
+      celler.set(k, n);
+      if (n > tættest) tættest = n;
+    }
+    varme.options.maxZoom = z;
+    varme.options.max = Math.max(2, tættest * 0.7);
+    // leaflet.heat tegner straks ved setLatLngs og fejler, hvis laget ikke er på kortet
+    if (map.hasLayer(varme)) varme.setLatLngs(varmePkt); else varme._latlngs = varmePkt;
+  }
+  map.on("zoomend", () => tegnVarme());
   const markører = new Map();
 
   const legend = L.control({ position: "bottomleft" });
   legend.onAdd = () => {
     const d = L.DomUtil.create("div", "legend");
-    d.innerHTML = '<span><i class="sw"></i>Privat beboelse</span><span><i class="sw b"></i>Erhverv og andet</span><span><i class="sw a o"></i>Ca. placering (by)</span><span><i class="sw s"></i>Kommune: alle indbrud i perioden</span>';
+    d.innerHTML = '<span><i class="sw"></i>Privat beboelse</span><span><i class="sw b"></i>Erhverv og andet</span><span><i class="sw a o"></i>Ca. placering (by)</span><span><i class="sw s"></i>Kommune: alle indbrud i perioden</span>' +
+      '<span class="varmeforkl" hidden><i class="varmeskala"></i>Varmekort: få → mange indbrud</span>';
     return d;
   };
   legend.addTo(map);
@@ -88,6 +115,7 @@
 
   function tegn(tilpas) {
     const v = synlige();
+    tegnVarme(v);
     lag.clearLayers();
     markører.clear();
     for (const r of v) {
@@ -572,6 +600,11 @@
   $("kvartal").addEventListener("change", tegnStatistik);
   $("maal").addEventListener("change", () => { tegnStatistik(); tegnGraf(); });
   $("visEnkelte").addEventListener("change", (e) => { if (e.target.checked) lag.addTo(map); else lag.remove(); });
+  $("visVarme").addEventListener("change", (e) => {
+    if (!varme) return;
+    if (e.target.checked) varme.addTo(map); else varme.remove();
+    document.querySelectorAll(".varmeforkl").forEach((x) => { x.hidden = !e.target.checked; });
+  });
 
   // ---------- data ----------
   async function hentData(navn = "indbrud.json") {

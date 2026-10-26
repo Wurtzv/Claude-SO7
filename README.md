@@ -117,6 +117,10 @@ Hvert placeret indbrud får et **postnummer** (feltet `postnr`) ved et omvendt o
 
 **Ugens overblik** (`python -m indbrudskort ugerapport`) sammenligner de seneste 7 dages døgnrapporter med de 7 før og viser, hvor det steg mest pr. bydel, postnummer og vej, plus de jyske kommuner med størst stigning i Danmarks Statistiks seneste kvartal mod samme kvartal året før. Hver kørsel gemmer det i `data/ugerapport.json` til kortsiden.
 
+### Varmekort
+
+Under *Kortlag* kan **Varmekort** slås til. Det viser, hvor indbruddene fra døgnrapporterne klumper sig sammen, og følger de valgte filtre (periode, politikreds, område). Kun indbrud med kendt vej tæller med, så indbrud, der kun er placeret ved byens midte, ikke giver en falsk varm plet i hver by. Farveskalaen følger zoomniveauet: den tætteste klynge i udsnittet bliver mørkerød. Varmekortet bruger [Leaflet.heat](https://github.com/Leaflet/Leaflet.heat).
+
 ### Indbrud nær mig og naboveje
 
 Knappen **"Indbrud nær mig"** bruger telefonens eller computerens placering (browseren spørger om lov) og viser alle indbrud fra døgnrapporterne inden for **5 km** fra de seneste **14 dage**, nærmeste først. Kortet zoomer ind med en 5 km-cirkel. Placeringen bliver kun brugt i browseren og sendes ingen steder hen. Den kræver, at siden åbnes via https (det gør GitHub Pages).
