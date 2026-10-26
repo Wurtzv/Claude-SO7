@@ -15,15 +15,14 @@ OpenStreetMap viser indbruddene på et kort, og den bliver lagt på GitHub Pages
 | `indbrudskort/geokod.py` | Vej + by → koordinat midt på vejen, med cache |
 | `indbrudskort/lager.py` | `data/indbrud.json`: fletning uden dubletter |
 | `indbrudskort/naboer.py` | Naboveje: vejene inden for ca. 500 m af hvert indbrud fra de seneste 30 dage → `data/naboveje.json` |
-| `indbrudskort/ugerapport.py` | Ugens opsummering (seneste 7 dage mod de 7 før) → `data/ugerapport.json` og Markdown til mail |
+| `indbrudskort/ugerapport.py` | Ugens opsummering (seneste 7 dage mod de 7 før) → `data/ugerapport.json` (vises på kortsiden) |
 | `indbrudskort/statistik.py` | Anmeldte indbrud pr. jysk kommune pr. kvartal fra Danmarks Statistik → `data/statistik.json` |
 | `data/indbrud.json` | Alle indbrud (bliver opdateret automatisk) |
 | `data/geokode-cache.json` | Cache over geokodede veje og byer |
 | `data/startdata.json` | De 31 indbrud fra prototypen (17.–22. okt. 2026), som blev brugt som startdata |
 | `site/` | Kortsiden (`index.html`, `app.js`, `style.css`) |
 | `tests/` | Tests med gemte rapporter i `tests/fixtures/` |
-| `.github/workflows/opdater.yml` | Daglig kørsel kl. 08:30 UTC, commit af nye data og udgivelse på GitHub Pages |
-| `.github/workflows/ugerapport.yml` | Hver mandag kl. 10:15 UTC: opretter et GitHub-issue med ugens overblik (kommer på mail) |
+| `.github/workflows/opdater.yml` | Kørsel fire gange dagligt (06:17, 10:17, 13:17 og 17:17 UTC), commit af nye data og udgivelse på GitHub Pages |
 | `.github/workflows/test.yml` | Tests og en prøvekørsel mod de rigtige kilder ved hvert push til en gren |
 
 ## Kom i gang lokalt
@@ -50,9 +49,7 @@ python -m http.server 8000
 1. **Slå GitHub Pages til:** Gå til *Settings → Pages → Build and deployment → Source* og vælg **GitHub Actions**.
 2. **Giv Actions lov til at skrive:** Gå til *Settings → Actions → General → Workflow permissions* og vælg **Read and write permissions**, så workflowet kan committe nye data.
 3. **Valgfrit: Dansk adresse-API.** Opret en gratis bruger på Dataforsyningen og lav en token. Læg den som repository-secret med navnet `DATAFORSYNINGEN_TOKEN` under *Settings → Secrets and variables → Actions*. Uden token bruges kun Nominatim.
-4. Kør workflowet **Opdater indbrudskort** én gang manuelt (*Actions → Opdater indbrudskort → Run workflow*). Bagefter kører det selv hver dag kl. 08:30 UTC. Det kører også ved push til `main`, når kode, side eller startdata ændres.
-
-5. **Ugerapport på mail:** Workflowet **Ugerapport** opretter hver mandag et issue med ugens overblik og lukker sidste uges. GitHub sender nye issues på mail, når du følger repoet (*Watch → All Activity*, eller *Custom → Issues*) og har mail slået til under *Settings → Notifications* på din GitHub-profil. Den kan også køres manuelt under *Actions → Ugerapport → Run workflow*.
+4. Kør workflowet **Opdater indbrudskort** én gang manuelt (*Actions → Opdater indbrudskort → Run workflow*). Bagefter kører det selv fire gange om dagen, så døgnrapporter, der udgives midt på dagen, hurtigt kommer på kortet. Nye rapporter kan også hentes med det samme med *Run workflow*. Det kører også ved push til `main`, når kode, side eller startdata ændres.
 
 Workflowet kører først testene. Hvis politiet ændrer formatet, så parseren går i stykker, bliver kørslen rød i stedet for at gemme forkerte data. Kørslen fejler også, hvis ingen af kilderne kan nås.
 
@@ -118,7 +115,7 @@ Hvert placeret indbrud får et **postnummer** (feltet `postnr`) ved et omvendt o
 
 **Hotspots** på kortsiden tæller indbrud pr. by/bydel, postnummer eller vej i de seneste 30, 90 eller 365 dage (efter rapportdato, regnet fra nyeste døgnrapport) og sammenligner med lige så mange dage før. Listen kan sorteres efter flest indbrud eller størst stigning. "Størst stigning" kræver mindst 2 indbrud i perioden, så ét enkelt indbrud et nyt sted ikke fylder listen.
 
-**Ugens overblik** (`python -m indbrudskort ugerapport`) sammenligner de seneste 7 dages døgnrapporter med de 7 før og viser, hvor det steg mest pr. bydel, postnummer og vej, plus de jyske kommuner med størst stigning i Danmarks Statistiks seneste kvartal mod samme kvartal året før. Den daglige kørsel gemmer det i `data/ugerapport.json` til kortsiden, og mandagens workflow sender det som issue.
+**Ugens overblik** (`python -m indbrudskort ugerapport`) sammenligner de seneste 7 dages døgnrapporter med de 7 før og viser, hvor det steg mest pr. bydel, postnummer og vej, plus de jyske kommuner med størst stigning i Danmarks Statistiks seneste kvartal mod samme kvartal året før. Hver kørsel gemmer det i `data/ugerapport.json` til kortsiden.
 
 ### Indbrud nær mig og naboveje
 
