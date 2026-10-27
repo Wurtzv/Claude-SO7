@@ -1,5 +1,5 @@
 {
- "opdateret": "2026-10-27T12:18:57+00:00",
+ "opdateret": "2026-10-27T18:43:15+00:00",
  "antal": 4638,
  "indbrud": [
   {
@@ -179,8 +179,8 @@
     }
    ],
    "beskrivelse": "Der har i løbet af weekenden været indbrud i et maskinhus i Brønderslev. Gerningspersonerne kom ind via en åben gårdsplads og brød herefter hængelåsen op til et maskinhus. Herfra stjal de en større havetraktor samt cirka 2.100 liter dieselolie.",
-   "lat": 57.2700129,
-   "lon": 9.9448631,
+   "lat": 57.270013,
+   "lon": 9.944863,
    "praecision": "by",
    "geokilde": "nominatim",
    "postnr": "9700"
@@ -233,8 +233,8 @@
     }
    ],
    "beskrivelse": "Lørdag formiddag blev der anmeldt et indbrud i en bolig i Aalborg Øst. Gerningspersonerne er kommet ind ved at afliste en rude og har efterfølgende gennemrodet hele huset. Der er blandt andet blevet stjålet diverse smykker, B&O-højtalere, en MacBook og en bærbar computer.",
-   "lat": 57.0097218,
-   "lon": 9.9396023,
+   "lat": 57.009722,
+   "lon": 9.939602,
    "praecision": "by",
    "geokilde": "nominatim",
    "postnr": "9210"
@@ -3824,7 +3824,7 @@
    "postnr": "8240"
   },
   {
-   "id": "a7e066306e47",
+   "id": "fa4c9591cc05",
    "vej": "Bredkær parkvej",
    "by": "Egå",
    "omraade": "Aarhus",
@@ -3928,7 +3928,7 @@
    "postnr": "8250"
   },
   {
-   "id": "fa4c9591cc05",
+   "id": "a7e066306e47",
    "vej": "Bredkær Parkvej",
    "by": "Egå",
    "omraade": "Aarhus",
@@ -4469,7 +4469,7 @@
    "postnr": "8270"
   },
   {
-   "id": "1d4b08aa9caf",
+   "id": "174c6e8beebf",
    "vej": "Montanagade",
    "by": "Aarhus C",
    "omraade": "Aarhus",
@@ -4495,7 +4495,7 @@
    "postnr": "8000"
   },
   {
-   "id": "174c6e8beebf",
+   "id": "1d4b08aa9caf",
    "vej": "Montanagade",
    "by": "Aarhus C",
    "omraade": "Aarhus",
@@ -7011,7 +7011,7 @@
    "postnr": "8462"
   },
   {
-   "id": "a36bc10e1bf0",
+   "id": "2e74fb3e9f82",
    "vej": "Ketting Parkvej",
    "by": "Harlev J",
    "omraade": "Aarhus",
@@ -7037,7 +7037,7 @@
    "postnr": "8462"
   },
   {
-   "id": "2e74fb3e9f82",
+   "id": "a36bc10e1bf0",
    "vej": "Ketting Parkvej",
    "by": "Harlev J",
    "omraade": "Aarhus",
@@ -7297,7 +7297,7 @@
    "postnr": "8270"
   },
   {
-   "id": "f3ef8220f57b",
+   "id": "77c06dc48d96",
    "vej": "Børupvej",
    "by": "Tranbjerg J",
    "omraade": "Aarhus",
@@ -7323,7 +7323,7 @@
    "postnr": "8310"
   },
   {
-   "id": "77c06dc48d96",
+   "id": "f3ef8220f57b",
    "vej": "Børupvej",
    "by": "Tranbjerg J",
    "omraade": "Aarhus",
@@ -13574,7 +13574,7 @@
    "postnr": "8543"
   },
   {
-   "id": "614da2cf26fd",
+   "id": "749f8334564c",
    "vej": "Tendrup Møllevej",
    "by": "Hornslet",
    "omraade": "Hornslet",
@@ -13600,7 +13600,7 @@
    "postnr": "8543"
   },
   {
-   "id": "749f8334564c",
+   "id": "614da2cf26fd",
    "vej": "Tendrup Møllevej",
    "by": "Hornslet",
    "omraade": "Hornslet",
@@ -23164,7 +23164,7 @@
    "postnr": "8240"
   },
   {
-   "id": "8768692d3f6d",
+   "id": "55f7412a6965",
    "vej": "Langager",
    "by": "Hornslet",
    "omraade": "Hornslet",
@@ -23190,7 +23190,7 @@
    "postnr": "8543"
   },
   {
-   "id": "55f7412a6965",
+   "id": "8768692d3f6d",
    "vej": "Langager",
    "by": "Hornslet",
    "omraade": "Hornslet",
@@ -27506,7 +27506,7 @@
    "postnr": "8000"
   },
   {
-   "id": "bbde6b91d6cc",
+   "id": "9b4c14d79448",
    "vej": "Råhøjparken",
    "by": "Viby J",
    "omraade": "Aarhus",
@@ -27532,7 +27532,7 @@
    "postnr": "8220"
   },
   {
-   "id": "9b4c14d79448",
+   "id": "bbde6b91d6cc",
    "vej": "Råhøjparken",
    "by": "Viby J",
    "omraade": "Aarhus",
@@ -27740,7 +27740,7 @@
    "postnr": "8381"
   },
   {
-   "id": "5481e0a9b7f6",
+   "id": "ebac038625bd",
    "vej": "Højbovej",
    "by": "Højbjerg",
    "omraade": "Aarhus",
@@ -27766,7 +27766,7 @@
    "postnr": "8270"
   },
   {
-   "id": "ebac038625bd",
+   "id": "5481e0a9b7f6",
    "vej": "Højbovej",
    "by": "Højbjerg",
    "omraade": "Aarhus",
@@ -32133,7 +32133,7 @@
    "postnr": "8361"
   },
   {
-   "id": "b86beeb47547",
+   "id": "cf61db8b47da",
    "vej": "Porskær",
    "by": "Brabrand",
    "omraade": "Aarhus",
@@ -32211,7 +32211,7 @@
    "postnr": "8000"
   },
   {
-   "id": "cf61db8b47da",
+   "id": "b86beeb47547",
    "vej": "Porskær",
    "by": "Brabrand",
    "omraade": "Aarhus",
@@ -41094,7 +41094,7 @@
    "postnr": "8361"
   },
   {
-   "id": "69f1f20fa203",
+   "id": "c0dc54958728",
    "vej": "Teglhøjen",
    "by": "Hinnerup",
    "omraade": "Hinnerup",
@@ -41146,7 +41146,7 @@
    "postnr": "8900"
   },
   {
-   "id": "c92aa1d4a3cf",
+   "id": "69f1f20fa203",
    "vej": "Teglhøjen",
    "by": "Hinnerup",
    "omraade": "Hinnerup",
@@ -41172,7 +41172,7 @@
    "postnr": "8382"
   },
   {
-   "id": "c0dc54958728",
+   "id": "c92aa1d4a3cf",
    "vej": "Teglhøjen",
    "by": "Hinnerup",
    "omraade": "Hinnerup",
@@ -42805,7 +42805,7 @@
    "postnr": "8361"
   },
   {
-   "id": "8f6aee6d70ef",
+   "id": "a3a79061f2e1",
    "vej": "Ørvadsvej",
    "by": "Årslev",
    "omraade": "Årslev",
@@ -42831,7 +42831,7 @@
    "postnr": "5792"
   },
   {
-   "id": "a3a79061f2e1",
+   "id": "8f6aee6d70ef",
    "vej": "Ørvadsvej",
    "by": "Årslev",
    "omraade": "Årslev",
@@ -52300,7 +52300,7 @@
    "postnr": "8300"
   },
   {
-   "id": "0ee5f31863dc",
+   "id": "b831de450140",
    "vej": "Laskedalen",
    "by": "Brabrand",
    "omraade": "Aarhus",
@@ -52326,7 +52326,7 @@
    "postnr": "8220"
   },
   {
-   "id": "b831de450140",
+   "id": "0ee5f31863dc",
    "vej": "Laskedalen",
    "by": "Brabrand",
    "omraade": "Aarhus",
@@ -71636,9 +71636,9 @@
    "by": "Randers NV",
    "omraade": "Randers",
    "type": "privat",
-   "gerningstid": "19/7 kl. 06.00 – 12.00",
+   "gerningstid": "19/7 kl. 06.00 – 11.37",
    "tid_fra": "2024-07-19T06:00",
-   "tid_til": "2024-07-19T12:00",
+   "tid_til": "2024-07-19T11:37",
    "rapportdato": "2024-07-20",
    "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-20-juli-2024/2024/07/20",
    "politikreds": "Østjyllands Politi",
@@ -71662,9 +71662,9 @@
    "by": "Randers NV",
    "omraade": "Randers",
    "type": "privat",
-   "gerningstid": "19/7 kl. 06.00 – 11.37",
+   "gerningstid": "19/7 kl. 06.00 – 12.00",
    "tid_fra": "2024-07-19T06:00",
-   "tid_til": "2024-07-19T11:37",
+   "tid_til": "2024-07-19T12:00",
    "rapportdato": "2024-07-20",
    "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-20-juli-2024/2024/07/20",
    "politikreds": "Østjyllands Politi",
@@ -81531,7 +81531,7 @@
    "postnr": "8250"
   },
   {
-   "id": "09649c6bed74",
+   "id": "e6767e598970",
    "vej": "I.P. Jacobsens Vej",
    "by": "Åbyhøj",
    "omraade": "Aarhus",
@@ -81557,7 +81557,7 @@
    "postnr": "8230"
   },
   {
-   "id": "e6767e598970",
+   "id": "09649c6bed74",
    "vej": "I.P. Jacobsens Vej",
    "by": "Åbyhøj",
    "omraade": "Aarhus",
@@ -84651,7 +84651,7 @@
    "postnr": "8920"
   },
   {
-   "id": "11d4aef5494a",
+   "id": "3ba4ba443b11",
    "vej": "Bakkevej",
    "by": "Randers SØ",
    "omraade": "Randers",
@@ -84677,7 +84677,7 @@
    "postnr": "8920"
   },
   {
-   "id": "3ba4ba443b11",
+   "id": "11d4aef5494a",
    "vej": "Bakkevej",
    "by": "Randers SØ",
    "omraade": "Randers",
@@ -91203,7 +91203,7 @@
    "postnr": "8963"
   },
   {
-   "id": "aeb2297eecb0",
+   "id": "c79b4f03647b",
    "vej": "Elleparken",
    "by": "Lystrup",
    "omraade": "Aarhus",
@@ -91229,7 +91229,7 @@
    "postnr": "8520"
   },
   {
-   "id": "c79b4f03647b",
+   "id": "aeb2297eecb0",
    "vej": "Elleparken",
    "by": "Lystrup",
    "omraade": "Aarhus",
@@ -101548,7 +101548,7 @@
    "postnr": "8230"
   },
   {
-   "id": "23ba731e356c",
+   "id": "44f205f7e0a9",
    "vej": "Sjællandsgade",
    "by": "Aarhus C",
    "omraade": "Aarhus",
@@ -101626,7 +101626,7 @@
    "postnr": "8000"
   },
   {
-   "id": "d0789c6087d4",
+   "id": "23ba731e356c",
    "vej": "Sjællandsgade",
    "by": "Aarhus C",
    "omraade": "Aarhus",
@@ -101678,7 +101678,7 @@
    "postnr": "8260"
   },
   {
-   "id": "44f205f7e0a9",
+   "id": "d0789c6087d4",
    "vej": "Sjællandsgade",
    "by": "Aarhus C",
    "omraade": "Aarhus",
@@ -110865,7 +110865,7 @@
    "postnr": "8000"
   },
   {
-   "id": "caae2d75f938",
+   "id": "e2d454ce2ad7",
    "vej": "Børupvej",
    "by": "Tranbjerg J",
    "omraade": "Aarhus",
@@ -110891,7 +110891,7 @@
    "postnr": "8310"
   },
   {
-   "id": "e2d454ce2ad7",
+   "id": "caae2d75f938",
    "vej": "Børupvej",
    "by": "Tranbjerg J",
    "omraade": "Aarhus",
@@ -118100,7 +118100,7 @@
    "postnr": "8000"
   },
   {
-   "id": "1bb0d1231ec1",
+   "id": "17baa343bdaf",
    "vej": "G. C. Amdrups Vej",
    "by": "Aarhus N",
    "omraade": "Aarhus",
@@ -118126,7 +118126,7 @@
    "postnr": "8000"
   },
   {
-   "id": "17baa343bdaf",
+   "id": "1bb0d1231ec1",
    "vej": "G. C. Amdrups Vej",
    "by": "Aarhus N",
    "omraade": "Aarhus",
@@ -121700,6 +121700,7 @@
   "https://via.ritzau.dk/pressemeddelelse/15251187/65-arig-anholdt-af-ostjyllands-politi-sigtet-for-overgreb?publisherId=90721&lang=da": "2026-10-27",
   "https://via.ritzau.dk/pressemeddelelse/15251206/65-arig-anholdt-af-ostjyllands-politi-sigtet-for-overgreb?publisherId=90721&lang=da": "2026-10-27",
   "https://via.ritzau.dk/pressemeddelelse/15251455/65-arig-anholdt-af-ostjyllands-politi-sigtet-for-overgreb?publisherId=90721&lang=da": "2026-10-27",
+  "https://via.ritzau.dk/pressemeddelelse/15251844/atk-maling-i-varde-kommune?publisherId=90686&lang=da": "2026-10-27",
   "https://via.ritzau.dk/release/15229519": "2026-10-17"
  }
 }
