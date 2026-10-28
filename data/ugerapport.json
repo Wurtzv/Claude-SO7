@@ -1,14 +1,21 @@
 {
- "opdateret": "2026-10-27T18:43:15+00:00",
+ "opdateret": "2026-10-28T13:07:51+00:00",
  "uge": {
-  "fra": "2026-10-21",
-  "til": "2026-10-27",
-  "foer_fra": "2026-10-14",
-  "foer_til": "2026-10-20",
-  "antal": 44,
-  "foer": 38,
+  "fra": "2026-10-22",
+  "til": "2026-10-28",
+  "foer_fra": "2026-10-15",
+  "foer_til": "2026-10-21",
+  "antal": 52,
+  "foer": 39,
   "bydele": {
    "flest": [
+    {
+     "navn": "Aarhus C",
+     "antal": 8,
+     "foer": 2,
+     "forskel": 6,
+     "kreds": "Østjyllands Politi"
+    },
     {
      "navn": "Aarhus V",
      "antal": 7,
@@ -17,10 +24,10 @@
      "kreds": "Østjyllands Politi"
     },
     {
-     "navn": "Aarhus C",
-     "antal": 7,
-     "foer": 2,
-     "forskel": 5,
+     "navn": "Risskov",
+     "antal": 5,
+     "foer": 4,
+     "forskel": 1,
      "kreds": "Østjyllands Politi"
     },
     {
@@ -31,10 +38,24 @@
      "kreds": "Østjyllands Politi"
     },
     {
-     "navn": "Risskov",
-     "antal": 4,
-     "foer": 4,
-     "forskel": 0,
+     "navn": "Viby J",
+     "antal": 3,
+     "foer": 2,
+     "forskel": 1,
+     "kreds": "Østjyllands Politi"
+    },
+    {
+     "navn": "Brabrand",
+     "antal": 2,
+     "foer": 0,
+     "forskel": 2,
+     "kreds": "Østjyllands Politi"
+    },
+    {
+     "navn": "Lystrup",
+     "antal": 2,
+     "foer": 0,
+     "forskel": 2,
      "kreds": "Østjyllands Politi"
     },
     {
@@ -52,32 +73,11 @@
      "kreds": "Nordjyllands Politi"
     },
     {
-     "navn": "Viby J",
+     "navn": "Randers NV",
      "antal": 2,
      "foer": 2,
      "forskel": 0,
      "kreds": "Østjyllands Politi"
-    },
-    {
-     "navn": "Aalborg Øst",
-     "antal": 1,
-     "foer": 0,
-     "forskel": 1,
-     "kreds": "Nordjyllands Politi"
-    },
-    {
-     "navn": "Brabrand",
-     "antal": 1,
-     "foer": 0,
-     "forskel": 1,
-     "kreds": "Østjyllands Politi"
-    },
-    {
-     "navn": "Brønderslev",
-     "antal": 1,
-     "foer": 0,
-     "forskel": 1,
-     "kreds": "Nordjyllands Politi"
     }
    ],
    "stigning": [
@@ -90,15 +90,29 @@
     },
     {
      "navn": "Aarhus C",
-     "antal": 7,
+     "antal": 8,
      "foer": 2,
-     "forskel": 5,
+     "forskel": 6,
      "kreds": "Østjyllands Politi"
     },
     {
      "navn": "Højbjerg",
      "antal": 4,
      "foer": 2,
+     "forskel": 2,
+     "kreds": "Østjyllands Politi"
+    },
+    {
+     "navn": "Brabrand",
+     "antal": 2,
+     "foer": 0,
+     "forskel": 2,
+     "kreds": "Østjyllands Politi"
+    },
+    {
+     "navn": "Lystrup",
+     "antal": 2,
+     "foer": 0,
      "forskel": 2,
      "kreds": "Østjyllands Politi"
     },
@@ -115,6 +129,20 @@
      "foer": 0,
      "forskel": 2,
      "kreds": "Nordjyllands Politi"
+    },
+    {
+     "navn": "Risskov",
+     "antal": 5,
+     "foer": 4,
+     "forskel": 1,
+     "kreds": "Østjyllands Politi"
+    },
+    {
+     "navn": "Viby J",
+     "antal": 3,
+     "foer": 2,
+     "forskel": 1,
+     "kreds": "Østjyllands Politi"
     }
    ]
   },
@@ -122,9 +150,9 @@
    "flest": [
     {
      "navn": "8000",
-     "antal": 7,
+     "antal": 9,
      "foer": 4,
-     "forskel": 3,
+     "forskel": 5,
      "kreds": "Østjyllands Politi",
      "byer": [
       "Aarhus C",
@@ -142,6 +170,16 @@
      ]
     },
     {
+     "navn": "8240",
+     "antal": 5,
+     "foer": 4,
+     "forskel": 1,
+     "kreds": "Østjyllands Politi",
+     "byer": [
+      "Risskov"
+     ]
+    },
+    {
      "navn": "8270",
      "antal": 4,
      "foer": 2,
@@ -149,16 +187,6 @@
      "kreds": "Østjyllands Politi",
      "byer": [
       "Højbjerg"
-     ]
-    },
-    {
-     "navn": "8240",
-     "antal": 4,
-     "foer": 4,
-     "forskel": 0,
-     "kreds": "Østjyllands Politi",
-     "byer": [
-      "Risskov"
      ]
     },
     {
@@ -170,6 +198,16 @@
      "byer": [
       "Vejgaard",
       "Aalborg Øst"
+     ]
+    },
+    {
+     "navn": "8520",
+     "antal": 2,
+     "foer": 0,
+     "forskel": 2,
+     "kreds": "Østjyllands Politi",
+     "byer": [
+      "Lystrup"
      ]
     },
     {
@@ -193,33 +231,26 @@
      ]
     },
     {
-     "navn": "8220",
-     "antal": 1,
-     "foer": 0,
-     "forskel": 1,
+     "navn": "8230",
+     "antal": 2,
+     "foer": 3,
+     "forskel": -1,
      "kreds": "Østjyllands Politi",
      "byer": [
-      "Brabrand"
+      "Åbyhøj",
+      "Viby J"
      ]
     },
     {
-     "navn": "8300",
-     "antal": 1,
-     "foer": 0,
-     "forskel": 1,
+     "navn": "8900",
+     "antal": 2,
+     "foer": 3,
+     "forskel": -1,
      "kreds": "Østjyllands Politi",
      "byer": [
-      "Odder"
-     ]
-    },
-    {
-     "navn": "8340",
-     "antal": 1,
-     "foer": 0,
-     "forskel": 1,
-     "kreds": "Østjyllands Politi",
-     "byer": [
-      "Malling"
+      "Randers C",
+      "Randers NØ",
+      "Randers NV"
      ]
     }
    ],
@@ -236,9 +267,9 @@
     },
     {
      "navn": "8000",
-     "antal": 7,
+     "antal": 9,
      "foer": 4,
-     "forskel": 3,
+     "forskel": 5,
      "kreds": "Østjyllands Politi",
      "byer": [
       "Aarhus C",
@@ -267,6 +298,16 @@
      ]
     },
     {
+     "navn": "8520",
+     "antal": 2,
+     "foer": 0,
+     "forskel": 2,
+     "kreds": "Østjyllands Politi",
+     "byer": [
+      "Lystrup"
+     ]
+    },
+    {
      "navn": "9310",
      "antal": 2,
      "foer": 0,
@@ -274,6 +315,16 @@
      "kreds": "Nordjyllands Politi",
      "byer": [
       "Vodskov"
+     ]
+    },
+    {
+     "navn": "8240",
+     "antal": 5,
+     "foer": 4,
+     "forskel": 1,
+     "kreds": "Østjyllands Politi",
+     "byer": [
+      "Risskov"
      ]
     }
    ]
@@ -316,6 +367,13 @@
      "kreds": "Østjyllands Politi"
     },
     {
+     "navn": "Alsvej, Risskov",
+     "antal": 1,
+     "foer": 0,
+     "forskel": 1,
+     "kreds": "Østjyllands Politi"
+    },
+    {
      "navn": "Byhøjparken, Trige",
      "antal": 1,
      "foer": 0,
@@ -338,13 +396,6 @@
     },
     {
      "navn": "Ellebrinken, Lystrup",
-     "antal": 1,
-     "foer": 0,
-     "forskel": 1,
-     "kreds": "Østjyllands Politi"
-    },
-    {
-     "navn": "Fynsgade, Aarhus C",
      "antal": 1,
      "foer": 0,
      "forskel": 1,
