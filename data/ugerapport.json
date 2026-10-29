@@ -1,19 +1,19 @@
 {
- "opdateret": "2026-10-28T18:52:57+00:00",
+ "opdateret": "2026-10-29T13:07:56+00:00",
  "uge": {
-  "fra": "2026-10-22",
-  "til": "2026-10-28",
-  "foer_fra": "2026-10-15",
-  "foer_til": "2026-10-21",
-  "antal": 52,
+  "fra": "2026-10-23",
+  "til": "2026-10-29",
+  "foer_fra": "2026-10-16",
+  "foer_til": "2026-10-22",
+  "antal": 53,
   "foer": 39,
   "bydele": {
    "flest": [
     {
      "navn": "Aarhus C",
      "antal": 8,
-     "foer": 2,
-     "forskel": 6,
+     "foer": 3,
+     "forskel": 5,
      "kreds": "Østjyllands Politi"
     },
     {
@@ -39,9 +39,9 @@
     },
     {
      "navn": "Viby J",
-     "antal": 3,
+     "antal": 4,
      "foer": 2,
-     "forskel": 1,
+     "forskel": 2,
      "kreds": "Østjyllands Politi"
     },
     {
@@ -91,12 +91,19 @@
     {
      "navn": "Aarhus C",
      "antal": 8,
-     "foer": 2,
-     "forskel": 6,
+     "foer": 3,
+     "forskel": 5,
      "kreds": "Østjyllands Politi"
     },
     {
      "navn": "Højbjerg",
+     "antal": 4,
+     "foer": 2,
+     "forskel": 2,
+     "kreds": "Østjyllands Politi"
+    },
+    {
+     "navn": "Viby J",
      "antal": 4,
      "foer": 2,
      "forskel": 2,
@@ -136,13 +143,6 @@
      "foer": 4,
      "forskel": 1,
      "kreds": "Østjyllands Politi"
-    },
-    {
-     "navn": "Viby J",
-     "antal": 3,
-     "foer": 2,
-     "forskel": 1,
-     "kreds": "Østjyllands Politi"
     }
    ]
   },
@@ -151,8 +151,8 @@
     {
      "navn": "8000",
      "antal": 9,
-     "foer": 4,
-     "forskel": 5,
+     "foer": 5,
+     "forskel": 4,
      "kreds": "Østjyllands Politi",
      "byer": [
       "Aarhus C",
@@ -201,6 +201,16 @@
      ]
     },
     {
+     "navn": "8260",
+     "antal": 3,
+     "foer": 2,
+     "forskel": 1,
+     "kreds": "Østjyllands Politi",
+     "byer": [
+      "Viby J"
+     ]
+    },
+    {
      "navn": "8520",
      "antal": 2,
      "foer": 0,
@@ -221,13 +231,15 @@
      ]
     },
     {
-     "navn": "8260",
+     "navn": "8900",
      "antal": 2,
      "foer": 2,
      "forskel": 0,
      "kreds": "Østjyllands Politi",
      "byer": [
-      "Viby J"
+      "Randers C",
+      "Randers NV",
+      "Randers NØ"
      ]
     },
     {
@@ -239,18 +251,6 @@
      "byer": [
       "Åbyhøj",
       "Viby J"
-     ]
-    },
-    {
-     "navn": "8900",
-     "antal": 2,
-     "foer": 3,
-     "forskel": -1,
-     "kreds": "Østjyllands Politi",
-     "byer": [
-      "Randers C",
-      "Randers NØ",
-      "Randers NV"
      ]
     }
    ],
@@ -268,8 +268,8 @@
     {
      "navn": "8000",
      "antal": 9,
-     "foer": 4,
-     "forskel": 5,
+     "foer": 5,
+     "forskel": 4,
      "kreds": "Østjyllands Politi",
      "byer": [
       "Aarhus C",
@@ -325,6 +325,16 @@
      "kreds": "Østjyllands Politi",
      "byer": [
       "Risskov"
+     ]
+    },
+    {
+     "navn": "8260",
+     "antal": 3,
+     "foer": 2,
+     "forskel": 1,
+     "kreds": "Østjyllands Politi",
+     "byer": [
+      "Viby J"
      ]
     }
    ]
