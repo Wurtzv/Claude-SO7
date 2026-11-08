@@ -1,7 +1,106 @@
 {
- "opdateret": "2026-11-07T18:03:53+00:00",
- "antal": 4720,
+ "opdateret": "2026-11-08T13:41:12+00:00",
+ "antal": 4724,
  "indbrud": [
+  {
+   "id": "c15a229bdeff",
+   "vej": "Rødtjørnevej",
+   "by": "Langå",
+   "omraade": "Langå",
+   "type": "privat",
+   "gerningstid": "7/11 kl. 22.20 – 22.30",
+   "tid_fra": "2026-11-07T22:20",
+   "tid_til": "2026-11-07T22:30",
+   "rapportdato": "2026-11-08",
+   "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/uddrag-af-doegnrapporten-8-november-2026/2026/11/08",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/uddrag-af-doegnrapporten-8-november-2026/2026/11/08",
+     "titel": "Uddrag af døgnrapporten fra Østjyllands Politi 8. november 2026",
+     "rapportdato": "2026-11-08",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "lat": 56.356643,
+   "lon": 9.921039,
+   "praecision": "vej",
+   "geokilde": "nominatim",
+   "postnr": "8870"
+  },
+  {
+   "id": "0db02ac56ae9",
+   "vej": "Hasle Ringvej",
+   "by": "",
+   "omraade": "",
+   "type": "privat",
+   "gerningstid": "7/11 kl. 19.00 – 8/11 kl. 00.40",
+   "tid_fra": "2026-11-07T19:00",
+   "tid_til": "2026-11-08T00:40",
+   "rapportdato": "2026-11-08",
+   "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/uddrag-af-doegnrapporten-8-november-2026/2026/11/08",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/uddrag-af-doegnrapporten-8-november-2026/2026/11/08",
+     "titel": "Uddrag af døgnrapporten fra Østjyllands Politi 8. november 2026",
+     "rapportdato": "2026-11-08",
+     "udgiver": "politi.dk"
+    }
+   ]
+  },
+  {
+   "id": "7a36e2b8b451",
+   "vej": "Basager",
+   "by": "Randers NØ",
+   "omraade": "Randers",
+   "type": "privat",
+   "gerningstid": "7/11 kl. 13.30 – 17.30",
+   "tid_fra": "2026-11-07T13:30",
+   "tid_til": "2026-11-07T17:30",
+   "rapportdato": "2026-11-08",
+   "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/uddrag-af-doegnrapporten-8-november-2026/2026/11/08",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/uddrag-af-doegnrapporten-8-november-2026/2026/11/08",
+     "titel": "Uddrag af døgnrapporten fra Østjyllands Politi 8. november 2026",
+     "rapportdato": "2026-11-08",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "lat": 56.495222,
+   "lon": 10.121836,
+   "praecision": "vej",
+   "geokilde": "nominatim",
+   "postnr": "8930"
+  },
+  {
+   "id": "ddb3de2cb782",
+   "vej": "Florasvej",
+   "by": "Harlev J",
+   "omraade": "Aarhus",
+   "type": "privat",
+   "gerningstid": "7/11 kl. 12.00 – 15.30",
+   "tid_fra": "2026-11-07T12:00",
+   "tid_til": "2026-11-07T15:30",
+   "rapportdato": "2026-11-08",
+   "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/uddrag-af-doegnrapporten-8-november-2026/2026/11/08",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/uddrag-af-doegnrapporten-8-november-2026/2026/11/08",
+     "titel": "Uddrag af døgnrapporten fra Østjyllands Politi 8. november 2026",
+     "rapportdato": "2026-11-08",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "lat": 56.14343,
+   "lon": 9.998218,
+   "praecision": "vej",
+   "geokilde": "nominatim",
+   "postnr": "8462"
+  },
   {
    "id": "35e6f02bfaed",
    "vej": "Ivar Huitfeldts Gade",
@@ -3268,8 +3367,8 @@
      "udgiver": "politi.dk"
     }
    ],
-   "lat": 56.1496278,
-   "lon": 10.2134046,
+   "lat": 56.149628,
+   "lon": 10.213405,
    "praecision": "by",
    "geokilde": "nominatim",
    "postnr": "8000"
@@ -3373,7 +3472,7 @@
     }
    ],
    "lat": 56.390979,
-   "lon": 9.8936301,
+   "lon": 9.89363,
    "praecision": "by",
    "geokilde": "nominatim",
    "postnr": "8870"
@@ -3529,8 +3628,8 @@
      "udgiver": "politi.dk"
     }
    ],
-   "lat": 56.2121365,
-   "lon": 10.0341514,
+   "lat": 56.212136,
+   "lon": 10.034151,
    "praecision": "by",
    "geokilde": "nominatim",
    "postnr": "8471"
@@ -3555,8 +3654,8 @@
      "udgiver": "politi.dk"
     }
    ],
-   "lat": 56.1496278,
-   "lon": 10.2134046,
+   "lat": 56.149628,
+   "lon": 10.213405,
    "praecision": "by",
    "geokilde": "nominatim",
    "postnr": "8000"
@@ -4128,7 +4227,7 @@
      "udgiver": "Via Ritzau"
     }
    ],
-   "lat": 56.1133853,
+   "lat": 56.113385,
    "lon": 10.206361,
    "praecision": "by",
    "geokilde": "nominatim",
@@ -4652,8 +4751,8 @@
      "udgiver": "politi.dk"
     }
    ],
-   "lat": 56.4355428,
-   "lon": 10.0425957,
+   "lat": 56.435543,
+   "lon": 10.042596,
    "praecision": "by",
    "geokilde": "nominatim",
    "postnr": "8940"
@@ -4704,8 +4803,8 @@
      "udgiver": "politi.dk"
     }
    ],
-   "lat": 56.4314503,
-   "lon": 10.3781855,
+   "lat": 56.43145,
+   "lon": 10.378186,
    "praecision": "by",
    "geokilde": "nominatim",
    "postnr": "8963"
@@ -5968,7 +6067,7 @@
    "postnr": "8240"
   },
   {
-   "id": "fa4c9591cc05",
+   "id": "a7e066306e47",
    "vej": "Bredkær parkvej",
    "by": "Egå",
    "omraade": "Aarhus",
@@ -6072,7 +6171,7 @@
    "postnr": "8250"
   },
   {
-   "id": "a7e066306e47",
+   "id": "fa4c9591cc05",
    "vej": "Bredkær Parkvej",
    "by": "Egå",
    "omraade": "Aarhus",
@@ -6613,7 +6712,7 @@
    "postnr": "8270"
   },
   {
-   "id": "174c6e8beebf",
+   "id": "1d4b08aa9caf",
    "vej": "Montanagade",
    "by": "Aarhus C",
    "omraade": "Aarhus",
@@ -6639,7 +6738,7 @@
    "postnr": "8000"
   },
   {
-   "id": "1d4b08aa9caf",
+   "id": "174c6e8beebf",
    "vej": "Montanagade",
    "by": "Aarhus C",
    "omraade": "Aarhus",
@@ -9155,7 +9254,7 @@
    "postnr": "8462"
   },
   {
-   "id": "2e74fb3e9f82",
+   "id": "a36bc10e1bf0",
    "vej": "Ketting Parkvej",
    "by": "Harlev J",
    "omraade": "Aarhus",
@@ -9181,7 +9280,7 @@
    "postnr": "8462"
   },
   {
-   "id": "a36bc10e1bf0",
+   "id": "2e74fb3e9f82",
    "vej": "Ketting Parkvej",
    "by": "Harlev J",
    "omraade": "Aarhus",
@@ -9441,7 +9540,7 @@
    "postnr": "8270"
   },
   {
-   "id": "77c06dc48d96",
+   "id": "f3ef8220f57b",
    "vej": "Børupvej",
    "by": "Tranbjerg J",
    "omraade": "Aarhus",
@@ -9467,7 +9566,7 @@
    "postnr": "8310"
   },
   {
-   "id": "f3ef8220f57b",
+   "id": "77c06dc48d96",
    "vej": "Børupvej",
    "by": "Tranbjerg J",
    "omraade": "Aarhus",
@@ -9616,8 +9715,8 @@
      "udgiver": "politi.dk"
     }
    ],
-   "lat": 55.5398998,
-   "lon": 11.2554858,
+   "lat": 55.5399,
+   "lon": 11.255486,
    "praecision": "by",
    "geokilde": "nominatim",
    "postnr": "4270"
@@ -15718,7 +15817,7 @@
    "postnr": "8543"
   },
   {
-   "id": "749f8334564c",
+   "id": "614da2cf26fd",
    "vej": "Tendrup Møllevej",
    "by": "Hornslet",
    "omraade": "Hornslet",
@@ -15744,7 +15843,7 @@
    "postnr": "8543"
   },
   {
-   "id": "614da2cf26fd",
+   "id": "749f8334564c",
    "vej": "Tendrup Møllevej",
    "by": "Hornslet",
    "omraade": "Hornslet",
@@ -25308,7 +25407,7 @@
    "postnr": "8240"
   },
   {
-   "id": "55f7412a6965",
+   "id": "8768692d3f6d",
    "vej": "Langager",
    "by": "Hornslet",
    "omraade": "Hornslet",
@@ -25334,7 +25433,7 @@
    "postnr": "8543"
   },
   {
-   "id": "8768692d3f6d",
+   "id": "55f7412a6965",
    "vej": "Langager",
    "by": "Hornslet",
    "omraade": "Hornslet",
@@ -26581,8 +26680,8 @@
      "udgiver": "politi.dk"
     }
    ],
-   "lat": 55.1838021,
-   "lon": 14.7061711,
+   "lat": 55.183802,
+   "lon": 14.706171,
    "praecision": "by",
    "geokilde": "nominatim",
    "postnr": "3790"
@@ -29650,7 +29749,7 @@
    "postnr": "8000"
   },
   {
-   "id": "9b4c14d79448",
+   "id": "bbde6b91d6cc",
    "vej": "Råhøjparken",
    "by": "Viby J",
    "omraade": "Aarhus",
@@ -29676,7 +29775,7 @@
    "postnr": "8220"
   },
   {
-   "id": "bbde6b91d6cc",
+   "id": "9b4c14d79448",
    "vej": "Råhøjparken",
    "by": "Viby J",
    "omraade": "Aarhus",
@@ -29884,7 +29983,7 @@
    "postnr": "8381"
   },
   {
-   "id": "ebac038625bd",
+   "id": "5481e0a9b7f6",
    "vej": "Højbovej",
    "by": "Højbjerg",
    "omraade": "Aarhus",
@@ -29910,7 +30009,7 @@
    "postnr": "8270"
   },
   {
-   "id": "5481e0a9b7f6",
+   "id": "ebac038625bd",
    "vej": "Højbovej",
    "by": "Højbjerg",
    "omraade": "Aarhus",
@@ -34277,7 +34376,7 @@
    "postnr": "8361"
   },
   {
-   "id": "cf61db8b47da",
+   "id": "b86beeb47547",
    "vej": "Porskær",
    "by": "Brabrand",
    "omraade": "Aarhus",
@@ -34355,7 +34454,7 @@
    "postnr": "8000"
   },
   {
-   "id": "b86beeb47547",
+   "id": "cf61db8b47da",
    "vej": "Porskær",
    "by": "Brabrand",
    "omraade": "Aarhus",
@@ -41544,8 +41643,8 @@
      "udgiver": "politi.dk"
     }
    ],
-   "lat": 55.7186117,
-   "lon": 11.7135474,
+   "lat": 55.718612,
+   "lon": 11.713547,
    "praecision": "by",
    "geokilde": "nominatim",
    "postnr": "4300"
@@ -42791,8 +42890,8 @@
      "udgiver": "politi.dk"
     }
    ],
-   "lat": 55.2361139,
-   "lon": 10.5625462,
+   "lat": 55.236114,
+   "lon": 10.562546,
    "praecision": "by",
    "geokilde": "nominatim",
    "postnr": "5856"
@@ -43238,7 +43337,7 @@
    "postnr": "8361"
   },
   {
-   "id": "c92aa1d4a3cf",
+   "id": "69f1f20fa203",
    "vej": "Teglhøjen",
    "by": "Hinnerup",
    "omraade": "Hinnerup",
@@ -43290,7 +43389,7 @@
    "postnr": "8900"
   },
   {
-   "id": "c0dc54958728",
+   "id": "c92aa1d4a3cf",
    "vej": "Teglhøjen",
    "by": "Hinnerup",
    "omraade": "Hinnerup",
@@ -43316,7 +43415,7 @@
    "postnr": "8382"
   },
   {
-   "id": "69f1f20fa203",
+   "id": "c0dc54958728",
    "vej": "Teglhøjen",
    "by": "Hinnerup",
    "omraade": "Hinnerup",
@@ -44949,7 +45048,7 @@
    "postnr": "8361"
   },
   {
-   "id": "a3a79061f2e1",
+   "id": "8f6aee6d70ef",
    "vej": "Ørvadsvej",
    "by": "Årslev",
    "omraade": "Årslev",
@@ -44969,13 +45068,13 @@
     }
    ],
    "lat": 55.305281,
-   "lon": 10.4711821,
+   "lon": 10.471182,
    "praecision": "by",
    "geokilde": "nominatim",
    "postnr": "5792"
   },
   {
-   "id": "8f6aee6d70ef",
+   "id": "a3a79061f2e1",
    "vej": "Ørvadsvej",
    "by": "Årslev",
    "omraade": "Årslev",
@@ -44995,7 +45094,7 @@
     }
    ],
    "lat": 55.305281,
-   "lon": 10.4711821,
+   "lon": 10.471182,
    "praecision": "by",
    "geokilde": "nominatim",
    "postnr": "5792"
@@ -46970,7 +47069,7 @@
      "udgiver": "politi.dk"
     }
    ],
-   "lat": 57.0573849,
+   "lat": 57.057385,
    "lon": 10.366756,
    "praecision": "by",
    "geokilde": "nominatim",
@@ -48328,8 +48427,8 @@
      "udgiver": "politi.dk"
     }
    ],
-   "lat": 54.6890665,
-   "lon": 11.7283083,
+   "lat": 54.689067,
+   "lon": 11.728308,
    "praecision": "by",
    "geokilde": "nominatim",
    "postnr": "4880"
@@ -52565,8 +52664,8 @@
      "udgiver": "politi.dk"
     }
    ],
-   "lat": 55.9831506,
-   "lon": 11.9416881,
+   "lat": 55.983151,
+   "lon": 11.941688,
    "praecision": "by",
    "geokilde": "nominatim",
    "postnr": "3370"
@@ -54444,7 +54543,7 @@
    "postnr": "8300"
   },
   {
-   "id": "b831de450140",
+   "id": "0ee5f31863dc",
    "vej": "Laskedalen",
    "by": "Brabrand",
    "omraade": "Aarhus",
@@ -54470,7 +54569,7 @@
    "postnr": "8220"
   },
   {
-   "id": "0ee5f31863dc",
+   "id": "b831de450140",
    "vej": "Laskedalen",
    "by": "Brabrand",
    "omraade": "Aarhus",
@@ -54802,7 +54901,7 @@
     }
    ],
    "lat": 56.830027,
-   "lon": 8.7509076,
+   "lon": 8.750908,
    "praecision": "by",
    "geokilde": "nominatim",
    "postnr": "7950"
@@ -60228,8 +60327,8 @@
      "udgiver": "politi.dk"
     }
    ],
-   "lat": 56.1877607,
-   "lon": 10.0122294,
+   "lat": 56.187761,
+   "lon": 10.012229,
    "praecision": "by",
    "geokilde": "nominatim",
    "postnr": "8471"
@@ -69443,8 +69542,8 @@
      "udgiver": "politi.dk"
     }
    ],
-   "lat": 55.2447907,
-   "lon": 9.3837264,
+   "lat": 55.244791,
+   "lon": 9.383726,
    "praecision": "by",
    "geokilde": "nominatim"
   },
@@ -73780,9 +73879,9 @@
    "by": "Randers NV",
    "omraade": "Randers",
    "type": "privat",
-   "gerningstid": "19/7 kl. 06.00 – 11.37",
+   "gerningstid": "19/7 kl. 06.00 – 12.00",
    "tid_fra": "2024-07-19T06:00",
-   "tid_til": "2024-07-19T11:37",
+   "tid_til": "2024-07-19T12:00",
    "rapportdato": "2024-07-20",
    "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-20-juli-2024/2024/07/20",
    "politikreds": "Østjyllands Politi",
@@ -73806,9 +73905,9 @@
    "by": "Randers NV",
    "omraade": "Randers",
    "type": "privat",
-   "gerningstid": "19/7 kl. 06.00 – 12.00",
+   "gerningstid": "19/7 kl. 06.00 – 11.37",
    "tid_fra": "2024-07-19T06:00",
-   "tid_til": "2024-07-19T12:00",
+   "tid_til": "2024-07-19T11:37",
    "rapportdato": "2024-07-20",
    "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-20-juli-2024/2024/07/20",
    "politikreds": "Østjyllands Politi",
@@ -76071,8 +76170,8 @@
      "udgiver": "politi.dk"
     }
    ],
-   "lat": 55.3619976,
-   "lon": 10.2766392,
+   "lat": 55.361998,
+   "lon": 10.276639,
    "praecision": "by",
    "geokilde": "nominatim",
    "postnr": "5491"
@@ -76331,8 +76430,8 @@
      "udgiver": "politi.dk"
     }
    ],
-   "lat": 57.0300896,
-   "lon": 9.9177223,
+   "lat": 57.03009,
+   "lon": 9.917722,
    "praecision": "by",
    "geokilde": "nominatim",
    "postnr": "9000"
@@ -80090,8 +80189,8 @@
      "udgiver": "politi.dk"
     }
    ],
-   "lat": 55.3986618,
-   "lon": 9.3729881,
+   "lat": 55.398662,
+   "lon": 9.372988,
    "praecision": "by",
    "geokilde": "nominatim",
    "postnr": "6580"
@@ -83675,7 +83774,7 @@
    "postnr": "8250"
   },
   {
-   "id": "e6767e598970",
+   "id": "09649c6bed74",
    "vej": "I.P. Jacobsens Vej",
    "by": "Åbyhøj",
    "omraade": "Aarhus",
@@ -83701,7 +83800,7 @@
    "postnr": "8230"
   },
   {
-   "id": "09649c6bed74",
+   "id": "e6767e598970",
    "vej": "I.P. Jacobsens Vej",
    "by": "Åbyhøj",
    "omraade": "Aarhus",
@@ -86795,7 +86894,7 @@
    "postnr": "8920"
   },
   {
-   "id": "3ba4ba443b11",
+   "id": "11d4aef5494a",
    "vej": "Bakkevej",
    "by": "Randers SØ",
    "omraade": "Randers",
@@ -86821,7 +86920,7 @@
    "postnr": "8920"
   },
   {
-   "id": "11d4aef5494a",
+   "id": "3ba4ba443b11",
    "vej": "Bakkevej",
    "by": "Randers SØ",
    "omraade": "Randers",
@@ -92950,7 +93049,7 @@
      "udgiver": "politi.dk"
     }
    ],
-   "lat": 56.4804333,
+   "lat": 56.480433,
    "lon": 9.626306,
    "praecision": "by",
    "geokilde": "nominatim",
@@ -93347,7 +93446,7 @@
    "postnr": "8963"
   },
   {
-   "id": "c79b4f03647b",
+   "id": "aeb2297eecb0",
    "vej": "Elleparken",
    "by": "Lystrup",
    "omraade": "Aarhus",
@@ -93373,7 +93472,7 @@
    "postnr": "8520"
   },
   {
-   "id": "aeb2297eecb0",
+   "id": "c79b4f03647b",
    "vej": "Elleparken",
    "by": "Lystrup",
    "omraade": "Aarhus",
@@ -99438,8 +99537,8 @@
      "udgiver": "politi.dk"
     }
    ],
-   "lat": 56.5166824,
-   "lon": 9.9438554,
+   "lat": 56.516682,
+   "lon": 9.943855,
    "praecision": "by",
    "geokilde": "nominatim",
    "postnr": "8920"
@@ -99542,8 +99641,8 @@
      "udgiver": "politi.dk"
     }
    ],
-   "lat": 56.5166824,
-   "lon": 9.9438554,
+   "lat": 56.516682,
+   "lon": 9.943855,
    "praecision": "by",
    "geokilde": "nominatim",
    "postnr": "8920"
@@ -102531,8 +102630,8 @@
      "udgiver": "politi.dk"
     }
    ],
-   "lat": 56.6721323,
-   "lon": 9.0152295,
+   "lat": 56.672132,
+   "lon": 9.01523,
    "praecision": "by",
    "geokilde": "nominatim"
   },
@@ -103692,7 +103791,7 @@
    "postnr": "8230"
   },
   {
-   "id": "d0789c6087d4",
+   "id": "23ba731e356c",
    "vej": "Sjællandsgade",
    "by": "Aarhus C",
    "omraade": "Aarhus",
@@ -103770,7 +103869,7 @@
    "postnr": "8000"
   },
   {
-   "id": "44f205f7e0a9",
+   "id": "d0789c6087d4",
    "vej": "Sjællandsgade",
    "by": "Aarhus C",
    "omraade": "Aarhus",
@@ -103822,7 +103921,7 @@
    "postnr": "8260"
   },
   {
-   "id": "23ba731e356c",
+   "id": "44f205f7e0a9",
    "vej": "Sjællandsgade",
    "by": "Aarhus C",
    "omraade": "Aarhus",
@@ -104153,8 +104252,8 @@
      "udgiver": "politi.dk"
     }
    ],
-   "lat": 56.2249776,
-   "lon": 9.8237345,
+   "lat": 56.224978,
+   "lon": 9.823735,
    "praecision": "by",
    "geokilde": "nominatim",
    "postnr": "8472"
@@ -105217,8 +105316,8 @@
      "udgiver": "politi.dk"
     }
    ],
-   "lat": 55.1838021,
-   "lon": 14.7061711,
+   "lat": 55.183802,
+   "lon": 14.706171,
    "praecision": "by",
    "geokilde": "nominatim",
    "postnr": "3790"
@@ -108851,8 +108950,8 @@
      "udgiver": "politi.dk"
     }
    ],
-   "lat": 56.0312845,
-   "lon": 10.1253465,
+   "lat": 56.031284,
+   "lon": 10.125346,
    "praecision": "by",
    "geokilde": "nominatim",
    "postnr": "8355"
@@ -109837,8 +109936,8 @@
      "udgiver": "politi.dk"
     }
    ],
-   "lat": 55.2816659,
-   "lon": 10.4921154,
+   "lat": 55.281666,
+   "lon": 10.492115,
    "praecision": "by",
    "geokilde": "nominatim",
    "postnr": "5792"
@@ -113009,7 +113108,7 @@
    "postnr": "8000"
   },
   {
-   "id": "e2d454ce2ad7",
+   "id": "caae2d75f938",
    "vej": "Børupvej",
    "by": "Tranbjerg J",
    "omraade": "Aarhus",
@@ -113035,7 +113134,7 @@
    "postnr": "8310"
   },
   {
-   "id": "caae2d75f938",
+   "id": "e2d454ce2ad7",
    "vej": "Børupvej",
    "by": "Tranbjerg J",
    "omraade": "Aarhus",
@@ -113495,8 +113594,8 @@
      "udgiver": "politi.dk"
     }
    ],
-   "lat": 55.1838021,
-   "lon": 14.7061711,
+   "lat": 55.183802,
+   "lon": 14.706171,
    "praecision": "by",
    "geokilde": "nominatim",
    "postnr": "3790"
@@ -113885,8 +113984,8 @@
      "udgiver": "politi.dk"
     }
    ],
-   "lat": 55.7718649,
-   "lon": 12.5051413,
+   "lat": 55.771865,
+   "lon": 12.505141,
    "praecision": "by",
    "geokilde": "nominatim",
    "postnr": "2800"
@@ -118937,7 +119036,7 @@
      "udgiver": "politi.dk"
     }
    ],
-   "lat": 55.0040202,
+   "lat": 55.00402,
    "lon": 12.312887,
    "praecision": "by",
    "geokilde": "nominatim",
@@ -120244,7 +120343,7 @@
    "postnr": "8000"
   },
   {
-   "id": "17baa343bdaf",
+   "id": "1bb0d1231ec1",
    "vej": "G. C. Amdrups Vej",
    "by": "Aarhus N",
    "omraade": "Aarhus",
@@ -120270,7 +120369,7 @@
    "postnr": "8000"
   },
   {
-   "id": "1bb0d1231ec1",
+   "id": "17baa343bdaf",
    "vej": "G. C. Amdrups Vej",
    "by": "Aarhus N",
    "omraade": "Aarhus",
@@ -121688,8 +121787,8 @@
      "udgiver": "politi.dk"
     }
    ],
-   "lat": 55.1838021,
-   "lon": 14.7061711,
+   "lat": 55.183802,
+   "lon": 14.706171,
    "praecision": "by",
    "geokilde": "nominatim",
    "postnr": "3790"
@@ -122645,8 +122744,8 @@
      "udgiver": "politi.dk"
     }
    ],
-   "lat": 56.5166824,
-   "lon": 9.9438554,
+   "lat": 56.516682,
+   "lon": 9.943855,
    "praecision": "by",
    "geokilde": "nominatim",
    "postnr": "8920"
@@ -123760,6 +123859,7 @@
   "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-9-september-2026/2026/09/09": "2026-09-09",
   "https://politi.dk/oestjyllands-politi/doegnrapporter/uddrag-af-doegnrapporten-13-december-2023/2023/12/13": "2023-12-13",
   "https://politi.dk/oestjyllands-politi/doegnrapporter/uddrag-af-doegnrapporten-29-december-2024/2024/12/29": "2024-12-29",
+  "https://politi.dk/oestjyllands-politi/doegnrapporter/uddrag-af-doegnrapporten-8-november-2026/2026/11/08": "2026-11-08",
   "https://via.ritzau.dk/pressemeddelelse/15211627/eftersogning-viborg?publisherId=90687&lang=da": "2026-10-07",
   "https://via.ritzau.dk/pressemeddelelse/15211823/aflysning-af-efterlysning?publisherId=90687&lang=da": "2026-10-07",
   "https://via.ritzau.dk/pressemeddelelse/15212089/eftersogning-viborg?publisherId=90687&lang=da": "2026-10-07",
