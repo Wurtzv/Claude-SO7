@@ -1,26 +1,19 @@
 {
- "opdateret": "2026-11-14T21:35:25+00:00",
+ "opdateret": "2026-11-15T14:04:47+00:00",
  "uge": {
-  "fra": "2026-11-07",
-  "til": "2026-11-13",
-  "foer_fra": "2026-10-31",
-  "foer_til": "2026-11-06",
-  "antal": 61,
-  "foer": 58,
+  "fra": "2026-11-09",
+  "til": "2026-11-15",
+  "foer_fra": "2026-11-02",
+  "foer_til": "2026-11-08",
+  "antal": 70,
+  "foer": 55,
   "bydele": {
    "flest": [
     {
      "navn": "Viby J",
-     "antal": 6,
+     "antal": 10,
      "foer": 7,
-     "forskel": -1,
-     "kreds": "Østjyllands Politi"
-    },
-    {
-     "navn": "Højbjerg",
-     "antal": 5,
-     "foer": 7,
-     "forskel": -2,
+     "forskel": 3,
      "kreds": "Østjyllands Politi"
     },
     {
@@ -31,6 +24,13 @@
      "kreds": "Østjyllands Politi"
     },
     {
+     "navn": "Aarhus N",
+     "antal": 4,
+     "foer": 1,
+     "forskel": 3,
+     "kreds": "Østjyllands Politi"
+    },
+    {
      "navn": "Ebeltoft",
      "antal": 4,
      "foer": 1,
@@ -38,10 +38,10 @@
      "kreds": "Østjyllands Politi"
     },
     {
-     "navn": "Tilst",
+     "navn": "Højbjerg",
      "antal": 4,
-     "foer": 1,
-     "forskel": 3,
+     "foer": 8,
+     "forskel": -4,
      "kreds": "Østjyllands Politi"
     },
     {
@@ -52,31 +52,31 @@
      "kreds": "Østjyllands Politi"
     },
     {
-     "navn": "Beder",
+     "navn": "Randers NV",
      "antal": 3,
-     "foer": 3,
-     "forskel": 0,
+     "foer": 0,
+     "forskel": 3,
      "kreds": "Østjyllands Politi"
     },
     {
-     "navn": "Randers NØ",
-     "antal": 2,
-     "foer": 0,
+     "navn": "Risskov",
+     "antal": 3,
+     "foer": 1,
      "forskel": 2,
      "kreds": "Østjyllands Politi"
     },
     {
-     "navn": "Aalborg",
-     "antal": 2,
-     "foer": 1,
+     "navn": "Beder",
+     "antal": 3,
+     "foer": 2,
      "forskel": 1,
-     "kreds": "Nordjyllands Politi"
+     "kreds": "Østjyllands Politi"
     },
     {
-     "navn": "Harlev J",
-     "antal": 2,
+     "navn": "Tilst",
+     "antal": 3,
      "foer": 2,
-     "forskel": 0,
+     "forskel": 1,
      "kreds": "Østjyllands Politi"
     }
    ],
@@ -89,14 +89,21 @@
      "kreds": "Østjyllands Politi"
     },
     {
-     "navn": "Ebeltoft",
+     "navn": "Viby J",
+     "antal": 10,
+     "foer": 7,
+     "forskel": 3,
+     "kreds": "Østjyllands Politi"
+    },
+    {
+     "navn": "Aarhus N",
      "antal": 4,
      "foer": 1,
      "forskel": 3,
      "kreds": "Østjyllands Politi"
     },
     {
-     "navn": "Tilst",
+     "navn": "Ebeltoft",
      "antal": 4,
      "foer": 1,
      "forskel": 3,
@@ -110,18 +117,39 @@
      "kreds": "Østjyllands Politi"
     },
     {
-     "navn": "Randers NØ",
+     "navn": "Randers NV",
+     "antal": 3,
+     "foer": 0,
+     "forskel": 3,
+     "kreds": "Østjyllands Politi"
+    },
+    {
+     "navn": "Risskov",
+     "antal": 3,
+     "foer": 1,
+     "forskel": 2,
+     "kreds": "Østjyllands Politi"
+    },
+    {
+     "navn": "Hadsten",
      "antal": 2,
      "foer": 0,
      "forskel": 2,
      "kreds": "Østjyllands Politi"
     },
     {
-     "navn": "Aalborg",
+     "navn": "Hammel",
      "antal": 2,
-     "foer": 1,
+     "foer": 0,
+     "forskel": 2,
+     "kreds": "Østjyllands Politi"
+    },
+    {
+     "navn": "Beder",
+     "antal": 3,
+     "foer": 2,
      "forskel": 1,
-     "kreds": "Nordjyllands Politi"
+     "kreds": "Østjyllands Politi"
     }
    ]
   },
@@ -129,93 +157,19 @@
    "flest": [
     {
      "navn": "8260",
-     "antal": 5,
+     "antal": 7,
      "foer": 3,
-     "forskel": 2,
-     "kreds": "Østjyllands Politi",
-     "byer": [
-      "Viby J"
-     ]
-    },
-    {
-     "navn": "8270",
-     "antal": 5,
-     "foer": 7,
-     "forskel": -2,
-     "kreds": "Østjyllands Politi",
-     "byer": [
-      "Højbjerg"
-     ]
-    },
-    {
-     "navn": "8361",
-     "antal": 4,
-     "foer": 0,
      "forskel": 4,
      "kreds": "Østjyllands Politi",
      "byer": [
-      "Hasselager"
-     ]
-    },
-    {
-     "navn": "8381",
-     "antal": 4,
-     "foer": 1,
-     "forskel": 3,
-     "kreds": "Østjyllands Politi",
-     "byer": [
-      "Tilst"
-     ]
-    },
-    {
-     "navn": "8400",
-     "antal": 4,
-     "foer": 1,
-     "forskel": 3,
-     "kreds": "Østjyllands Politi",
-     "byer": [
-      "Ebeltoft"
-     ]
-    },
-    {
-     "navn": "8000",
-     "antal": 4,
-     "foer": 6,
-     "forskel": -2,
-     "kreds": "Østjyllands Politi",
-     "byer": [
-      "Aarhus C",
-      "Aarhus N",
       "Viby J"
-     ]
-    },
-    {
-     "navn": "9000",
-     "antal": 3,
-     "foer": 2,
-     "forskel": 1,
-     "kreds": "Nordjyllands Politi",
-     "byer": [
-      "Aalborg",
-      "Kærby",
-      "Aalborg SØ"
-     ]
-    },
-    {
-     "navn": "8330",
-     "antal": 3,
-     "foer": 3,
-     "forskel": 0,
-     "kreds": "Østjyllands Politi",
-     "byer": [
-      "Beder"
      ]
     },
     {
      "navn": "8220",
-     "antal": 3,
+     "antal": 5,
      "foer": 4,
-     "forskel": -1,
+     "forskel": 1,
      "kreds": "Østjyllands Politi",
      "byer": [
       "Viby J",
@@ -223,18 +177,15 @@
      ]
     },
     {
-     "navn": "8900",
-     "antal": 2,
+     "navn": "8200",
+     "antal": 4,
      "foer": 0,
-     "forskel": 2,
+     "forskel": 4,
      "kreds": "Østjyllands Politi",
      "byer": [
-      "Randers NØ",
-      "Randers"
+      "Aarhus N"
      ]
-    }
-   ],
-   "stigning": [
+    },
     {
      "navn": "8361",
      "antal": 4,
@@ -243,16 +194,6 @@
      "kreds": "Østjyllands Politi",
      "byer": [
       "Hasselager"
-     ]
-    },
-    {
-     "navn": "8381",
-     "antal": 4,
-     "foer": 1,
-     "forskel": 3,
-     "kreds": "Østjyllands Politi",
-     "byer": [
-      "Tilst"
      ]
     },
     {
@@ -266,46 +207,156 @@
      ]
     },
     {
+     "navn": "8270",
+     "antal": 4,
+     "foer": 8,
+     "forskel": -4,
+     "kreds": "Østjyllands Politi",
+     "byer": [
+      "Højbjerg"
+     ]
+    },
+    {
+     "navn": "8240",
+     "antal": 3,
+     "foer": 0,
+     "forskel": 3,
+     "kreds": "Østjyllands Politi",
+     "byer": [
+      "Risskov"
+     ]
+    },
+    {
+     "navn": "8920",
+     "antal": 3,
+     "foer": 0,
+     "forskel": 3,
+     "kreds": "Østjyllands Politi",
+     "byer": [
+      "Randers NV"
+     ]
+    },
+    {
+     "navn": "8330",
+     "antal": 3,
+     "foer": 2,
+     "forskel": 1,
+     "kreds": "Østjyllands Politi",
+     "byer": [
+      "Beder"
+     ]
+    },
+    {
+     "navn": "8381",
+     "antal": 3,
+     "foer": 2,
+     "forskel": 1,
+     "kreds": "Østjyllands Politi",
+     "byer": [
+      "Tilst"
+     ]
+    }
+   ],
+   "stigning": [
+    {
      "navn": "8260",
-     "antal": 5,
+     "antal": 7,
      "foer": 3,
-     "forskel": 2,
+     "forskel": 4,
      "kreds": "Østjyllands Politi",
      "byer": [
       "Viby J"
      ]
     },
     {
-     "navn": "8900",
+     "navn": "8200",
+     "antal": 4,
+     "foer": 0,
+     "forskel": 4,
+     "kreds": "Østjyllands Politi",
+     "byer": [
+      "Aarhus N"
+     ]
+    },
+    {
+     "navn": "8361",
+     "antal": 4,
+     "foer": 0,
+     "forskel": 4,
+     "kreds": "Østjyllands Politi",
+     "byer": [
+      "Hasselager"
+     ]
+    },
+    {
+     "navn": "8400",
+     "antal": 4,
+     "foer": 1,
+     "forskel": 3,
+     "kreds": "Østjyllands Politi",
+     "byer": [
+      "Ebeltoft"
+     ]
+    },
+    {
+     "navn": "8240",
+     "antal": 3,
+     "foer": 0,
+     "forskel": 3,
+     "kreds": "Østjyllands Politi",
+     "byer": [
+      "Risskov"
+     ]
+    },
+    {
+     "navn": "8920",
+     "antal": 3,
+     "foer": 0,
+     "forskel": 3,
+     "kreds": "Østjyllands Politi",
+     "byer": [
+      "Randers NV"
+     ]
+    },
+    {
+     "navn": "8370",
      "antal": 2,
      "foer": 0,
      "forskel": 2,
      "kreds": "Østjyllands Politi",
      "byer": [
-      "Randers NØ",
-      "Randers"
+      "Hadsten"
      ]
     },
     {
-     "navn": "9000",
-     "antal": 3,
-     "foer": 2,
-     "forskel": 1,
-     "kreds": "Nordjyllands Politi",
-     "byer": [
-      "Aalborg",
-      "Kærby",
-      "Aalborg SØ"
-     ]
-    },
-    {
-     "navn": "8200",
+     "navn": "8450",
      "antal": 2,
-     "foer": 1,
+     "foer": 0,
+     "forskel": 2,
+     "kreds": "Østjyllands Politi",
+     "byer": [
+      "Hammel"
+     ]
+    },
+    {
+     "navn": "8220",
+     "antal": 5,
+     "foer": 4,
      "forskel": 1,
      "kreds": "Østjyllands Politi",
      "byer": [
-      "Aarhus N"
+      "Viby J",
+      "Brabrand"
+     ]
+    },
+    {
+     "navn": "8330",
+     "antal": 3,
+     "foer": 2,
+     "forskel": 1,
+     "kreds": "Østjyllands Politi",
+     "byer": [
+      "Beder"
      ]
     }
    ]
@@ -314,9 +365,9 @@
    "flest": [
     {
      "navn": "Søskrænten, Viby J",
-     "antal": 4,
+     "antal": 6,
      "foer": 2,
-     "forskel": 2,
+     "forskel": 4,
      "kreds": "Østjyllands Politi"
     },
     {
@@ -335,13 +386,6 @@
     },
     {
      "navn": "Stokrosevej, Beder",
-     "antal": 2,
-     "foer": 0,
-     "forskel": 2,
-     "kreds": "Østjyllands Politi"
-    },
-    {
-     "navn": "Søhøjen, Tilst",
      "antal": 2,
      "foer": 0,
      "forskel": 2,
@@ -362,7 +406,7 @@
      "kreds": "Østjyllands Politi"
     },
     {
-     "navn": "Basager, Randers NØ",
+     "navn": "Bispevej, Viby J",
      "antal": 1,
      "foer": 0,
      "forskel": 1,
@@ -376,7 +420,14 @@
      "kreds": "Østjyllands Politi"
     },
     {
-     "navn": "Emiliehøj 16, Højbjerg",
+     "navn": "Emiliehøj, Højbjerg",
+     "antal": 1,
+     "foer": 0,
+     "forskel": 1,
+     "kreds": "Østjyllands Politi"
+    },
+    {
+     "navn": "Engdalgårdsvej, Beder",
      "antal": 1,
      "foer": 0,
      "forskel": 1,
@@ -386,9 +437,9 @@
    "stigning": [
     {
      "navn": "Søskrænten, Viby J",
-     "antal": 4,
+     "antal": 6,
      "foer": 2,
-     "forskel": 2,
+     "forskel": 4,
      "kreds": "Østjyllands Politi"
     },
     {
@@ -407,13 +458,6 @@
     },
     {
      "navn": "Stokrosevej, Beder",
-     "antal": 2,
-     "foer": 0,
-     "forskel": 2,
-     "kreds": "Østjyllands Politi"
-    },
-    {
-     "navn": "Søhøjen, Tilst",
      "antal": 2,
      "foer": 0,
      "forskel": 2,
