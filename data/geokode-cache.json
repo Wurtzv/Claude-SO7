@@ -219,6 +219,10 @@
   "lon": 10.071288,
   "praecision": "vej"
  },
+ "Agerbovej|": {
+  "dato": "2026-11-21",
+  "fejl": true
+ },
  "Agerbovej|Randers NV": {
   "geokilde": "nominatim",
   "lat": 56.482074,
@@ -1934,6 +1938,10 @@
   "lon": 10.158423,
   "praecision": "vej"
  },
+ "Carit Etlars vej|": {
+  "dato": "2026-11-21",
+  "fejl": true
+ },
  "Carl Blochs Gade|Aarhus C": {
   "geokilde": "nominatim",
   "lat": 56.153647,
@@ -2566,6 +2574,13 @@
   "lat": 56.132966,
   "lon": 10.176916,
   "praecision": "vej"
+ },
+ "Edisonvej|Viby H": {
+  "dato": "2026-11-21",
+  "geokilde": "nominatim",
+  "lat": 55.5509387,
+  "lon": 12.0248273,
+  "praecision": "by"
  },
  "Edithsvej|Brabrand": {
   "geokilde": "nominatim",
@@ -13972,6 +13987,10 @@
   "lon": 10.227516,
   "praecision": "vej"
  },
+ "Thomas Thaarups vej|": {
+  "dato": "2026-11-21",
+  "fejl": true
+ },
  "Thongvallagade|Aarhus N": {
   "dato": "2026-11-08",
   "geokilde": "nominatim",
@@ -15778,6 +15797,10 @@
  "kommune|Østjyllands Politi|Vejerslev": "Favrskov",
  "kommune|Østjyllands Politi|Vellev": "Favrskov",
  "kommune|Østjyllands Politi|Vestrup": "Randers",
+ "kommune|Østjyllands Politi|Viby H": {
+  "dato": "2026-11-21",
+  "fejl": true
+ },
  "kommune|Østjyllands Politi|Villersø": "Norddjurs",
  "kommune|Østjyllands Politi|Vinterslev": "Favrskov",
  "kommune|Østjyllands Politi|Vissing": "Favrskov",
@@ -15822,6 +15845,7 @@
  "pnr|55.399,9.373": "6580",
  "pnr|55.492,11.969": "4140",
  "pnr|55.540,11.255": "4270",
+ "pnr|55.551,12.025": "4130",
  "pnr|55.611,11.238": "4490",
  "pnr|55.619,11.264": "4490",
  "pnr|55.719,11.714": "4300",
@@ -23546,6 +23570,10 @@
  "|Viborg Kommune": {
   "lat": 56.450845,
   "lon": 9.382808
+ },
+ "|Viby H": {
+  "lat": 55.550939,
+  "lon": 12.024827
  },
  "|Viby J": {
   "lat": 56.129033,

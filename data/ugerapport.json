@@ -1,33 +1,33 @@
 {
- "opdateret": "2026-11-20T23:06:38+00:00",
+ "opdateret": "2026-11-21T14:42:10+00:00",
  "uge": {
-  "fra": "2026-11-14",
-  "til": "2026-11-20",
-  "foer_fra": "2026-11-07",
-  "foer_til": "2026-11-13",
+  "fra": "2026-11-15",
+  "til": "2026-11-21",
+  "foer_fra": "2026-11-08",
+  "foer_til": "2026-11-14",
   "antal": 84,
-  "foer": 61,
+  "foer": 58,
   "bydele": {
    "flest": [
     {
      "navn": "Højbjerg",
-     "antal": 9,
-     "foer": 5,
-     "forskel": 4,
-     "kreds": "Østjyllands Politi"
-    },
-    {
-     "navn": "Randers NV",
      "antal": 8,
-     "foer": 0,
-     "forskel": 8,
+     "foer": 3,
+     "forskel": 5,
      "kreds": "Østjyllands Politi"
     },
     {
      "navn": "Viby J",
-     "antal": 8,
+     "antal": 7,
      "foer": 6,
-     "forskel": 2,
+     "forskel": 1,
+     "kreds": "Østjyllands Politi"
+    },
+    {
+     "navn": "Randers NV",
+     "antal": 6,
+     "foer": 2,
+     "forskel": 4,
      "kreds": "Østjyllands Politi"
     },
     {
@@ -82,16 +82,16 @@
    ],
    "stigning": [
     {
-     "navn": "Randers NV",
+     "navn": "Højbjerg",
      "antal": 8,
-     "foer": 0,
-     "forskel": 8,
+     "foer": 3,
+     "forskel": 5,
      "kreds": "Østjyllands Politi"
     },
     {
-     "navn": "Højbjerg",
-     "antal": 9,
-     "foer": 5,
+     "navn": "Randers NV",
+     "antal": 6,
+     "foer": 2,
      "forskel": 4,
      "kreds": "Østjyllands Politi"
     },
@@ -114,13 +114,6 @@
      "antal": 3,
      "foer": 0,
      "forskel": 3,
-     "kreds": "Østjyllands Politi"
-    },
-    {
-     "navn": "Viby J",
-     "antal": 8,
-     "foer": 6,
-     "forskel": 2,
      "kreds": "Østjyllands Politi"
     },
     {
@@ -150,6 +143,13 @@
      "foer": 0,
      "forskel": 2,
      "kreds": "Østjyllands Politi"
+    },
+    {
+     "navn": "Viby J",
+     "antal": 7,
+     "foer": 6,
+     "forskel": 1,
+     "kreds": "Østjyllands Politi"
     }
    ]
   },
@@ -157,9 +157,9 @@
    "flest": [
     {
      "navn": "8270",
-     "antal": 10,
-     "foer": 5,
-     "forskel": 5,
+     "antal": 9,
+     "foer": 3,
+     "forskel": 6,
      "kreds": "Østjyllands Politi",
      "byer": [
       "Højbjerg",
@@ -168,9 +168,9 @@
     },
     {
      "navn": "8920",
-     "antal": 9,
-     "foer": 0,
-     "forskel": 9,
+     "antal": 7,
+     "foer": 2,
+     "forskel": 5,
      "kreds": "Østjyllands Politi",
      "byer": [
       "Randers NV",
@@ -191,8 +191,8 @@
     {
      "navn": "8900",
      "antal": 5,
-     "foer": 2,
-     "forskel": 3,
+     "foer": 1,
+     "forskel": 4,
      "kreds": "Østjyllands Politi",
      "byer": [
       "Randers SØ",
@@ -256,8 +256,8 @@
     {
      "navn": "8381",
      "antal": 3,
-     "foer": 4,
-     "forskel": -1,
+     "foer": 3,
+     "forskel": 0,
      "kreds": "Østjyllands Politi",
      "byer": [
       "Tilst"
@@ -266,25 +266,25 @@
    ],
    "stigning": [
     {
-     "navn": "8920",
-     "antal": 9,
-     "foer": 0,
-     "forskel": 9,
-     "kreds": "Østjyllands Politi",
-     "byer": [
-      "Randers NV",
-      "Langå"
-     ]
-    },
-    {
      "navn": "8270",
-     "antal": 10,
-     "foer": 5,
-     "forskel": 5,
+     "antal": 9,
+     "foer": 3,
+     "forskel": 6,
      "kreds": "Østjyllands Politi",
      "byer": [
       "Højbjerg",
       "Viby J"
+     ]
+    },
+    {
+     "navn": "8920",
+     "antal": 7,
+     "foer": 2,
+     "forskel": 5,
+     "kreds": "Østjyllands Politi",
+     "byer": [
+      "Randers NV",
+      "Langå"
      ]
     },
     {
@@ -301,8 +301,8 @@
     {
      "navn": "8900",
      "antal": 5,
-     "foer": 2,
-     "forskel": 3,
+     "foer": 1,
+     "forskel": 4,
      "kreds": "Østjyllands Politi",
      "byer": [
       "Randers SØ",
