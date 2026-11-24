@@ -1,7 +1,428 @@
 {
- "opdateret": "2026-11-23T18:29:50+00:00",
- "antal": 4867,
+ "opdateret": "2026-11-24T17:54:59+00:00",
+ "antal": 4883,
  "indbrud": [
+  {
+   "id": "3ff7bdceadf6",
+   "vej": "Nygårdsvej",
+   "by": "Højbjerg",
+   "omraade": "Aarhus",
+   "type": "privat",
+   "gerningstid": "23/11",
+   "tid_fra": "2026-11-23",
+   "tid_til": null,
+   "rapportdato": "2026-11-24",
+   "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-24-november-2026/2026/11/24",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-24-november-2026/2026/11/24",
+     "titel": "Østjyllands Politi: uddrag af døgnrapporten 24. november 2026",
+     "rapportdato": "2026-11-24",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "lat": 56.110747,
+   "lon": 10.177313,
+   "praecision": "vej",
+   "geokilde": "nominatim",
+   "postnr": "8270"
+  },
+  {
+   "id": "487be959de26",
+   "vej": "Fagotvej",
+   "by": "Randers SV",
+   "omraade": "Randers",
+   "type": "privat",
+   "gerningstid": "22/11",
+   "tid_fra": "2026-11-22",
+   "tid_til": null,
+   "rapportdato": "2026-11-24",
+   "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-24-november-2026/2026/11/24",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-24-november-2026/2026/11/24",
+     "titel": "Østjyllands Politi: uddrag af døgnrapporten 24. november 2026",
+     "rapportdato": "2026-11-24",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "lat": 56.43371,
+   "lon": 10.036621,
+   "praecision": "vej",
+   "geokilde": "nominatim",
+   "postnr": "8940"
+  },
+  {
+   "id": "3c8c0f1c132e",
+   "vej": "",
+   "by": "Klarup",
+   "omraade": "Aalborg",
+   "type": "privat",
+   "gerningstid": "Søndag aften 22/11",
+   "tid_fra": "2026-11-22",
+   "tid_til": null,
+   "rapportdato": "2026-11-24",
+   "kilde_url": "https://politi.dk/nordjyllands-politi/doegnrapporter/241126/2026/11/24",
+   "politikreds": "Nordjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/nordjyllands-politi/doegnrapporter/241126/2026/11/24",
+     "titel": "Nordjyllands Politi: uddrag af politirapporterne 21. – 24. november",
+     "rapportdato": "2026-11-24",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "beskrivelse": "Der blev søndag aften anmeldt et indbrud i Klarup. Gerningspersonerne kom ind gennem et opbrudt vindue. De kom afsted med diverse guldsmykker samt et mindre kontantbeløb.",
+   "lat": 57.0113058,
+   "lon": 10.0500412,
+   "praecision": "by",
+   "geokilde": "nominatim",
+   "postnr": "9270"
+  },
+  {
+   "id": "5ea30e0b9c84",
+   "vej": "",
+   "by": "Hasseris",
+   "omraade": "Aalborg",
+   "type": "privat",
+   "gerningstid": "Søndag morgen 22/11",
+   "tid_fra": "2026-11-22",
+   "tid_til": null,
+   "rapportdato": "2026-11-24",
+   "kilde_url": "https://politi.dk/nordjyllands-politi/doegnrapporter/241126/2026/11/24",
+   "politikreds": "Nordjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/nordjyllands-politi/doegnrapporter/241126/2026/11/24",
+     "titel": "Nordjyllands Politi: uddrag af politirapporterne 21. – 24. november",
+     "rapportdato": "2026-11-24",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "beskrivelse": "Der blev søndag morgen anmeldt et indbrud i Hasseris, Aalborg. Gerningspersonerne kom ind gennem et opbrudt vindue. Alle skuffer og skabe var gennemrodet. De kom afsted med diverse guldsmykker. I samme område blev der anmeldt endnu et indbrud søndag formiddag. Gerningspersonerne kom ind gennem et opbrudt vindue og har ligeledes gennemrodet alle skuffer og skabe. De kom afsted med diverse smykker og et betydeligt kontantbeløb.",
+   "lat": 57.0396822,
+   "lon": 9.8855685,
+   "praecision": "by",
+   "geokilde": "nominatim",
+   "postnr": "9000"
+  },
+  {
+   "id": "b8085e5c5555",
+   "vej": "",
+   "by": "Nørresundby",
+   "omraade": "Aalborg",
+   "type": "andet",
+   "gerningstid": "Søndag eftermiddag 22/11",
+   "tid_fra": "2026-11-22",
+   "tid_til": null,
+   "rapportdato": "2026-11-24",
+   "kilde_url": "https://politi.dk/nordjyllands-politi/doegnrapporter/241126/2026/11/24",
+   "politikreds": "Nordjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/nordjyllands-politi/doegnrapporter/241126/2026/11/24",
+     "titel": "Nordjyllands Politi: uddrag af politirapporterne 21. – 24. november",
+     "rapportdato": "2026-11-24",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "beskrivelse": "Der blev søndag eftermiddag anmeldt indbrud i flere kælderrum i Nørresundby. Gerningspersonerne havde fundet adgang til bygningen og dermed den dertilhørende kælder. Hvert rums døre var aflåst med hængelåse, som var blevet klippet i stykker. Der er tale om indbrud i flere kælderrum samt flere forsøg på indbrud. Gerningspersonerne kom blandt andet afsted med værktøj, dykkerudstyr, designerlamper og diverse rygsække.",
+   "lat": 57.060725,
+   "lon": 9.924132,
+   "praecision": "by",
+   "geokilde": "nominatim",
+   "postnr": "9400"
+  },
+  {
+   "id": "f4962d8af358",
+   "vej": "Lindesnæsvej",
+   "by": "Aarhus N",
+   "omraade": "Aarhus",
+   "type": "privat",
+   "gerningstid": "21/11 – 23/11",
+   "tid_fra": "2026-11-21",
+   "tid_til": "2026-11-23",
+   "rapportdato": "2026-11-24",
+   "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-24-november-2026/2026/11/24",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-24-november-2026/2026/11/24",
+     "titel": "Østjyllands Politi: uddrag af døgnrapporten 24. november 2026",
+     "rapportdato": "2026-11-24",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "lat": 56.176497,
+   "lon": 10.19686,
+   "praecision": "vej",
+   "geokilde": "nominatim",
+   "postnr": "8200"
+  },
+  {
+   "id": "585a6fb439af",
+   "vej": "Gørtlervej",
+   "by": "Randers NV",
+   "omraade": "Randers",
+   "type": "privat",
+   "gerningstid": "21/11 – 23/11",
+   "tid_fra": "2026-11-21",
+   "tid_til": "2026-11-23",
+   "rapportdato": "2026-11-24",
+   "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-24-november-2026/2026/11/24",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-24-november-2026/2026/11/24",
+     "titel": "Østjyllands Politi: uddrag af døgnrapporten 24. november 2026",
+     "rapportdato": "2026-11-24",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "lat": 56.47177,
+   "lon": 10.001958,
+   "praecision": "vej",
+   "geokilde": "nominatim",
+   "postnr": "8920"
+  },
+  {
+   "id": "056a821b99d4",
+   "vej": "",
+   "by": "Strandby",
+   "omraade": "Strandby",
+   "type": "privat",
+   "gerningstid": "Lørdag morgen 21/11",
+   "tid_fra": "2026-11-21",
+   "tid_til": null,
+   "rapportdato": "2026-11-24",
+   "kilde_url": "https://politi.dk/nordjyllands-politi/doegnrapporter/241126/2026/11/24",
+   "politikreds": "Nordjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/nordjyllands-politi/doegnrapporter/241126/2026/11/24",
+     "titel": "Nordjyllands Politi: uddrag af politirapporterne 21. – 24. november",
+     "rapportdato": "2026-11-24",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "beskrivelse": "Der blev lørdag morgen anmeldt indbrud i Strandby. Gerningspersonerne kom ind gennem en opbrudt terrassedør og har gennemrodet hele huset. De kom afsted med et guldur af betydelig værdi. Der blev samme morgen anmeldt endnu et indbrud i samme område. Her kom gerningspersonerne ind gennem et opbrudt vindue og havde ligeledes gennemrodet huset. Her kom de afsted med et større kontantbeløb og guldsmykker.",
+   "lat": 57.4926713,
+   "lon": 10.4978821,
+   "praecision": "by",
+   "geokilde": "nominatim",
+   "postnr": "9970"
+  },
+  {
+   "id": "4fc0f39e09b0",
+   "vej": "",
+   "by": "Hjallerup",
+   "omraade": "Aalborg",
+   "type": "privat",
+   "gerningstid": "Lørdag aften 21/11",
+   "tid_fra": "2026-11-21",
+   "tid_til": null,
+   "rapportdato": "2026-11-24",
+   "kilde_url": "https://politi.dk/nordjyllands-politi/doegnrapporter/241126/2026/11/24",
+   "politikreds": "Nordjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/nordjyllands-politi/doegnrapporter/241126/2026/11/24",
+     "titel": "Nordjyllands Politi: uddrag af politirapporterne 21. – 24. november",
+     "rapportdato": "2026-11-24",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "beskrivelse": "Der blev lørdag aften anmeldt et indbrud i Hjallerup. Gerningspersonerne kom ind gennem et opbrudt vindue. De kom afsted med en større mængde sølvtøj og smykker.",
+   "lat": 57.1665803,
+   "lon": 10.1465801,
+   "praecision": "by",
+   "geokilde": "nominatim",
+   "postnr": "9320"
+  },
+  {
+   "id": "14e797f9003d",
+   "vej": "Atlasvej",
+   "by": "Højbjerg",
+   "omraade": "Aarhus",
+   "type": "privat",
+   "gerningstid": "20/11 – 23/11",
+   "tid_fra": "2026-11-20",
+   "tid_til": "2026-11-23",
+   "rapportdato": "2026-11-24",
+   "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-24-november-2026/2026/11/24",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-24-november-2026/2026/11/24",
+     "titel": "Østjyllands Politi: uddrag af døgnrapporten 24. november 2026",
+     "rapportdato": "2026-11-24",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "lat": 56.128531,
+   "lon": 10.190239,
+   "praecision": "vej",
+   "geokilde": "nominatim",
+   "postnr": "8270"
+  },
+  {
+   "id": "3cbfe1b02f90",
+   "vej": "Saralystvej",
+   "by": "Højbjerg",
+   "omraade": "Aarhus",
+   "type": "privat",
+   "gerningstid": "21/11 – 22/11",
+   "tid_fra": "2026-11-21",
+   "tid_til": "2026-11-22",
+   "rapportdato": "2026-11-23",
+   "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-23-november-2026/2026/11/23",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-23-november-2026/2026/11/23",
+     "titel": "Østjyllands Politi: uddrag af døgnrapporten 23. november 2026",
+     "rapportdato": "2026-11-23",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "lat": 56.122722,
+   "lon": 10.196388,
+   "praecision": "vej",
+   "geokilde": "nominatim",
+   "postnr": "8270"
+  },
+  {
+   "id": "1f4c0deed828",
+   "vej": "Ferskenvej",
+   "by": "Randers NV",
+   "omraade": "Randers",
+   "type": "privat",
+   "gerningstid": "21/11 – 22/11",
+   "tid_fra": "2026-11-21",
+   "tid_til": "2026-11-22",
+   "rapportdato": "2026-11-23",
+   "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-23-november-2026/2026/11/23",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-23-november-2026/2026/11/23",
+     "titel": "Østjyllands Politi: uddrag af døgnrapporten 23. november 2026",
+     "rapportdato": "2026-11-23",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "lat": 56.476229,
+   "lon": 9.994069,
+   "praecision": "vej",
+   "geokilde": "nominatim",
+   "postnr": "8920"
+  },
+  {
+   "id": "1705861910a9",
+   "vej": "Elverumvej",
+   "by": "Aarhus N",
+   "omraade": "Aarhus",
+   "type": "privat",
+   "gerningstid": "21/11 – 22/11",
+   "tid_fra": "2026-11-21",
+   "tid_til": "2026-11-22",
+   "rapportdato": "2026-11-23",
+   "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-23-november-2026/2026/11/23",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-23-november-2026/2026/11/23",
+     "titel": "Østjyllands Politi: uddrag af døgnrapporten 23. november 2026",
+     "rapportdato": "2026-11-23",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "lat": 56.176785,
+   "lon": 10.196913,
+   "praecision": "vej",
+   "geokilde": "nominatim",
+   "postnr": "8200"
+  },
+  {
+   "id": "a1946c7336e8",
+   "vej": "Tranbjerggårdsparken",
+   "by": "Mårslet",
+   "omraade": "Aarhus",
+   "type": "privat",
+   "gerningstid": "20/11 – 22/11",
+   "tid_fra": "2026-11-20",
+   "tid_til": "2026-11-22",
+   "rapportdato": "2026-11-23",
+   "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-23-november-2026/2026/11/23",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-23-november-2026/2026/11/23",
+     "titel": "Østjyllands Politi: uddrag af døgnrapporten 23. november 2026",
+     "rapportdato": "2026-11-23",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "lat": 56.077211,
+   "lon": 10.158898,
+   "praecision": "vej",
+   "geokilde": "nominatim",
+   "postnr": "8320"
+  },
+  {
+   "id": "123e084a6d20",
+   "vej": "H.C. Ørsteds Vej",
+   "by": "Viby J",
+   "omraade": "Aarhus",
+   "type": "privat",
+   "gerningstid": "20/11 – 22/11",
+   "tid_fra": "2026-11-20",
+   "tid_til": "2026-11-22",
+   "rapportdato": "2026-11-23",
+   "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-23-november-2026/2026/11/23",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-23-november-2026/2026/11/23",
+     "titel": "Østjyllands Politi: uddrag af døgnrapporten 23. november 2026",
+     "rapportdato": "2026-11-23",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "lat": 56.132902,
+   "lon": 10.179055,
+   "praecision": "vej",
+   "geokilde": "nominatim",
+   "postnr": "8270"
+  },
+  {
+   "id": "309f61039615",
+   "vej": "Tretommervej",
+   "by": "Risskov",
+   "omraade": "Aarhus",
+   "type": "privat",
+   "gerningstid": "19/11 – 22/11",
+   "tid_fra": "2026-11-19",
+   "tid_til": "2026-11-22",
+   "rapportdato": "2026-11-23",
+   "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-23-november-2026/2026/11/23",
+   "politikreds": "Østjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-23-november-2026/2026/11/23",
+     "titel": "Østjyllands Politi: uddrag af døgnrapporten 23. november 2026",
+     "rapportdato": "2026-11-23",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "lat": 56.188884,
+   "lon": 10.22296,
+   "praecision": "vej",
+   "geokilde": "nominatim",
+   "postnr": "8240"
+  },
   {
    "id": "fd535b63c3d9",
    "vej": "Ny Tjørnegade",
@@ -1922,7 +2343,7 @@
    "postnr": "8240"
   },
   {
-   "id": "dffa8a12e665",
+   "id": "b6b028e5daa1",
    "vej": "Søskrænten",
    "by": "Viby J",
    "omraade": "Aarhus",
@@ -1974,7 +2395,7 @@
    "postnr": "8240"
   },
   {
-   "id": "b6b028e5daa1",
+   "id": "dffa8a12e665",
    "vej": "Søskrænten",
    "by": "Viby J",
    "omraade": "Aarhus",
@@ -3316,33 +3737,6 @@
    "by": "Aalborg",
    "omraade": "Aalborg",
    "type": "privat",
-   "gerningstid": "Lørdag eftermiddag 7/11",
-   "tid_fra": "2026-11-07",
-   "tid_til": null,
-   "rapportdato": "2026-11-10",
-   "kilde_url": "https://politi.dk/nordjyllands-politi/doegnrapporter/dr101126/2026/11/10",
-   "politikreds": "Nordjyllands Politi",
-   "kilder": [
-    {
-     "url": "https://politi.dk/nordjyllands-politi/doegnrapporter/dr101126/2026/11/10",
-     "titel": "Nordjyllands Politi: uddrag af politirapporterne 7. – 10. november",
-     "rapportdato": "2026-11-10",
-     "udgiver": "politi.dk"
-    }
-   ],
-   "beskrivelse": "Der blev lørdag eftermiddag anmeldt et indbrud i Aalborg. Gerningspersonerne var kommet ind gennem opbrudt terrassedør. De kom afsted med diverse smykker og en PlayStation 5.",
-   "lat": 57.046263,
-   "lon": 9.921526,
-   "praecision": "by",
-   "geokilde": "nominatim",
-   "postnr": "9000"
-  },
-  {
-   "id": "86ef5b01c399",
-   "vej": "",
-   "by": "Aalborg",
-   "omraade": "Aalborg",
-   "type": "privat",
    "gerningstid": "Lørdag morgen 7/11",
    "tid_fra": "2026-11-07",
    "tid_til": null,
@@ -3358,6 +3752,33 @@
     }
    ],
    "beskrivelse": "Der blev lørdag morgen anmeldt et indbrud i Aalborg. Gerningspersonerne var kommet ind gennem et opbrudt vindue, og havde gennemrodet skuffer og skabe. De kom afsted med et mindre kontantbeløb, designer tasker samt smykker.",
+   "lat": 57.046263,
+   "lon": 9.921526,
+   "praecision": "by",
+   "geokilde": "nominatim",
+   "postnr": "9000"
+  },
+  {
+   "id": "86ef5b01c399",
+   "vej": "",
+   "by": "Aalborg",
+   "omraade": "Aalborg",
+   "type": "privat",
+   "gerningstid": "Lørdag eftermiddag 7/11",
+   "tid_fra": "2026-11-07",
+   "tid_til": null,
+   "rapportdato": "2026-11-10",
+   "kilde_url": "https://politi.dk/nordjyllands-politi/doegnrapporter/dr101126/2026/11/10",
+   "politikreds": "Nordjyllands Politi",
+   "kilder": [
+    {
+     "url": "https://politi.dk/nordjyllands-politi/doegnrapporter/dr101126/2026/11/10",
+     "titel": "Nordjyllands Politi: uddrag af politirapporterne 7. – 10. november",
+     "rapportdato": "2026-11-10",
+     "udgiver": "politi.dk"
+    }
+   ],
+   "beskrivelse": "Der blev lørdag eftermiddag anmeldt et indbrud i Aalborg. Gerningspersonerne var kommet ind gennem opbrudt terrassedør. De kom afsted med diverse smykker og en PlayStation 5.",
    "lat": 57.046263,
    "lon": 9.921526,
    "praecision": "by",
@@ -9794,7 +10215,7 @@
    "postnr": "8240"
   },
   {
-   "id": "a7e066306e47",
+   "id": "fa4c9591cc05",
    "vej": "Bredkær parkvej",
    "by": "Egå",
    "omraade": "Aarhus",
@@ -9898,7 +10319,7 @@
    "postnr": "8250"
   },
   {
-   "id": "fa4c9591cc05",
+   "id": "a7e066306e47",
    "vej": "Bredkær Parkvej",
    "by": "Egå",
    "omraade": "Aarhus",
@@ -10439,7 +10860,7 @@
    "postnr": "8270"
   },
   {
-   "id": "1d4b08aa9caf",
+   "id": "174c6e8beebf",
    "vej": "Montanagade",
    "by": "Aarhus C",
    "omraade": "Aarhus",
@@ -10465,7 +10886,7 @@
    "postnr": "8000"
   },
   {
-   "id": "174c6e8beebf",
+   "id": "1d4b08aa9caf",
    "vej": "Montanagade",
    "by": "Aarhus C",
    "omraade": "Aarhus",
@@ -12981,7 +13402,7 @@
    "postnr": "8462"
   },
   {
-   "id": "a36bc10e1bf0",
+   "id": "2e74fb3e9f82",
    "vej": "Ketting Parkvej",
    "by": "Harlev J",
    "omraade": "Aarhus",
@@ -13007,7 +13428,7 @@
    "postnr": "8462"
   },
   {
-   "id": "2e74fb3e9f82",
+   "id": "a36bc10e1bf0",
    "vej": "Ketting Parkvej",
    "by": "Harlev J",
    "omraade": "Aarhus",
@@ -13267,7 +13688,7 @@
    "postnr": "8270"
   },
   {
-   "id": "f3ef8220f57b",
+   "id": "77c06dc48d96",
    "vej": "Børupvej",
    "by": "Tranbjerg J",
    "omraade": "Aarhus",
@@ -13293,7 +13714,7 @@
    "postnr": "8310"
   },
   {
-   "id": "77c06dc48d96",
+   "id": "f3ef8220f57b",
    "vej": "Børupvej",
    "by": "Tranbjerg J",
    "omraade": "Aarhus",
@@ -19544,7 +19965,7 @@
    "postnr": "8543"
   },
   {
-   "id": "614da2cf26fd",
+   "id": "749f8334564c",
    "vej": "Tendrup Møllevej",
    "by": "Hornslet",
    "omraade": "Hornslet",
@@ -19570,7 +19991,7 @@
    "postnr": "8543"
   },
   {
-   "id": "749f8334564c",
+   "id": "614da2cf26fd",
    "vej": "Tendrup Møllevej",
    "by": "Hornslet",
    "omraade": "Hornslet",
@@ -29134,7 +29555,7 @@
    "postnr": "8240"
   },
   {
-   "id": "8768692d3f6d",
+   "id": "55f7412a6965",
    "vej": "Langager",
    "by": "Hornslet",
    "omraade": "Hornslet",
@@ -29160,7 +29581,7 @@
    "postnr": "8543"
   },
   {
-   "id": "55f7412a6965",
+   "id": "8768692d3f6d",
    "vej": "Langager",
    "by": "Hornslet",
    "omraade": "Hornslet",
@@ -33476,7 +33897,7 @@
    "postnr": "8000"
   },
   {
-   "id": "bbde6b91d6cc",
+   "id": "9b4c14d79448",
    "vej": "Råhøjparken",
    "by": "Viby J",
    "omraade": "Aarhus",
@@ -33502,7 +33923,7 @@
    "postnr": "8220"
   },
   {
-   "id": "9b4c14d79448",
+   "id": "bbde6b91d6cc",
    "vej": "Råhøjparken",
    "by": "Viby J",
    "omraade": "Aarhus",
@@ -33710,7 +34131,7 @@
    "postnr": "8381"
   },
   {
-   "id": "5481e0a9b7f6",
+   "id": "ebac038625bd",
    "vej": "Højbovej",
    "by": "Højbjerg",
    "omraade": "Aarhus",
@@ -33736,7 +34157,7 @@
    "postnr": "8270"
   },
   {
-   "id": "ebac038625bd",
+   "id": "5481e0a9b7f6",
    "vej": "Højbovej",
    "by": "Højbjerg",
    "omraade": "Aarhus",
@@ -38103,7 +38524,7 @@
    "postnr": "8361"
   },
   {
-   "id": "b86beeb47547",
+   "id": "cf61db8b47da",
    "vej": "Porskær",
    "by": "Brabrand",
    "omraade": "Aarhus",
@@ -38181,7 +38602,7 @@
    "postnr": "8000"
   },
   {
-   "id": "cf61db8b47da",
+   "id": "b86beeb47547",
    "vej": "Porskær",
    "by": "Brabrand",
    "omraade": "Aarhus",
@@ -47064,7 +47485,7 @@
    "postnr": "8361"
   },
   {
-   "id": "69f1f20fa203",
+   "id": "c0dc54958728",
    "vej": "Teglhøjen",
    "by": "Hinnerup",
    "omraade": "Hinnerup",
@@ -47116,7 +47537,7 @@
    "postnr": "8900"
   },
   {
-   "id": "c92aa1d4a3cf",
+   "id": "69f1f20fa203",
    "vej": "Teglhøjen",
    "by": "Hinnerup",
    "omraade": "Hinnerup",
@@ -47142,7 +47563,7 @@
    "postnr": "8382"
   },
   {
-   "id": "c0dc54958728",
+   "id": "c92aa1d4a3cf",
    "vej": "Teglhøjen",
    "by": "Hinnerup",
    "omraade": "Hinnerup",
@@ -48775,7 +49196,7 @@
    "postnr": "8361"
   },
   {
-   "id": "8f6aee6d70ef",
+   "id": "a3a79061f2e1",
    "vej": "Ørvadsvej",
    "by": "Årslev",
    "omraade": "Årslev",
@@ -48801,7 +49222,7 @@
    "postnr": "5792"
   },
   {
-   "id": "a3a79061f2e1",
+   "id": "8f6aee6d70ef",
    "vej": "Ørvadsvej",
    "by": "Årslev",
    "omraade": "Årslev",
@@ -58270,7 +58691,7 @@
    "postnr": "8300"
   },
   {
-   "id": "0ee5f31863dc",
+   "id": "b831de450140",
    "vej": "Laskedalen",
    "by": "Brabrand",
    "omraade": "Aarhus",
@@ -58296,7 +58717,7 @@
    "postnr": "8220"
   },
   {
-   "id": "b831de450140",
+   "id": "0ee5f31863dc",
    "vej": "Laskedalen",
    "by": "Brabrand",
    "omraade": "Aarhus",
@@ -77606,9 +78027,9 @@
    "by": "Randers NV",
    "omraade": "Randers",
    "type": "privat",
-   "gerningstid": "19/7 kl. 06.00 – 12.00",
+   "gerningstid": "19/7 kl. 06.00 – 11.37",
    "tid_fra": "2024-07-19T06:00",
-   "tid_til": "2024-07-19T12:00",
+   "tid_til": "2024-07-19T11:37",
    "rapportdato": "2024-07-20",
    "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-20-juli-2024/2024/07/20",
    "politikreds": "Østjyllands Politi",
@@ -77632,9 +78053,9 @@
    "by": "Randers NV",
    "omraade": "Randers",
    "type": "privat",
-   "gerningstid": "19/7 kl. 06.00 – 11.37",
+   "gerningstid": "19/7 kl. 06.00 – 12.00",
    "tid_fra": "2024-07-19T06:00",
-   "tid_til": "2024-07-19T11:37",
+   "tid_til": "2024-07-19T12:00",
    "rapportdato": "2024-07-20",
    "kilde_url": "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-20-juli-2024/2024/07/20",
    "politikreds": "Østjyllands Politi",
@@ -87501,7 +87922,7 @@
    "postnr": "8250"
   },
   {
-   "id": "09649c6bed74",
+   "id": "e6767e598970",
    "vej": "I.P. Jacobsens Vej",
    "by": "Åbyhøj",
    "omraade": "Aarhus",
@@ -87527,7 +87948,7 @@
    "postnr": "8230"
   },
   {
-   "id": "e6767e598970",
+   "id": "09649c6bed74",
    "vej": "I.P. Jacobsens Vej",
    "by": "Åbyhøj",
    "omraade": "Aarhus",
@@ -90621,7 +91042,7 @@
    "postnr": "8920"
   },
   {
-   "id": "11d4aef5494a",
+   "id": "3ba4ba443b11",
    "vej": "Bakkevej",
    "by": "Randers SØ",
    "omraade": "Randers",
@@ -90647,7 +91068,7 @@
    "postnr": "8920"
   },
   {
-   "id": "3ba4ba443b11",
+   "id": "11d4aef5494a",
    "vej": "Bakkevej",
    "by": "Randers SØ",
    "omraade": "Randers",
@@ -97173,7 +97594,7 @@
    "postnr": "8963"
   },
   {
-   "id": "aeb2297eecb0",
+   "id": "c79b4f03647b",
    "vej": "Elleparken",
    "by": "Lystrup",
    "omraade": "Aarhus",
@@ -97199,7 +97620,7 @@
    "postnr": "8520"
   },
   {
-   "id": "c79b4f03647b",
+   "id": "aeb2297eecb0",
    "vej": "Elleparken",
    "by": "Lystrup",
    "omraade": "Aarhus",
@@ -107518,7 +107939,7 @@
    "postnr": "8230"
   },
   {
-   "id": "23ba731e356c",
+   "id": "44f205f7e0a9",
    "vej": "Sjællandsgade",
    "by": "Aarhus C",
    "omraade": "Aarhus",
@@ -107596,7 +108017,7 @@
    "postnr": "8000"
   },
   {
-   "id": "d0789c6087d4",
+   "id": "23ba731e356c",
    "vej": "Sjællandsgade",
    "by": "Aarhus C",
    "omraade": "Aarhus",
@@ -107648,7 +108069,7 @@
    "postnr": "8260"
   },
   {
-   "id": "44f205f7e0a9",
+   "id": "d0789c6087d4",
    "vej": "Sjællandsgade",
    "by": "Aarhus C",
    "omraade": "Aarhus",
@@ -116835,7 +117256,7 @@
    "postnr": "8000"
   },
   {
-   "id": "caae2d75f938",
+   "id": "e2d454ce2ad7",
    "vej": "Børupvej",
    "by": "Tranbjerg J",
    "omraade": "Aarhus",
@@ -116861,7 +117282,7 @@
    "postnr": "8310"
   },
   {
-   "id": "e2d454ce2ad7",
+   "id": "caae2d75f938",
    "vej": "Børupvej",
    "by": "Tranbjerg J",
    "omraade": "Aarhus",
@@ -124070,7 +124491,7 @@
    "postnr": "8000"
   },
   {
-   "id": "1bb0d1231ec1",
+   "id": "17baa343bdaf",
    "vej": "G. C. Amdrups Vej",
    "by": "Aarhus N",
    "omraade": "Aarhus",
@@ -124096,7 +124517,7 @@
    "postnr": "8000"
   },
   {
-   "id": "17baa343bdaf",
+   "id": "1bb0d1231ec1",
    "vej": "G. C. Amdrups Vej",
    "by": "Aarhus N",
    "omraade": "Aarhus",
@@ -126533,6 +126954,7 @@
  "behandlede_meddelelser": {
   "https://politi.dk/nordjyllands-politi/doegnrapporter/021026prnjyl/2026/10/02": "2026-10-02",
   "https://politi.dk/nordjyllands-politi/doegnrapporter/061026prnjyl/2026/10/06": "2026-10-06",
+  "https://politi.dk/nordjyllands-politi/doegnrapporter/241126/2026/11/24": "2026-11-24",
   "https://politi.dk/nordjyllands-politi/doegnrapporter/290926prnjyl/2026/09/29": "2026-09-29",
   "https://politi.dk/nordjyllands-politi/doegnrapporter/dr-250926/2026/09/25": "2026-09-25",
   "https://politi.dk/nordjyllands-politi/doegnrapporter/dr031126/2026/11/03": "2026-11-03",
@@ -127269,6 +127691,7 @@
   "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-23-maj-2025/2025/05/23": "2025-05-23",
   "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-23-maj-2026/2026/05/23": "2026-05-23",
   "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-23-marts-2024/2024/03/23": "2024-03-23",
+  "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-23-november-2026/2026/11/23": "2026-11-23",
   "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-23-oktober-2023/2023/10/23": "2023-10-23",
   "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-23-oktober-2024/2024/10/23": "2024-10-23",
   "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-23-oktober-2025/2025/10/23": "2025-10-23",
@@ -127300,6 +127723,7 @@
   "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-24-november-2023/2023/11/24": "2023-11-24",
   "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-24-november-2024/2024/11/24": "2024-11-24",
   "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-24-november-2025/2025/11/24": "2025-11-24",
+  "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-24-november-2026/2026/11/24": "2026-11-24",
   "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-24-oktober-2024/2024/10/24": "2024-10-24",
   "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-24-oktober-2025/2025/10/24": "2025-10-24",
   "https://politi.dk/oestjyllands-politi/doegnrapporter/oestjyllands-politi-uddrag-af-doegnrapporten-24-oktober-2026/2026/10/24": "2026-10-24",
@@ -127879,6 +128303,11 @@
   "https://via.ritzau.dk/pressemeddelelse/15305823/anmeldelser-om-bombetrusler-mod-en-raekke-skoler?publisherId=90721&lang=da": "2026-11-23",
   "https://via.ritzau.dk/pressemeddelelse/15305891/anmeldelser-om-bombetrusler?publisherId=90687&lang=da": "2026-11-23",
   "https://via.ritzau.dk/pressemeddelelse/15306302/anmeldelser-om-bombetrusler-mod-en-raekke-skoler?publisherId=90721&lang=da": "2026-11-23",
+  "https://via.ritzau.dk/pressemeddelelse/15307155/vi-soger-vidner-i-forbindelse-med-voldtaegtsforsog-i-viborg-sondag-morgen?publisherId=90687&lang=da": "2026-11-24",
+  "https://via.ritzau.dk/pressemeddelelse/15307461/faerdselsuheld-randersvej-v-djurslandsmotorvejen?publisherId=90721&lang=da": "2026-11-23",
+  "https://via.ritzau.dk/pressemeddelelse/15307566/faerdselsuheld-randersvej-v-djurslandsmotorvejen?publisherId=90721&lang=da": "2026-11-23",
+  "https://via.ritzau.dk/pressemeddelelse/15307670/efterlysning-af-20-arig-mand-i-randers?publisherId=90721&lang=da": "2026-11-23",
+  "https://via.ritzau.dk/pressemeddelelse/15307757/efterlysning-af-20-arig-mand-i-randers?publisherId=90721&lang=da": "2026-11-24",
   "https://via.ritzau.dk/release/15229519": "2026-10-17"
  }
 }

@@ -1,26 +1,26 @@
 {
- "opdateret": "2026-11-23T18:30:02+00:00",
+ "opdateret": "2026-11-24T17:55:00+00:00",
  "uge": {
-  "fra": "2026-11-16",
-  "til": "2026-11-22",
-  "foer_fra": "2026-11-09",
-  "foer_til": "2026-11-15",
-  "antal": 73,
-  "foer": 70,
+  "fra": "2026-11-18",
+  "til": "2026-11-24",
+  "foer_fra": "2026-11-11",
+  "foer_til": "2026-11-17",
+  "antal": 58,
+  "foer": 78,
   "bydele": {
    "flest": [
     {
-     "navn": "Højbjerg",
-     "antal": 7,
+     "navn": "Randers NV",
+     "antal": 6,
      "foer": 4,
-     "forskel": 3,
+     "forskel": 2,
      "kreds": "Østjyllands Politi"
     },
     {
-     "navn": "Randers NV",
-     "antal": 5,
-     "foer": 3,
-     "forskel": 2,
+     "navn": "Højbjerg",
+     "antal": 6,
+     "foer": 7,
+     "forskel": -1,
      "kreds": "Østjyllands Politi"
     },
     {
@@ -38,45 +38,45 @@
      "kreds": "Østjyllands Politi"
     },
     {
-     "navn": "Beder",
+     "navn": "Aarhus N",
      "antal": 4,
-     "foer": 3,
-     "forskel": 1,
+     "foer": 4,
+     "forskel": 0,
      "kreds": "Østjyllands Politi"
     },
     {
-     "navn": "Aarhus V",
-     "antal": 3,
-     "foer": 0,
-     "forskel": 3,
-     "kreds": "Østjyllands Politi"
-    },
-    {
-     "navn": "Harlev J",
-     "antal": 3,
-     "foer": 1,
-     "forskel": 2,
+     "navn": "Viby J",
+     "antal": 4,
+     "foer": 9,
+     "forskel": -5,
      "kreds": "Østjyllands Politi"
     },
     {
      "navn": "Randers SV",
      "antal": 3,
-     "foer": 1,
+     "foer": 2,
+     "forskel": 1,
+     "kreds": "Østjyllands Politi"
+    },
+    {
+     "navn": "Fårup",
+     "antal": 2,
+     "foer": 0,
      "forskel": 2,
      "kreds": "Østjyllands Politi"
     },
     {
-     "navn": "Risskov",
-     "antal": 3,
-     "foer": 3,
-     "forskel": 0,
+     "navn": "Mårslet",
+     "antal": 2,
+     "foer": 0,
+     "forskel": 2,
      "kreds": "Østjyllands Politi"
     },
     {
-     "navn": "Tilst",
-     "antal": 3,
-     "foer": 3,
-     "forskel": 0,
+     "navn": "Skødstrup",
+     "antal": 2,
+     "foer": 1,
+     "forskel": 1,
      "kreds": "Østjyllands Politi"
     }
    ],
@@ -89,13 +89,6 @@
      "kreds": "Østjyllands Politi"
     },
     {
-     "navn": "Højbjerg",
-     "antal": 7,
-     "foer": 4,
-     "forskel": 3,
-     "kreds": "Østjyllands Politi"
-    },
-    {
      "navn": "Randers SØ",
      "antal": 4,
      "foer": 1,
@@ -103,30 +96,9 @@
      "kreds": "Østjyllands Politi"
     },
     {
-     "navn": "Aarhus V",
-     "antal": 3,
-     "foer": 0,
-     "forskel": 3,
-     "kreds": "Østjyllands Politi"
-    },
-    {
      "navn": "Randers NV",
-     "antal": 5,
-     "foer": 3,
-     "forskel": 2,
-     "kreds": "Østjyllands Politi"
-    },
-    {
-     "navn": "Harlev J",
-     "antal": 3,
-     "foer": 1,
-     "forskel": 2,
-     "kreds": "Østjyllands Politi"
-    },
-    {
-     "navn": "Randers SV",
-     "antal": 3,
-     "foer": 1,
+     "antal": 6,
+     "foer": 4,
      "forskel": 2,
      "kreds": "Østjyllands Politi"
     },
@@ -138,17 +110,24 @@
      "kreds": "Østjyllands Politi"
     },
     {
-     "navn": "Hjørring",
+     "navn": "Mårslet",
      "antal": 2,
      "foer": 0,
      "forskel": 2,
-     "kreds": "Nordjyllands Politi"
+     "kreds": "Østjyllands Politi"
     },
     {
-     "navn": "Hornslet",
+     "navn": "Randers SV",
+     "antal": 3,
+     "foer": 2,
+     "forskel": 1,
+     "kreds": "Østjyllands Politi"
+    },
+    {
+     "navn": "Skødstrup",
      "antal": 2,
-     "foer": 0,
-     "forskel": 2,
+     "foer": 1,
+     "forskel": 1,
      "kreds": "Østjyllands Politi"
     }
    ]
@@ -156,25 +135,25 @@
   "postnumre": {
    "flest": [
     {
-     "navn": "8270",
+     "navn": "8920",
      "antal": 8,
      "foer": 4,
      "forskel": 4,
      "kreds": "Østjyllands Politi",
      "byer": [
-      "Højbjerg",
-      "Viby J"
+      "Randers NV",
+      "Langå"
      ]
     },
     {
-     "navn": "8920",
-     "antal": 7,
-     "foer": 3,
-     "forskel": 4,
+     "navn": "8270",
+     "antal": 8,
+     "foer": 7,
+     "forskel": 1,
      "kreds": "Østjyllands Politi",
      "byer": [
-      "Randers NV",
-      "Langå"
+      "Højbjerg",
+      "Viby J"
      ]
     },
     {
@@ -190,155 +169,36 @@
      ]
     },
     {
+     "navn": "8200",
+     "antal": 4,
+     "foer": 3,
+     "forskel": 1,
+     "kreds": "Østjyllands Politi",
+     "byer": [
+      "Aarhus N"
+     ]
+    },
+    {
      "navn": "8940",
      "antal": 4,
-     "foer": 2,
-     "forskel": 2,
+     "foer": 3,
+     "forskel": 1,
      "kreds": "Østjyllands Politi",
      "byer": [
       "Randers SV",
       "Randers SØ",
       "Randers NV"
-     ]
-    },
-    {
-     "navn": "8240",
-     "antal": 4,
-     "foer": 3,
-     "forskel": 1,
-     "kreds": "Østjyllands Politi",
-     "byer": [
-      "Risskov",
-      "Aarhus N"
-     ]
-    },
-    {
-     "navn": "8330",
-     "antal": 4,
-     "foer": 3,
-     "forskel": 1,
-     "kreds": "Østjyllands Politi",
-     "byer": [
-      "Beder"
-     ]
-    },
-    {
-     "navn": "8210",
-     "antal": 3,
-     "foer": 0,
-     "forskel": 3,
-     "kreds": "Østjyllands Politi",
-     "byer": [
-      "Aarhus V"
-     ]
-    },
-    {
-     "navn": "8462",
-     "antal": 3,
-     "foer": 1,
-     "forskel": 2,
-     "kreds": "Østjyllands Politi",
-     "byer": [
-      "Harlev J"
-     ]
-    },
-    {
-     "navn": "8381",
-     "antal": 3,
-     "foer": 3,
-     "forskel": 0,
-     "kreds": "Østjyllands Politi",
-     "byer": [
-      "Tilst"
      ]
     },
     {
      "navn": "8220",
      "antal": 3,
-     "foer": 5,
-     "forskel": -2,
+     "foer": 2,
+     "forskel": 1,
      "kreds": "Østjyllands Politi",
      "byer": [
       "Viby J",
       "Brabrand"
-     ]
-    }
-   ],
-   "stigning": [
-    {
-     "navn": "8270",
-     "antal": 8,
-     "foer": 4,
-     "forskel": 4,
-     "kreds": "Østjyllands Politi",
-     "byer": [
-      "Højbjerg",
-      "Viby J"
-     ]
-    },
-    {
-     "navn": "8920",
-     "antal": 7,
-     "foer": 3,
-     "forskel": 4,
-     "kreds": "Østjyllands Politi",
-     "byer": [
-      "Randers NV",
-      "Langå"
-     ]
-    },
-    {
-     "navn": "8210",
-     "antal": 3,
-     "foer": 0,
-     "forskel": 3,
-     "kreds": "Østjyllands Politi",
-     "byer": [
-      "Aarhus V"
-     ]
-    },
-    {
-     "navn": "8900",
-     "antal": 4,
-     "foer": 2,
-     "forskel": 2,
-     "kreds": "Østjyllands Politi",
-     "byer": [
-      "Randers SØ",
-      "Randers NØ",
-      "Randers SV"
-     ]
-    },
-    {
-     "navn": "8940",
-     "antal": 4,
-     "foer": 2,
-     "forskel": 2,
-     "kreds": "Østjyllands Politi",
-     "byer": [
-      "Randers SV",
-      "Randers SØ",
-      "Randers NV"
-     ]
-    },
-    {
-     "navn": "8462",
-     "antal": 3,
-     "foer": 1,
-     "forskel": 2,
-     "kreds": "Østjyllands Politi",
-     "byer": [
-      "Harlev J"
-     ]
-    },
-    {
-     "navn": "8543",
-     "antal": 2,
-     "foer": 0,
-     "forskel": 2,
-     "kreds": "Østjyllands Politi",
-     "byer": [
-      "Hornslet"
      ]
     },
     {
@@ -352,24 +212,124 @@
      ]
     },
     {
-     "navn": "9800",
+     "navn": "8541",
      "antal": 2,
-     "foer": 0,
-     "forskel": 2,
-     "kreds": "Nordjyllands Politi",
+     "foer": 1,
+     "forskel": 1,
+     "kreds": "Østjyllands Politi",
      "byer": [
-      "Hjørring"
+      "Skødstrup"
      ]
     },
     {
-     "navn": "8240",
+     "navn": "9000",
+     "antal": 2,
+     "foer": 2,
+     "forskel": 0,
+     "kreds": "Nordjyllands Politi",
+     "byer": [
+      "Hasseris",
+      "Aalborg",
+      "Aalborg SV"
+     ]
+    },
+    {
+     "navn": "4130",
+     "antal": 1,
+     "foer": 0,
+     "forskel": 1,
+     "kreds": "Østjyllands Politi",
+     "byer": [
+      "Viby H"
+     ]
+    }
+   ],
+   "stigning": [
+    {
+     "navn": "8920",
+     "antal": 8,
+     "foer": 4,
+     "forskel": 4,
+     "kreds": "Østjyllands Politi",
+     "byer": [
+      "Randers NV",
+      "Langå"
+     ]
+    },
+    {
+     "navn": "8900",
+     "antal": 4,
+     "foer": 2,
+     "forskel": 2,
+     "kreds": "Østjyllands Politi",
+     "byer": [
+      "Randers SØ",
+      "Randers NØ",
+      "Randers SV"
+     ]
+    },
+    {
+     "navn": "8990",
+     "antal": 2,
+     "foer": 0,
+     "forskel": 2,
+     "kreds": "Østjyllands Politi",
+     "byer": [
+      "Fårup"
+     ]
+    },
+    {
+     "navn": "8270",
+     "antal": 8,
+     "foer": 7,
+     "forskel": 1,
+     "kreds": "Østjyllands Politi",
+     "byer": [
+      "Højbjerg",
+      "Viby J"
+     ]
+    },
+    {
+     "navn": "8200",
      "antal": 4,
      "foer": 3,
      "forskel": 1,
      "kreds": "Østjyllands Politi",
      "byer": [
-      "Risskov",
       "Aarhus N"
+     ]
+    },
+    {
+     "navn": "8940",
+     "antal": 4,
+     "foer": 3,
+     "forskel": 1,
+     "kreds": "Østjyllands Politi",
+     "byer": [
+      "Randers SV",
+      "Randers SØ",
+      "Randers NV"
+     ]
+    },
+    {
+     "navn": "8220",
+     "antal": 3,
+     "foer": 2,
+     "forskel": 1,
+     "kreds": "Østjyllands Politi",
+     "byer": [
+      "Viby J",
+      "Brabrand"
+     ]
+    },
+    {
+     "navn": "8541",
+     "antal": 2,
+     "foer": 1,
+     "forskel": 1,
+     "kreds": "Østjyllands Politi",
+     "byer": [
+      "Skødstrup"
      ]
     }
    ]
@@ -391,20 +351,6 @@
      "kreds": "Østjyllands Politi"
     },
     {
-     "navn": "Præstetoften, Beder",
-     "antal": 2,
-     "foer": 0,
-     "forskel": 2,
-     "kreds": "Østjyllands Politi"
-    },
-    {
-     "navn": "Ahornvej, Hornslet",
-     "antal": 1,
-     "foer": 0,
-     "forskel": 1,
-     "kreds": "Østjyllands Politi"
-    },
-    {
      "navn": "Albert Naurs Vej, Højbjerg",
      "antal": 1,
      "foer": 0,
@@ -412,7 +358,7 @@
      "kreds": "Østjyllands Politi"
     },
     {
-     "navn": "Alphavej, Højbjerg",
+     "navn": "Atlasvej, Højbjerg",
      "antal": 1,
      "foer": 0,
      "forskel": 1,
@@ -433,14 +379,28 @@
      "kreds": "Østjyllands Politi"
     },
     {
-     "navn": "Drejøvænget, Tilst",
+     "navn": "Edisonvej, Viby H",
      "antal": 1,
      "foer": 0,
      "forskel": 1,
      "kreds": "Østjyllands Politi"
     },
     {
-     "navn": "Edisonvej, Viby H",
+     "navn": "Elverumvej, Aarhus N",
+     "antal": 1,
+     "foer": 0,
+     "forskel": 1,
+     "kreds": "Østjyllands Politi"
+    },
+    {
+     "navn": "Fagotvej, Randers SV",
+     "antal": 1,
+     "foer": 0,
+     "forskel": 1,
+     "kreds": "Østjyllands Politi"
+    },
+    {
+     "navn": "Ferskenvej, Randers NV",
      "antal": 1,
      "foer": 0,
      "forskel": 1,
@@ -457,13 +417,6 @@
     },
     {
      "navn": "Ny Tjørnegade, Aarhus N",
-     "antal": 2,
-     "foer": 0,
-     "forskel": 2,
-     "kreds": "Østjyllands Politi"
-    },
-    {
-     "navn": "Præstetoften, Beder",
      "antal": 2,
      "foer": 0,
      "forskel": 2,
